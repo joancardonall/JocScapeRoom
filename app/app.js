@@ -623,83 +623,98 @@ function App() {
           position: 'absolute',
           left: '2%',
           top: '3%',
-          width: '380px',
-          background: 'rgba(248, 241, 228, 0.96)',
-          border: '1px solid #8f7756',
-          borderRadius: '10px',
-          padding: '10px',
+          display: 'flex',
+          alignItems: 'flex-end',
+          gap: '10px',
+          maxWidth: '78vw',
+          background: 'transparent',
+          border: 'none',
+          padding: 0,
           zIndex: 5000
         }
       },
       e(
-        'label',
-        {
-          htmlFor: 'case-selector',
-          style: {
-            display: 'block',
-            fontSize: '13px',
-            marginBottom: '6px',
-            color: '#2b2016',
-            fontWeight: '600'
-          }
-        },
-        'Cas actiu'
-      ),
-      e(
-        'select',
-        {
-          id: 'case-selector',
-          value: selectedCasePath,
-          onChange: function (event) {
-            setSelectedCasePath(event.target.value);
+        'div',
+        { style: { minWidth: '220px', maxWidth: '360px' } },
+        e(
+          'label',
+          {
+            htmlFor: 'case-selector',
+            style: {
+              display: 'block',
+              fontSize: '11px',
+              marginBottom: '3px',
+              color: '#fff7ea',
+              fontWeight: '600',
+              textShadow: '0 1px 3px rgba(0, 0, 0, 0.75)'
+            }
           },
-          style: {
-            width: '100%',
-            height: '34px',
-            borderRadius: '8px',
-            border: '1px solid #9d8461',
-            background: '#fffdf8',
-            padding: '0 8px',
-            fontSize: '14px',
-            marginBottom: '10px'
-          }
-        },
-        selectOptions
-      ),
-      e(
-        'label',
-        {
-          htmlFor: 'layout-selector',
-          style: {
-            display: 'block',
-            fontSize: '13px',
-            marginBottom: '6px',
-            color: '#2b2016',
-            fontWeight: '600'
-          }
-        },
-        'Estil visual'
-      ),
-      e(
-        'select',
-        {
-          id: 'layout-selector',
-          value: selectedLayoutId,
-          onChange: function (event) {
-            setSelectedLayoutId(event.target.value);
-            setOpenWindows([]);
+          'Cas'
+        ),
+        e(
+          'select',
+          {
+            id: 'case-selector',
+            value: selectedCasePath,
+            onChange: function (event) {
+              setSelectedCasePath(event.target.value);
+            },
+            style: {
+              width: '100%',
+              height: '30px',
+              borderRadius: '6px',
+              border: '1px solid rgba(255, 255, 255, 0.38)',
+              background: 'rgba(20, 18, 16, 0.34)',
+              color: '#fff8ed',
+              padding: '0 7px',
+              fontSize: '12px',
+              boxShadow: '0 1px 4px rgba(0, 0, 0, 0.18)'
+            }
           },
-          style: {
-            width: '100%',
-            height: '34px',
-            borderRadius: '8px',
-            border: '1px solid #9d8461',
-            background: '#fffdf8',
-            padding: '0 8px',
-            fontSize: '14px'
-          }
-        },
-        layoutOptions
+          selectOptions
+        )
+      ),
+      e(
+        'div',
+        { style: { width: '160px' } },
+        e(
+          'label',
+          {
+            htmlFor: 'layout-selector',
+            style: {
+              display: 'block',
+              fontSize: '11px',
+              marginBottom: '3px',
+              color: '#fff7ea',
+              fontWeight: '600',
+              textShadow: '0 1px 3px rgba(0, 0, 0, 0.75)'
+            }
+          },
+          'Estil'
+        ),
+        e(
+          'select',
+          {
+            id: 'layout-selector',
+            value: selectedLayoutId,
+            onChange: function (event) {
+              setSelectedLayoutId(event.target.value);
+              setOpenWindows([]);
+            },
+            style: {
+              width: '100%',
+              height: '30px',
+              borderRadius: '6px',
+              border: '1px solid rgba(255, 255, 255, 0.38)',
+              background: 'rgba(20, 18, 16, 0.34)',
+              color: '#fff8ed',
+              padding: '0 7px',
+              fontSize: '12px',
+              boxShadow: '0 1px 4px rgba(0, 0, 0, 0.18)'
+            }
+          },
+          layoutOptions
+        )
       )
     )
   );

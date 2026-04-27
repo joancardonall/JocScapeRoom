@@ -57,6 +57,7 @@ Hi ha 2 peces de dades principals:
 - Defineix la imatge de fons.
 - Defineix hotspots.
 - Defineix `hotspotActions`.
+- Pot definir diversos estils visuals a `styles[]`, cadascun amb el seu propi `sceneImage`, `hotspots` i `hotspotActions`.
 - No forma part de la història del cas.
 
 2. `app/cases/case-XXX.json`
@@ -87,12 +88,41 @@ Important: no obrir `app/index.html` directament. Cal servidor local perque la w
 1. Carrega `app/scene-layout.json` i `app/cases/cases-index.json`.
 2. Carrega el cas seleccionat.
 3. Dibuixa la imatge de fons.
-4. Dibuixa hotspots invisibles.
-5. En clicar un hotspot, obre el node associat.
-6. Si el node és carpeta, mostra fills.
-7. Si el node és document o sospitós, mostra contingut textual.
-8. En els dossiers de sospitós nous, la UI mostra una fitxa policial amb foto i recorre a un retrat per defecte si la imatge encara no existeix.
-9. El botó de solució i la tecla `Esc` mostren o amaguen la resolució final.
+4. Permet escollir l'estil visual de l'escena si `scene-layout.json` en defineix mes d'un.
+5. Dibuixa hotspots invisibles segons l'estil actiu.
+6. En clicar un hotspot, obre el node associat.
+7. Si el node és carpeta, mostra fills.
+8. Si el node és document o sospitós, mostra contingut textual.
+9. En els dossiers de sospitós nous, la UI mostra una fitxa policial amb foto i recorre a un retrat per defecte si la imatge encara no existeix.
+10. El botó de solució i la tecla `Esc` mostren o amaguen la resolució final.
+
+## Estils visuals de l'escena
+
+Per afegir una nova imatge de fons sense perdre l'anterior, afegeix una entrada nova a `app/scene-layout.json` dins de `styles[]`:
+
+```json
+{
+  "id": "nom-de-lestil",
+  "name": "Nom visible al selector",
+  "sceneImage": "./images/el-meu-fons.png",
+  "hotspotActions": {
+    "monitor": "computer-emails-doc",
+    "file": "main-folder"
+  },
+  "hotspots": [
+    {
+      "id": "monitor",
+      "label": "Ordinador",
+      "x": 1,
+      "y": 2,
+      "w": 34,
+      "h": 33
+    }
+  ]
+}
+```
+
+Les coordenades dels hotspots son percentatges de la pantalla. Cada `id` de `hotspots[]` ha de tenir el seu objectiu equivalent dins de `hotspotActions`.
 
 ## Esquema mínim d'un cas final
 

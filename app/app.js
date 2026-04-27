@@ -10,6 +10,7 @@ function App() {
   // 1) ESTAT PRINCIPAL DE L'APP
   // -----------------------------
   const [layoutData, setLayoutData] = React.useState(null); // scene-layout.json
+  const [selectedLayoutId, setSelectedLayoutId] = React.useState(''); // estil visual actual
   const [caseIndex, setCaseIndex] = React.useState([]); // llista de casos disponibles
   const [selectedCasePath, setSelectedCasePath] = React.useState(''); // cas actual
   const [caseData, setCaseData] = React.useState(null); // JSON del cas carregat
@@ -74,6 +75,31 @@ function App() {
     const lastCase = caseIndex[caseIndex.length - 1];
     setSelectedCasePath(lastCase.path || './cases/case-001.json');
   }, [caseIndex]);
+
+  React.useEffect(
+    function () {
+      if (!layoutData) {
+        return;
+      }
+
+      const layouts = getAvailableLayouts();
+      if (layouts.length === 0) {
+        return;
+      }
+
+      let selectedLayoutExists = false;
+      for (let i = 0; i < layouts.length; i += 1) {
+        if (getLayoutId(layouts[i], i) === selectedLayoutId) {
+          selectedLayoutExists = true;
+        }
+      }
+
+      if (!selectedLayoutExists) {
+        setSelectedLayoutId(getLayoutId(layouts[0], 0));
+      }
+    },
+    [layoutData, selectedLayoutId]
+  );
 
   // ---------------------------------
   // 3) CARREGA DEL CAS SELECCIONAT
@@ -143,6 +169,41 @@ function App() {
       return null;
     }
     return caseData.fileSystem.nodes[nodeId];
+  }
+
+  function getLayoutId(layout, index) {
+    if (layout && layout.id) {
+      return layout.id;
+    }
+
+    return 'layout-' + index;
+  }
+
+  function getAvailableLayouts() {
+    if (!layoutData) {
+      return [];
+    }
+
+    if (Array.isArray(layoutData.styles) && layoutData.styles.length > 0) {
+      return layoutData.styles;
+    }
+
+    return [layoutData];
+  }
+
+  function getActiveLayout() {
+    const layouts = getAvailableLayouts();
+    if (layouts.length === 0) {
+      return null;
+    }
+
+    for (let i = 0; i < layouts.length; i += 1) {
+      if (getLayoutId(layouts[i], i) === selectedLayoutId) {
+        return layouts[i];
+      }
+    }
+
+    return layouts[0];
   }
 
   function getFolderChildren(node) {
@@ -461,14 +522,15 @@ function App() {
   }
 
   function openFromHotspot(hotspotId) {
-    if (!layoutData) {
+    const activeLayout = getActiveLayout();
+    if (!activeLayout) {
       return;
     }
-    if (!layoutData.hotspotActions) {
+    if (!activeLayout.hotspotActions) {
       return;
     }
 
-    const targetNodeId = layoutData.hotspotActions[hotspotId];
+    const targetNodeId = activeLayout.hotspotActions[hotspotId];
     if (targetNodeId) {
       openNodeWindow(targetNodeId);
     }
@@ -499,9 +561,10 @@ function App() {
   // 7) CONSTRUCCIÓ DELS ELEMENTS UI
   // ---------------------------------
   const mainChildren = [];
+  const activeLayout = getActiveLayout();
 
   // 7.1) Hotspots invisibles
-  const hotspots = layoutData.hotspots || [];
+  const hotspots = activeLayout && Array.isArray(activeLayout.hotspots) ? activeLayout.hotspots : [];
   for (let i = 0; i < hotspots.length; i += 1) {
     const hotspot = hotspots[i];
     mainChildren.push(
@@ -530,7 +593,7 @@ function App() {
     );
   }
 
-  // 7.2) Selector de cas
+  // 7.2) Selectors de cas i estil visual
   const selectOptions = [];
   if (caseIndex.length > 0) {
     for (let i = 0; i < caseIndex.length; i += 1) {
@@ -544,6 +607,14 @@ function App() {
     selectOptions.push(e('option', { key: 'default', value: selectedCasePath }, selectedCasePath));
   }
 
+  const layoutOptions = [];
+  const layouts = getAvailableLayouts();
+  for (let i = 0; i < layouts.length; i += 1) {
+    const layout = layouts[i];
+    const layoutId = getLayoutId(layout, i);
+    layoutOptions.push(e('option', { key: layoutId, value: layoutId }, layout.name || layoutId));
+  }
+
   mainChildren.push(
     e(
       'section',
@@ -552,7 +623,7 @@ function App() {
           position: 'absolute',
           left: '2%',
           top: '3%',
-          width: '360px',
+          width: '380px',
           background: 'rgba(248, 241, 228, 0.96)',
           border: '1px solid #8f7756',
           borderRadius: '10px',
@@ -589,10 +660,46 @@ function App() {
             border: '1px solid #9d8461',
             background: '#fffdf8',
             padding: '0 8px',
-            fontSize: '14px'
+            fontSize: '14px',
+            marginBottom: '10px'
           }
         },
         selectOptions
+      ),
+      e(
+        'label',
+        {
+          htmlFor: 'layout-selector',
+          style: {
+            display: 'block',
+            fontSize: '13px',
+            marginBottom: '6px',
+            color: '#2b2016',
+            fontWeight: '600'
+          }
+        },
+        'Estil visual'
+      ),
+      e(
+        'select',
+        {
+          id: 'layout-selector',
+          value: selectedLayoutId,
+          onChange: function (event) {
+            setSelectedLayoutId(event.target.value);
+            setOpenWindows([]);
+          },
+          style: {
+            width: '100%',
+            height: '34px',
+            borderRadius: '8px',
+            border: '1px solid #9d8461',
+            background: '#fffdf8',
+            padding: '0 8px',
+            fontSize: '14px'
+          }
+        },
+        layoutOptions
       )
     )
   );
@@ -1140,7 +1247,7 @@ function App() {
         width: '100vw',
         height: '100vh',
         overflow: 'hidden',
-        backgroundImage: 'url(' + layoutData.sceneImage + ')',
+        backgroundImage: 'url(' + activeLayout.sceneImage + ')',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',

@@ -1,0 +1,241 @@
+{
+  "id": "case-008",
+  "title": "Vidre, acer i silenci",
+  "summary": "El director tecnic d'una fundacio que prepara una gran retrospectiva sobre Mies van der Rohe mor dins el Pavello de Barcelona durant una visita privada de preinauguracio.",
+  "objective": "Resol qui va matar Ernest Vila provant quina persona tenia l'acces real a la instal·lacio, el mobil per silenciar una irregularitat i el marge temporal per executar-la.",
+  "fileSystem": {
+    "rootId": "main-folder",
+    "nodes": {
+      "main-folder": {
+        "id": "main-folder",
+        "type": "folder",
+        "title": "Expedient Principal",
+        "description": "Investigacio de la mort d'Ernest Vila al Pavello.",
+        "children": [
+          "police-report-folder",
+          "witnesses-folder"
+        ]
+      },
+      "police-report-folder": {
+        "id": "police-report-folder",
+        "type": "folder",
+        "title": "Informes Policials",
+        "description": "Context inicial i estat de l'escena.",
+        "children": [
+          "intro-report-doc",
+          "scene-arrival-doc"
+        ]
+      },
+      "witnesses-folder": {
+        "id": "witnesses-folder",
+        "type": "folder",
+        "title": "Testimonis",
+        "description": "Declaracions del personal i tercers.",
+        "children": [
+          "witness-porter-doc",
+          "witness-taxi-doc",
+          "witness-dock-doc"
+        ]
+      },
+      "suspects-folder": {
+        "id": "suspects-folder",
+        "type": "folder",
+        "title": "Sospitosos",
+        "description": "Perfils i relacio amb la victima.",
+        "children": [
+          "suspect-claudia",
+          "suspect-pau",
+          "suspect-mireia",
+          "suspect-lluc"
+        ]
+      },
+      "extra-evidence-folder": {
+        "id": "extra-evidence-folder",
+        "type": "folder",
+        "title": "Proves Complementaries",
+        "description": "Forense, correus, notes i cronologia.",
+        "children": [
+          "forensic-report-doc",
+          "computer-emails-doc",
+          "drawer-notes-doc",
+          "harbor-shift-doc",
+          "timeline-synthesis-doc"
+        ]
+      },
+      "intro-report-doc": {
+        "id": "intro-report-doc",
+        "type": "document",
+        "title": "Informe Inicial",
+        "subtitle": "Resum de la nit dels fets",
+        "content": [
+          "Ernest Vila, 55 anys, director tecnic de la Fundacio Pavello Mies, va ser trobat mort a les 23.04 h al costat de l'estany interior.",
+          "La fundacio preparava una preinauguracio sobre muntatges perduts de Mies van der Rohe amb prestec de peces originals i recreacions digitals d'alt valor economic.",
+          "La victima havia avisat aquell mateix dia que volia paralitzar la mostra per discrepancies greus entre les peces assegurades i les realment rebudes.",
+          "L'escena presenta una caiguda a l'aigua, pero els indicis apunten a una perdua de consciència previa i a manipulacio de la il·luminacio.",
+          "La hipotesi principal es que algu va aprofitar el control tecnic de l'espai per convertir una visita privada en una trampa."
+        ]
+      },
+      "scene-arrival-doc": {
+        "id": "scene-arrival-doc",
+        "type": "document",
+        "title": "Arribada a l'Escena",
+        "subtitle": "Observacions de la patrulla",
+        "content": [
+          "El pavello estava tancat al public i nomes hi havia personal acreditat. No hi ha signes d'entrada forçada ni de robatori obert.",
+          "La il·luminacio de l'ala sud havia estat reconfigurada manualment. A terra, prop del pedrís, es localitza una copa de cava trencada i un comandament de passarel·la tecnica.",
+          "El cos d'Ernest Vila no presenta lesions defensives destacables. Les marques als avantbraços son compatibles amb una caiguda desorientada mes que no pas amb una agressio directa llarga."
+        ]
+      },
+      "witness-porter-doc": {
+        "id": "witness-porter-doc",
+        "type": "document",
+        "title": "Declaracio del vigilant",
+        "subtitle": "Rafel Codina, control de nit",
+        "content": [
+          "Rafel Codina situa Ernest Vila dins el pavello a les 21.47 h, preparant una ultima revisio abans de l'acte de lendema.",
+          "A les 22.11 h veu Lluc Pons accedir a la passarel·la tecnica superior. No li sorpren al moment perque era el responsable de sistemes, pero despres recorda que el seu torn havia acabat a les 21.30 h.",
+          "A les 22.34 h, el vigilant observa una sortida rapida de Lluc per la porta de servei del jardi posterior. Quan el crida, Lluc fa un gest ambigu i continua caminant sense aturar-se."
+        ]
+      },
+      "witness-taxi-doc": {
+        "id": "witness-taxi-doc",
+        "type": "document",
+        "title": "Declaracio del conductor VTC",
+        "subtitle": "Youssef Marwan, registre 884",
+        "content": [
+          "El conductor recull Claudia Recasens a les 21.49 h davant el pavello i la deixa a l'Hotel Mirador a les 22.03 h. El trajecte queda registrat per geolocalitzacio.",
+          "La passatgera li demana anar de pressa per no perdre una presentacio amb inversors alemanys. Durant el cami, es queixa que Ernest li esta enfonsant la captacio de fons.",
+          "L'hotel confirma la seva entrada a la sala privada a les 22.08 h i no hi ha cap nou trajecte seu cap al pavello aquella nit."
+        ]
+      },
+      "witness-dock-doc": {
+        "id": "witness-dock-doc",
+        "type": "document",
+        "title": "Declaracio de restauradora",
+        "subtitle": "Aina Tello, assistent de muntatge",
+        "content": [
+          "Aina Tello va veure Mireia Nadal parlar amb Ernest cap a les 22.00 h. Segons ella, la conversa era tensa perque la conservadora no volia exposar una cadira sense certificat definitiu.",
+          "Cap a les 22.19 h, Aina sent el mecanisme de foscor parcial de l'ala sud, un sistema que normalment nomes opera el departament tecnic.",
+          "Uns minuts abans, Pau Sastre li havia escrit des del taller extern per demanar-li fotografies de les unions metal·liques. El missatge porta hora 22.13 h."
+        ]
+      },
+      "suspect-claudia": {
+        "id": "suspect-claudia",
+        "type": "suspect",
+        "name": "Claudia Recasens",
+        "role": "Directora de mecenatge de la fundacio",
+        "alibi": "Assegura que va abandonar el pavello abans de les 21.50 h i que va assistir tota la nit a una reunio amb inversors a l'Hotel Mirador.",
+        "statement": [
+          "Ernest estava disposat a fer saltar pels aires anys de captacio per una discussio sobre assegurances i terminologia de cataleg.",
+          "Jo el trobava inflexible, pero no soc tan estupida com per matar-lo el dia abans d'una presentacio amb noms i cognoms.",
+          "Tothom em veu com la cara amable de la fundacio, i per aixo els resulta comodissim imaginar un mobil de diners."
+        ]
+      },
+      "suspect-pau": {
+        "id": "suspect-pau",
+        "type": "suspect",
+        "name": "Pau Sastre",
+        "role": "Metal·lista responsable del taller de reconstruccions",
+        "alibi": "Declara que treballava al taller extern fins passada la mitjanit i que nomes va intervenir per missatgeria amb l'equip de muntatge.",
+        "statement": [
+          "Ernest m'exigia una precisio impossible amb pressupost reduit, pero la nostra tensio era professional, no personal.",
+          "Si el sistema d'il·luminacio falla, jo no hi pinto res. La meva feina s'acaba quan entrego estructura i soldadures.",
+          "Vaig escriure a l'Aina per una unio defectuosa, no per controlar on era la victima."
+        ]
+      },
+      "suspect-mireia": {
+        "id": "suspect-mireia",
+        "type": "suspect",
+        "name": "Mireia Nadal",
+        "role": "Conservadora de la mostra",
+        "alibi": "Diu que va discutir amb Ernest a les 22.00 h i que despres va romandre al magatzem de peces amb dues ajudants fins que va arribar la policia.",
+        "statement": [
+          "No volia que s'obrissin caixes sense documentacio tancada. Ernest, en canvi, creia que l'espectacle ho justificava tot.",
+          "La meva discussio amb ell va existir, i no la minimitzare. Pero si jo l'hagués volgut aturar, ho hauria fet per via formal, no ofegant-lo en un pavello de vidre.",
+          "El problema real era qui controlava els dispositius, les claus i els accessos fora d'horari."
+        ]
+      },
+      "suspect-lluc": {
+        "id": "suspect-lluc",
+        "type": "suspect",
+        "name": "Lluc Pons",
+        "role": "Cap de sistemes audiovisuals i seguretat tecnica",
+        "alibi": "Afirma que va resoldre una incidencia remota des de casa i que la seva presencia al pavello despres del torn es impossible.",
+        "statement": [
+          "Ernest m'havia posat sota sospita per un tema de comandaments duplicats, pero era una paranoia seva de director cansat.",
+          "Les passarel·les i les fosques parcials es poden activar a distancia. Que el vigilant em situï alla no vol dir res si ni tan sols m'ha aturat.",
+          "Sempre soc l'ultim nom de la llista perque tinc les claus de tot, i aquest privilegi a vegades sembla una condemna."
+        ]
+      },
+      "forensic-report-doc": {
+        "id": "forensic-report-doc",
+        "type": "document",
+        "title": "Informe Forense",
+        "subtitle": "Resultats preliminars",
+        "content": [
+          "La causa de la mort es asfixia per immersio, pero la victima ja presentava una sedacio incapacitant per midazolam poc abans de caure a l'estany.",
+          "La finestra de mort s'estableix entre les 22.18 h i les 22.33 h. La quantitat del sedant es compatible amb administracio en beguda escumosa.",
+          "A la copa trencada hi ha restes de lubricant de connector i microresidus de guants negres de nitril, habituals a les feines de cablejat i focus. Al comandament de passarel·la hi ha ADN parcial compatible amb Lluc Pons."
+        ]
+      },
+      "computer-emails-doc": {
+        "id": "computer-emails-doc",
+        "type": "document",
+        "title": "Correus i Logs Tecnics",
+        "subtitle": "Sistema intern del pavello",
+        "content": [
+          "A les 20.42 h, Ernest escriu a Lluc Pons: 'Demà compareixerem junts. Portare les claus duplicades i les assegurances falsades al patronat'.",
+          "A les 20.51 h, Lluc respon: 'No facis aquest pas abans de parlar amb mi. Encara ho podem ordenar'.",
+          "Els logs mostren una activacio manual de la foscor parcial a les 22.19 h des del terminal de passarel·la superior i una obertura de l'armari de comandaments amb el codi personal de Lluc a les 22.10 h.",
+          "A les 22.31 h, el mobil de Lluc es connecta a l'antena mes propera al jardi posterior del pavello, i a les 22.36 h ja consta en trajecte cap a casa."
+        ]
+      },
+      "drawer-notes-doc": {
+        "id": "drawer-notes-doc",
+        "type": "document",
+        "title": "Notes de Despatx",
+        "subtitle": "Apunts d'Ernest Vila",
+        "content": [
+          "En una llibreta de sobretaula es llegeix: 'Lluc ha reutilitzat claus i codis de peces no assegurades. Diu que era per estalviar, pero hi ha factures duplicades'.",
+          "Una nota secundaria recull: 'Claudia pressionada pels mecenes. Mireia te raons per bloquejar la mostra. Pau se sent menyspreat per tots'.",
+          "A la darrera pagina, escrita amb traç mes fort, hi consta: '22.10 passarel·la. No ajornar mes'."
+        ]
+      },
+      "harbor-shift-doc": {
+        "id": "harbor-shift-doc",
+        "type": "document",
+        "title": "Registre d'Accessos i Torns",
+        "subtitle": "Control intern de la fundacio",
+        "content": [
+          "Claudia Recasens valida sortida a les 21.48 h i queda despres associada a l'Hotel Mirador. Pau Sastre fitxa sortida del taller extern a les 00.07 h i envia missatge des d'alla a les 22.13 h.",
+          "Mireia Nadal accedeix al magatzem de peces a les 22.06 h i hi roman amb dues auxiliars fins a les 22.40 h, segons registre de porta i testimonis.",
+          "Lluc Pons no tenia torn assignat despres de les 21.30 h, pero el seu codi obre l'armari de comandaments a les 22.10 h i la porta de servei posterior a les 22.34 h."
+        ]
+      },
+      "timeline-synthesis-doc": {
+        "id": "timeline-synthesis-doc",
+        "type": "document",
+        "title": "Sintesi Cronologica",
+        "subtitle": "Contrast de forense, testimonis i logs",
+        "content": [
+          "20.42 h i 20.51 h: Ernest i Lluc intercanvien correus sobre claus duplicades i assegurances falsades. A la llibreta d'Ernest consta una cita a la passarel·la per a les 22.10 h.",
+          "21.49 h - 22.08 h: Claudia surt en VTC i queda vinculada a una reunio externa. 22.06 h: Mireia entra al magatzem amb dues auxiliars. 22.13 h: Pau envia un missatge des del taller extern.",
+          "22.10 h: el codi de Lluc obre l'armari de comandaments. 22.11 h: el vigilant el veu pujar a la passarel·la. 22.19 h: s'activa la foscor parcial, maniobra que desorienta la victima.",
+          "22.18 h - 22.33 h: finestra de mort. El midazolam a la copa situa una preparacio previa de la beguda i la presencia d'algú amb accés tecnic immediat.",
+          "22.34 h: la porta de servei posterior s'obre amb el codi de Lluc i el vigilant el veu marxar. La suma de cita previa, control tecnic i fugida el converteix en l'unic autor viable."
+        ]
+      }
+    }
+  },
+  "solution": {
+    "culprit": "Lluc Pons",
+    "motive": "Ernest havia descobert que Lluc reutilitzava claus, codis i documentacio tecnica per ocultar peces no assegurades i facturacio irregular en el muntatge de l'exposicio. Si el patronat ho sabien, Lluc perdia la seva carrera i podia acabar imputat.",
+    "method": "Lluc va citar Ernest a la passarel·la tecnica, va preparar-li una copa amb midazolam, va provocar una foscor parcial per desorientar-lo i, quan la victima ja estava incapacitada, va fer que caigués a l'estany per simular un accident.",
+    "keyProof": "Convergeixen el correu i la nota que fixen la trobada amb Lluc, l'ús del seu codi a l'armari de comandaments i a la porta posterior, l'ADN parcial al comandament, els residus tecnics a la copa i la seva fugida vista pel vigilant.",
+    "eliminations": [
+      "Claudia Recasens tenia un clar interes economic, pero queda fora del recinte en VTC i hotel durant tota la finestra de mort.",
+      "Pau Sastre podia sentir-se humiliat professionalment, pero el seu missatge des del taller extern i el registre de permanencia el deixen sense oportunitat.",
+      "Mireia Nadal discuteix amb la victima i funciona com a pista falsa, pero el magatzem i les dues auxiliars sostenen la seva coartada mentre els elements tecnics apunten fora del seu ambit."
+    ]
+  }
+}

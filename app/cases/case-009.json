@@ -1,0 +1,241 @@
+{
+  "id": "case-009",
+  "title": "La casa sobre la cascada",
+  "summary": "Durant el muntatge d'una retrospectiva sobre Frank Lloyd Wright, el comissari principal apareix mort dins una recreacio domèstica inspirada en Fallingwater, just quan estava a punt de retirar una peça estrella de la mostra.",
+  "objective": "Identifica l'unic culpable creuant la finestra de mort, els registres de magatzem i les tensions personals nascudes al voltant de la peça retirada.",
+  "fileSystem": {
+    "rootId": "main-folder",
+    "nodes": {
+      "main-folder": {
+        "id": "main-folder",
+        "type": "folder",
+        "title": "Expedient Principal",
+        "description": "Mort del comissari Juli Font al Museu d'Arquitectura Domestica.",
+        "children": [
+          "police-report-folder",
+          "witnesses-folder"
+        ]
+      },
+      "police-report-folder": {
+        "id": "police-report-folder",
+        "type": "folder",
+        "title": "Informes Policials",
+        "description": "Context i escena de la mort.",
+        "children": [
+          "intro-report-doc",
+          "scene-arrival-doc"
+        ]
+      },
+      "witnesses-folder": {
+        "id": "witnesses-folder",
+        "type": "folder",
+        "title": "Testimonis",
+        "description": "Declaracions del personal de sala i transport.",
+        "children": [
+          "witness-porter-doc",
+          "witness-taxi-doc",
+          "witness-dock-doc"
+        ]
+      },
+      "suspects-folder": {
+        "id": "suspects-folder",
+        "type": "folder",
+        "title": "Sospitosos",
+        "description": "Les quatre persones amb conflictes directes amb la victima.",
+        "children": [
+          "suspect-claudia",
+          "suspect-pau",
+          "suspect-mireia",
+          "suspect-lluc"
+        ]
+      },
+      "extra-evidence-folder": {
+        "id": "extra-evidence-folder",
+        "type": "folder",
+        "title": "Proves Complementaries",
+        "description": "Forense, correus, notes de calaix i cronologia.",
+        "children": [
+          "forensic-report-doc",
+          "computer-emails-doc",
+          "drawer-notes-doc",
+          "harbor-shift-doc",
+          "timeline-synthesis-doc"
+        ]
+      },
+      "intro-report-doc": {
+        "id": "intro-report-doc",
+        "type": "document",
+        "title": "Informe Inicial",
+        "subtitle": "Resum de la nit del 5 de novembre",
+        "content": [
+          "Juli Font, 51 anys, comissari principal de l'exposicio 'Habitar Wright', va ser trobat mort a les 22.58 h dins una sala ambientada com un salo de Fallingwater.",
+          "La victima havia comunicat internament que retiraria una lluminaria atribuida a Frank Lloyd Wright per possibles problemes de procedencia.",
+          "La decisio afectava prestigi, diners i la credibilitat de diversos departaments. Una setmana abans, Juli havia acusat algú de forcar inventaris i substituir etiquetes.",
+          "A la sala hi havia una tassa de cafe fred, una cinta d'embalatge tallada i el sensor d'humitat desconnectat del panell auxiliar.",
+          "Els indicis apunten a una mort preparada dins el recorregut de muntatge, no a una discussio improvisada."
+        ]
+      },
+      "scene-arrival-doc": {
+        "id": "scene-arrival-doc",
+        "type": "document",
+        "title": "Arribada a l'Escena",
+        "subtitle": "Acta de patrulla",
+        "content": [
+          "La sala estava tancada per dins amb pestell simple, pero la porta de servei lateral havia estat oberta amb targeta magnetica minuts abans del descobriment.",
+          "Juli Font presentava cianosi lleu i una lesio al costat del cap per impacte contra un moble baix. L'escena no mostra lluita extensa.",
+          "A la cuina escenografica es recupera una ampolla de xarop per a cafe alterada i un drap de microfibra amb pols de fusta de caixeria."
+        ]
+      },
+      "witness-porter-doc": {
+        "id": "witness-porter-doc",
+        "type": "document",
+        "title": "Declaracio del vigilant",
+        "subtitle": "Bernat Comes, control de galeria",
+        "content": [
+          "Bernat Comes va veure Juli Font entrar sol a la sala a les 21.54 h per revisar l'etiquetatge final de la lluminaria dubtosa.",
+          "A les 22.12 h, Lluc Riera va accedir per la porta lateral de servei amb una caixa petita de material de muntatge. Segons el vigilant, semblava molest i no volia signar l'entrada manual.",
+          "A les 22.37 h, el mateix vigilant veu Lluc sortir de pressa, ja sense la caixa. No identifica cap altre sospitos entrant a la sala entre aquestes hores."
+        ]
+      },
+      "witness-taxi-doc": {
+        "id": "witness-taxi-doc",
+        "type": "document",
+        "title": "Declaracio de taxista",
+        "subtitle": "Carla Moncunill, llicencia 592",
+        "content": [
+          "La taxista recull Claudia Roca a les 21.47 h al museu i la deixa al Restaurant Plom a les 22.01 h. El rebut i la geolocalitzacio coincideixen.",
+          "Durant el trajecte, Claudia es queixa que Juli la deixara sola davant els prestadors americans si retira la peça estrella de la mostra.",
+          "El restaurant certifica que la sospitosa es va asseure a taula amb dos col·leccionistes a les 22.06 h."
+        ]
+      },
+      "witness-dock-doc": {
+        "id": "witness-dock-doc",
+        "type": "document",
+        "title": "Declaracio de muntadora",
+        "subtitle": "Ariadna Serra, equip expositiu",
+        "content": [
+          "Ariadna Serra va veure Mireia Vila al magatzem de conservacio a les 22.05 h preparant fulls de sala amb dues becaries.",
+          "Cap a les 22.20 h, Ariadna sent Juli discutir amb un home sobre una 'substitucio d'inventari' i sobre una factura que no podia continuar amagada.",
+          "Segons la muntadora, Pau Ferri era al moll de càrrega resolent un retard de transport a les 22.14 h i a les 22.33 h, en una cadena de trucades que ella mateixa escolta."
+        ]
+      },
+      "suspect-claudia": {
+        "id": "suspect-claudia",
+        "type": "suspect",
+        "name": "Claudia Roca",
+        "role": "Cap de relacions amb prestadors i col·leccionistes",
+        "alibi": "Sosté que va marxar del museu abans de les 21.50 h i que va sopar amb dos prestadors al Restaurant Plom fins passada la mitjanit.",
+        "statement": [
+          "Juli estava obsessionat amb la purea academica, com si una exposicio no depengués tambe de la confiança dels prestadors.",
+          "Jo tenia molt a perdre si retirava la lluminaria, pero encara mes si em vinculaven amb un crim tan absurdament visible.",
+          "No vaig tornar al museu, i si algu va aprofitar el caos, no va ser jo."
+        ]
+      },
+      "suspect-pau": {
+        "id": "suspect-pau",
+        "type": "suspect",
+        "name": "Pau Ferri",
+        "role": "Cap de logística i transport d'obres",
+        "alibi": "Declara que va passar tota la franja critica entre el moll de càrrega i les trucades amb una empresa de transport retardada.",
+        "statement": [
+          "Juli em feia responsable de qualsevol etiqueta mal posada, com si la logística fos l'arrel moral de tots els problemes del museu.",
+          "Vaig discutir amb ell mes d'un cop, si, pero aquella nit jo estava apagant focs amb un camio aturat a l'autopista.",
+          "No tenia cap interès a tocar la peça. El meu problema era que ell m'humiliava davant l'equip."
+        ]
+      },
+      "suspect-mireia": {
+        "id": "suspect-mireia",
+        "type": "suspect",
+        "name": "Mireia Vila",
+        "role": "Conservadora de col·leccio",
+        "alibi": "Assegura que es va quedar al magatzem de conservacio amb dues becaries fins que va sonar l'alarma interna.",
+        "statement": [
+          "Juli i jo ens haviem allunyat des que va prioritzar l'impacte mediatic per damunt de la documentacio. Haviem estat amics abans de ser rivals.",
+          "Si jo hagués volgut retirar la peça, hauria tingut raons professionals. Pero matar-lo nomes hauria consolidat la narrativa equivocada.",
+          "El problema de debò era qui podia entrar i sortir de la sala lateral sense deixar rastre aparent."
+        ]
+      },
+      "suspect-lluc": {
+        "id": "suspect-lluc",
+        "type": "suspect",
+        "name": "Lluc Riera",
+        "role": "Registrador de col·leccio i control d'inventari",
+        "alibi": "Afirma que va pujar a la sala nomes per deixar material i que en menys de cinc minuts va tornar al despatx de registre.",
+        "statement": [
+          "Juli s'havia posat dramatic amb una suposada substitucio d'inventari que encara no entenia del tot.",
+          "Jo podia accedir a la sala perque portava etiquetes i caixes, no perque planeges cap atac.",
+          "Tothom es fixa en mi per les targetes magnetiques, pero hi ha massa gent que podia entrar si s'ho proposava."
+        ]
+      },
+      "forensic-report-doc": {
+        "id": "forensic-report-doc",
+        "type": "document",
+        "title": "Informe Forense",
+        "subtitle": "Resultats preliminars d'autopsia",
+        "content": [
+          "La causa principal de la mort es una intoxicacio aguda per glibenclamida dissolta en una beguda dolca concentrada. La caiguda posterior provoca una lesio cranial secundaria.",
+          "La finestra de mort es fixa entre les 22.18 h i les 22.34 h. La victima mostra una hipoglucemia extrema compatible amb ingestio recent del preparat.",
+          "Al drap de microfibra hi ha fibres de guants de cotó gris i pols de fusta de caixeria de magatzem. El tap del xarop presenta ADN parcial compatible amb Lluc Riera."
+        ]
+      },
+      "computer-emails-doc": {
+        "id": "computer-emails-doc",
+        "type": "document",
+        "title": "Correus i Registres d'Inventari",
+        "subtitle": "Extraccio digital del museu",
+        "content": [
+          "A les 20.31 h, Juli escriu a Lluc: 'A les 22.15 vull la fitxa original de la lluminaria. Si no apareix, aixeco acta davant la direccio'.",
+          "A les 20.44 h, Lluc respon: 'No facis cap pas fins que revisem les entrades. Em perjudicaria a mi i a mes gent'.",
+          "Els logs mostren que a les 22.09 h es modifica l'inventari de la lluminaria des del compte de Lluc i que a les 22.11 h s'obre la porta lateral de la sala amb la seva targeta.",
+          "A les 22.32 h, una sessio iniciada al terminal de registre intenta esborrar una alerta de discrepancia creada per Juli, pero el sistema conserva el rastre."
+        ]
+      },
+      "drawer-notes-doc": {
+        "id": "drawer-notes-doc",
+        "type": "document",
+        "title": "Notes del Calaix",
+        "subtitle": "Apunts de Juli Font",
+        "content": [
+          "En un bloc manuscrit hi consta: 'Lluc va moure la peça a una caixa sense traça. No ha estat un error, ha estat una coberta'.",
+          "Una altra nota diu: 'Claudia s'espanta pels prestadors, Mireia pels protocols, Pau per les culpes publiques. Pero nomes Lluc controla fitxes i accessos alhora'.",
+          "A la pagina del dia dels fets es llegeix: '22.15 sala Fallingwater - resolucio definitiva'."
+        ]
+      },
+      "harbor-shift-doc": {
+        "id": "harbor-shift-doc",
+        "type": "document",
+        "title": "Registre d'Accessos i Activitat",
+        "subtitle": "Control de portes i terminals",
+        "content": [
+          "Claudia Roca surt del museu a les 21.46 h i el restaurant valida la seva presència a les 22.06 h. Mireia Vila fitxa entrada al magatzem de conservacio a les 22.05 h i no en surt fins les 22.42 h.",
+          "Pau Ferri registra trucades amb l'empresa de transport a les 22.14 h, 22.23 h i 22.33 h des del moll de càrrega, confirmades pel sistema intern.",
+          "Lluc Riera obre la sala Fallingwater amb la seva targeta a les 22.11 h i la porta lateral de servei a les 22.37 h. El seu terminal de registre queda inactiu entre les 22.10 h i les 22.35 h."
+        ]
+      },
+      "timeline-synthesis-doc": {
+        "id": "timeline-synthesis-doc",
+        "type": "document",
+        "title": "Sintesi Cronologica",
+        "subtitle": "Franja critica contrastada",
+        "content": [
+          "20.31 h i 20.44 h: Juli cita Lluc per resoldre la discrepancia d'inventari de la lluminaria. La seva nota manuscrita reforca la trobada a les 22.15 h.",
+          "21.47 h - 22.06 h: Claudia surt en taxi i arriba al restaurant amb prestadors. 22.05 h: Mireia entra al magatzem amb dues becaries. Pau queda fixat al moll de càrrega per tres trucades consecutives.",
+          "22.09 h - 22.11 h: Lluc modifica l'inventari i obre la sala amb la seva targeta. 22.18 h - 22.34 h: finestra de mort segons forense.",
+          "22.20 h: una testimoni sent Juli discutir amb un home per una substitucio d'inventari i una factura amagada. 22.32 h: algu intenta esborrar l'alerta creada per la victima des del flux de treball de Lluc.",
+          "22.37 h: la porta lateral s'obre amb la targeta de Lluc i el vigilant el veu sortir de pressa. Les evidencies materials, digitals i cronologiques assenyalen un sol autor possible."
+        ]
+      }
+    }
+  },
+  "solution": {
+    "culprit": "Lluc Riera",
+    "motive": "Juli havia descobert que Lluc havia manipulat inventaris i etiquetes per cobrir una substitucio de peça i facturacio vinculada a una lluminaria d'autenticitat dubtosa. Si sortia a la llum, Lluc quedava arruïnat professionalment i exposat penalment.",
+    "method": "Lluc va citar Juli a la sala Fallingwater, va adulterar el xarop del cafe amb glibenclamida, va esperar el col·lapse hipoglucemic i va deixar que la caiguda contra el mobiliari semblés un accident durant el muntatge.",
+    "keyProof": "La citacio per correu, la nota manuscrita, la modificacio de l'inventari des del compte de Lluc, l'obertura de les portes amb la seva targeta, l'ADN al xarop i l'intent d'esborrar l'alerta formen un conjunt probatori convergent.",
+    "eliminations": [
+      "Claudia Roca tenia pressio dels prestadors, pero taxi, rebut i validacio del restaurant la mantenen lluny de l'escena.",
+      "Pau Ferri podia ressentir-se de la victima, pero les trucades i la permanencia al moll de càrrega li neguen l'oportunitat material.",
+      "Mireia Vila discuteix sobre protocols i ofereix una falsa pista emocional, pero el registre del magatzem i la presència de dues becaries sostenen la seva coartada."
+    ]
+  }
+}

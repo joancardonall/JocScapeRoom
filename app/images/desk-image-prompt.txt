@@ -1,0 +1,17 @@
+Use case: ui-mockup
+Asset type: detective game background image
+Primary request: Create a clean 16:9 top-down detective office desk scene for a web mystery game.
+Scene/backdrop: Warm vintage office desk, soft cinematic lighting, no people.
+Subject: Desk with clearly separated objects and empty space around each object for clickable hotspots.
+Style/medium: Digital illustration, realistic but slightly stylized, high readability.
+Composition/framing: Top-down view, 1920x1080, with these object positions:
+- Corkboard area: top-right quadrant
+- Computer monitor: upper-left quadrant
+- Left desk drawer area: bottom-left quadrant
+- Evidence bag: lower-center area
+- Main case file folder: center-right area
+Lighting/mood: Cozy noir detective atmosphere, warm lamp light, subtle shadows.
+Color palette: Browns, amber, muted greens, paper beige.
+Text (verbatim): "" (no text labels in image).
+Constraints: Keep scene uncluttered; object silhouettes should be clear; leave negative space around objects so transparent hotspot buttons can be placed easily; no logos, no watermarks.
+Avoid: Tiny unreadable details, heavy blur, perspective distortion, fish-eye lens effect.

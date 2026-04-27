@@ -1,0 +1,258 @@
+{
+  "id": "case-001",
+  "title": "Silenci a la Darsena 12",
+  "summary": "L'advocat naval Biel Ros apareix mort al despatx 3B del Port Vell a les 22:47. Estava a punt d'entregar un dossier que comprometia adjudicacions del moll D12.",
+  "objective": "Obre carpetes i fitxers, contrasta testimonis i coartades, i determina qui va matar en Biel, per quin motiu i amb quin metode.",
+  "fileSystem": {
+    "rootId": "main-folder",
+    "nodes": {
+      "main-folder": {
+        "id": "main-folder",
+        "type": "folder",
+        "title": "Dossier Principal del Cas",
+        "description": "Unitat d'Homicidis - Cas 001. Selecciona una carpeta per revisar la documentacio.",
+        "children": [
+          "police-report-folder",
+          "witnesses-folder"
+        ]
+      },
+      "police-report-folder": {
+        "id": "police-report-folder",
+        "type": "folder",
+        "title": "Informe Policial",
+        "description": "Documentacio oficial d'inici del cas.",
+        "children": [
+          "intro-report-doc",
+          "scene-arrival-doc"
+        ]
+      },
+      "witnesses-folder": {
+        "id": "witnesses-folder",
+        "type": "folder",
+        "title": "Testimonis",
+        "description": "Declaracions formals recollides per l'equip investigador.",
+        "children": [
+          "witness-porter-doc",
+          "witness-taxi-doc",
+          "witness-dock-doc"
+        ]
+      },
+      "suspects-folder": {
+        "id": "suspects-folder",
+        "type": "folder",
+        "title": "Tauler de Sospitosos",
+        "description": "Declaracions en primera persona dels principals sospitosos.",
+        "children": [
+          "suspect-claudia",
+          "suspect-pau",
+          "suspect-mireia",
+          "suspect-lluc"
+        ]
+      },
+      "extra-evidence-folder": {
+        "id": "extra-evidence-folder",
+        "type": "folder",
+        "title": "Proves Addicionals",
+        "description": "Material digital i tecnic per contrastar cronologies i coartades.",
+        "children": [
+          "forensic-report-doc",
+          "computer-emails-doc",
+          "drawer-notes-doc",
+          "harbor-shift-doc",
+          "timeline-synthesis-doc"
+        ]
+      },
+      "intro-report-doc": {
+        "id": "intro-report-doc",
+        "type": "document",
+        "title": "Informe Introductori",
+        "subtitle": "Redaccio narrativa - context complet del crim",
+        "content": [
+          "A les 22:47, central rep un avís des del Port Vell: un home està estès al despatx 3B de la Darsena 12 i no respon.",
+          "La patrulla arriba pocs minuts després i confirma la mort de Biel Ros, advocat naval de 48 anys. El despatx està tancat però no hi ha signes clars de forçament a la porta principal.",
+          "A l'interior hi ha una cadira tombada, una tassa de cafe i indicis d'un enfrontament curt. No es localitza l'arma al lloc.",
+          "També es detecta la desaparició d'una carpeta blau fosc amb la marca 'Concessions D12', que la víctima havia de presentar l'endemà al matí.",
+          "La investigació inicial apunta a persones del seu entorn professional immediat, totes amb possible motiu i accés parcial a informació sensible.",
+          "L'objectiu de l'anàlisi és reconstruir la franja de 22:30 a 22:47 i determinar qui tenia motiu, oportunitat real i accés al passadís de manteniment."
+        ]
+      },
+      "scene-arrival-doc": {
+        "id": "scene-arrival-doc",
+        "type": "document",
+        "title": "Arribada Policial a l'Escena",
+        "subtitle": "Acta resum - primera resposta",
+        "content": [
+          "22:47 - Avis d'emergencia rebut per central.",
+          "22:53 - Primera unitat uniformada al lloc. S'assegura perimetre.",
+          "22:56 - Confirmacio de mort aparent de Biel Ros.",
+          "23:04 - Inspeccio ocular preliminar: trauma cranial visible, absencia d'arma al despatx.",
+          "23:08 - Es detecta entrada de servei lateral (passadis de manteniment) amb pany electrònic funcional.",
+          "23:14 - S'indica desaparicio de carpeta blau fosc 'Concessions D12'.",
+          "23:26 - Es reclama policia cientifica i s'aixeca inventari inicial de proves."
+        ]
+      },
+      "witness-porter-doc": {
+        "id": "witness-porter-doc",
+        "type": "document",
+        "title": "Declaracio Testimoni 01 - Porter Joan P.",
+        "subtitle": "Nota policial professional",
+        "content": [
+          "El testimoni manifesta que entre les 22:18 i les 22:22 veu sortir Claudia Serra per l'entrada principal amb pas rapid i actitud alterada.",
+          "Indica que, minuts abans, havia sentit una discussio apagada a la planta del despatx 3B, sense poder identificar paraules concretes.",
+          "No observa la sospitosa Mireia Soler entrant a l'edifici durant aquesta franja.",
+          "No recorda haver vist Pau Noguera per la porta principal entre les 22:00 i les 22:45."
+        ]
+      },
+      "witness-taxi-doc": {
+        "id": "witness-taxi-doc",
+        "type": "document",
+        "title": "Declaracio Testimoni 02 - Taxista Marc F.",
+        "subtitle": "Nota policial professional",
+        "content": [
+          "Aporta rebut digital #7741 amb inici de trajecte a les 22:11 davant Hotel Maritim.",
+          "Identifica la passatgera com Mireia Soler mitjançant fotografia mostrada pels agents.",
+          "Finalitza el trajecte a l'Estacio de Franca a les 22:24. Pagament amb targeta corporativa.",
+          "El testimoni confirma que la passatgera roman dins el vehicle durant tot el trajecte."
+        ]
+      },
+      "witness-dock-doc": {
+        "id": "witness-dock-doc",
+        "type": "document",
+        "title": "Declaracio Testimoni 03 - Mosso de Moll Eric V.",
+        "subtitle": "Nota policial professional",
+        "content": [
+          "El testimoni treballava al passadis lateral del moll D12 entre les 22:30 i les 22:45.",
+          "Refereix haver sentit un cop sec cap a les 22:41 a l'alçada del corredor de manteniment.",
+          "Afirma haver vist una figura amb jaqueta impermeable fosca sortir amb una carpeta sota el braç.",
+          "No pot identificar el rostre, pero assenyala una manera de caminar 'rigida, com qui porta botes de taller'."
+        ]
+      },
+      "suspect-claudia": {
+        "id": "suspect-claudia",
+        "type": "suspect",
+        "name": "Claudia Serra",
+        "role": "Cap d'operacions portuaries",
+        "alibi": "Assegura que va discutir amb Biel cap a les 21:50 i que va abandonar l'edifici abans de les 22:00.",
+        "statement": [
+          "Si us plau, deixeu-me ser clara: jo sí, vaig discutir amb en Biel. Ho feiem sovint perquè era inflexible i tenia la mania de creure que tothom era culpable abans de llegir un sol paper.",
+          "Vaig sortir d'alla quan encara hi havia moviment al passadis. Havia de tornar al despatx central i, francament, no tenia cap ganes de continuar escoltant amenaces de denúncia.",
+          "Si la meva empremta surt en una tassa, no em sorprèn. Jo hi havia estat. Pero una discussio no em converteix en assassina."
+        ]
+      },
+      "suspect-pau": {
+        "id": "suspect-pau",
+        "type": "suspect",
+        "name": "Pau Noguera",
+        "role": "Enginyer de seguretat del moll D12",
+        "alibi": "Declara haver estat sol al taller durant tota la franja 22:00-23:00 revisant planols.",
+        "statement": [
+          "No tinc res a amagar. Em vaig quedar al taller tota la nit perquè teniem una auditoria i els planols no quadraven.",
+          "En Biel estava obsessionat amb trobar un cap de turc. Vaig rebre algun correu seu, sí, però correus en rebem tots.",
+          "No vaig pujar al despatx 3B i no vaig tocar cap carpeta. Si algu diu que em va veure, s'equivoca de persona."
+        ]
+      },
+      "suspect-mireia": {
+        "id": "suspect-mireia",
+        "type": "suspect",
+        "name": "Mireia Soler",
+        "role": "Regidora municipal",
+        "alibi": "Trajecte en taxi verificat entre 22:11 i 22:24; posterior entrada a estacio registrada.",
+        "statement": [
+          "Jo no soc santa, pero tampoc soc suicida. Amb la premsa al damunt, l'ultima cosa que faria seria aparèixer en una escena de crim.",
+          "Vaig agafar un taxi perquè tenia una reunió fora del port. Hi ha rebut, hi ha registre i hi ha càmeres. No m'agrada dependre de proves, pero en aquest cas em van a favor.",
+          "En Biel m'havia pressionat, cert. Pero pressionar no és matar. Qui ho va fer coneixia massa bé els passadissos interns."
+        ]
+      },
+      "suspect-lluc": {
+        "id": "suspect-lluc",
+        "type": "suspect",
+        "name": "Lluc Ferrer",
+        "role": "Periodista d'investigacio",
+        "alibi": "Confirma que esperava confirmacio documental des de redaccio, sense desplaçar-se al port aquella franja.",
+        "statement": [
+          "Tenia una exclusiva a tocar, és veritat, però sense documents no podia publicar res. Necessitava en Biel viu, no mort.",
+          "Vaig insistir perquè em confirmés una dada, i es va tallar. Des d'aleshores vaig estar pendent del mòbil i de la redaccio.",
+          "Si algú ha fet desaparèixer el dossier, no és algú que busqués llum pública. És algú que volia apagar-la."
+        ]
+      },
+      "forensic-report-doc": {
+        "id": "forensic-report-doc",
+        "type": "document",
+        "title": "Informe Forense",
+        "subtitle": "Unitat Cientifica - resum tecnic",
+        "content": [
+          "Causa de mort: traumatisme cranial per impacte contundent amb objecte metal·lic curt.",
+          "Franja probable de mort: entre 22:38 i 22:46.",
+          "Residus en roba de la víctima: pintura industrial verda i microparticules de cautxu antilliscant.",
+          "Comparativa de laboratori: coincidencia alta amb passarel·les internes del magatzem D12.",
+          "Tassa del despatx: empremta parcial de Claudia Serra i traces de sedant lleu (dosi no letal)."
+        ]
+      },
+      "computer-emails-doc": {
+        "id": "computer-emails-doc",
+        "type": "document",
+        "title": "Correus i Registre Informatic",
+        "subtitle": "Extracte del terminal de Biel Ros",
+        "content": [
+          "20:41 - Correu de Claudia: 'Parlem avui. No facis cap pas en fals.'",
+          "21:12 - Correu de Pau: 'No penso carregar sol amb tot això.'",
+          "21:58 - Missatge de Lluc: 'Demà publiquem. Necessito una ultima confirmacio.'",
+          "22:09 - Esborrany no enviat de Biel: 'Mireia menteix sobre la reunió de les 22:15...'",
+          "22:31 - Acces remot detectat des del terminal de recepcio del D12.",
+          "22:34-22:43 - Càmera de servei: entrada i sortida d'una figura amb carpeta."
+        ]
+      },
+      "drawer-notes-doc": {
+        "id": "drawer-notes-doc",
+        "type": "document",
+        "title": "Notes del Calaix",
+        "subtitle": "Apunts manuals de la víctima",
+        "content": [
+          "Anotacio: 'Si demà no signen, envio copia a Fiscalia.'",
+          "Llista parcial de noms vinculats a contractes: C.S., P.N., M.S.",
+          "Recordatori subratllat: 'Canviar codi passadis servei? Preguntar a seguretat.'",
+          "Nota lateral: 'No confiar en la versio del taller.'",
+          "Paper solt amb dada possiblement accessoria: 'Reunio club nautic ajornada a divendres'."
+        ]
+      },
+      "harbor-shift-doc": {
+        "id": "harbor-shift-doc",
+        "type": "document",
+        "title": "Torns de Personal D12",
+        "subtitle": "Document intern - possible pista secundaria",
+        "content": [
+          "Torn nit recepcio D12: tecnic assignat 22:00-23:00 -> Pau Noguera (substitucio temporal).",
+          "Manteniment corredor intern: sense personal fix entre 22:15 i 22:50.",
+          "Observacio administrativa: lectura d'acces 22:31 validada amb credencial tecnica nivell 2.",
+          "Nota de gerencia: la credencial de Claudia te permisos oficina, pero no pas complet de manteniment.",
+          "Dada de soroll (no determinant): incidència menor d'il·luminacio al moll exterior a les 21:05."
+        ]
+      },
+      "timeline-synthesis-doc": {
+        "id": "timeline-synthesis-doc",
+        "type": "document",
+        "title": "Sintesi de Cronologia",
+        "subtitle": "Document de treball intern - contrast de coartades",
+        "content": [
+          "Franja de mort consolidada per forense: 22:38-22:46.",
+          "Mireia: trajecte en taxi verificat 22:11-22:24 i entrada posterior a estacio; queda fora de la franja operativa al despatx.",
+          "Claudia: vista sortint per l'entrada principal a les 22:18-22:22 i sense permis complet de passadis de manteniment.",
+          "Lluc: no consta presència acreditada al port, pero tampoc evidencia tecnica d'acces a recepcio D12 ni al corredor de servei.",
+          "Pau: torn assignat a recepcio D12 22:00-23:00, accés remot registrat a les 22:31 i perfil d'acces compatible amb la ruta de servei.",
+          "Conclusio operativa: l'unica combinacio completa de motiu, oportunitat, accessos i rastre fisic correspon a Pau Noguera."
+        ]
+      }
+    }
+  },
+  "solution": {
+    "culprit": "Pau Noguera",
+    "motive": "Evitar que el dossier blau revelés la seva participacio tecnica en la manipulacio d'informes de seguretat del D12.",
+    "method": "Va aprofitar el seu acces de torn al terminal de recepcio, va entrar pel passadis de servei amb una eina metal·lica curta, va colpejar en Biel dins la finestra forense i va sortir amb el dossier.",
+    "keyProof": "La finestra de mort descarta Mireia (coartada de taxi) i deixa Claudia fora pel control de sortida. Els residus forenses apunten a D12, el registre de 22:31 surt del terminal assignat a Pau i els torns confirmen que era l'unic amb acces simultani a recepcio i corredor de manteniment.",
+    "eliminations": [
+      "Claudia Serra: te motiu i empremta a la tassa, pero és vista sortint abans de la franja crítica i no consta amb permis complet de passadis de manteniment.",
+      "Mireia Soler: el rebut de taxi i el registre posterior d'estacio la situen fora de lloc durant la finestra de mort.",
+      "Lluc Ferrer: tenia interès periodistic, pero no hi ha traça tecnica ni testifical que el posi al circuit intern de D12 durant 22:38-22:46."
+    ]
+  }
+}

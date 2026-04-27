@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ca">
+  <head>
+    <!-- Basic page metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joc de Detectius</title>
+    <style>
+      /* Remove default spacing so the image can fully fill the screen */
+      html,
+      body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      /* Minimal global style for now */
+      body {
+        font-family: Arial, sans-serif;
+        background: #f3f0e8;
+        overflow: hidden; /* Disable page scrolling */
+      }
+
+      /* React mounts the app inside this element */
+      #root {
+        width: 100%;
+        height: 100%;
+      }
+
+      /* Simple animation used when evidence/solution panels appear */
+      @keyframes popupIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px) scale(0.98);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- React app container -->
+    <div id="root"></div>
+    <!-- App entry point (ES module) -->
+    <script type="module" src="./app.js?v=20260409-dossier"></script>
+  </body>
+</html>

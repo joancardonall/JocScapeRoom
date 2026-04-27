@@ -1,0 +1,241 @@
+{
+  "id": "case-010",
+  "title": "El cavallet de Lina",
+  "summary": "A la vigilia d'una exposicio dedicada a Lina Bo Bardi, la directora d'un centre de disseny apareix morta en una sala d'assaig on s'havia de presentar una cadira original recuperada del Brasil.",
+  "objective": "Reconstrueix qui va aprofitar la preparacio de la mostra per matar Beatriz Montoliu i amagar un frau de procedencia sense dependre de cap coneixement extern.",
+  "fileSystem": {
+    "rootId": "main-folder",
+    "nodes": {
+      "main-folder": {
+        "id": "main-folder",
+        "type": "folder",
+        "title": "Expedient Principal",
+        "description": "Cas sobre la mort de Beatriz Montoliu al Centre de Disseny Civic.",
+        "children": [
+          "police-report-folder",
+          "witnesses-folder"
+        ]
+      },
+      "police-report-folder": {
+        "id": "police-report-folder",
+        "type": "folder",
+        "title": "Informes Policials",
+        "description": "Escena, context i primeres diligencies.",
+        "children": [
+          "intro-report-doc",
+          "scene-arrival-doc"
+        ]
+      },
+      "witnesses-folder": {
+        "id": "witnesses-folder",
+        "type": "folder",
+        "title": "Testimonis",
+        "description": "Declaracions de personal i serveis externs.",
+        "children": [
+          "witness-porter-doc",
+          "witness-taxi-doc",
+          "witness-dock-doc"
+        ]
+      },
+      "suspects-folder": {
+        "id": "suspects-folder",
+        "type": "folder",
+        "title": "Sospitosos",
+        "description": "Persones d'interes de l'entorn immediat.",
+        "children": [
+          "suspect-claudia",
+          "suspect-pau",
+          "suspect-mireia",
+          "suspect-lluc"
+        ]
+      },
+      "extra-evidence-folder": {
+        "id": "extra-evidence-folder",
+        "type": "folder",
+        "title": "Proves Complementaries",
+        "description": "Forense, emails, notes i registres.",
+        "children": [
+          "forensic-report-doc",
+          "computer-emails-doc",
+          "drawer-notes-doc",
+          "harbor-shift-doc",
+          "timeline-synthesis-doc"
+        ]
+      },
+      "intro-report-doc": {
+        "id": "intro-report-doc",
+        "type": "document",
+        "title": "Informe Inicial",
+        "subtitle": "Resum de la investigacio preliminar",
+        "content": [
+          "Beatriz Montoliu, 46 anys, directora del Centre de Disseny Civic, va ser trobada morta a les 22.41 h a la sala d'assaig 2, preparada per a una mostra sobre Lina Bo Bardi.",
+          "La victima volia suspendre la presentacio d'una cadira recuperada a Sao Paulo perque els documents de procedencia no quadraven amb els pagaments fets.",
+          "Segons l'equip, Beatriz combinava una gran capacitat de captacio amb una manera de dirigir molt personal i sovint invasiva. Aquesta barreja li havia generat aliances i ressentiments alhora.",
+          "A l'escena hi ha una ampolla d'aigua aromatitzada, una caixa de transport oberta i un cavallet metàl·lic desplaçat, pero cap signe d'assalt obert.",
+          "La hipotesi de treball es que el crim pretenia bloquejar la suspensio i protegir una cadena de compres irregular."
+        ]
+      },
+      "scene-arrival-doc": {
+        "id": "scene-arrival-doc",
+        "type": "document",
+        "title": "Arribada a l'Escena",
+        "subtitle": "Acta de la primera patrulla",
+        "content": [
+          "La sala d'assaig estava oberta i la llum de treball encara encesa. La caixa de transport de la cadira presentava el segell tallat amb cutter recent.",
+          "Beatriz Montoliu era al terra, recolzada contra el cavallet. Presentava una contusio a l'espatlla i signes de desmai sobtat sense lluita intensa.",
+          "A la taula auxiliar s'han recollit una ampolla d'aigua amb residus d'edulcorant i un paquet de guants fins de cotó utilitzats en manipulacio de peces."
+        ]
+      },
+      "witness-porter-doc": {
+        "id": "witness-porter-doc",
+        "type": "document",
+        "title": "Declaracio del conserge",
+        "subtitle": "Xavier Freixas, torn de tarda",
+        "content": [
+          "Xavier Freixas veu Beatriz entrar a la sala d'assaig a les 21.52 h amb una carpeta groga de proveidors i una ampolla d'aigua.",
+          "A les 22.09 h, veu Lluc Santacana entrar a la mateixa sala amb el pretext de revisar el sistema de climatitzacio de la caixa de transport. No constava cap revisio programada.",
+          "A les 22.28 h, el conserge el veu sortir amb presses i tornar a guardar-se una targeta universal que normalment nomes fa servir per a sales tancades."
+        ]
+      },
+      "witness-taxi-doc": {
+        "id": "witness-taxi-doc",
+        "type": "document",
+        "title": "Declaracio de taxista",
+        "subtitle": "Felisa Pardo, llicencia 207",
+        "content": [
+          "La taxista recull Claudia Miret a les 21.39 h al centre i la deixa al Teatre Principal a les 21.54 h. L'aplicacio del servei i l'entrada del teatre ho confirmen.",
+          "Claudia li comenta durant el trajecte que Beatriz esta disposada a rebentar la inauguracio per una mania de control que ja no suporta ningú.",
+          "El teatre aporta lectura d'entrada a les 21.58 h i consum a la mitja part, suficient per descartar un retorn discret durant la finestra de mort."
+        ]
+      },
+      "witness-dock-doc": {
+        "id": "witness-dock-doc",
+        "type": "document",
+        "title": "Declaracio de tecnica de sala",
+        "subtitle": "Noa Farre, muntatge expositiu",
+        "content": [
+          "Noa Farre situa Mireia Casals a la sala de grafisme a les 22.05 h revisant retolacio amb dos dissenyadors juniors.",
+          "A les 22.17 h escolta Beatriz discutir amb un home sobre un certificat brasilè i sobre un compte pont que no podia continuar figurant al centre.",
+          "També recorda que Pau Ribot li va trucar a les 22.14 h i a les 22.31 h des del moll de recepcio perquè faltava una signatura per descarregar material."
+        ]
+      },
+      "suspect-claudia": {
+        "id": "suspect-claudia",
+        "type": "suspect",
+        "name": "Claudia Miret",
+        "role": "Responsable de captacio i patrocinis",
+        "alibi": "Declara que va anar directament al Teatre Principal abans de les 22.00 h i que no va tornar al centre fins l'endema.",
+        "statement": [
+          "Beatriz podia destruir mesos de feina amb una sola roda de premsa. Això em feia enfadar, no homicida.",
+          "La nostra tensio no era només pels diners. Ella volia controlar fins i tot la manera com jo demanava ajuda als patrocinadors.",
+          "No vaig tocar cap peça ni cap document aquella nit."
+        ]
+      },
+      "suspect-pau": {
+        "id": "suspect-pau",
+        "type": "suspect",
+        "name": "Pau Ribot",
+        "role": "Cap de recepcio i transport de peces",
+        "alibi": "Assegura que va romandre al moll de recepcio resolent la descarrega d'un enviament fins despres de les 22.30 h.",
+        "statement": [
+          "Em tenen per bronco perquè em nego a firmar caixes que arriben mal documentades. Amb Beatriz hi havia tensio, si, però també respecte.",
+          "El certificat brasiler no passava per les meves mans; jo veig pesos, segells i desperfectes, no els diners.",
+          "Si hi ha frau, busqueu qui podia tocar papers i sistemes sense donar explicacions a ningú."
+        ]
+      },
+      "suspect-mireia": {
+        "id": "suspect-mireia",
+        "type": "suspect",
+        "name": "Mireia Casals",
+        "role": "Comissaria de continguts",
+        "alibi": "Diu que va estar tota la franja critica a la sala de grafisme amb dos juniors acabant textos de paret.",
+        "statement": [
+          "Jo defensava la mostra per motius intel·lectuals, però això no vol dir que aprovés cap procedencia dubtosa.",
+          "Beatriz i jo haviem estat amigues i, ultimament, rivals. Em demanava fidelitat personal quan el projecte ja feia aigua.",
+          "No vaig entrar a la sala d'assaig despres de les nou i quart."
+        ]
+      },
+      "suspect-lluc": {
+        "id": "suspect-lluc",
+        "type": "suspect",
+        "name": "Lluc Santacana",
+        "role": "Coordinador tecnic de col·leccio i climatitzacio",
+        "alibi": "Afirma que va revisar un sensor des del passadis i que despres es va quedar al soterrani tecnic fins sentir les sirenes.",
+        "statement": [
+          "Beatriz exagerava qualsevol incidencia tecnica fins convertir-la en un atac personal contra mi.",
+          "Si la caixa havia de ser revisada, jo era l'unic que podia fer-ho be. Entrar a la sala no em converteix en assassi.",
+          "La historia del compte pont es una insinuacio sense proves. Tothom parla i ningú sap."
+        ]
+      },
+      "forensic-report-doc": {
+        "id": "forensic-report-doc",
+        "type": "document",
+        "title": "Informe Forense",
+        "subtitle": "Autopsia preliminar",
+        "content": [
+          "La causa de la mort es una intoxicacio aguda per digoxina dissolta en una beguda amb edulcorant. La contusio a l'espatlla es compatible amb una caiguda posterior a la perdua de força.",
+          "La finestra de mort es fixa entre les 22.16 h i les 22.30 h. L'absorcio del compost indica ingestio molt propera al col·lapse.",
+          "A l'ampolla d'aigua hi ha fibres de guants fins de cotó amb residus de pols d'escuma d'embalatge. El tap presenta empremta parcial coincident amb Lluc Santacana."
+        ]
+      },
+      "computer-emails-doc": {
+        "id": "computer-emails-doc",
+        "type": "document",
+        "title": "Correus i Logs del Centre",
+        "subtitle": "Extraccio de missatges i accessos",
+        "content": [
+          "A les 20.36 h, Beatriz escriu a Lluc: 'A les 22.10 ensenyes els certificats originals o aturo la presentacio i obro revisio externa'.",
+          "A les 20.49 h, Lluc respon: 'Parlem en privat. Si obres aquest expedient, no caure nomes jo'.",
+          "El sistema d'accessos mostra que a les 22.09 h la targeta universal de Lluc obre la sala d'assaig 2. El seu terminal tecnic queda inactiu entre les 22.07 h i les 22.29 h.",
+          "A les 22.26 h es produeix un intent fallit d'esborrar l'arxiu 'proveidor_sao_paulo_compte_pont.pdf' des del compte de Beatriz, sense contrasenya completa."
+        ]
+      },
+      "drawer-notes-doc": {
+        "id": "drawer-notes-doc",
+        "type": "document",
+        "title": "Notes Recuperades",
+        "subtitle": "Apunts de Beatriz Montoliu",
+        "content": [
+          "En una carpeta manuscrita hi consta: 'Lluc ha mantingut viu el compte pont i ha reetiquetat la caixa com a revisio climatica'.",
+          "Una pagina anterior resumeix: 'Claudia nomes veu patrocinadors; Mireia es debat entre amistat i carrera; Pau sospita de tothom pero no toca documents'.",
+          "A l'ultima nota del dia: '22.10 sala 2. Tancar tema Brasil abans no em tornin a fer callar'."
+        ]
+      },
+      "harbor-shift-doc": {
+        "id": "harbor-shift-doc",
+        "type": "document",
+        "title": "Registre de Torns i Portes",
+        "subtitle": "Control intern del centre",
+        "content": [
+          "Claudia Miret valida sortida a les 21.37 h i la seva entrada al teatre queda registrada abans de les 22.00 h. Pau Ribot registra gestio de moll a les 22.14 h i 22.31 h.",
+          "Mireia Casals usa la sala de grafisme a les 22.05 h i hi continua fins les 22.38 h amb dos juniors que ho corroboren.",
+          "La targeta universal de Lluc obre la sala d'assaig 2 a les 22.09 h i la porta de servei sud a les 22.28 h. No hi ha cap ordre de revisio climatica generada al sistema aquella nit."
+        ]
+      },
+      "timeline-synthesis-doc": {
+        "id": "timeline-synthesis-doc",
+        "type": "document",
+        "title": "Sintesi Cronologica",
+        "subtitle": "Lectura integrada de la franja critica",
+        "content": [
+          "20.36 h i 20.49 h: Beatriz cita Lluc per ensenyar certificats originals de la peça brasilera. La seva nota manuscrita fixa la trobada a les 22.10 h a la sala 2.",
+          "21.39 h - 21.58 h: Claudia surt en taxi i entra al teatre. 22.05 h: Mireia queda situada a la sala de grafisme amb dos juniors. 22.14 h i 22.31 h: Pau roman al moll de recepcio.",
+          "22.09 h: la targeta universal de Lluc obre la sala d'assaig 2. 22.16 h - 22.30 h: finestra de mort segons forense.",
+          "22.17 h: una tecnica sent una discussio sobre un certificat brasilè i un compte pont. 22.26 h: s'intenta esborrar des del compte de la victima un arxiu compromes sense tenir-ne la contrasenya.",
+          "22.28 h: la porta de servei sud s'obre amb la targeta de Lluc. El conjunt de proves materials, digitals i testimonials el deixa com a l'unic sospitos amb motiu, mitjà i oportunitat."
+        ]
+      }
+    }
+  },
+  "solution": {
+    "culprit": "Lluc Santacana",
+    "motive": "Beatriz havia descobert que Lluc havia reetiquetat la caixa i mantingut un compte pont per canalitzar una compra irregular vinculada a la suposada peça original de Lina Bo Bardi. Si ella ho obria a revisio externa, ell quedava exposat com a eix tecnic del frau.",
+    "method": "Lluc va acudir a la trobada privada, va adulterar l'ampolla d'aigua de Beatriz amb digoxina mentre fingia revisar la climatitzacio de la caixa i, un cop la victima va col·lapsar, va provar d'esborrar l'arxiu compromes abans de fugir per la porta de servei sud.",
+    "keyProof": "La citacio per correu i notes, l'obertura de la sala amb la targeta universal de Lluc, la inactivitat del seu terminal, l'empremta al tap de l'ampolla i l'intent d'esborrar el PDF compromes des del compte de la victima formen una cadena probatoria robusta.",
+    "eliminations": [
+      "Claudia Miret tenia mobil economic i una relacio molt desgastada amb Beatriz, pero taxi, teatre i registre extern l'exclouen de la finestra de mort.",
+      "Pau Ribot sospitava de la documentacio, pero els registres del moll i les trucades l'allunyen de l'escena quan la victima mor.",
+      "Mireia Casals ofereix tensio emocional i passat compartit amb Beatriz, pero la seva presència continuada amb dos juniors a la sala de grafisme la deixa sense oportunitat real."
+    ]
+  }
+}

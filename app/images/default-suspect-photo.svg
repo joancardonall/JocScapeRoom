@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" role="img" aria-labelledby="title desc">
+  <title id="title">Retrat per defecte del sospitós</title>
+  <desc id="desc">Silueta neutra sobre una targeta de fitxer policial.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#d8c3a5"/>
+      <stop offset="100%" stop-color="#b99669"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f7f1e6"/>
+      <stop offset="100%" stop-color="#e5d4bb"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="800" fill="url(#bg)"/>
+  <rect x="38" y="38" width="524" height="724" rx="26" fill="url(#card)" stroke="#8b6a43" stroke-width="8"/>
+  <rect x="78" y="78" width="444" height="90" rx="14" fill="#dfc39d" stroke="#9a764d" stroke-width="4"/>
+  <text x="300" y="132" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#4b3521" letter-spacing="3">
+    ARXIU POLICIAL
+  </text>
+  <rect x="110" y="205" width="380" height="470" rx="22" fill="#c9b08b" stroke="#8d6a45" stroke-width="5"/>
+  <circle cx="300" cy="355" r="88" fill="#7f6444"/>
+  <path d="M180 610c18-110 93-165 120-165s102 55 120 165" fill="#7f6444"/>
+  <rect x="120" y="698" width="360" height="18" rx="9" fill="#9a764d" opacity="0.7"/>
+  <rect x="120" y="728" width="240" height="18" rx="9" fill="#9a764d" opacity="0.45"/>
+</svg>

@@ -1,0 +1,160 @@
+{
+  "id": "case-003",
+  "title": "Tempesta al Refugi Blanc",
+  "summary": "Durant una tempesta de neu, el director d'un refugi de muntanya apareix mort al magatzem de calderes. Falta la llibreta amb els comptes de temporada.",
+  "objective": "Revisa la documentacio del refugi i determina qui va aprofitar l'aïllament per cometre el crim.",
+  "fileSystem": {
+    "rootId": "main-folder",
+    "nodes": {
+      "main-folder": {"id": "main-folder", "type": "folder", "title": "Dossier Principal del Cas", "description": "Unitat Territorial - Cas 003.", "children": ["police-report-folder", "witnesses-folder"]},
+      "police-report-folder": {"id": "police-report-folder", "type": "folder", "title": "Informe Policial", "description": "Actes de la nit de tempesta.", "children": ["intro-report-doc", "scene-arrival-doc"]},
+      "witnesses-folder": {"id": "witnesses-folder", "type": "folder", "title": "Testimonis", "description": "Declaracions del personal i clients.", "children": ["witness-porter-doc", "witness-taxi-doc", "witness-dock-doc"]},
+      "suspects-folder": {"id": "suspects-folder", "type": "folder", "title": "Tauler de Sospitosos", "description": "Declaracions dels quatre sospitosos principals.", "children": ["suspect-claudia", "suspect-pau", "suspect-mireia", "suspect-lluc"]},
+      "extra-evidence-folder": {"id": "extra-evidence-folder", "type": "folder", "title": "Proves Addicionals", "description": "Forense, missatgeria i registres interns.", "children": ["forensic-report-doc", "computer-emails-doc", "drawer-notes-doc", "harbor-shift-doc", "timeline-synthesis-doc"]},
+
+      "intro-report-doc": {
+        "id": "intro-report-doc",
+        "type": "document",
+        "title": "Informe Introductori",
+        "subtitle": "Context del cas",
+        "content": [
+          "A les 00:16, el cuiner del Refugi Blanc comunica la desaparicio del director Arnau Vives i informa d'un cop fort sentit a la zona tècnica.",
+          "Els equips d'emergencia arriben amb retard per la tempesta, i localitzen Arnau mort al passadis de calderes a les 00:44.",
+          "El refugi estava pràcticament incomunicat per carretera des de les 22:30.",
+          "Segons administracio, falta la llibreta de caixa on el director anotava pagaments no declarats de reserves premium.",
+          "La investigacio busca qui tenia accés a la zona tècnica i motiu per fer desaparèixer la llibreta."
+        ]
+      },
+      "scene-arrival-doc": {
+        "id": "scene-arrival-doc",
+        "type": "document",
+        "title": "Arribada Policial a l'Escena",
+        "subtitle": "Resum operatiu",
+        "content": [
+          "00:44 - Localitzacio del cos al passadis de calderes.",
+          "00:49 - Confirmacio de traumatisme cranial i absencia d'arma.",
+          "00:55 - Porta lateral de manteniment oberta des de dins.",
+          "01:04 - Habitacio de direccio remenada; manca la llibreta de caixa.",
+          "01:17 - Es bloquegen accessos interns i es recullen targetes de personal."
+        ]
+      },
+      "witness-porter-doc": {
+        "id": "witness-porter-doc",
+        "type": "document",
+        "title": "Declaracio Testimoni 01 - Recepcionista Eloi P.",
+        "subtitle": "Nota policial professional",
+        "content": [
+          "A les 23:38 veu Claudia Vidal pujar sola cap al despatx del director.",
+          "A les 23:51 sent discussio al passadis intern que baixa a calderes.",
+          "A les 00:02 veu Lluc Serra corrent cap a recepcio dient que no trobava Arnau.",
+          "No veu Mireia Costa sortir de la sala de clients entre 23:30 i 00:10."
+        ]
+      },
+      "witness-taxi-doc": {
+        "id": "witness-taxi-doc",
+        "type": "document",
+        "title": "Declaracio Testimoni 02 - Transport de Neu",
+        "subtitle": "Nota policial professional",
+        "content": [
+          "Conductor de moto de neu confirma que Mireia Costa queda bloquejada al refugi des de les 22:20.",
+          "No hi ha cap servei d'entrada/sortida possible durant la tempesta fins passada la 01:30.",
+          "Registre de recepcio mostra Mireia fent pagament de sopar a les 23:46.",
+          "No pot confirmar moviment posterior de la clienta dins zones restringides."
+        ]
+      },
+      "witness-dock-doc": {
+        "id": "witness-dock-doc",
+        "type": "document",
+        "title": "Declaracio Testimoni 03 - Maquinista de Calderes Toni R.",
+        "subtitle": "Nota policial professional",
+        "content": [
+          "Va revisar pressio de caldera a les 23:43 i no va veure ningú al passadis tècnic.",
+          "A les 23:58 torna i troba la llum del magatzem auxiliar encesa.",
+          "Identifica Pau Soler entrant al corredor de servei a les 23:56 amb claus de manteniment.",
+          "A les 00:06 troba rastre de sang prop de la porta interior."
+        ]
+      },
+
+      "suspect-claudia": {"id": "suspect-claudia", "type": "suspect", "name": "Claudia Vidal", "role": "Administradora del refugi", "alibi": "Afirma que després de parlar amb Arnau va quedar-se a oficina quadrant reserves.", "statement": ["Vaig discutir pels comptes, sí, però no era la primera vegada.", "Vaig pujar al despatx, no al corredor de calderes.", "Tenia molta pressio per tancar temporada, però matar-lo no m'ajudava en res."]},
+      "suspect-pau": {"id": "suspect-pau", "type": "suspect", "name": "Pau Soler", "role": "Cap de manteniment", "alibi": "Diu que reparava una valvula i no va coincidir amb Arnau en tota la nit.", "statement": ["Si vaig entrar al passadis era per una alarma de pressio.", "No sabia res de cap llibreta de caixa.", "Em volen incriminar perquè tinc claus de totes les zones tècniques."]},
+      "suspect-mireia": {"id": "suspect-mireia", "type": "suspect", "name": "Mireia Costa", "role": "Clienta i inversora minoritaria", "alibi": "Declara que va estar al menjador i després al saló comú, visible per personal.", "statement": ["La inversio m'importava, però no tinc accés a calderes ni motiu per embrutar-me així.", "Vaig veure Arnau nervios abans de mitjanit.", "Tot el refugi sap que jo no toco zones tècniques."]},
+      "suspect-lluc": {"id": "suspect-lluc", "type": "suspect", "name": "Lluc Serra", "role": "Sotsdirector comercial", "alibi": "Assegura que feia trucades de cancel·lacio de reserves des de recepcio.", "statement": ["Estava atenent incidències de clients, això ho pot confirmar mitja plantilla.", "Vaig buscar Arnau perquè no responia i em feia falta una signatura urgent.", "No vaig tocar cap document de caixa."]},
+
+      "forensic-report-doc": {
+        "id": "forensic-report-doc",
+        "type": "document",
+        "title": "Informe Forense",
+        "subtitle": "Unitat Cientifica",
+        "content": [
+          "Causa de mort: cop contundent a regió occipital amb clau metàl·lica pesada.",
+          "Franja de mort estimada: 23:57-00:05.",
+          "Restes a la roba: oli tècnic i partícules de cautxu industrial.",
+          "Coincidencia elevada amb terra del corredor de calderes.",
+          "Sense indicis de lluita prolongada; atac ràpid i proper."
+        ]
+      },
+      "computer-emails-doc": {
+        "id": "computer-emails-doc",
+        "type": "document",
+        "title": "Correus i Missatges Interns",
+        "subtitle": "Terminal de direccio",
+        "content": [
+          "22:58 - Arnau a Claudia: 'No penso signar el tancament amb aquests números.'",
+          "23:21 - Pau a Arnau: 'Necessito autoritzacio per material, passa pel corredor tècnic.'",
+          "23:47 - Arnau (esborrany): 'Si falten 18.000 euros, ho denuncio demà.'",
+          "23:56 - Obertura de sessio al terminal tècnic de manteniment.",
+          "00:03 - Càmera interior: figura amb mono de treball surt de corredor amb llibreta petita fosca."
+        ]
+      },
+      "drawer-notes-doc": {
+        "id": "drawer-notes-doc",
+        "type": "document",
+        "title": "Notes del Calaix",
+        "subtitle": "Apunts manuscrits del director",
+        "content": [
+          "Anotacio: 'P. va insistir per canviar factures de recanvis'.",
+          "Recordatori: revisio caixa diumenge amb auditor extern.",
+          "Llista de claus mestres amb copia extra assignada a manteniment.",
+          "Nota irrellevant: comanda de llenya pendent per dimarts."
+        ]
+      },
+      "harbor-shift-doc": {
+        "id": "harbor-shift-doc",
+        "type": "document",
+        "title": "Registre de Torns i Accessos",
+        "subtitle": "Control intern del refugi",
+        "content": [
+          "Torn tècnic 22:00-02:00: Pau Soler.",
+          "Accés corredor calderes 23:56 amb clau electrònica #M-02 (Pau).",
+          "Accés oficina direccio 23:39 amb targeta d'administracio (Claudia).",
+          "No hi ha cap accés tècnic registrat amb perfils de clients.",
+          "Lectura de porta lateral 00:04 sense nova targeta (obertura des de dins)."
+        ]
+      },
+      "timeline-synthesis-doc": {
+        "id": "timeline-synthesis-doc",
+        "type": "document",
+        "title": "Sintesi de Cronologia",
+        "subtitle": "Contrast de coartades",
+        "content": [
+          "Finestra de mort: 23:57-00:05.",
+          "Mireia no consta amb accessos tècnics i resta vista en zones comunes abans i durant l'inici de la franja.",
+          "Claudia té conflicte econòmic, però només registre d'oficina i cap rastre físic tècnic.",
+          "Lluc localitza la víctima tard, però no hi ha traça seva a corredor de calderes.",
+          "Pau concentra accés tècnic, rastre forense compatible i missatge previ citant Arnau al corredor."
+        ]
+      }
+    }
+  },
+  "solution": {
+    "culprit": "Pau Soler",
+    "motive": "Evitar que el director descobrís i denunciés desviaments econòmics vinculats a compres tècniques inflades.",
+    "method": "Va citar Arnau al corredor de calderes amb el pretext d'una avaria, el va atacar amb una clau metàl·lica i va sostreure la llibreta de caixa abans de sortir per la porta lateral interior.",
+    "keyProof": "Missatge de 23:21 citant el corredor tècnic, accés #M-02 a les 23:56, finestra forense 23:57-00:05 i rastres d'oli/cautxú propis de la seva zona de treball.",
+    "eliminations": [
+      "Claudia Vidal: motiu administratiu i discussió, però sense accés tècnic ni rastres físics del corredor de calderes.",
+      "Mireia Costa: perfil de clienta sense permisos tècnics i coartada parcial sostinguda en zones comunes.",
+      "Lluc Serra: presència a recepció i descoberta tardana, sense indicis materials al punt d'impacte."
+    ]
+  }
+}

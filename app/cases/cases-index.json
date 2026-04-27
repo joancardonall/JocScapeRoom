@@ -1,0 +1,17 @@
+[
+  {"id":"case-001","title":"Silenci a la Darsena 12","path":"./cases/case-001.json"},
+  {"id":"case-002","title":"La Nit de la Sala Vermella","path":"./cases/case-002.json"},
+  {"id":"case-003","title":"Tempesta al Refugi Blanc","path":"./cases/case-003.json"},
+  {"id":"case-004","title":"Protocol Ombra","path":"./cases/case-004.json"},
+  {"id":"case-005","title":"Backstage 3","path":"./cases/case-005.json"},
+  {"id":"case-006","title":"Verema Fosca","path":"./cases/case-006.json"},
+  {"id":"case-007","title":"L'ombra de Gaudi","path":"./cases/case-007.json"},
+  {"id":"case-008","title":"Vidre, acer i silenci","path":"./cases/case-008.json"},
+  {"id":"case-009","title":"La casa sobre la cascada","path":"./cases/case-009.json"},
+  {"id":"case-010","title":"El cavallet de Lina","path":"./cases/case-010.json"},
+  {"id":"case-011","title":"La promenade truncada","path":"./cases/case-011.json"},
+  {"id":"case-012","title":"La porta verda de Paris","path":"./cases/case-012.json"},
+  {"id":"case-015","title":"El pavello de la boira","path":"./cases/case-015.json"},
+  {"id":"case-016","title":"La galeria dels miralls freds","path":"./cases/case-016.json"},
+  {"id":"case-017","title":"L'ombra del trifori","path":"./cases/case-017.json"}
+]

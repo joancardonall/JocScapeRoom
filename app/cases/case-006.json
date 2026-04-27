@@ -1,0 +1,160 @@
+{
+  "id": "case-006",
+  "title": "Verema Fosca",
+  "summary": "El propietari d'un celler familiar apareix mort a la sala de barriques després d'una cata privada. Falta el quadern amb pactes de distribucio paral·lela.",
+  "objective": "Compara declaracions, registres interns i proves fisicoquímiques per establir l'únic culpable.",
+  "fileSystem": {
+    "rootId": "main-folder",
+    "nodes": {
+      "main-folder": {"id":"main-folder","type":"folder","title":"Dossier Principal del Cas","description":"Unitat Rural - Cas 006.","children":["police-report-folder","witnesses-folder"]},
+      "police-report-folder": {"id":"police-report-folder","type":"folder","title":"Informe Policial","description":"Actuacio al Celler Rovira.","children":["intro-report-doc","scene-arrival-doc"]},
+      "witnesses-folder": {"id":"witnesses-folder","type":"folder","title":"Testimonis","description":"Declaracions de personal i convidats.","children":["witness-porter-doc","witness-taxi-doc","witness-dock-doc"]},
+      "suspects-folder": {"id":"suspects-folder","type":"folder","title":"Tauler de Sospitosos","description":"Declaracions en primera persona dels sospitosos.","children":["suspect-claudia","suspect-pau","suspect-mireia","suspect-lluc"]},
+      "extra-evidence-folder": {"id":"extra-evidence-folder","type":"folder","title":"Proves Addicionals","description":"Forense, comunicacions i registres del celler.","children":["forensic-report-doc","computer-emails-doc","drawer-notes-doc","harbor-shift-doc","timeline-synthesis-doc"]},
+
+      "intro-report-doc": {
+        "id": "intro-report-doc",
+        "type": "document",
+        "title": "Informe Introductori",
+        "subtitle": "Context del cas",
+        "content": [
+          "A les 22:18, una treballadora del Celler Rovira troba el propietari Ramon Rovira inconscient a la sala de barriques B.",
+          "Els serveis mèdics confirmen la mort al lloc. La víctima havia participat en una cata privada amb socis i distribuïdors.",
+          "No hi ha signes de robatori general, però falta el quadern gris on Ramon anotava acords de venda fora de canal oficial.",
+          "La sala de barriques té accés restringit i registre mecànic de clau.",
+          "La investigacio busca qui tenia motiu comercial i control sobre els accessos interns del celler."
+        ]
+      },
+      "scene-arrival-doc": {
+        "id": "scene-arrival-doc",
+        "type": "document",
+        "title": "Arribada Policial a l'Escena",
+        "subtitle": "Acta resum",
+        "content": [
+          "22:26 - Primera unitat al celler.",
+          "22:31 - Confirmacio preliminar de mort per traumatisme cranial lateral.",
+          "22:38 - Es precinta sala de barriques B i despatx de direccio.",
+          "22:44 - Es detecta absència del quadern gris de distribucio.",
+          "22:59 - Es recullen claus mestres i targetes d'accés del personal clau."
+        ]
+      },
+      "witness-porter-doc": {
+        "id": "witness-porter-doc",
+        "type": "document",
+        "title": "Declaracio Testimoni 01 - Encarregat de Porta Jaume D.",
+        "subtitle": "Nota policial professional",
+        "content": [
+          "A les 21:49 veu Claudia Pujol sortir del despatx de Ramon alterada.",
+          "A les 21:57 registra l'entrada de Pau Ferrer a la sala de barriques amb clau tècnica.",
+          "Lluc Marimon marxa del pati de càrrega a les 21:40 i no torna a zona interior fins tard.",
+          "Mireia Solà és vista a sala de tast amb convidats entre 21:45 i 22:10."
+        ]
+      },
+      "witness-taxi-doc": {
+        "id": "witness-taxi-doc",
+        "type": "document",
+        "title": "Declaracio Testimoni 02 - Servei VTC Local",
+        "subtitle": "Nota policial professional",
+        "content": [
+          "Registre: recollida de Lluc Marimon a les 21:41 al Celler Rovira.",
+          "Arribada a oficina logística externa a les 21:58, validada per geolocalitzacio.",
+          "Retorn de Lluc al celler no abans de les 22:28.",
+          "El trajecte queda íntegrament registrat per aplicacio i pagament digital."
+        ]
+      },
+      "witness-dock-doc": {
+        "id": "witness-dock-doc",
+        "type": "document",
+        "title": "Declaracio Testimoni 03 - Enòloga Assistenta Carla M.",
+        "subtitle": "Nota policial professional",
+        "content": [
+          "Sent una discussio apagada a sala de barriques B cap a les 22:02.",
+          "A les 22:06 veu Pau Ferrer sortir de la zona amb guants de neteja i una llibreta sota la jaqueta.",
+          "A les 22:09 troba una copa trencada al passadis intern.",
+          "No identifica Claudia ni Mireia entrant a la sala B en aquella franja."
+        ]
+      },
+
+      "suspect-claudia": {"id":"suspect-claudia","type":"suspect","name":"Claudia Pujol","role":"Socia comercial del celler","alibi":"Diu que després de discutir va anar a la terrassa amb inversors fins passades les 22:15.","statement":["Ramon i jo discutíem sovint pels preus, però la discussio era empresarial.","No vaig entrar a sala de barriques B després de parlar amb ell.","Si falta el quadern, pot interessar a molta més gent que a mi."]},
+      "suspect-pau": {"id":"suspect-pau","type":"suspect","name":"Pau Ferrer","role":"Cap de produccio del celler","alibi":"Afirma que va entrar a barriques només per revisar humitat i va sortir al cap de dos minuts.","statement":["Tenia claus perquè soc responsable de produccio, això és normal.","La llibreta no la vaig agafar jo, i els guants eren de neteja rutinària.","Ramon em volia carregar pèrdues que no eren culpa meva."]},
+      "suspect-mireia": {"id":"suspect-mireia","type":"suspect","name":"Mireia Solà","role":"Sommelier principal","alibi":"Declara que va romandre amb convidats a la sala de tast durant tota la franja crítica.","statement":["Jo estava fent el servei de cata, hi ha clients que m'han vist tot el temps.","No tenia cap interès en els quaderns de distribucio.","Ramon podia ser dur, però jo no tenia conflicte directe amb ell."]},
+      "suspect-lluc": {"id":"suspect-lluc","type":"suspect","name":"Lluc Marimon","role":"Distribuïdor extern","alibi":"Es troba fora del celler entre 21:41 i 22:28 segons VTC.","statement":["Ramon i jo negociàvem marges, però aquella nit vaig marxar abans del caos.","No podia ser a la sala B en el moment del crim.","M'interessava que el negoci continués, no pas enfonsar-lo."]},
+
+      "forensic-report-doc": {
+        "id": "forensic-report-doc",
+        "type": "document",
+        "title": "Informe Forense",
+        "subtitle": "Unitat Cientifica",
+        "content": [
+          "Causa de mort: cop contundent amb objecte curt i dens, compatible amb clau de vàlvula de barrica.",
+          "Franja de mort: 22:03-22:08.",
+          "Rastres: most de syrah jove i detergent alcalí en màniga de la víctima.",
+          "Coincidencia amb zona de rentat tècnic annexa a sala B.",
+          "Empremtes útils de Pau en eina de vàlvula trobada netejada parcialment."
+        ]
+      },
+      "computer-emails-doc": {
+        "id": "computer-emails-doc",
+        "type": "document",
+        "title": "Correus i Missatges Interns",
+        "subtitle": "Terminal de direccio",
+        "content": [
+          "20:58 - Ramon a Claudia: 'Demà tanquem acords i revisem comissions'.",
+          "21:22 - Pau a Ramon: 'Cal parlar dels lots desviats abans que sigui tard'.",
+          "21:50 - Ramon (esborrany): 'Si no em torneu el marge ocult, cancel·lo distribucio'.",
+          "22:01 - Acces al fitxer de distribucio des del terminal de produccio.",
+          "22:07 - Càmera passadis intern: figura amb granota de produccio surt de sala B amb llibreta grisa."
+        ]
+      },
+      "drawer-notes-doc": {
+        "id": "drawer-notes-doc",
+        "type": "document",
+        "title": "Notes del Calaix",
+        "subtitle": "Apunts de Ramon Rovira",
+        "content": [
+          "'P.F. coneix massa bé els moviments del quadern'.",
+          "'Lluc pressiona per terminis, però avui és fora a logística'.",
+          "'No cedir en comissions ocultes de lot 17'.",
+          "Dada secundaria: 'Reserva hotel enoturisme dissabte'."
+        ]
+      },
+      "harbor-shift-doc": {
+        "id": "harbor-shift-doc",
+        "type": "document",
+        "title": "Registre de Claus i Accessos",
+        "subtitle": "Control intern del celler",
+        "content": [
+          "Clau tècnica sala B assignada a Pau Ferrer (ús registrat 21:57).",
+          "Acces terminal produccio 22:01 amb usuari de Pau.",
+          "No hi ha registres de Mireia a sala B durant la franja crítica.",
+          "VTC de Lluc confirma absència física del recinte fins les 22:28.",
+          "Claudia sense clau tècnica activa a sala B després de 21:49."
+        ]
+      },
+      "timeline-synthesis-doc": {
+        "id": "timeline-synthesis-doc",
+        "type": "document",
+        "title": "Sintesi de Cronologia",
+        "subtitle": "Contrast de coartades",
+        "content": [
+          "Franja de mort: 22:03-22:08.",
+          "Lluc queda fora per trajecte VTC validat en aquest interval.",
+          "Mireia resta vinculada a sala de tast amb testimonis i sense accessos tècnics.",
+          "Claudia té discussio prèvia però no registre de clau tècnica en hora crítica.",
+          "Pau concentra accés a sala B, ús de terminal de produccio a 22:01 i rastres físics compatibles amb l'arma i la zona de rentat."
+        ]
+      }
+    }
+  },
+  "solution": {
+    "culprit": "Pau Ferrer",
+    "motive": "Evitar que Ramon revelés desviaments i comissions ocultes en la cadena de distribucio que l'implicaven directament.",
+    "method": "Va entrar a sala B amb clau tècnica, va confrontar Ramon, el va colpejar amb una clau de vàlvula i va extreure la llibreta grisa abans de sortir pel passadis intern.",
+    "keyProof": "Franja forense 22:03-22:08, accés de clau tècnica i terminal de produccio vinculats a Pau, càmera de 22:07 amb figura de granota de produccio i rastres químics coherents amb la seva zona de treball.",
+    "eliminations": [
+      "Claudia Pujol: discussió comercial prèvia, però sense registre d'accés tècnic en la finestra de mort.",
+      "Mireia Solà: coartada sostinguda per testimonis de cata i absència de permisos de sala B.",
+      "Lluc Marimon: ubicació externa validada per VTC durant tota la franja crítica."
+    ]
+  }
+}

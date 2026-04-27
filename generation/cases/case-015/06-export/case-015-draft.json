@@ -1,0 +1,243 @@
+{
+  "id": "case-015",
+  "title": "El pavello de la boira",
+  "summary": "Julia Valles, directora-curadora de la Fundacio Borrell, apareix morta la nit abans de reobrir el Pavello de la Boira, una reconstruccio de gran prestigi dins el circuit europeu d'arquitectura i colleccionisme. La mort sembla un accident provocat per la caiguda d'una corona suspesa de vidre i niquel durant un assaig privat amb boira escenica. Pero aquella mateixa nit Julia havia decidit suspendre la inauguracio i revelar que el pavello amagava una autoria esborrada i peces patrimonials de procedencia illegitima.",
+  "objective": "Identifica l'unic culpable demostrant motiu, metode i oportunitat. La resolucio ha de llegir correctament la cronologia del passi, la manipulacio material del pavello i les relacions emocionals que unien la victima amb els quatre sospitosos.",
+  "fileSystem": {
+    "rootId": "main-folder",
+    "nodes": {
+      "main-folder": {
+        "id": "main-folder",
+        "type": "folder",
+        "title": "Expedient Principal",
+        "description": "Mort de Julia Valles a la Fundacio Borrell durant l'assaig del Pavello de la Boira.",
+        "children": [
+          "police-report-folder",
+          "witnesses-folder",
+          "suspects-folder",
+          "extra-evidence-folder"
+        ]
+      },
+      "police-report-folder": {
+        "id": "police-report-folder",
+        "type": "folder",
+        "title": "Informes Policials",
+        "description": "Resum inicial del cas i observacions de l'escena.",
+        "children": [
+          "intro-report-doc",
+          "scene-arrival-doc"
+        ]
+      },
+      "witnesses-folder": {
+        "id": "witnesses-folder",
+        "type": "folder",
+        "title": "Testimonis",
+        "description": "Declaracions de personal present al recinte durant l'assaig.",
+        "children": [
+          "witness-porter-doc",
+          "witness-taxi-doc",
+          "witness-dock-doc"
+        ]
+      },
+      "suspects-folder": {
+        "id": "suspects-folder",
+        "type": "folder",
+        "title": "Sospitosos",
+        "description": "Perfils, coartades i declaracions de les quatre persones amb un vincle directe amb Julia Valles.",
+        "children": [
+          "suspect-claudia",
+          "suspect-pau",
+          "suspect-mireia",
+          "suspect-lluc"
+        ]
+      },
+      "extra-evidence-folder": {
+        "id": "extra-evidence-folder",
+        "type": "folder",
+        "title": "Proves Complementaries",
+        "description": "Forense, documents, registres d'acces i sintesi cronologica del crim.",
+        "children": [
+          "forensic-report-doc",
+          "computer-emails-doc",
+          "drawer-notes-doc",
+          "harbor-shift-doc",
+          "timeline-synthesis-doc"
+        ]
+      },
+      "intro-report-doc": {
+        "id": "intro-report-doc",
+        "type": "document",
+        "title": "Informe Inicial",
+        "subtitle": "Unitat d'Homicidis - resum dels fets",
+        "content": [
+          "La victima es Julia Valles i Riba, 52 anys, directora-curadora de la Fundacio Borrell i responsable intel.lectual de la reobertura del Pavello de la Boira. Va ser localitzada sense vida a les 21.36 h del 2 d'abril, just despres d'un assaig privat amb boira escenica dins el pavello.",
+          "La primera versio dels fets parlava d'un accident estructural: una corona suspesa de vidre gravat i niquel va cedir sobre Julia en ple passi tecnic. Tanmateix, la victima havia decidit suspendre la inauguracio de l'endema i preparar un comunicat sobre autoria falsa, espoli patrimonial i irregularitats materials del projecte.",
+          "El pavello era presentat com una reconstruccio modEl. Ara sabem que Julia havia reunit cartes, esbossos i una llibreta capaços de demostrar que l'obra no pertanyia exclusivament a Adria Borrell, sino tambe a Eva Marquet, decoradora i artista esborrada del relat oficial.",
+          "Els quatre sospitos tenien un motiu clar per silenciar-la: Arnau Bellmunt temia la ruina del mecenatge familiar, Clara Reventos la seva caiguda professional, Damia Llorens l'ensorrament del seu gran debut internacional i Sofia Delmas una nova traicio a la memoria d'Eva Marquet.",
+          "La investigacio se centra en determinar si la caiguda de la corona va ser una avaria real o un sabotatge premeditat aprofitant l'assaig, els accessos tecniques i la boira com a cobertura."
+        ]
+      },
+      "scene-arrival-doc": {
+        "id": "scene-arrival-doc",
+        "type": "document",
+        "title": "Arribada a l'Escena",
+        "subtitle": "Observacions dels primers agents",
+        "content": [
+          "En entrar al Pavello de la Boira, els agents troben boira residual encara suspesa, fragments de vidre gravat escampats a l'eix nord de l'espai i Julia Valles a terra, de costat, sota el punt on havia cedit la corona.",
+          "A tocar del cos hi ha una carpeta gris amb correspondencia d'Eva Marquet, mentre que la tapa de traverti del pedestal central apareix lleugerament desplacada. Segons la primera reconstruccio, en aquell pedestal s'hi havia amagat un document original que ja no es localitza a l'escena.",
+          "El mecanisme nord presenta un aspecte enganyosament compatible amb fatiga estructural, pero la carcassa superior mostra obertura recent, cargols reposicionats i marques fines d'eina. L'escena apunta mes a una manipulacio dirigida que no pas a una fallada espontania.",
+          "No es detecten signes de lluita directa ni d'enverinament previ. La victima sembla haver estat situada sota el punt de carrega per una conversa o una espera, cosa que converteix la relacio amb l'ultima persona present en un element central de la investigacio."
+        ]
+      },
+      "witness-porter-doc": {
+        "id": "witness-porter-doc",
+        "type": "document",
+        "title": "Declaracio del vigilant",
+        "subtitle": "Marc Estrems, control de nit",
+        "content": [
+          "Marc Estrems confirma que Julia li havia demanat poc abans de les 21.00 h que no deixes entrar ningun convidat imprevist al pavello. La descriu tensa pero resolta, amb una carpeta documental grisa sota el braç.",
+          "Segons el vigilant, Clara Reventos travessa la zona de servei amb una petita capsa d'eines fines minuts abans del passi i entra al pavello per parlar amb Julia. Marc no ho troba estrany perque la restauradora encara supervisava detalls materials de la corona.",
+          "A les 21.36 h, despres d'un cop sec entre la boira, Marc entra amb Damia Llorens i una tecnica de llum. Troben Julia ja sense resposta. La seva impressio inicial es d'accident, pero remarca que Clara insistia des de feia estona en una suposada fatiga per humitat."
+        ]
+      },
+      "witness-taxi-doc": {
+        "id": "witness-taxi-doc",
+        "type": "document",
+        "title": "Declaracio de cambrera",
+        "subtitle": "Laia Roig, servei de sala",
+        "content": [
+          "Laia Roig situa Sofia Delmas a la terrassa fent una trucada internacional cap a les 21.15 h. Recorda la escena perque Sofia fumava sense encendre el cigarret i repetia en frances que aquella nit no es podia tornar a ajornar res.",
+          "La mateixa testimoni veu Arnau Bellmunt entrar al despatx nord molt alterat i el sent parlar per telefon amb un patro estranger. Despres del crit del vigilant, el veu sortir encara blanc de cara, motiu pel qual en un primer moment sospita d'ell.",
+          "Laia no veu ni Sofia ni Arnau apropar-se a les passarel.les ni a la zona superior del pavello. La seva declaracio ajuda a fixar les posicions de dos sospitosos amb motius forts pero sense acces material al mecanisme.",
+          "TambE afirma que Julia havia refusat champagne i havia demanat expressament que durant l'assaig no hi haguEs public ni mecenes, nomes l'equip estrictament necessari."
+        ]
+      },
+      "witness-dock-doc": {
+        "id": "witness-dock-doc",
+        "type": "document",
+        "title": "Declaracio de tecnica de llum",
+        "subtitle": "Helena Costa, assistent del passi",
+        "content": [
+          "Helena Costa situa Damia Llorens a la taula de control entre les 21.26 h i les 21.36 h, pendent de l'activacio de la boira, la llum lateral i la vibracio suau del passi. Segons ella, Damia no abandona la consola durant la franja critica.",
+          "La tecnica recorda haver vist Clara amb una capsa d'eines i guants de taller abans de les 21.10 h. Va pensar que anava a revisar condensacio al suport nord de la corona, una maniobra que Clara havia justificat diverses vegades al llarg de la tarda.",
+          "Helena interpreta inicialment que la boira pot haver ocultat una avaria general de l'estructura. Amb el temps, admet que l'efecte escenic nomes podia amagar a ull nu una manipulacio ja preparada, no causar per si mateix la caiguda."
+        ]
+      },
+      "suspect-claudia": {
+        "id": "suspect-claudia",
+        "type": "suspect",
+        "name": "Clara Reventos Serra",
+        "role": "Cap de restauracio i supervisora material del Pavello de la Boira",
+        "alibi": "Soste que despres de les 21.05 h va tornar al taller annex per revisar uns vidres amb condensacio i que no va parlar amb Julia a soles en l'ultima franja abans del passi.",
+        "statement": [
+          "Si la seva idea es trobar una restauradora negligent, arriba tard: fa mesos que tots vivim dins una obra que havia de ser impecable per fora i impossible per dins. Julia em demanava precisio absoluta per sostenir decisions que no sempre eren netes.",
+          "Es cert que discutiem. Em va convertir en la seva persona de confianca i tambe en el lloc on podien anar a parar tots els errors materials del projecte. Aixo no vol dir que jo volguEs veure-la morta.",
+          "La corona era delicada i jo havia advertit de la humitat i de les tensions del suport nord. Si va caure, no necessito haver-la tocat aquella nit per entendre com podia passar."
+        ]
+      },
+      "suspect-pau": {
+        "id": "suspect-pau",
+        "type": "suspect",
+        "name": "Arnau Bellmunt i Casals",
+        "role": "President de la Fundacio Borrell i principal mecenes del projecte",
+        "alibi": "Afirma que, des de poc abans de les 21.20 h fins al soroll de la caiguda, era al despatx nord en una trucada amb Emil Frey, patro principal de la gala.",
+        "statement": [
+          "La mort de Julia es una tragedia institucional, no una novela sentimental. Si em pregunta si vaig intentar aturar-la, la resposta es si. Volia suspendre una inauguracio que tenia compromisos internacionals i un impacte economic enorme.",
+          "TambE es cert que la revelacio que preparava hauria fet molt mal al nom de la fundacio i al meu. Pero jo no pujo passarel.les, no obro mecanismes i no m'amago darrere boires teatrals.",
+          "Julia sempre havia jugat fort. El problema es que aquella nit va pensar que podia desfer una arquitectura sencera de silencis sense que ningU intentEs salvar-se."
+        ]
+      },
+      "suspect-mireia": {
+        "id": "suspect-mireia",
+        "type": "suspect",
+        "name": "Sofia Delmas",
+        "role": "Historiadora d'arts decoratives i investigadora convidada des de Paris",
+        "alibi": "Declara que va sortir del pavello a les 21.12 h per fer una trucada a Paris i que no hi va tornar fins despres del commocio.",
+        "statement": [
+          "Fa un segle que el meu entorn familiar veu el nom d'Eva Marquet convertit en una nota al marge, mentre altres persones capitalitzen la seva obra. Julia deia que aquesta vegada ho arreglaria, pero sempre apareixia un nou motiu per esperar.",
+          "Si em pregunta si volia obligar-la a dir la veritat aquella mateixa nit, si. No he vingut fins aqui per veure com una dona morta continua servint de decoracio a una instituciO elegant.",
+          "El meu error ha estat confiar poc en aquesta casa i massa en la urgencia dels papers. Jo trec documents de caixes; no faig caure estructures."
+        ]
+      },
+      "suspect-lluc": {
+        "id": "suspect-lluc",
+        "type": "suspect",
+        "name": "Damia Llorens Pujol",
+        "role": "Escenograf i responsable de llum, so i boira del passi inaugural",
+        "alibi": "Declara que va romandre a la taula de control durant tota la franja critica i que la seqUencia de boira estava programada des de les 19.30 h sense canvis posteriors.",
+        "statement": [
+          "Jo dissenyo atmosferes, no funerals. La boira estava mesurada, domesticada i pensada per fer llegible l'espai, no per convertir-lo en una trampa.",
+          "Julia m'havia posat al centre del projecte i, alhora, estava a punt d'humiliar-me pels sobrecostos. Tenia prou motiu per odiar-la, d'acord, pero cap interes a enfonsar la inauguracio que havia de donar-me una carrera internacional.",
+          "Si algu vol convertir el meu dispositiu escenic en l'arma del crim, confon la cobertura visual amb la causa real. El que va matar Julia no va ser l'efecte; va ser allO que algu havia preparat abans."
+        ]
+      },
+      "forensic-report-doc": {
+        "id": "forensic-report-doc",
+        "type": "document",
+        "title": "Informe Forense",
+        "subtitle": "Autopsia preliminar i laboratori material",
+        "content": [
+          "La causa principal de la mort es un traumatisme cranial i cervical immediat per impacte d'un segment de la corona suspesa de vidre i niquel. No hi ha indicis de sedacio, enverinament ni agressio previa a curta distancia.",
+          "L'estudi del suport nord descarta una fatiga espontania: el passador estructural numerat havia estat retirat recentment i substituit per una replica decorativa sense capacitat real de carrega. El cable protector presenta un tall superficial compatible amb manipulacio fina de taller.",
+          "Al mecanisme obert s'hi detecten cera microcristal.lina, grafit, limadures fines de llauto niquelat i una fibra de guant de coto. Son restes compatibles amb processos de restauracio, no amb manteniment generic ni amb una avaria accidental."
+        ]
+      },
+      "computer-emails-doc": {
+        "id": "computer-emails-doc",
+        "type": "document",
+        "title": "Correus i Registres Digitals",
+        "subtitle": "Portatil de la victima, telefonia i control d'accessos",
+        "content": [
+          "Al portatil de Julia hi ha un esborrany titulat 'Suspensio i auditoria immediata' on anuncia la cancel.lacio de la inauguracio, una revisio d'autoria i procedencia i la responsabilitat signant de Clara Reventos en diversos informes materials falsejats.",
+          "Al mobil de Clara consta un missatge esborrat enviat a les 20.57 h: 'No em facis caure sola per tot aixo'. Els registres d'acces situen la seva targeta al taller annex a les 21.08 h i al passadis superior de manteniment a les 21.17 h, sense cap altre sospitos en aquella ruta tecniques durant la finestra critica.",
+          "La seqUencia de boira queda programada a les 19.30 h i no rep modificacions posteriors. A mes, apareix una comanda interna signada per Clara dues setmanes abans per a un 'passador de reproduccio per suport expositiu' amb mides coincidents amb la peca no estructural trobada al mecanisme."
+        ]
+      },
+      "drawer-notes-doc": {
+        "id": "drawer-notes-doc",
+        "type": "document",
+        "title": "Notes Recuperades del Despatx",
+        "subtitle": "Apunts personals de Julia Valles",
+        "content": [
+          "En una pagina de treball hi consta: 'Eva Marquet no va decorar res; va concebre el pavello amb Borrell. Ja no puc sostenir la ficcio amb panells arrencats de casa seva i informes de consolidacio maquillats'.",
+          "Una altra anotacio resumeix la xarxa emocional del cas: 'Arnau vol salvar el cognom. Damia, el seu gran salt. Sofia, la dignitat dels morts. Clara sap exactament quina part del pavello s'aguanta sobre mentides materials'.",
+          "A l'ultima nota, escrita amb pressa, Julia apunta: 'Parlar amb Clara abans del passi. Si no accepta la sortida pactada, aturo la gala igualment. La llibreta queda sota el pedestal fins que arribi la policia'."
+        ]
+      },
+      "harbor-shift-doc": {
+        "id": "harbor-shift-doc",
+        "type": "document",
+        "title": "Registre Intern d'Accessos i Torns",
+        "subtitle": "Control de sales, passarel.les i posicions durant l'assaig",
+        "content": [
+          "Arnau Bellmunt queda registrat a la linia fixa del despatx nord entre les 21.24 h i les 21.32 h. Laia Roig i una assistent de mecenatge confirmen la seva presencia en aquella zona durant la franja de la mort.",
+          "Damia Llorens es situat a la taula de control entre les 21.26 h i les 21.36 h per Helena Costa i dos tecnics, mentre que Sofia Delmas queda fora del pavello entre les 21.12 h i les 21.22 h segons cobertura telefonica i testimoni de sala.",
+          "L'unic acces al passadis superior de manteniment entre les 21.15 h i les 21.30 h correspon a Clara Reventos. La combinacio d'aquesta dada, la conversa final amb la victima i la naturalesa del sabotatge tanca una finestra temporal incompatible amb qualsevol altre sospitos."
+        ]
+      },
+      "timeline-synthesis-doc": {
+        "id": "timeline-synthesis-doc",
+        "type": "document",
+        "title": "Sintesi Cronologica",
+        "subtitle": "Reconstruccio dels fets entre les 18.00 h i les 21.36 h",
+        "content": [
+          "18.20 h - 20.50 h: Julia rep de Sofia cartes i una llibreta d'Eva Marquet, discuteix amb Arnau per la procedencia de les peces i redacta al portatil el comunicat de suspensio. Damia rep una esbroncada pels sobrecostos i Clara es advertida que haura de respondre pels informes materials signats.",
+          "19.05 h i 21.17 h: Clara accedeix sola al passadis superior en dues ocasions. La primera li permet preparar la zona del mecanisme nord i la segona completar el sabotatge abans de baixar a la trobada definitiva amb Julia. A les 21.18 h es l'ultima persona confirmada amb la victima dins el pavello.",
+          "21.12 h - 21.32 h: Sofia es a la terrassa i al corredor oest; Arnau al despatx nord amb telefonia fixa; Damia a la consola. La seqUencia de boira s'activa a les 21.30 h sense canvis recents i el suport nord cedeix a les 21.31 h, dins la finestra de mort forense.",
+          "La combinacio de motiu immediat, acces exclusiu, capacitat material i mentida posterior sobre l'hora de l'ultima conversa fa de Clara l'unica autora viable. Els altres sospitos mantenen motius potents, pero la cronologia els deixa fora del mecanisme real del crim."
+        ]
+      }
+    }
+  },
+  "solution": {
+    "culprit": "Clara Reventos Serra",
+    "motive": "Julia havia decidit suspendre la inauguracio, exposar l'espoli patrimonial i presentar Clara com a responsable tecnica dels informes materials falsejats. Per a Clara, aquella revelacio significava perdre la carrera, afrontar una possible causa penal i descobrir que la seva mentora la convertia en sacrifici util per salvar la resta de la instituciO.",
+    "method": "Clara va sabotejar el punt de subjeccio nord de la corona suspesa: va retirar el passador estructural original, el va substituir per una replica decorativa que havia encarregat setmanes abans i va debilitar el conjunt prou perque la seqUencia de boira i vibracio del passi provoquEs la caiguda sobre Julia.",
+    "keyProof": "Tres linies independents convergeixen en Clara: la prova forense mostra manipulacio manual del mecanisme amb restes de restauracio; els registres d'acces la situen com l'unica persona al passadis superior dins la finestra critica i com a ultima persona confirmada amb Julia; i el material documental demostra que Julia estava a punt d'assenyalar-la publicament i que Clara havia encarregat una replica exacta del passador trobat a l'escena.",
+    "eliminations": [
+      "Arnau Bellmunt tenia un motiu institucional enorme, pero la telefonia fixa i dos testimonis el situen al despatx nord quan s'executa el sabotatge i no te ni acces ni coneixement per manipular el mecanisme.",
+      "Damia Llorens sembla sospitos perque controla la boira i l'efecte visual de l'assaig, pero la programacio no es modifica des de les 19.30 h i diversos testimonis el mantenen a la consola durant la caiguda.",
+      "Sofia Delmas menteix sobre la seva conducta posterior perque retira la llibreta d'Eva Marquet, pero no disposa ni d'acces ni de temps material per actuar sobre la passarel.la superior i la seva mentida es posterior al crim."
+    ]
+  }
+}

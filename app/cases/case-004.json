@@ -1,0 +1,160 @@
+{
+  "id": "case-004",
+  "title": "Protocol Ombra",
+  "summary": "La cap de compliment normatiu d'una biotech apareix morta al laboratori sec. Ha desaparegut una carpeta amb evidencies de resultats manipulats.",
+  "objective": "Analitza registres, testimonis i proves tècniques per identificar el responsable del crim i de l'encobriment.",
+  "fileSystem": {
+    "rootId": "main-folder",
+    "nodes": {
+      "main-folder": {"id": "main-folder", "type": "folder", "title": "Dossier Principal del Cas", "description": "Unitat de Delictes Corporatius - Cas 004.", "children": ["police-report-folder", "witnesses-folder"]},
+      "police-report-folder": {"id": "police-report-folder", "type": "folder", "title": "Informe Policial", "description": "Actes d'intervencio a HelixNova.", "children": ["intro-report-doc", "scene-arrival-doc"]},
+      "witnesses-folder": {"id": "witnesses-folder", "type": "folder", "title": "Testimonis", "description": "Declaracions de personal de nit.", "children": ["witness-porter-doc", "witness-taxi-doc", "witness-dock-doc"]},
+      "suspects-folder": {"id": "suspects-folder", "type": "folder", "title": "Tauler de Sospitosos", "description": "Declaracions dels quatre implicats principals.", "children": ["suspect-claudia", "suspect-pau", "suspect-mireia", "suspect-lluc"]},
+      "extra-evidence-folder": {"id": "extra-evidence-folder", "type": "folder", "title": "Proves Addicionals", "description": "Forense, correus interns i logs d'accés.", "children": ["forensic-report-doc", "computer-emails-doc", "drawer-notes-doc", "harbor-shift-doc", "timeline-synthesis-doc"]},
+
+      "intro-report-doc": {
+        "id": "intro-report-doc",
+        "type": "document",
+        "title": "Informe Introductori",
+        "subtitle": "Context del cas",
+        "content": [
+          "A les 21:58, seguretat interna de HelixNova detecta que la cap de compliment normatiu, Nora Pons, no respon al laboratori sec de la planta 5.",
+          "A les 22:07, personal de seguretat la localitza sense constants vitals entre els arxivadors de validacio.",
+          "Nora preparava un informe sobre desviacions en assajos preclinics i havia programat una reunió amb el consell l'endemà.",
+          "No hi ha forçament a portes, però desapareix una carpeta taronja amb annexos de control de qualitat.",
+          "La investigacio se centra en qui tenia accés simultani a planta 5 i al repositori de dades aquella nit."
+        ]
+      },
+      "scene-arrival-doc": {
+        "id": "scene-arrival-doc",
+        "type": "document",
+        "title": "Arribada Policial a l'Escena",
+        "subtitle": "Acta resum",
+        "content": [
+          "22:19 - Primera unitat policial a HelixNova.",
+          "22:24 - Confirmacio de mort per traumatisme cervical amb objecte curt i rígid.",
+          "22:30 - Es precinten planta 5 i sala de servidors adjunta.",
+          "22:42 - Es confirma absència de carpeta taronja de validacio.",
+          "22:55 - Requisades targetes d'accés del personal present."
+        ]
+      },
+      "witness-porter-doc": {
+        "id": "witness-porter-doc",
+        "type": "document",
+        "title": "Declaracio Testimoni 01 - Vigilant Sergi T.",
+        "subtitle": "Nota policial professional",
+        "content": [
+          "Veu Claudia Reig sortir de planta 5 a les 21:41 parlant per telèfon.",
+          "Registra que Pau Mena puja a planta 5 a les 21:46 i baixa a les 22:06.",
+          "No observa Mireia Costa a planta 5 després de les 21:20.",
+          "A les 22:05, Lluc Feliu pregunta per Nora a recepcio amb to nerviós."
+        ]
+      },
+      "witness-taxi-doc": {
+        "id": "witness-taxi-doc",
+        "type": "document",
+        "title": "Declaracio Testimoni 02 - VTC Registre 4118",
+        "subtitle": "Nota policial professional",
+        "content": [
+          "Conductor confirma recollida de Mireia Costa a les 21:27 davant HelixNova.",
+          "Trajecte fins a l'Auditori Central finalitzat a les 21:49.",
+          "Pagament i geolocalitzacio validats per plataforma.",
+          "No hi ha retorn de Mireia a l'empresa durant la franja 21:49-22:30."
+        ]
+      },
+      "witness-dock-doc": {
+        "id": "witness-dock-doc",
+        "type": "document",
+        "title": "Declaracio Testimoni 03 - Tècnica de Laboratori Aina V.",
+        "subtitle": "Nota policial professional",
+        "content": [
+          "A les 21:52 escolta discussio breu a la zona d'arxivadors de planta 5.",
+          "A les 21:57 veu Pau Mena sortir del passadis sec amb guants blaus a la mà.",
+          "Detecta una carpeta taronja sobre el carro de mostres a les 21:50; a les 22:08 ja no hi és.",
+          "No veu Nora viva després de les 21:54 aproximadament."
+        ]
+      },
+
+      "suspect-claudia": {"id": "suspect-claudia", "type": "suspect", "name": "Claudia Reig", "role": "Directora financera", "alibi": "Diu que va sortir de planta 5 a les 21:41 i no hi va tornar.", "statement": ["Nora pressionava massa i volia aturar el llançament, però jo només discutia pressupostos.", "Després de la trucada vaig anar directa a sala de juntes.", "No tenia cap interès a tocar informes tècnics que ni tan sols són de la meva àrea."]},
+      "suspect-pau": {"id": "suspect-pau", "type": "suspect", "name": "Pau Mena", "role": "Cap de dades precliniques", "alibi": "Assegura que va pujar a planta 5 només per recollir una firma i va marxar de seguida.", "statement": ["Nora exagerava incidències menors; això passa a tots els assajos.", "Vaig anar a buscar-la, no a confrontar-la.", "La carpeta taronja no la vaig tocar, i els guants eren d'ús estàndard del laboratori."]},
+      "suspect-mireia": {"id": "suspect-mireia", "type": "suspect", "name": "Mireia Costa", "role": "Directora d'operacions", "alibi": "Es troba fora del campus en acte extern des de les 21:49.", "statement": ["Si Nora bloquejava el llançament, jo tenia un problema operatiu, no penal.", "Vaig sortir amb VTC i hi ha registre complet.", "No tenia manera material de ser a planta 5 quan passa el crim."]},
+      "suspect-lluc": {"id": "suspect-lluc", "type": "suspect", "name": "Lluc Feliu", "role": "Assessor legal intern", "alibi": "Declara que revisava contractes al despatx legal i puja a recepcio quan no localitza Nora.", "statement": ["Nora m'havia demanat assessorament per una comunicacio al consell.", "La buscava perquè havia de revisar un text urgent.", "No vaig entrar a l'àrea seca aquella nit."]},
+
+      "forensic-report-doc": {
+        "id": "forensic-report-doc",
+        "type": "document",
+        "title": "Informe Forense",
+        "subtitle": "Unitat Cientifica",
+        "content": [
+          "Causa de mort: impacte cervical lateral amb objecte rígid metàl·lic.",
+          "Franja de mort estimada: 21:55-22:03.",
+          "Residus en màniga de la víctima: pols de cartutx filtrant i traces de nitril blau.",
+          "Compatibilitat alta amb guants i filtres utilitzats al passadis sec de planta 5.",
+          "No hi ha sedants ni alcohol en concentracions rellevants."
+        ]
+      },
+      "computer-emails-doc": {
+        "id": "computer-emails-doc",
+        "type": "document",
+        "title": "Correus i Logs Informàtics",
+        "subtitle": "Extracte corporatiu",
+        "content": [
+          "20:44 - Nora a Lluc: 'Demà exposo discrepàncies de validacio al consell'.",
+          "21:18 - Pau a Nora: 'Parlem abans de l'informe final. És important'.",
+          "21:49 - Nora (esborrany): 'Hi ha alteracions en datasets 7C i 8A'.",
+          "21:53 - Acces al repositori de validacio amb credencial de Pau Mena.",
+          "22:02 - Descàrrega de carpeta taronja des del terminal de planta 5."
+        ]
+      },
+      "drawer-notes-doc": {
+        "id": "drawer-notes-doc",
+        "type": "document",
+        "title": "Notes de Calaix",
+        "subtitle": "Apunts de Nora Pons",
+        "content": [
+          "'P. insisteix en retocar annex 8A abans del consell'.",
+          "'No acceptar pressions financeres de C.R.'.",
+          "'Guardar copia física si bloquegen accés digital'.",
+          "Nota secundaria: 'Reserva restaurant equip divendres'."
+        ]
+      },
+      "harbor-shift-doc": {
+        "id": "harbor-shift-doc",
+        "type": "document",
+        "title": "Registre d'Accessos i Torns",
+        "subtitle": "Seguretat HelixNova",
+        "content": [
+          "Acces planta 5 - 21:46, credencial Pau Mena.",
+          "Acces repositori validacio - 21:53, credencial Pau Mena.",
+          "Sortida planta 5 - 22:06, credencial Pau Mena.",
+          "Cap accés de Mireia a campus després de 21:27.",
+          "Claudia registra sortida de planta 5 a 21:41 i cap retorn posterior."
+        ]
+      },
+      "timeline-synthesis-doc": {
+        "id": "timeline-synthesis-doc",
+        "type": "document",
+        "title": "Sintesi de Cronologia",
+        "subtitle": "Contrast de coartades",
+        "content": [
+          "Franja de mort: 21:55-22:03.",
+          "Mireia queda descartada per geolocalitzacio externa validada.",
+          "Claudia té motiu corporatiu però surt de planta 5 abans de la finestra crítica.",
+          "Lluc apareix a recepcio a les 22:05 i no registra accés a àrea seca.",
+          "Pau concentra presència a planta 5, accés a repositori i traces materials compatibles en la franja de mort."
+        ]
+      }
+    }
+  },
+  "solution": {
+    "culprit": "Pau Mena",
+    "motive": "Evitar que Nora revelés manipulacions de datasets preclínics que el comprometien professionalment i penalment.",
+    "method": "La va citar al passadis sec, la va atacar amb un suport metàl·lic de filtre i va retirar la carpeta taronja aprofitant els seus accessos de dades.",
+    "keyProof": "Accesos de 21:46/21:53/22:06 amb la seva credencial, descàrrega de carpeta a 22:02, franja forense coincident i residus de nitril/filtre propis de la seva zona operativa.",
+    "eliminations": [
+      "Claudia Reig: pressió financera real, però fora de la planta crítica abans de la finestra forense.",
+      "Mireia Costa: ubicació externa acreditada per VTC durant la franja 21:55-22:03.",
+      "Lluc Feliu: contacte legal amb la víctima, però sense traça d'accés ni indicis físics a l'àrea del crim."
+    ]
+  }
+}

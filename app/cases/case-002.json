@@ -1,0 +1,235 @@
+{
+  "id": "case-002",
+  "title": "La Nit de la Sala Vermella",
+  "summary": "La conservadora d'un museu privat apareix morta durant el muntatge d'una exposicio. Falta un sobre amb l'informe d'autenticitat d'una peça milionaria.",
+  "objective": "Revisa la documentacio del museu, contrasta testimonis i determina qui va matar la conservadora i per què.",
+  "fileSystem": {
+    "rootId": "main-folder",
+    "nodes": {
+      "main-folder": {
+        "id": "main-folder",
+        "type": "folder",
+        "title": "Dossier Principal del Cas",
+        "description": "Unitat de Delictes Patrimonials - Cas 002.",
+        "children": ["police-report-folder", "witnesses-folder"]
+      },
+      "police-report-folder": {
+        "id": "police-report-folder",
+        "type": "folder",
+        "title": "Informe Policial",
+        "description": "Documentacio inicial del crim al Museu Calder.",
+        "children": ["intro-report-doc", "scene-arrival-doc"]
+      },
+      "witnesses-folder": {
+        "id": "witnesses-folder",
+        "type": "folder",
+        "title": "Testimonis",
+        "description": "Declaracions recollides la mateixa nit.",
+        "children": ["witness-porter-doc", "witness-taxi-doc", "witness-dock-doc"]
+      },
+      "suspects-folder": {
+        "id": "suspects-folder",
+        "type": "folder",
+        "title": "Tauler de Sospitosos",
+        "description": "Declaracions en primera persona dels implicats.",
+        "children": ["suspect-claudia", "suspect-pau", "suspect-mireia", "suspect-lluc"]
+      },
+      "extra-evidence-folder": {
+        "id": "extra-evidence-folder",
+        "type": "folder",
+        "title": "Proves Addicionals",
+        "description": "Forense, correus interns i registres de seguretat.",
+        "children": ["forensic-report-doc", "computer-emails-doc", "drawer-notes-doc", "harbor-shift-doc", "timeline-synthesis-doc"]
+      },
+
+      "intro-report-doc": {
+        "id": "intro-report-doc",
+        "type": "document",
+        "title": "Informe Introductori",
+        "subtitle": "Context del cas",
+        "content": [
+          "A les 23:12, el vigilant nocturn del Museu Calder truca a emergencies en trobar la conservadora Helena Mas al terra de la Sala Vermella.",
+          "La víctima preparava la presentacio d'una pintura atribuida a Verdaguer i havia redactat un informe intern sobre la seva autenticitat.",
+          "Quan arriba la patrulla, la porta de servei de la sala és tancada però no forçada. Falta un sobre negre amb l'informe signat per la víctima.",
+          "Les primeres gestions indiquen tensio entre direccio, comissariat i patrocinadors per l'impacte economic de l'exposicio.",
+          "La investigacio se centra en qui tenia accés a la sala en la franja critica i qui necessitava controlar el contingut de l'informe." 
+        ]
+      },
+      "scene-arrival-doc": {
+        "id": "scene-arrival-doc",
+        "type": "document",
+        "title": "Arribada Policial a l'Escena",
+        "subtitle": "Acta resum",
+        "content": [
+          "23:12 - Avis rebut per central.",
+          "23:18 - Primera unitat al museu.",
+          "23:21 - Confirmacio de mort aparent per cop contundent al clatell.",
+          "23:25 - Es localitza taula de treball oberta i armari de documents remenat.",
+          "23:32 - Es confirma desaparicio del sobre negre amb l'informe d'autenticitat.",
+          "23:40 - Es preserven càmeres i accessos de la planta 2." 
+        ]
+      },
+      "witness-porter-doc": {
+        "id": "witness-porter-doc",
+        "type": "document",
+        "title": "Declaracio Testimoni 01 - Vigilant Jordi C.",
+        "subtitle": "Nota policial professional",
+        "content": [
+          "Declara que a les 22:41 veu la comissaria sortir de la Sala Vermella amb una carpeta grisa.",
+          "A les 22:50 escolta un cop sec i pensa que cau material de muntatge.",
+          "A les 23:05 observa l'assessor de patrocini utilitzant el passadís intern de personal.",
+          "Assegura que la directora ja havia marxat per l'entrada principal cap a les 22:35."
+        ]
+      },
+      "witness-taxi-doc": {
+        "id": "witness-taxi-doc",
+        "type": "document",
+        "title": "Declaracio Testimoni 02 - Taxista Nuria V.",
+        "subtitle": "Nota policial professional",
+        "content": [
+          "Aporta rebut #9132: recull Mireia Solanes (directora) a les 22:36 al carrer del museu.",
+          "Finalitza trajecte a les 22:52 a l'Hotel Diagonal Centre.",
+          "Pagament amb targeta nominal de la passatgera.",
+          "Confirma que la clienta no baixa del vehicle durant el trajecte."
+        ]
+      },
+      "witness-dock-doc": {
+        "id": "witness-dock-doc",
+        "type": "document",
+        "title": "Declaracio Testimoni 03 - Tecnic d'Il·luminacio Marc A.",
+        "subtitle": "Nota policial professional",
+        "content": [
+          "Treballava a la planta 2 entre 22:40 i 23:00 ajustant focus.",
+          "Recorda veure Pau Riera (restaurador) entrar a la sala de reserva a les 22:46.",
+          "A les 22:54 veu Lluc Benet (patrocinis) caminar rapid cap al magatzem documental.",
+          "No veu Helena Mas sortir viva de la Sala Vermella des de les 22:30."
+        ]
+      },
+
+      "suspect-claudia": {
+        "id": "suspect-claudia",
+        "type": "suspect",
+        "name": "Claudia Font",
+        "role": "Comissaria de l'exposicio",
+        "alibi": "Diu que marxa de la planta 2 a les 22:42 i es queda preparant discursos a l'oficina de premsa.",
+        "statement": [
+          "L'Helena i jo discutíem sobre criteris, no sobre diners. No tenia cap sentit fer-li mal.",
+          "Vaig entrar a revisar etiquetes i en vaig sortir abans de les onze menys quart.",
+          "Si em vau veure amb carpetes és normal: aquell vespre tothom anava carregat de documentacio."
+        ]
+      },
+      "suspect-pau": {
+        "id": "suspect-pau",
+        "type": "suspect",
+        "name": "Pau Riera",
+        "role": "Restaurador extern",
+        "alibi": "Afirma que va estar tota l'estona al taller de conservacio (planta -1) treballant en un marc.",
+        "statement": [
+          "Jo no decideixo autenticitats. Jo arreglo suports i vernissos, res mes.",
+          "Vaig baixar al taller i no vaig tornar a pujar fins que va venir seguretat.",
+          "Em volen penjar el mort perquè tenia les claus tècniques, però no vaig tocar cap informe."
+        ]
+      },
+      "suspect-mireia": {
+        "id": "suspect-mireia",
+        "type": "suspect",
+        "name": "Mireia Solanes",
+        "role": "Directora del museu",
+        "alibi": "Trajecte en taxi acreditat entre 22:36 i 22:52.",
+        "statement": [
+          "L'exposicio m'hi jugava el càrrec, sí, però no soc tan imprudent com per quedar-me en una escena així.",
+          "Vaig marxar per una reunió amb patrocinadors i hi ha registre de trajecte.",
+          "L'informe d'Helena era sensible, però la meva prioritat era guanyar temps, no eliminar-la."
+        ]
+      },
+      "suspect-lluc": {
+        "id": "suspect-lluc",
+        "type": "suspect",
+        "name": "Lluc Benet",
+        "role": "Assessor de patrocinis",
+        "alibi": "Diu que va estar en trucada amb dos inversors de 22:45 a 23:05 des del despatx de patrocini.",
+        "statement": [
+          "Sense aquesta exposicio, els patrocinadors retiraven mig pressupost anual. Era una nit critica.",
+          "Vaig parlar amb inversors i no vaig trepitjar la Sala Vermella en la franja final.",
+          "No sabia ni on guardava Helena el seu informe final."
+        ]
+      },
+
+      "forensic-report-doc": {
+        "id": "forensic-report-doc",
+        "type": "document",
+        "title": "Informe Forense",
+        "subtitle": "Unitat Cientifica",
+        "content": [
+          "Causa de mort: cop contundent posterior al crani amb eina curta de metall.",
+          "Franja de mort: 22:47-22:55.",
+          "Particules trobades a la jaqueta: pols de guix vermell i fibres de drap de restauracio.",
+          "Les fibres coincideixen amb draps utilitzats al taller de conservacio.",
+          "Empremtes parcials d'Helena i Claudia en la taula; cap empremta util de Lluc a la zona de l'impacte."
+        ]
+      },
+      "computer-emails-doc": {
+        "id": "computer-emails-doc",
+        "type": "document",
+        "title": "Correus i Missatgeria Interna",
+        "subtitle": "Extracte corporatiu",
+        "content": [
+          "20:52 - Helena a direccio: 'L'informe no és favorable. Cal replantejar la venda.'",
+          "21:11 - Pau a Helena: 'No enviis res encara, deixa'm revisar l'annex tecnic.'",
+          "22:31 - Helena a Lluc: 'No facilitaré cap versió suavitzada.'",
+          "22:44 - Connexio a l'arxiu documental des de terminal de conservacio.",
+          "22:53 - Càmera passadis intern: una figura surt de Sala Vermella amb sobre negre cap a zona taller."
+        ]
+      },
+      "drawer-notes-doc": {
+        "id": "drawer-notes-doc",
+        "type": "document",
+        "title": "Notes de Calaix",
+        "subtitle": "Apunts de la víctima",
+        "content": [
+          "Nota manuscrita: 'Si maquillen l'informe, no signo.'",
+          "Recordatori: 'Pau insisteix massa en l'annex del craquelat'.",
+          "Llista de reunions: Claudia 22:20, Mireia 22:10, patrocinis 22:40.",
+          "Dada secundaria: canvi de càtering confirmat per divendres."
+        ]
+      },
+      "harbor-shift-doc": {
+        "id": "harbor-shift-doc",
+        "type": "document",
+        "title": "Registre d'Accessos del Museu",
+        "subtitle": "Control intern de portes",
+        "content": [
+          "Acces sala conservacio 22:43 amb targeta de Pau Riera.",
+          "Acces arxiu documental 22:44 amb la mateixa targeta.",
+          "Sortida passadis intern 22:56 sense lectura correcta (porta deixada oberta).",
+          "Targeta de Mireia no registra moviments des de 22:35.",
+          "Targeta de Claudia no entra a zona taller en tota la nit."
+        ]
+      },
+      "timeline-synthesis-doc": {
+        "id": "timeline-synthesis-doc",
+        "type": "document",
+        "title": "Sintesi de Cronologia",
+        "subtitle": "Contrast de coartades",
+        "content": [
+          "Franja de mort: 22:47-22:55.",
+          "Mireia queda fora per trajecte en taxi validat durant la franja.",
+          "Claudia discuteix abans, però no registra accés a taller ni arxiu en hora critica.",
+          "Lluc té motiu economic, pero no consta rastre tecnic de pas per zona de crim.",
+          "Pau és l'unic amb accés simultani a conservacio/arxiu, rastre de fibres coincident i moviment en la franja de mort."
+        ]
+      }
+    }
+  },
+  "solution": {
+    "culprit": "Pau Riera",
+    "motive": "Evitar que l'informe d'Helena desacredités la peça central i l'assenyalés per haver avalat annexos tecnics manipulats.",
+    "method": "Va utilitzar els seus accessos de conservacio per interceptar l'informe, va atacar Helena amb una eina metàl·lica del taller i va retirar el sobre negre abans de sortir pel passadis intern.",
+    "keyProof": "Accesos 22:43-22:44 amb la targeta de Pau, fibres de drap de restauracio a la víctima i càmera de 22:53 amb sortida cap a zona taller dins la franja forense.",
+    "eliminations": [
+      "Mireia Solanes: coartada de taxi validada en la finestra de mort.",
+      "Claudia Font: conflicte verbal previ, però sense rastre d'accés a zones tècniques ni indicis físics compatibles.",
+      "Lluc Benet: motiu financer plausible, però absència de traça tècnica o presència acreditada al punt d'impacte."
+    ]
+  }
+}

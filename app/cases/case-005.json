@@ -1,0 +1,160 @@
+{
+  "id": "case-005",
+  "title": "Backstage 3",
+  "summary": "En un festival d'estiu, el productor executiu apareix mort al backstage tècnic minuts abans del cap de cartell. Falta una carpeta amb contractes i pagaments paral·lels.",
+  "objective": "Reuneix proves de backstage, alibis i registres tècnics per resoldre qui va cometre l'homicidi.",
+  "fileSystem": {
+    "rootId": "main-folder",
+    "nodes": {
+      "main-folder": {"id":"main-folder","type":"folder","title":"Dossier Principal del Cas","description":"Unitat d'Esdeveniments Massius - Cas 005.","children":["police-report-folder","witnesses-folder"]},
+      "police-report-folder": {"id":"police-report-folder","type":"folder","title":"Informe Policial","description":"Actuacio al recinte del Festival Delta.","children":["intro-report-doc","scene-arrival-doc"]},
+      "witnesses-folder": {"id":"witnesses-folder","type":"folder","title":"Testimonis","description":"Declaracions d'equip tècnic i logística.","children":["witness-porter-doc","witness-taxi-doc","witness-dock-doc"]},
+      "suspects-folder": {"id":"suspects-folder","type":"folder","title":"Tauler de Sospitosos","description":"Declaracions en primera persona dels implicats.","children":["suspect-claudia","suspect-pau","suspect-mireia","suspect-lluc"]},
+      "extra-evidence-folder": {"id":"extra-evidence-folder","type":"folder","title":"Proves Addicionals","description":"Forense, correus i logs d'accessos de backstage.","children":["forensic-report-doc","computer-emails-doc","drawer-notes-doc","harbor-shift-doc","timeline-synthesis-doc"]},
+
+      "intro-report-doc": {
+        "id": "intro-report-doc",
+        "type": "document",
+        "title": "Informe Introductori",
+        "subtitle": "Context del cas",
+        "content": [
+          "A les 23:27, seguretat del Festival Delta reporta un cos al passadis de racks del Backstage 3.",
+          "La víctima és Oriol Massip, productor executiu i responsable de contractacio artística.",
+          "L'homicidi passa a menys de quaranta minuts de l'actuacio principal, en un moment de màxima pressió operativa.",
+          "Desapareix una carpeta negra amb annexos de pagaments extraordinaris a proveïdors i artistes.",
+          "La investigacio se centra en qui tenia accés tècnic al passadis intern i interès en fer desaparèixer aquests contractes."
+        ]
+      },
+      "scene-arrival-doc": {
+        "id": "scene-arrival-doc",
+        "type": "document",
+        "title": "Arribada Policial a l'Escena",
+        "subtitle": "Acta resum",
+        "content": [
+          "23:34 - Primera patrulla al recinte.",
+          "23:39 - Confirmacio de mort per cop contundent al temporal esquerre.",
+          "23:46 - Zona de backstage precintada; revisio de càmeres internes.",
+          "23:51 - Confirmada absència de carpeta negra de contractacio.",
+          "00:02 - Requisades credencials de produccio, logística i stage management."
+        ]
+      },
+      "witness-porter-doc": {
+        "id": "witness-porter-doc",
+        "type": "document",
+        "title": "Declaracio Testimoni 01 - Cap de Seguretat Biel R.",
+        "subtitle": "Nota policial professional",
+        "content": [
+          "A les 23:09 veu Claudia Amat sortir enfadada del despatx de produccio.",
+          "A les 23:18 identifica Pau Cardona entrant al passadis de racks amb acreditacio tècnica.",
+          "A les 23:25 veu Lluc Vidal discutint per telèfon a zona de càrrega.",
+          "No observa Mireia Puig al Backstage 3 des de les 23:00."
+        ]
+      },
+      "witness-taxi-doc": {
+        "id": "witness-taxi-doc",
+        "type": "document",
+        "title": "Declaracio Testimoni 02 - VTC de Servei Artistes",
+        "subtitle": "Nota policial professional",
+        "content": [
+          "Registre de plataforma: Mireia Puig puja a un VTC intern a les 23:05 cap a la zona VIP nord.",
+          "Arribada a VIP nord a les 23:14, validada per control de polsera RFID.",
+          "Sense retorn a backstage principal fins passades les 23:40.",
+          "Coartada parcialment corroborada per coordinacio de càtering VIP."
+        ]
+      },
+      "witness-dock-doc": {
+        "id": "witness-dock-doc",
+        "type": "document",
+        "title": "Declaracio Testimoni 03 - Tècnic de So Roger L.",
+        "subtitle": "Nota policial professional",
+        "content": [
+          "A les 23:21 sent un cop sec al passadis de racks i una caiguda metàl·lica.",
+          "Veu Pau Cardona sortir d'aquella zona a les 23:24 amb una carpeta fosca sota el braç.",
+          "No identifica Claudia en aquell passadis després de les 23:10.",
+          "A les 23:28 observa Oriol ja estès al terra i avisa seguretat."
+        ]
+      },
+
+      "suspect-claudia": {"id":"suspect-claudia","type":"suspect","name":"Claudia Amat","role":"Directora de produccio","alibi":"Assegura que després de discutir amb Oriol va quedar-se a camerinos resolent incidències.","statement":["Sí, vaig discutir amb ell per sobrecostos, però això passava cada festival.","No vaig entrar al passadis de racks després de les onze i deu.","Si em volia perjudicar, tenia vies legals; no necessitava cap barbaritat."]},
+      "suspect-pau": {"id":"suspect-pau","type":"suspect","name":"Pau Cardona","role":"Coordinador tècnic d'escenari","alibi":"Diu que va anar al passadis només a revisar una línia de corrent i va tornar a control de llums.","statement":["Al backstage hi entra tothom, no només jo.","Portava una carpeta? Podia ser de cues tècniques, no recordo exactament.","No tenia cap motiu personal contra l'Oriol."]},
+      "suspect-mireia": {"id":"suspect-mireia","type":"suspect","name":"Mireia Puig","role":"Manager d'artistes","alibi":"Ubicada a zona VIP nord entre 23:14 i 23:40.","statement":["La meva guerra era amb horaris, no amb contractes interns.","Vaig estar a VIP perquè un artista exigia canvis immediats.","No podia ser al passadis de racks a l'hora del crim."]},
+      "suspect-lluc": {"id":"suspect-lluc","type":"suspect","name":"Lluc Vidal","role":"Responsable de patrocini comercial","alibi":"Afirma que estava en trucada continua amb patrocinador principal de 23:15 a 23:30.","statement":["Si Oriol queia, el festival se n'anava en orris. Jo no hi guanyava res.","És cert que parlava fort per telèfon, tothom em va sentir.","No vaig tocar ni una carpeta de contractes aquella nit."]},
+
+      "forensic-report-doc": {
+        "id": "forensic-report-doc",
+        "type": "document",
+        "title": "Informe Forense",
+        "subtitle": "Unitat Cientifica",
+        "content": [
+          "Causa de mort: cop contundent amb eina curta de muntatge (probable clau de truss).",
+          "Franja de mort: 23:20-23:26.",
+          "Restes trobades: alumini anoditzat i pols de cinta gaffer negra.",
+          "Coincidencia amb material del passadis de racks del Backstage 3.",
+          "No hi ha signes d'agressio prèvia ni consum elevat d'alcohol a la víctima."
+        ]
+      },
+      "computer-emails-doc": {
+        "id": "computer-emails-doc",
+        "type": "document",
+        "title": "Correus i Missatges de Produccio",
+        "subtitle": "Extracte del terminal d'Oriol",
+        "content": [
+          "22:17 - Oriol a comptabilitat: 'No autoritzo pagaments addicionals sense annex signat'.",
+          "22:48 - Pau a Oriol: 'Necessito parlar urgent al passadis tècnic'.",
+          "23:07 - Oriol a Claudia: 'Demà revisem contractes B i C amb auditor'.",
+          "23:19 - Obertura de sessio a l'arxiu de contractes des del terminal tècnic d'escenari.",
+          "23:24 - Càmera lateral: figura amb acreditacio tècnica surt amb carpeta negra." 
+        ]
+      },
+      "drawer-notes-doc": {
+        "id": "drawer-notes-doc",
+        "type": "document",
+        "title": "Notes del Calaix",
+        "subtitle": "Apunts d'Oriol Massip",
+        "content": [
+          "'P. pressiona per validar extres no justificats'.",
+          "'Mireia fora de backstage principal abans del cap de cartell'.",
+          "'No tancar contractes Cobalt sense annex legal'.",
+          "Nota accessoria: 'Canviar proveïdor de generadors diumenge'."
+        ]
+      },
+      "harbor-shift-doc": {
+        "id": "harbor-shift-doc",
+        "type": "document",
+        "title": "Registre d'Acreditacions i Accessos",
+        "subtitle": "Control intern festival",
+        "content": [
+          "Acreditacio tècnica de Pau: accés Backstage 3 a 23:18.",
+          "Accés terminal contractes des d'estació tècnica #TS-4 a 23:19 (assignada a Pau).",
+          "Acreditacio de Claudia sense pas al passadis de racks entre 23:10 i 23:30.",
+          "Polsera RFID de Mireia activa a VIP nord de 23:14 a 23:38.",
+          "Lluc registrat a zona càrrega/patrocini, no a passadis intern de racks." 
+        ]
+      },
+      "timeline-synthesis-doc": {
+        "id": "timeline-synthesis-doc",
+        "type": "document",
+        "title": "Sintesi de Cronologia",
+        "subtitle": "Contrast de coartades",
+        "content": [
+          "Franja de mort: 23:20-23:26.",
+          "Mireia queda fora per registre RFID continu a VIP nord.",
+          "Claudia discuteix abans però no té pas validat al corredor crític.",
+          "Lluc és visible en zona càrrega i no registra accés intern al passadis de racks.",
+          "Pau és l'únic amb accés tècnic, connexio a arxiu contractes a 23:19 i sortida amb carpeta a 23:24." 
+        ]
+      }
+    }
+  },
+  "solution": {
+    "culprit": "Pau Cardona",
+    "motive": "Evitar que Oriol bloquegés i denunciés pagaments tècnics irregulars que l'implicaven directament.",
+    "method": "Va citar Oriol al passadis de racks, el va atacar amb una eina de truss i va retirar la carpeta negra aprofitant l'acreditacio tècnica.",
+    "keyProof": "Franja forense 23:20-23:26, accés de Pau a Backstage 3 a 23:18, connexio a arxiu a 23:19 i càmera de 23:24 amb sortida de figura tècnica amb carpeta negra.",
+    "eliminations": [
+      "Claudia Amat: conflicte professional previ, però sense accés registrat al passadis de racks durant la franja de mort.",
+      "Mireia Puig: coartada tecnològica robusta per RFID a zona VIP nord.",
+      "Lluc Vidal: presència en zona de càrrega i absència de traça d'accés intern al lloc de l'impacte."
+    ]
+  }
+}

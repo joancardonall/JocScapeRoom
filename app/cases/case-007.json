@@ -1,0 +1,241 @@
+{
+  "id": "case-007",
+  "title": "L'ombra de Gaudi",
+  "summary": "La directora d'un centre d'estudis dedicat a Antoni Gaudi apareix morta al taller de maquetes hores abans de fer publica una rectificacio sobre l'autenticitat d'uns plànols molt valuosos.",
+  "objective": "Determina qui va matar Helena Pujalt demostrant com convergien el mobil economic, l'accés al taller i la manipulacio de la documentacio tecnica la nit dels fets.",
+  "fileSystem": {
+    "rootId": "main-folder",
+    "nodes": {
+      "main-folder": {
+        "id": "main-folder",
+        "type": "folder",
+        "title": "Expedient Principal",
+        "description": "Mort d'Helena Pujalt al Centre d'Estudis Gaudinians.",
+        "children": [
+          "police-report-folder",
+          "witnesses-folder"
+        ]
+      },
+      "police-report-folder": {
+        "id": "police-report-folder",
+        "type": "folder",
+        "title": "Informes Policials",
+        "description": "Actuacions inicials i estat de l'escena.",
+        "children": [
+          "intro-report-doc",
+          "scene-arrival-doc"
+        ]
+      },
+      "witnesses-folder": {
+        "id": "witnesses-folder",
+        "type": "folder",
+        "title": "Testimonis",
+        "description": "Declaracions recollides durant la primera nit.",
+        "children": [
+          "witness-porter-doc",
+          "witness-taxi-doc",
+          "witness-dock-doc"
+        ]
+      },
+      "suspects-folder": {
+        "id": "suspects-folder",
+        "type": "folder",
+        "title": "Sospitosos",
+        "description": "Perfils i declaracions de les persones d'interes.",
+        "children": [
+          "suspect-claudia",
+          "suspect-pau",
+          "suspect-mireia",
+          "suspect-lluc"
+        ]
+      },
+      "extra-evidence-folder": {
+        "id": "extra-evidence-folder",
+        "type": "folder",
+        "title": "Proves Complementaries",
+        "description": "Forense, registres digitals i sintesi cronologica.",
+        "children": [
+          "forensic-report-doc",
+          "computer-emails-doc",
+          "drawer-notes-doc",
+          "harbor-shift-doc",
+          "timeline-synthesis-doc"
+        ]
+      },
+      "intro-report-doc": {
+        "id": "intro-report-doc",
+        "type": "document",
+        "title": "Informe Inicial",
+        "subtitle": "Unitat d'Homicidis - resum dels fets",
+        "content": [
+          "Helena Pujalt, 48 anys, directora del Centre d'Estudis Gaudinians, va ser localitzada sense vida a les 22.46 h dins el taller de maquetes de l'edifici annex.",
+          "La victima havia anunciat per a l'endema una compareixenca per revisar l'autenticitat d'uns plànols atribuits a Antoni Gaudi i cedits per una fundacio privada.",
+          "Segons el personal, la rectificacio podia comprometre una campanya de patrocini milionaria i deixar en evidencia diverses persones del centre.",
+          "A l'escena hi havia una tassa de te d'herbes, una maqueta parcialment desmuntada i un armari d'arxiu obert amb una carpeta desapareguda.",
+          "La investigacio se centra en qui sabia de la revisio interna i tenia prou proximitat per fer-la callar abans de la roda de premsa."
+        ]
+      },
+      "scene-arrival-doc": {
+        "id": "scene-arrival-doc",
+        "type": "document",
+        "title": "Arribada a l'Escena",
+        "subtitle": "Observacions dels primers agents",
+        "content": [
+          "La porta del taller no presenta forçament. El sistema d'alarma interior estava en mode treball fins a les 22.31 h.",
+          "Helena jeia al costat d'una taula alta. Presentava una ferida al clatell compatible amb una caiguda posterior a una sedacio rapida. No hi havia signes de lluita prolongada.",
+          "Al banc de feina s'ha recollit una tassa amb residus de te, una cullereta amb empremta parcial esborrada i una polsera de paper d'accés temporal trencada."
+        ]
+      },
+      "witness-porter-doc": {
+        "id": "witness-porter-doc",
+        "type": "document",
+        "title": "Declaracio del vigilant",
+        "subtitle": "Mateu Soler, control de porta principal",
+        "content": [
+          "Mateu Soler confirma que Helena Pujalt va tornar al taller a les 21.38 h dient que havia de revisar una maqueta abans de la roda de premsa.",
+          "A les 22.07 h va veure Lluc Gavaldà entrar a l'annex amb una acreditacio d'empleat tot i que, segons el calendari intern, ja havia acabat el torn. Lluc li va dir que havia de buscar un projector.",
+          "Cap a les 22.29 h, el vigilant el va veure sortir per la porta lateral del jardi, evitant la recepcio. No recorda cap altre sospitos principal entrant o sortint del taller en aquella franja."
+        ]
+      },
+      "witness-taxi-doc": {
+        "id": "witness-taxi-doc",
+        "type": "document",
+        "title": "Declaracio de taxista",
+        "subtitle": "Nadia Ribes, llicencia 311",
+        "content": [
+          "La conductora recull Claudia Vendrell a les 21.41 h davant del centre i la deixa a l'Hotel Colom a les 21.56 h, segons GPS i rebut digital.",
+          "Durant el trajecte, Claudia parla per telefon amb to contingut i diu que Helena no la deixara sortir neta de la crisi dels plànols.",
+          "La taxista recorda que la passatgera es va quedar a l'hotel per reunir-se amb dos mecenes estrangers, cosa confirmada posteriorment pel registre de recepcio."
+        ]
+      },
+      "witness-dock-doc": {
+        "id": "witness-dock-doc",
+        "type": "document",
+        "title": "Declaracio del maquetista",
+        "subtitle": "Oriol Bassa, tecnic de taller",
+        "content": [
+          "Oriol Bassa va parlar amb Mireia Bosch a les 22.02 h al passadis dels laboratoris. Ella estava nerviosa perque Helena li havia recriminat una filtracio a premsa.",
+          "Segons Oriol, a les 22.18 h la llum del taller es va atenuar durant uns segons, un efecte que sol passar quan algu activa manualment el projector de demostracions.",
+          "No va veure Pau ni Claudia a la zona annexa despres de les 22.00 h, pero si va sentir la veu d'un home discutint breument amb Helena abans que tot quedes en silenci."
+        ]
+      },
+      "suspect-claudia": {
+        "id": "suspect-claudia",
+        "type": "suspect",
+        "name": "Claudia Vendrell",
+        "role": "Cap de patrocini i relacions institucionals",
+        "alibi": "Assegura que va sortir del centre abans de les 21.45 h i que es va reunir amb mecenes a l'Hotel Colom entre les 22.00 h i les 23.00 h.",
+        "statement": [
+          "Helena volia fer una rectificacio publica sense entendre l'impacte economic que tindria. Aixo no la converteix en enemiga meva, la converteix en una directora imprudent.",
+          "Haviem discutit molt aquells dies perque jo havia promes als donants una calma que ella ja no podia sostenir.",
+          "No vaig tornar al taller ni tenia motiu per entrar-hi quan l'escandol ja era inevitable."
+        ]
+      },
+      "suspect-pau": {
+        "id": "suspect-pau",
+        "type": "suspect",
+        "name": "Pau Alier",
+        "role": "Arquitecte restaurador extern",
+        "alibi": "Diu que va marxar del centre a les 21.50 h i que a les 22.10 h ja era en una videoconferencia amb un estudi de Girona.",
+        "statement": [
+          "Helena i jo no coincidiem sobre com reconstruir la maqueta, pero la discussio era academica i vella.",
+          "Si jo hagués volgut desacreditar els plànols, m'hauria bastat amb un informe tecnic; no necessitava cap escena criminal.",
+          "El meu nom surt a totes les revisions perque soc qui coneix millor els materials, i aixo em fa sospitos per comoditat."
+        ]
+      },
+      "suspect-mireia": {
+        "id": "suspect-mireia",
+        "type": "suspect",
+        "name": "Mireia Bosch",
+        "role": "Conservadora en cap de l'arxiu",
+        "alibi": "Afirma que va sortir plorant d'una discussio amb Helena a les 22.00 h i que es va quedar fumant al pati fins que va marxar a casa a les 22.16 h.",
+        "statement": [
+          "Helena volia saber qui havia filtrat la revisio dels plànols. Jo vaig dir-li que la premsa ho acabaria sabent igualment, i es va enfurismar.",
+          "No vaig tocar cap tassa ni cap arxiu aquella nit. Estava massa cansada per seguir-li el joc a tothom.",
+          "La relacio entre nosaltres s'havia tensat per motius professionals, pero tambe perque ella em demanava lleialtat personal quan jo ja no li podia oferir."
+        ]
+      },
+      "suspect-lluc": {
+        "id": "suspect-lluc",
+        "type": "suspect",
+        "name": "Lluc Gavaldà",
+        "role": "Arxiver digital i gestor d'acreditacions",
+        "alibi": "Manté que va plegar a les 21.30 h, que no va tornar a l'annex i que la desconnexio del projector va ser una prova automàtica programada.",
+        "statement": [
+          "Helena em tractava com si encara fos el becari que havia de donar-li les gràcies per existir. Aixo no es agradable, pero tampoc es un motiu per matar.",
+          "Jo nomes administrava accessos i còpies digitals. La batalla pels plànols era entre direccio, restauracio i patrocini.",
+          "Si vaig passar prop del taller devia ser per una incidencia tecnica. Aquella nit tothom em demanava coses."
+        ]
+      },
+      "forensic-report-doc": {
+        "id": "forensic-report-doc",
+        "type": "document",
+        "title": "Informe Forense",
+        "subtitle": "Autopsia preliminar i laboratori",
+        "content": [
+          "La causa de la mort es una intoxicacio aguda per escopolamina administrada en una infusio calenta, seguida d'una caiguda amb impacte occipital. La lesio del cap es secundaria.",
+          "La finestra de mort se situa entre les 22.12 h i les 22.28 h. La concentracio del sedant indica administracio immediata abans del col·lapse.",
+          "A la tassa s'han trobat residus de guants de cotó amb pols de grafit, habituals en la manipulacio d'arxius digitals i projectors antics. També hi ha empremtes parcials esborrades amb dissolvent de neteja."
+        ]
+      },
+      "computer-emails-doc": {
+        "id": "computer-emails-doc",
+        "type": "document",
+        "title": "Correus i Registres Digitals",
+        "subtitle": "Extraccio de correu i sistema d'accessos",
+        "content": [
+          "A les 20.58 h, Helena envia un correu a Lluc Gavaldà: 'Demà revelare la cadena de custodia real. Porta l'historial complet i les acreditacions provisionals'.",
+          "A les 21.06 h, Lluc respon: 'Parlem-ne avui. Si surt tot, no caure nomes jo'. No consta cap anul·lacio posterior de la trobada.",
+          "Els logs mostren que a les 22.09 h es reactiva una acreditacio temporal al nom d'un becari absent des de fa mesos, des del compte de Lluc. Aquesta polsera trencada es la mateixa localitzada al taller.",
+          "A les 22.18 h s'activa manualment el projector del taller des de la consola local i a les 22.26 h el compte de Helena intenta obrir la carpeta 'Custodia_Plànols_Originals', pero la sessio es talla sense completar-se."
+        ]
+      },
+      "drawer-notes-doc": {
+        "id": "drawer-notes-doc",
+        "type": "document",
+        "title": "Notes del Calaix",
+        "subtitle": "Apunts manuscrits d'Helena Pujalt",
+        "content": [
+          "En un full solt hi consta: 'Lluc va duplicar credencials per moure els plànols sense registre. Ho admetra o ho exposare'.",
+          "Una nota anterior diu: 'Claudia nomes veu la supervivencia del centre. Mireia te por d'haver obert massa la boca. Pau vol distancia per protegir el seu prestigi'.",
+          "També hi ha una targeta amb la frase 'No tornar a acceptar te del laboratori a ultima hora', escrita en to aparentment irònic el mateix matí."
+        ]
+      },
+      "harbor-shift-doc": {
+        "id": "harbor-shift-doc",
+        "type": "document",
+        "title": "Registre Intern d'Accessos",
+        "subtitle": "Control de portes, alarmes i terminals",
+        "content": [
+          "Mireia Bosch valida sortida del pati a les 22.16 h. Claudia Vendrell no torna a usar la seva targeta des de les 21.39 h.",
+          "Pau Alier es connecta a una videoconferencia des del seu estudi a les 22.11 h, segons metadades de la plataforma, i no hi ha cap nova entrada seva al centre.",
+          "El terminal d'arxiu assignat a Lluc queda inactiu entre les 22.05 h i les 22.30 h. La porta lateral de l'annex s'obre amb una acreditacio provisional reactivada a les 22.07 h i es tanca a les 22.29 h."
+        ]
+      },
+      "timeline-synthesis-doc": {
+        "id": "timeline-synthesis-doc",
+        "type": "document",
+        "title": "Sintesi Cronologica",
+        "subtitle": "Reconstruccio contrastada de la franja critica",
+        "content": [
+          "21.38 h: Helena torna al taller. 20.58 h i 21.06 h: correu i resposta fixen una conversa urgent amb Lluc sobre la cadena de custodia dels plànols.",
+          "22.00 h - 22.02 h: Mireia surt alterada d'una discussio amb Helena. El seu conflicte es real, pero el registre la situa fora del recinte a les 22.16 h, abans del tancament de la finestra de mort.",
+          "21.41 h - 21.56 h: Claudia viatja en taxi fins a l'hotel i queda vinculada a una reunio amb mecenes. 22.11 h: Pau entra en videoconferencia remota des de Girona.",
+          "22.07 h: una acreditacio provisional reactivada des del compte de Lluc obre l'annex. 22.18 h: s'activa el projector manualment. 22.12 h - 22.28 h: finestra de mort segons forense.",
+          "22.29 h: el vigilant veu Lluc sortir per la porta lateral. Les proves convergeixen en una trobada privada en que Lluc seda Helena amb el te, intenta recuperar la carpeta de custodia i marxa abans que el cos sigui descobert."
+        ]
+      }
+    }
+  },
+  "solution": {
+    "culprit": "Lluc Gavaldà",
+    "motive": "Helena havia descobert que Lluc havia manipulat acreditacions i cadenes de custodia per moure plànols dubtosos i facilitar una operacio de venda encoberta. Si ella ho feia public, ell perdia la feina, la reputacio i probablement afrontava responsabilitat penal.",
+    "method": "Lluc va entrar a l'annex amb una acreditacio provisional reactivada per ell mateix, va preparar una infusio amb escopolamina aprofitant la confiança operativa amb Helena i, un cop ella va col·lapsar, va intentar recuperar la carpeta comprometedora abans de fugir per la porta lateral.",
+    "keyProof": "El correu que fixa la confrontacio amb Lluc, la reactivacio d'una acreditacio temporal des del seu compte, la inactivitat del seu terminal en la franja critica, la sortida observada pel vigilant i els residus tecnics a la tassa formen tres linies independents que el situen com a autor.",
+    "eliminations": [
+      "Claudia Vendrell tenia pressio economica i una frase comprometedora, pero queda fora del centre per taxi, GPS i registre hoteler dins la finestra de mort.",
+      "Pau Alier discrepa amb Helena sobre la restauracio, pero la seva videoconferencia iniciada a les 22.11 h des de Girona el deixa sense oportunitat material.",
+      "Mireia Bosch funciona com a falsa pista per la discussio emocional, pero el control d'accessos acredita la seva sortida a les 22.16 h i no hi ha rastres que la relacionin amb la beguda sedada."
+    ]
+  }
+}

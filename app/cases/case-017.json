@@ -1,0 +1,517 @@
+{
+  "id": "case-017",
+  "title": "L'ombra del trifori",
+  "summary": "Un investigador vinculat a un arxiu privat sobre la Sagrada Família mor dins una galeria tècnica oberta per a una visita restringida. Entre maquetes, cartes, motlles i una discussió sobre Gaudí, el cas gira al voltant de qui volia controlar el relat de l'obra i de quina manera es va fer desaparèixer una prova material clau.",
+  "objective": "Llegeix declaracions, registres i proves materials per resoldre qui va matar Marc Borràs i per què la discussió sobre la Sagrada Família i Gaudí s'havia tornat tan perillosa.",
+  "fileSystem": {
+    "rootId": "main-folder",
+    "nodes": {
+      "main-folder": {
+        "id": "main-folder",
+        "type": "folder",
+        "title": "Expedient Principal",
+        "description": "Mort de Marc Borràs a la galeria superior d'un arxiu vinculat a la Sagrada Família.",
+        "children": [
+          "police-report-folder",
+          "witnesses-folder",
+          "suspects-folder",
+          "extra-evidence-folder"
+        ]
+      },
+      "police-report-folder": {
+        "id": "police-report-folder",
+        "type": "folder",
+        "title": "Informe Policial",
+        "description": "Entrada general del cas i observacions dels primers agents.",
+        "children": [
+          "intro-report-doc",
+          "scene-arrival-doc"
+        ]
+      },
+      "witnesses-folder": {
+        "id": "witnesses-folder",
+        "type": "folder",
+        "title": "Testimonis",
+        "description": "Personal, guies i personal de seguretat presents durant la visita restringida.",
+        "children": [
+          "witness-porter-doc",
+          "witness-taxi-doc",
+          "witness-dock-doc"
+        ]
+      },
+      "suspects-folder": {
+        "id": "suspects-folder",
+        "type": "folder",
+        "title": "Expedients de Sospitosos",
+        "description": "Quatre dossiers personals amb context, document de coartada i interrogatori.",
+        "children": [
+          "suspect-claudia-folder",
+          "suspect-pau-folder",
+          "suspect-mireia-folder",
+          "suspect-lluc-folder"
+        ]
+      },
+      "extra-evidence-folder": {
+        "id": "extra-evidence-folder",
+        "type": "folder",
+        "title": "Proves Complementaries",
+        "description": "Forense, registres d'accés, correspondència i síntesi cronològica.",
+        "children": [
+          "forensic-report-doc",
+          "computer-emails-doc",
+          "drawer-notes-doc",
+          "harbor-shift-doc",
+          "timeline-synthesis-doc"
+        ]
+      },
+      "intro-report-doc": {
+        "id": "intro-report-doc",
+        "type": "document",
+        "title": "Informe Inicial",
+        "subtitle": "Unitat d'Homicidis - Arxiu del Taller del Naixement",
+        "content": [
+          "La víctima és Marc Borràs i Vinyals, 47 anys, investigador extern i comissari d'una visita privada a un arxiu tècnic vinculat a la Sagrada Família. És localitzat mort a les 22.18 h del 7 d'abril a la galeria superior del taller conegut com a Taller del Naixement.",
+          "El motiu oficial de la trobada era presentar documentació i una maqueta parcial que qüestionaven l'autoria d'una solució estructural atribuïda de manera directa a Antoni Gaudí. Segons Marc, el material demostrava intervencions posteriors mal documentades i una correspondència alterada.",
+          "La primera versió parla de caiguda accidental des d'una passera estreta. La inspecció inicial, però, apunta a desplaçament d'una barana auxiliar i a una desaparició immediata d'una capsa d'arxiu que Marc havia mostrat minuts abans."
+        ]
+      },
+      "scene-arrival-doc": {
+        "id": "scene-arrival-doc",
+        "type": "document",
+        "title": "Arribada a l'Escena",
+        "subtitle": "Galeria superior i zona de maquetes",
+        "content": [
+          "Marc Borràs apareix al nivell inferior, al peu de la galeria superior, en una zona de pas restringit entre prestatgeries de motlles i caixes d'arxiu. El cos queda molt a prop d'una taula on s'havien deixat plànols, guants de cotó i llums manuals.",
+          "A la barana de la galeria hi falta un passador lateral de bloqueig. La peça de subjecció no és a terra ni a cap prestatgeria propera.",
+          "A la passera hi ha una marca recent de fregament i una petjada parcial de pols de guix sobre la franja metàl·lica interior."
+        ]
+      },
+      "witness-porter-doc": {
+        "id": "witness-porter-doc",
+        "type": "document",
+        "title": "Declaració de la Guia de Sala",
+        "subtitle": "Visita restringida de les 21.45 h",
+        "content": [
+          "La guia responsable diu que Marc Borràs havia insistit tota la tarda que no volia fer una xerrada bonica per a mecenes, sinó ensenyar proves concretes. El nota tens i més sec del normal.",
+          "Cap a les 22.10 h el veu discutir en veu baixa amb Clara Rius al costat d'una maqueta de l'absis. No sent frases senceres, però sí que identifica dues paraules repetides: 'còpia' i 'retocat'.",
+          "Pocs minuts abans del soroll final veu Clara pujar sola a la galeria superior amb una carpeta grisa prima."
+        ]
+      },
+      "witness-taxi-doc": {
+        "id": "witness-taxi-doc",
+        "type": "document",
+        "title": "Informe de Seguretat Exterior",
+        "subtitle": "Pati de càrrega i sortida lateral",
+        "content": [
+          "El vigilant exterior situa Sofia Pujol al pati de càrrega entre les 22.05 h i les 22.19 h. L'identifica perquè estava parlant per telèfon amb un proveïdor de transport i perquè li va demanar cobertura per a una furgoneta que arribava tard.",
+          "La càmera lateral registra la seva presència continuada a fora i no mostra retorn a l'interior abans del crit.",
+          "La mateixa càmera grava també l'arribada de la furgoneta a les 22.17 h."
+        ]
+      },
+      "witness-dock-doc": {
+        "id": "witness-dock-doc",
+        "type": "document",
+        "title": "Nota de Cabina i Control",
+        "subtitle": "Sala audiovisual - 22.00 h a 22.18 h",
+        "content": [
+          "L'operador de cabina confirma que Nil Muntaner es queda amb ell revisant una projecció d'arxiu i un bucle de fotografies del temple durant tota la franja crítica.",
+          "La consola registra canvis manuals continus de brillantor i enfoc entre les 22.06 h i les 22.16 h amb sessió oberta a nom de Nil Muntaner.",
+          "Quan se sent el cop, Nil surt corrent de cabina en direcció al taller."
+        ]
+      },
+      "suspect-claudia-folder": {
+        "id": "suspect-claudia-folder",
+        "type": "folder",
+        "category": "suspect",
+        "title": "Clara Rius",
+        "description": "Conservadora en cap de l'arxiu. Coneixia el taller i les seves zones tècniques com casa seva.",
+        "children": [
+          "suspect-claudia-dossier-doc",
+          "suspect-claudia-connection-doc",
+          "suspect-claudia-alibi-doc",
+          "suspect-claudia-interrogation-doc"
+        ]
+      },
+      "suspect-pau-folder": {
+        "id": "suspect-pau-folder",
+        "type": "folder",
+        "category": "suspect",
+        "title": "Ramon Vilar",
+        "description": "Patró de la fundació amiga del taller i principal impulsor del passi privat.",
+        "children": [
+          "suspect-pau-dossier-doc",
+          "suspect-pau-connection-doc",
+          "suspect-pau-alibi-doc",
+          "suspect-pau-interrogation-doc"
+        ]
+      },
+      "suspect-mireia-folder": {
+        "id": "suspect-mireia-folder",
+        "type": "folder",
+        "category": "suspect",
+        "title": "Sofia Pujol",
+        "description": "Responsable logística de préstecs i transports. Sabia què entrava i què sortia de l'arxiu.",
+        "children": [
+          "suspect-mireia-dossier-doc",
+          "suspect-mireia-connection-doc",
+          "suspect-mireia-alibi-doc",
+          "suspect-mireia-interrogation-doc"
+        ]
+      },
+      "suspect-lluc-folder": {
+        "id": "suspect-lluc-folder",
+        "type": "folder",
+        "category": "suspect",
+        "title": "Nil Muntaner",
+        "description": "Responsable audiovisual de la visita. Era qui havia preparat la projecció sobre Gaudí i la façana del Naixement.",
+        "children": [
+          "suspect-lluc-dossier-doc",
+          "suspect-lluc-connection-doc",
+          "suspect-lluc-alibi-doc",
+          "suspect-lluc-interrogation-doc"
+        ]
+      },
+      "suspect-claudia-backstory-doc": {
+        "id": "suspect-claudia-backstory-doc",
+        "type": "document",
+        "category": "suspect-story",
+        "title": "Història Personal",
+        "subtitle": "Protegir l'obra o protegir el relat",
+        "content": [
+          "Clara havia entrat al taller amb la vocació una mica romàntica de salvar matèria i memòria. Amb el temps va descobrir que treballar a l'entorn de Gaudí no era només conservar peces, sinó també conviure amb egos, mites i interpretacions convertides en dogma.",
+          "Durant anys va acceptar petites correccions de catàleg, atribucions massa netes i silencis sobre intervencions posteriors perquè creia que això mantenia l'arxiu viu i protegit. Quan aquestes correccions van començar a tocar correspondència i procedències, la frontera moral se li va anar esborrant.",
+          "Marc Borràs arribava amb una energia incòmoda: no volia una matisació acadèmica, volia exposar públicament qui havia reordenat el relat i quan."
+        ]
+      },
+      "suspect-claudia-connection-doc": {
+        "id": "suspect-claudia-connection-doc",
+        "type": "document",
+        "category": "suspect-relationship",
+        "title": "Relació amb Marc Borràs",
+        "subtitle": "Complicitat de feina i trencament sobtat",
+        "content": [
+          "Al principi, Clara i Marc es portaven bé. Compartien mania pels detalls i una mateixa fascinació pel taller material de la Sagrada Família, aquell món on Gaudí deixava de ser símbol i tornava a ser procés, prova i brutícia de feina.",
+          "La relació es trenca quan Marc entén que Clara sap perfectament quines peces documentals s'han retocat i en quins moments ha preferit mirar cap a una altra banda. A partir d'aquí ja no la veu com una aliada, sinó com una baula clau del problema."
+        ]
+      },
+      "suspect-claudia-alibi-doc": {
+        "id": "suspect-claudia-alibi-doc",
+        "type": "document",
+        "category": "suspect-alibi",
+        "title": "Full de Declaració Inicial",
+        "subtitle": "Unitat d'Homicidis - 23.01 h",
+        "content": [
+          "Declarant: Clara Rius.",
+          "Franja declarada: de 22.07 h a 22.18 h.",
+          "Manifesta que va pujar a la galeria superior només per buscar una capsa de fotografies i que en menys de dos minuts ja havia baixat altra vegada.",
+          "Diu que quan Marc cau ella ja era a la taula gran del nivell inferior, revisant una carpeta amb etiquetes de procedència."
+        ]
+      },
+      "suspect-claudia-interrogation-doc": {
+        "id": "suspect-claudia-interrogation-doc",
+        "type": "document",
+        "category": "suspect-interrogation",
+        "title": "Registre d'Interrogatori",
+        "subtitle": "Declaració policial de Clara Rius",
+        "content": [
+          "Interrogador: Clara, tornem a la galeria superior. Hi puges o no hi puges durant la franja crítica? Declarant: Hi pujo un moment, sí. Però un moment. Vaig a buscar una capsa de còpies fotogràfiques i baixo de seguida.",
+          "Interrogador: La guia et veu pujar amb una carpeta grisa, no amb una capsa. Declarant: Perquè primer portava la carpeta. Al taller tothom porta carpetes, no és gaire misteriós.",
+          "Interrogador: Marc et va acusar d'haver retocat correspondència? Declarant: Marc acusava molta gent de moltes coses quan s'embalava. Li agradava entrar a una sala i fer veure que ell sol havia descobert la gran vergonya del segle.",
+          "Interrogador: I això et tocava el voraviu. Declarant: Més que tocar-me'l. Perquè una cosa és investigar i una altra és convertir un arxiu delicadíssim en un espectacle.",
+          "Interrogador: Quanta estona ets realment a dalt? Declarant: No ho sé al segon. Un minut? Dos? Miro una prestatgeria, no trobo el que busco i baixo.",
+          "Interrogador: La barana lateral apareix sense el passador de bloqueig. Declarant: Jo no vaig tocar aquella peça.",
+          "Interrogador: Coneixes perfectament aquella galeria. Declarant: I tant. Justament per això sé que si algú l'ha moguda, no ha estat per accident.",
+          "Interrogador: Marc portava una capsa amb documents que t'incomodaven? Declarant: Marc portava sempre alguna cosa que havia de canviar-ho tot. Aquesta vegada no sé exactament què hi havia, però ja venia disposat a muntar numeret.",
+          "Interrogador: Et noto més preocupada per la capsa que per la caiguda. Declarant: Em preocupa la capsa perquè ha desaparegut i perquè vosaltres encara no enteneu què pot fer saltar pels aires si surt sencera."
+        ]
+      },
+      "suspect-pau-backstory-doc": {
+        "id": "suspect-pau-backstory-doc",
+        "type": "document",
+        "category": "suspect-story",
+        "title": "Història Personal",
+        "subtitle": "Prestigi, diners i relat patrimonial",
+        "content": [
+          "Ramon no és un estudiós de Gaudí; és un home que ha après a moure's pel seu voltant perquè la proximitat al gran mite arquitectònic dona prestigi, contactes i una pàtina moral molt rendible.",
+          "Per ell, el taller i l'arxiu havien de servir per obrir una experiència cuidada, atractiva i institucionalment segura. Qualsevol escàndol sobre autoria, correspondència manipulada o reconstruccions poc clares posava en risc aquest pla."
+        ]
+      },
+      "suspect-pau-connection-doc": {
+        "id": "suspect-pau-connection-doc",
+        "type": "document",
+        "category": "suspect-relationship",
+        "title": "Relació amb Marc Borràs",
+        "subtitle": "Una aliança impossible",
+        "content": [
+          "Marc suportava molt malament la idea que l'arxiu es convertís en una peça amable per a mecenes. Ramon, al seu torn, trobava Marc insofriblement purista i incapaç d'entendre què costa mantenir un projecte viu.",
+          "La seva relació era una guerra freda a base de reunions tenses, correus llargs i frases amables dites amb molta mala bava."
+        ]
+      },
+      "suspect-pau-alibi-doc": {
+        "id": "suspect-pau-alibi-doc",
+        "type": "document",
+        "category": "suspect-alibi",
+        "title": "Nota de Recepció Interna",
+        "subtitle": "Vestíbul d'accés - 22.08 h a 22.19 h",
+        "content": [
+          "Recepció interna registra Ramon Vilar al vestíbul fent una trucada amb el patró Enric Serra i parlant amb dues convidades del grup privat.",
+          "La conversa es manté al mateix espai fins després del crit procedent del taller.",
+          "Personal present: recepcionista, dues convidades, Ramon Vilar."
+        ]
+      },
+      "suspect-pau-interrogation-doc": {
+        "id": "suspect-pau-interrogation-doc",
+        "type": "document",
+        "category": "suspect-interrogation",
+        "title": "Registre d'Interrogatori",
+        "subtitle": "Declaració policial de Ramon Vilar",
+        "content": [
+          "Interrogador: Senyor Vilar, vostè sabia que Marc volia rebentar la presentació? Declarant: Rebentar-la és la seva paraula, però sí, jo sabia que venia carregat i amb ganes de fer sang.",
+          "Interrogador: I on és vostè entre les deu i les deu i divuit? Declarant: Al vestíbul, intentant que dues persones molt importants no marxessin amb la sensació que acabaven d'entrar en una batalla campal.",
+          "Interrogador: Li convenia molt que Marc callés. Declarant: Em convenia que no improvisés un escàndol, que és diferent.",
+          "Interrogador: Diferent però no tant. Declarant: Home, bastant diferent. Una cosa és voler controlar un relat i una altra empènyer algú des d'una galeria.",
+          "Interrogador: Havia pujat mai allà dalt? Declarant: Sí, de visita. Però jo no vaig tocant baranes ni passadors. Ja em costa prou no trencar res només de mirar.",
+          "Interrogador: La mort de Marc li resolia un problema. Declarant: I me n'obria vint més. A veure si ara semblarà que jo surto guanyant d'un mort en un arxiu ple de mecenes espantats."
+        ]
+      },
+      "suspect-mireia-backstory-doc": {
+        "id": "suspect-mireia-backstory-doc",
+        "type": "document",
+        "category": "suspect-story",
+        "title": "Història Personal",
+        "subtitle": "La gent idealitza el patrimoni, algú l'ha de moure",
+        "content": [
+          "Sofia fa anys que viu envoltada de persones que parlen de Gaudí com si fos una aparició divina mentre ella intenta que les caixes arribin senceres, els papers quadrin i ningú no improvitzi una sortida sense signar.",
+          "Aquesta posició la fa veure coses que els altres ignoren: quines peces es mouen massa, quins registres es corregeixen a mà i quines desaparicions temporals tothom decideix no mirar gaire."
+        ]
+      },
+      "suspect-mireia-connection-doc": {
+        "id": "suspect-mireia-connection-doc",
+        "type": "document",
+        "category": "suspect-relationship",
+        "title": "Relació amb Marc Borràs",
+        "subtitle": "Aliats ocasionals",
+        "content": [
+          "Marc acudia sovint a Sofia quan sospitava que una peça havia entrat o sortit sense traçabilitat neta. Ella no li regalava res, però li deia on valia la pena mirar.",
+          "No eren amics íntims, però s'entenien perquè tots dos desconfiaven del llenguatge massa noble quan servia per tapar una chapussa."
+        ]
+      },
+      "suspect-mireia-alibi-doc": {
+        "id": "suspect-mireia-alibi-doc",
+        "type": "document",
+        "category": "suspect-alibi",
+        "title": "Extracte de Càmera Exterior",
+        "subtitle": "Pati de càrrega - 22.05 h a 22.19 h",
+        "content": [
+          "Sofia Pujol surt al pati de càrrega a les 22.05 h.",
+          "Roman visible a càmera fins a l'arribada d'una furgoneta a les 22.17 h.",
+          "No entra de nou a l'interior fins després del crit."
+        ]
+      },
+      "suspect-mireia-interrogation-doc": {
+        "id": "suspect-mireia-interrogation-doc",
+        "type": "document",
+        "category": "suspect-interrogation",
+        "title": "Registre d'Interrogatori",
+        "subtitle": "Declaració policial de Sofia Pujol",
+        "content": [
+          "Interrogador: Sofia, on ets quan passa tot? Declarant: Al pati de càrrega. Esperant una furgoneta que arribava tard i parlant amb un proveïdor que m'estava fent perdre la paciència.",
+          "Interrogador: Marc confiava en tu. Declarant: Confiar és molt dir. Sabia que jo veig coses, això sí.",
+          "Interrogador: Et va ensenyar la capsa desapareguda? Declarant: Me la va ensenyar de lluny. Em va dir que aquella nit hi havia correspondència que podia fer molt mal a segons qui.",
+          "Interrogador: A qui exactament? Declarant: Em va dir: 'a qui fa massa anys que toca el relat i encara es pensa que ningú no ho nota'. No em va donar noms.",
+          "Interrogador: Vas pensar en entrar i agafar-la tu? Declarant: No. I si l'hagués volgut fer desaparèixer no ho hauria fet amb mig edifici ple de gent nerviosa.",
+          "Interrogador: Tens clar qui podia moure's per la galeria sense semblar fora de lloc? Declarant: Clara, sobretot. I això no és una acusació teatral, és pura logística."
+        ]
+      },
+      "suspect-lluc-backstory-doc": {
+        "id": "suspect-lluc-backstory-doc",
+        "type": "document",
+        "category": "suspect-story",
+        "title": "Història Personal",
+        "subtitle": "Fer veure no és el mateix que entendre",
+        "content": [
+          "Nil s'ha passat mig inici de carrera intentant demostrar que explicar visualment una obra com la Sagrada Família no és banalitzar-la. El problema és que sovint treballa envoltat de gent que o bé el menysté o bé el vol només per donar brillantor a coses que no són netes.",
+          "Marc li agradava a estones i li feia ràbia a estones perquè tenia aquella superioritat de qui està convençut que tothom al seu voltant està fallant moralment."
+        ]
+      },
+      "suspect-lluc-connection-doc": {
+        "id": "suspect-lluc-connection-doc",
+        "type": "document",
+        "category": "suspect-relationship",
+        "title": "Relació amb Marc Borràs",
+        "subtitle": "Apropament frustrat",
+        "content": [
+          "Nil havia intentat col·laborar amb Marc per construir una visita menys decorativa i més honesta. El problema és que Marc acabava tractant tothom com un instrument o com una decepció.",
+          "Això li deixa ressentiment, però també la sensació amarga que l'únic que de veritat estava intentant obrir el taller aquella nit era justament la víctima."
+        ]
+      },
+      "suspect-lluc-alibi-doc": {
+        "id": "suspect-lluc-alibi-doc",
+        "type": "document",
+        "category": "suspect-alibi",
+        "title": "Log de Consola",
+        "subtitle": "Cabina audiovisual - 22.00 h a 22.18 h",
+        "content": [
+          "Sessió oberta a nom de Nil Muntaner a les 22.00 h.",
+          "Canvis manuals continus de brillantor, transició i enfoc entre les 22.06 h i les 22.16 h.",
+          "Operador de cabina present al mateix espai durant tota la franja."
+        ]
+      },
+      "suspect-lluc-interrogation-doc": {
+        "id": "suspect-lluc-interrogation-doc",
+        "type": "document",
+        "category": "suspect-interrogation",
+        "title": "Registre d'Interrogatori",
+        "subtitle": "Declaració policial de Nil Muntaner",
+        "content": [
+          "Interrogador: Nil, estàs a cabina tota l'estona? Declarant: Sí. Si revisen la consola ho veuran. No em podia desdoblar, encara que a segons qui li aniria molt bé.",
+          "Interrogador: Tenies mala relació amb Marc? Declarant: Mala no. Complicada. De vegades em tractava com si jo fos només fum i pantalla.",
+          "Interrogador: T'emprenyava prou per voler-li fer mal? Declarant: M'emprenyava prou per discutir-hi, no per llençar-lo d'una galeria.",
+          "Interrogador: Ell deia que la visita sobre Gaudí estava massa domesticada. Declarant: I una mica de raó tenia. Però una cosa és això i una altra fer desaparèixer una capsa d'arxiu.",
+          "Interrogador: Qui podia moure aquella capsa amb més facilitat? Declarant: Algú que sap exactament quines prestatgeries no mira ningú i quines claus obren passos interns. Jo d'allò no en sé.",
+          "Interrogador: I qui és aquest algú? Declarant: Si em pregunta a mi, Clara ho tenia molt més fàcil que qualsevol altre."
+        ]
+      },
+      "forensic-report-doc": {
+        "id": "forensic-report-doc",
+        "type": "document",
+        "title": "Informe Forense",
+        "subtitle": "Caiguda, barana i rastres",
+        "content": [
+          "Les lesions són compatibles amb caiguda des de la galeria superior després d'una pèrdua sobtada de suport lateral.",
+          "La barana auxiliar presenta absència del passador de bloqueig i una marca recent de manipulació amb eina fina.",
+          "A la franja metàl·lica interior hi ha pols de guix i residu d'adhesiu de conservació utilitzat habitualment al taller de catalogació."
+        ]
+      },
+      "computer-emails-doc": {
+        "id": "computer-emails-doc",
+        "type": "document",
+        "title": "Correspondència i Esborranys",
+        "subtitle": "Arxiu digital de Marc Borràs",
+        "content": [
+          "Es recupera un esborrany de correu sense enviar amb l'assumpte: 'Sobre la correspondència atribuïda a Gaudí i les modificacions posteriors'.",
+          "Al cos del missatge apareix la frase: 'Demà ja no penso protegir més aquesta versió de l'arxiu. Hi ha mans molt concretes darrere les correccions.'",
+          "Última modificació de l'arxiu: 21.58 h."
+        ]
+      },
+      "drawer-notes-doc": {
+        "id": "drawer-notes-doc",
+        "type": "document",
+        "title": "Notes i Fulls Solts",
+        "subtitle": "Material recollit a la taula de treball",
+        "content": [
+          "Targeta manuscrita: 'Mirar carpeta grisa de CR abans del passi'.",
+          "Paper plegat dins un quadern: 'No és una simple còpia tardana. Van moure dates i peus de foto'.",
+          "Etiqueta buida localitzada al costat de la taula: 'Capsa 4B - correspondència torre Naixement'."
+        ]
+      },
+      "harbor-shift-doc": {
+        "id": "harbor-shift-doc",
+        "type": "document",
+        "title": "Registres d'Accés i Moviment",
+        "subtitle": "Galeria superior, cabina i portes laterals",
+        "content": [
+          "Accés manual de Clara Rius a la galeria superior a les 22.11 h segons lector intern.",
+          "Sofia Pujol registrada a l'exterior des de les 22.05 h.",
+          "Nil Muntaner logat a cabina audiovisual entre les 22.00 h i les 22.18 h."
+        ]
+      },
+      "timeline-synthesis-doc": {
+        "id": "timeline-synthesis-doc",
+        "type": "document",
+        "title": "Síntesi Cronològica",
+        "subtitle": "Franja 22.10 h - 22.18 h",
+        "content": [
+          "22.10 h: discussió en veu baixa entre Marc Borràs i Clara Rius al costat d'una maqueta de l'absis.",
+          "22.11 h: accés de Clara Rius a la galeria superior.",
+          "22.05 h - 22.19 h: Sofia Pujol consta a l'exterior; 22.00 h - 22.18 h: Nil Muntaner consta a cabina; Ramon Vilar consta al vestíbul.",
+          "22.18 h: cop, crit i localització de la víctima al nivell inferior."
+        ]
+      },
+      "suspect-claudia-dossier-doc": {
+        "id": "suspect-claudia-dossier-doc",
+        "type": "document",
+        "category": "suspect-dossier",
+        "title": "Fitxa Policial",
+        "subtitle": "Clara Rius - conservadora en cap",
+        "suspectName": "Clara Rius",
+        "suspectRole": "conservadora en cap",
+        "photo": "./images/suspects/case-017/suspect-claudia.jpg",
+        "profile": [
+          "Clara Rius, 44 anys, és la responsable de conservació i catalogació tècnica del taller-arxiu. Ha treballat durant anys entre maquetes, motlles, fragments de pedra i correspondència associada a la Sagrada Família.",
+          "Fa la impressió d'una professional metòdica, seca quan vol tallar una conversa i molt protectora amb qualsevol peça que consideri sensible."
+        ],
+        "personalHistory": [
+          "Clara havia entrat al taller amb la vocació una mica romàntica de salvar matèria i memòria. Amb el temps va descobrir que treballar a l'entorn de Gaudí no era només conservar peces, sinó també conviure amb egos, mites i interpretacions convertides en dogma.",
+          "Durant anys va acceptar petites correccions de catàleg, atribucions massa netes i silencis sobre intervencions posteriors perquè creia que això mantenia l'arxiu viu i protegit. Quan aquestes correccions van començar a tocar correspondència i procedències, la frontera moral se li va anar esborrant.",
+          "Marc Borràs arribava amb una energia incòmoda: no volia una matisació acadèmica, volia exposar públicament qui havia reordenat el relat i quan."
+        ]
+      },
+      "suspect-pau-dossier-doc": {
+        "id": "suspect-pau-dossier-doc",
+        "type": "document",
+        "category": "suspect-dossier",
+        "title": "Fitxa Policial",
+        "subtitle": "Ramon Vilar - patró i mecenes",
+        "suspectName": "Ramon Vilar",
+        "suspectRole": "patró i mecenes",
+        "photo": "./images/suspects/case-017/suspect-pau.jpg",
+        "profile": [
+          "Ramon Vilar, 58 anys, és la cara visible del grup de patrons que havia de finançar una nova sala d'interpretació al voltant de Gaudí i la Sagrada Família.",
+          "Parla amb to afable i elegant, però sempre fa la impressió que està calculant quina frase li convé més deixar dita."
+        ],
+        "personalHistory": [
+          "Ramon no és un estudiós de Gaudí; és un home que ha après a moure's pel seu voltant perquè la proximitat al gran mite arquitectònic dona prestigi, contactes i una pàtina moral molt rendible.",
+          "Per ell, el taller i l'arxiu havien de servir per obrir una experiència cuidada, atractiva i institucionalment segura. Qualsevol escàndol sobre autoria, correspondència manipulada o reconstruccions poc clares posava en risc aquest pla."
+        ]
+      },
+      "suspect-mireia-dossier-doc": {
+        "id": "suspect-mireia-dossier-doc",
+        "type": "document",
+        "category": "suspect-dossier",
+        "title": "Fitxa Policial",
+        "subtitle": "Sofia Pujol - logística i préstecs",
+        "suspectName": "Sofia Pujol",
+        "suspectRole": "logística i préstecs",
+        "photo": "./images/suspects/case-017/suspect-mireia.jpg",
+        "profile": [
+          "Sofia Pujol, 39 anys, coordina trasllats, recepcions i sortides de material sensible. Coneix l'arxiu des de la banda menys romàntica: caixes, albarans, permisos i nervis d'última hora.",
+          "Té un punt molt directe, gens cerimoniós, i una tendència clara a dir les coses sense massa embolcalls."
+        ],
+        "personalHistory": [
+          "Sofia fa anys que viu envoltada de persones que parlen de Gaudí com si fos una aparició divina mentre ella intenta que les caixes arribin senceres, els papers quadrin i ningú no improvitzi una sortida sense signar.",
+          "Aquesta posició la fa veure coses que els altres ignoren: quines peces es mouen massa, quins registres es corregeixen a mà i quines desaparicions temporals tothom decideix no mirar gaire."
+        ]
+      },
+      "suspect-lluc-dossier-doc": {
+        "id": "suspect-lluc-dossier-doc",
+        "type": "document",
+        "category": "suspect-dossier",
+        "title": "Fitxa Policial",
+        "subtitle": "Nil Muntaner - responsable audiovisual",
+        "suspectName": "Nil Muntaner",
+        "suspectRole": "responsable audiovisual",
+        "photo": "./images/suspects/case-017/suspect-lluc.jpg",
+        "profile": [
+          "Nil Muntaner, 31 anys, havia dissenyat la presentació visual del passi privat: fotografies de la Sagrada Família, fragments de maquetes i projeccions sobre l'univers de Gaudí.",
+          "Té la sensibilitat una mica a flor de pell i un punt de ràbia acumulada cada vegada que els tècnics de taller el tracten com si només fes llumetes."
+        ],
+        "personalHistory": [
+          "Nil s'ha passat mig inici de carrera intentant demostrar que explicar visualment una obra com la Sagrada Família no és banalitzar-la. El problema és que sovint treballa envoltat de gent que o bé el menysté o bé el vol només per donar brillantor a coses que no són netes.",
+          "Marc li agradava a estones i li feia ràbia a estones perquè tenia aquella superioritat de qui està convençut que tothom al seu voltant està fallant moralment."
+        ]
+      }
+    }
+  },
+  "solution": {
+    "culprit": "Clara Rius",
+    "motive": "Marc Borràs estava a punt d'exposar que Clara havia tolerat i participat en retocs de correspondència i procedència dins un arxiu sensible sobre la Sagrada Família i Gaudí. Si ho feia públic, li enfonsava la carrera i convertia anys de silencis en escàndol.",
+    "method": "Va pujar a la galeria superior, va retirar el passador lateral de la barana auxiliar i, en la discussió final, va deixar Marc sense suport en una franja estreta de pas. Després va fer desaparèixer la capsa 4B.",
+    "keyProof": "L'accés registrat de Clara a la galeria a les 22.11 h, la seva discussió amb la víctima, els residus de conservació a la barana manipulada i la referència directa a la seva carpeta grisa dins les notes de Marc la converteixen en l'única culpable viable.",
+    "eliminations": [
+      "Ramon Vilar tenia molt a perdre, però queda fixat al vestíbul per recepció i convidades durant la franja crítica.",
+      "Sofia Pujol sabia massa coses, però la càmera exterior la manté fora fins després del crit.",
+      "Nil Muntaner tenia ressentiment i mala relació amb Marc, però la cabina audiovisual i els logs de consola el deixen fora de la galeria."
+    ]
+  }
+}

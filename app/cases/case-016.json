@@ -1,0 +1,518 @@
+{
+  "id": "case-016",
+  "title": "La galeria dels miralls freds",
+  "summary": "Una directora-curadora mor durant un assaig a la Casa Auber quan un panell de mirall historic cedeix. L'accident amaga una restauracio adulterada, una autoria discutida i una coartada que nomes es desmunta quan l'interrogatori deixa sentir la veu real dels sospitosos.",
+  "objective": "Reuneix proves materials, registres i declaracions policials per demostrar qui va convertir una reobertura patrimonial en un homicidi.",
+  "fileSystem": {
+    "rootId": "main-folder",
+    "nodes": {
+      "main-folder": {
+        "id": "main-folder",
+        "type": "folder",
+        "title": "Expedient Principal",
+        "description": "Cas complet de la mort d'Iris Vendrell a la Galeria de Miralls d'Hivern.",
+        "children": [
+          "police-report-folder",
+          "witnesses-folder",
+          "suspects-folder",
+          "extra-evidence-folder"
+        ]
+      },
+      "police-report-folder": {
+        "id": "police-report-folder",
+        "type": "folder",
+        "title": "Informe Policial",
+        "description": "Resum inicial dels fets i primera lectura de l'escena.",
+        "children": [
+          "intro-report-doc",
+          "scene-arrival-doc"
+        ]
+      },
+      "witnesses-folder": {
+        "id": "witnesses-folder",
+        "type": "folder",
+        "title": "Testimonis",
+        "description": "Declaracions de personal i registres humans de la nit del crim.",
+        "children": [
+          "witness-porter-doc",
+          "witness-taxi-doc",
+          "witness-dock-doc"
+        ]
+      },
+      "suspects-folder": {
+        "id": "suspects-folder",
+        "type": "folder",
+        "title": "Expedients de Sospitosos",
+        "description": "Quatre dossiers personals amb context, peces de coartada i interrogatoris complets.",
+        "children": [
+          "suspect-claudia-folder",
+          "suspect-pau-folder",
+          "suspect-mireia-folder",
+          "suspect-lluc-folder"
+        ]
+      },
+      "extra-evidence-folder": {
+        "id": "extra-evidence-folder",
+        "type": "folder",
+        "title": "Proves Complementaries",
+        "description": "Forense, registres, documents i sintesi final de la cronologia.",
+        "children": [
+          "forensic-report-doc",
+          "computer-emails-doc",
+          "drawer-notes-doc",
+          "harbor-shift-doc",
+          "timeline-synthesis-doc"
+        ]
+      },
+      "intro-report-doc": {
+        "id": "intro-report-doc",
+        "type": "document",
+        "title": "Informe Inicial",
+        "subtitle": "Unitat d'Homicidis - Casa Auber",
+        "content": [
+          "La victima es Iris Vendrell i Serra, 51 anys, directora-curadora de la Fundacio Auber. Va morir el 6 d'abril a les 21.14 h aproximadament durant un assaig restringit a la Galeria de Miralls d'Hivern, dins la mansio modernista coneguda com a Casa Auber.",
+          "La primera hipotesi apuntava a accident patrimonial: un panell lateral de mirall hauria cedit per tensio i humitat. La inspeccio preliminar, tanmateix, mostra un mecanisme d'alliberament lateral incompatible amb una caiguda espontania.",
+          "Abans de morir, Iris preparava la suspensio de la reobertura. Havia localitzat anomalies en la restauracio, contradiccions d'autoria i retocs materials que comprometien la fundacio, la seva conservadora principal i els mecenes de la nit."
+        ]
+      },
+      "scene-arrival-doc": {
+        "id": "scene-arrival-doc",
+        "type": "document",
+        "title": "Arribada a l'Escena",
+        "subtitle": "Observacions dels primers agents",
+        "content": [
+          "El corredor nord conserva boira baixa i llum freda residual. Iris apareix sota un panell lateral de gran format, caigut en angle de gir i no en desplom frontal, dada rellevant per descartar una ruptura passiva del conjunt.",
+          "A la balustrada superior hi ha una ratlla recent, fregament metal.lic i residu d'adhesiu proteic al costat del cable de servei. El passador de seguretat del panell no es troba fracturat: falta.",
+          "Els accessos immediats queden reduits per un assaig tecnic molt controlat."
+        ]
+      },
+      "witness-porter-doc": {
+        "id": "witness-porter-doc",
+        "type": "document",
+        "title": "Declaracio de l'Auxiliar de Sala",
+        "subtitle": "Passera superior, 21.12 h aproximadament",
+        "content": [
+          "L'auxiliar del corredor sud declara que veu una figura prima amb bata curta de taller travessant la passera superior nord pocs segons abans del soroll fort. No pot identificar rostre, pero insisteix que no era roba d'etiqueta ni un tecnic de llum.",
+          "Tambe recorda haver vist Iris entrar sola al corredor nord i mirar cap amunt, com si esperes que algu li confirmes alguna cosa sobre el panell.",
+          "La testimoni no situa cap altre sospitos en l'altura superior dins la finestra critica."
+        ]
+      },
+      "witness-taxi-doc": {
+        "id": "witness-taxi-doc",
+        "type": "document",
+        "title": "Informe del Vigilant del Pati",
+        "subtitle": "Camera exterior i declaracio humana",
+        "content": [
+          "El vigilant lateral situa Lucie Moreau al pati exterior entre les 21.03 h i les 21.18 h. La veu fumant, caminant curta distancia i parlant en frances per telefon.",
+          "La camera de reixa confirma la seva presencia continuada a l'exterior. Lucie torna a entrar despres del soroll, no abans.",
+          "Lucie torna a entrar despres del soroll."
+        ]
+      },
+      "witness-dock-doc": {
+        "id": "witness-dock-doc",
+        "type": "document",
+        "title": "Nota de Centraleta i Sala Blava",
+        "subtitle": "Franja 21.02 h - 21.17 h",
+        "content": [
+          "La secretaria del Salon Blau confirma que Damia Riera mante una trucada oberta amb creditors suissos entre les 21.02 h i les 21.14 h, amb dues pauses breus sense abandonar la sala.",
+          "El registre de centraleta interna reforca la declaracio. Dos patrons estrangers el situen encara a la sala quan se sent el trencament del panell.",
+          "Dos patrons estrangers el situen encara a la sala quan se sent el trencament del panell."
+        ]
+      },
+      "suspect-claudia-folder": {
+        "id": "suspect-claudia-folder",
+        "type": "folder",
+        "category": "suspect",
+        "title": "Clara Nogues",
+        "description": "Cap de conservacio. Professional precisa, endeutada amb la institucio i cada vegada mes atrapada pels retocs que havia acceptat.",
+        "children": [
+          "suspect-claudia-dossier-doc",
+          "suspect-claudia-connection-doc",
+          "suspect-claudia-alibi-doc",
+          "suspect-claudia-interrogation-doc"
+        ]
+      },
+      "suspect-pau-folder": {
+        "id": "suspect-pau-folder",
+        "type": "folder",
+        "category": "suspect",
+        "title": "Damia Riera",
+        "description": "Tresorer i mecenes principal. Necessitava que la reobertura salves el prestigi financer de la fundacio.",
+        "children": [
+          "suspect-pau-dossier-doc",
+          "suspect-pau-connection-doc",
+          "suspect-pau-alibi-doc",
+          "suspect-pau-interrogation-doc"
+        ]
+      },
+      "suspect-mireia-folder": {
+        "id": "suspect-mireia-folder",
+        "type": "folder",
+        "category": "suspect",
+        "title": "Lucie Moreau",
+        "description": "Investigadora convidada i hereva d'un arxiu familiar que questionava la historia oficial de la galeria.",
+        "children": [
+          "suspect-mireia-dossier-doc",
+          "suspect-mireia-connection-doc",
+          "suspect-mireia-alibi-doc",
+          "suspect-mireia-interrogation-doc"
+        ]
+      },
+      "suspect-lluc-folder": {
+        "id": "suspect-lluc-folder",
+        "type": "folder",
+        "category": "suspect",
+        "title": "Nil Font",
+        "description": "Dissenyador de llum i boira. La seva escenografia dona cobertura visual al crim, pero no n'explica la mecanica.",
+        "children": [
+          "suspect-lluc-dossier-doc",
+          "suspect-lluc-connection-doc",
+          "suspect-lluc-alibi-doc",
+          "suspect-lluc-interrogation-doc"
+        ]
+      },
+      "suspect-claudia-backstory-doc": {
+        "id": "suspect-claudia-backstory-doc",
+        "type": "document",
+        "category": "suspect-story",
+        "title": "Historia Personal",
+        "subtitle": "Quan la conservacio deixa de reparar i comenca a dissimular",
+        "content": [
+          "Clara va construir la seva carrera intervenint peces delicades sense fer soroll. Amb els anys va aprendre una llio moralment corrosiva: molts patrons prefereixen una obra convincent a una obra honestament ferida.",
+          "A la Casa Auber, Iris la va convertir en especialista imprescindible. Aquest privilegi va acabar tenint una factura: terminis impossibles, informes retocats i una serie de substitucions materials que Clara va acceptar com a solucions provisionals fins que ja van ser irreversibles.",
+          "La reobertura de la galeria no nomes exposava els miralls; exposava la seva propia caiguda. Si Iris parlava, Clara quedava convertida en la cara tecnica d'un frau elegant."
+        ]
+      },
+      "suspect-claudia-connection-doc": {
+        "id": "suspect-claudia-connection-doc",
+        "type": "document",
+        "category": "suspect-relationship",
+        "title": "Relacio amb Iris Vendrell",
+        "subtitle": "Mentoria, dependencia i ruptura final",
+        "content": [
+          "Iris havia estat mentora, escut institucional i font de legitimitat per a Clara. La dirigia, la protegia i alhora li demanava que aguantes el pes brut de decisions que no podien quedar escrites.",
+          "La nit del crim aquesta relacio ja havia canviat de signe. Iris estava disposada a salvar la fundacio sacrificant precisament la persona que havia ensenyat a maquillar-ne les ferides."
+        ]
+      },
+      "suspect-claudia-alibi-doc": {
+        "id": "suspect-claudia-alibi-doc",
+        "type": "document",
+        "category": "suspect-alibi",
+        "title": "Full de Declaracio Inicial",
+        "subtitle": "Unitat d'Homicidis - 6 d'abril, 22.05 h",
+        "content": [
+          "Declarant: Clara Nogues.",
+          "Franja declarada: de 20.55 h a 21.20 h.",
+          "Manifesta que va romandre al taller annex revisant feltres, safates d'humitat i condensacions dels marcs petits.",
+          "Diu que no va tornar a quedar sola amb Iris Vendrell despres de la discussio de la tarda.",
+          "Comprovacions a fer: auxiliar de taller, registre d'acces i material utilitzat aquella nit."
+        ]
+      },
+      "suspect-claudia-interrogation-doc": {
+        "id": "suspect-claudia-interrogation-doc",
+        "type": "document",
+        "category": "suspect-interrogation",
+        "title": "Registre d'Interrogatori",
+        "subtitle": "Declaracio policial de Clara Nogues",
+        "content": [
+          "Interrogador: Clara, comencem pel tros que ens interessa. Entre les nou i les nou i quart, on eres? Declarant: Al taller annex. Ja ho he dit abans. Tenia els feltres dels marcs petits oberts sobre la taula i estava mirant una condensacio que no m'agradava gens.",
+          "Interrogador: Ho dius molt segur, pero la teva targeta obre la passera de restauracio nord a les 21.07 h. Declarant: La meva targeta obre mig edifici. I aquell lector va fatal. Si hi vaig passar, devia ser abans, quan encara pujava i baixava per mirar com responien els miralls amb la humitat.",
+          "Interrogador: Abans quant es abans? Perque la finestra es molt curta. Declarant: No et sabria dir el minut exacte. No anava mirant el rellotge cada trenta segons. Treballava.",
+          "Interrogador: Vas veure Iris despres de la discussio de la tarda? Declarant: De lluny, si. Parlar-hi, no. A la tarda ja havíem dit tot el que havíem de dir-nos.",
+          "Interrogador: Què us vau dir exactament? Declarant: Que volia revisar informes, que volia parar el passi, que no pensava aguantar una altra nit fent veure que tot estava perfecte. Res que no s'hagi dit ja en aquesta casa durant setmanes.",
+          "Interrogador: Sembla que et jugaves molt si ella aturava la inauguracio. Declarant: Ens ho jugavem tots, no només jo. El problema es que ara m'ho voleu penjar tot a mi.",
+          "Interrogador: I el compost del teu banc d'argentat al pestell superior del panell? Declarant: Porto dies tocant aquella galeria de punta a punta. Si hi busqueu rastre meu, en trobareu al pestell, a les grapes i a les eines. Aixo per si sol no diu que jo fos alla en aquell moment.",
+          "Interrogador: Una auxiliar diu que va veure una figura amb bata curta a la passera superior. Declarant: Molta gent del taller porta bata curta. Jo no era l'unica persona que hi treballava.",
+          "Interrogador: Però la targeta que obre es la teva. Declarant: I jo et torno a dir que aquell registre no explica què feia jo en aquell moment ni quant m'hi vaig quedar.",
+          "Interrogador: Et noto més preocupada pel registre que per la mort d'Iris. Declarant: Em preocupa tot. La mort d'Iris, el que li ha passat a la casa i el fet que esteu simplificant una nit molt mes embolicada del que sembla."
+        ]
+      },
+      "suspect-pau-backstory-doc": {
+        "id": "suspect-pau-backstory-doc",
+        "type": "document",
+        "category": "suspect-story",
+        "title": "Historia Personal",
+        "subtitle": "Governar la memoria des del pressupost",
+        "content": [
+          "Damia forma part d'una generacio de mecenes que entenen la cultura com una arquitectura de legitimitat. La Casa Auber li servia per fixar una imatge de sofisticacio estable davant creditors i cercles europeus.",
+          "Iris era incomoda, pero util. Mentre controlava el relat amb una aparenca de rigor, Damia podia seguir presentant el projecte com un triomf moral a mes d'estetic."
+        ]
+      },
+      "suspect-pau-connection-doc": {
+        "id": "suspect-pau-connection-doc",
+        "type": "document",
+        "category": "suspect-relationship",
+        "title": "Relacio amb Iris Vendrell",
+        "subtitle": "Alianca de conveniencia sota pressio",
+        "content": [
+          "Damia i Iris es necessitaven sense estimar-se. Ell aportava estructura, contactes i recursos; ella credibilitat i discurs cultural.",
+          "Quan Iris decideix que la veritat val mes que la nit inaugural, Damia ho viu com una traicio a la supervivencia de la fundacio."
+        ]
+      },
+      "suspect-pau-alibi-doc": {
+        "id": "suspect-pau-alibi-doc",
+        "type": "document",
+        "category": "suspect-alibi",
+        "title": "Nota de Centraleta",
+        "subtitle": "Sala Blava - franja 21.02 h a 21.14 h",
+        "content": [
+          "Sortida registrada a Basilea des del terminal intern del Salon Blau a les 21.02 h.",
+          "Trucada activa fins a les 21.14 h amb dues pauses breus sense desconnexio del terminal.",
+          "Personal present a sala durant la franja: Damia Riera, secretaria de planta, dos patrons convidats."
+        ]
+      },
+      "suspect-pau-interrogation-doc": {
+        "id": "suspect-pau-interrogation-doc",
+        "type": "document",
+        "category": "suspect-interrogation",
+        "title": "Registre d'Interrogatori",
+        "subtitle": "Declaracio policial de Damia Riera",
+        "content": [
+          "Interrogador: Senyor Riera, torni'm a dir els seus moviments entre les nou i les nou i quart. Declarant: No surto del Salon Blau. Estava amb una trucada a Basilea i amb dues persones que, sincerament, estaven a punt de marxar si la nit feia mala pinta.",
+          "Interrogador: O sigui, estava apagant un incendi. Declarant: Exacte. Un incendi economic, d'imatge i de nervis. El de sempre quan una fundacio vol fer veure que tot va rodat.",
+          "Interrogador: Iris li havia dit que volia aturar la reobertura. Declarant: M'ho va insinuar, si. I no li negaré que em va caure com un tret.",
+          "Interrogador: Li va passar pel cap fer-la callar? Declarant: Em va passar pel cap convèncer-la, pressionar-la, discutir-hi. Fer caure un panell antic, no. No se ni per on es toca aquella mena de mecanismes.",
+          "Interrogador: Hi ha qui diu que quan se sent el soroll vostè surt molt de pressa de la sala. Declarant: Surto de pressa perque se sent un cop sec al mig de la casa. El contrari seria estrany, no?",
+          "Interrogador: La seva relacio amb ella era pitjor del que aparentaven en public? Declarant: Bastant pitjor. Pero una mala relacio no em converteix en operari de conservacio.",
+          "Interrogador: Li preocupa mes la mort d'Iris o l'escandol que pot venir ara? Declarant: Si li soc sincer, ara mateix em preocupen totes dues coses alhora."
+        ]
+      },
+      "suspect-mireia-backstory-doc": {
+        "id": "suspect-mireia-backstory-doc",
+        "type": "document",
+        "category": "suspect-story",
+        "title": "Historia Personal",
+        "subtitle": "La memoria familiar contra l'elegancia de l'oblit",
+        "content": [
+          "Lucie va creixer entre capses, cartes i fotografies d'una branca artistica secundaritzada pel relat oficial. La seva recerca no neix del luxe academic, sino del dolor de veure una contribucio femenina convertida en nota al marge.",
+          "A la Casa Auber creu trobar l'oportunitat de restituir aquesta historia. Cada ajornament d'Iris li sembla una nova domesticacio del llegat familiar."
+        ]
+      },
+      "suspect-mireia-connection-doc": {
+        "id": "suspect-mireia-connection-doc",
+        "type": "document",
+        "category": "suspect-relationship",
+        "title": "Relacio amb Iris Vendrell",
+        "subtitle": "Confianca inicial i desengany posterior",
+        "content": [
+          "Iris va ser la primera veu institucional que va escoltar Lucie de debo. Aquesta complicitat es va degradar quan Lucie va descobrir que tota veritat quedava subordinada al calendari de la fundacio.",
+          "La nit del crim encara volia forcar una reparacio historica, pero el seu combat seguia essent documental i moral."
+        ]
+      },
+      "suspect-mireia-alibi-doc": {
+        "id": "suspect-mireia-alibi-doc",
+        "type": "document",
+        "category": "suspect-alibi",
+        "title": "Extracte de Camera Exterior",
+        "subtitle": "Pati lateral - 21.03 h a 21.18 h",
+        "content": [
+          "Figura identificada com a Lucie Moreau sortint al pati lateral a les 21.03 h.",
+          "Permaneix a l'exterior fins despres del soroll registrat a l'interior.",
+          "Retorn per la porta lateral a les 21.18 h aproximadament."
+        ]
+      },
+      "suspect-mireia-interrogation-doc": {
+        "id": "suspect-mireia-interrogation-doc",
+        "type": "document",
+        "category": "suspect-interrogation",
+        "title": "Registre d'Interrogatori",
+        "subtitle": "Declaracio policial de Lucie Moreau",
+        "content": [
+          "Interrogador: Lucie, on era exactament quan cau Iris? Declarant: Al pati lateral, fent una trucada a Paris. No era una trucada amable, si vol saber-ho. Estava intentant moure papers per si aquí tornaven a tapar-ho tot.",
+          "Interrogador: Per què no ho diu d'entrada a la primera declaracio? Declarant: Perque ja veia per on anava tot. Una dona morta, una estrangera nerviosa i uns documents familiars. Era massa facil fer-me entrar al paper que us convenia.",
+          "Interrogador: Vol dir que no confiava en nosaltres. Declarant: Vull dir que no confiava ni en la policia, ni en la fundacio, ni en ningú que tingués pressa per tancar el relat en deu minuts.",
+          "Interrogador: Va veure algú pujant o baixant del corredor nord? Declarant: No des del pati. Veia llum, boira i reflexos. Res que em permeti inventar una resposta més bonica.",
+          "Interrogador: Va voler forçar Iris a parlar aquella nit? Declarant: Si. I no me n'amago. Feia mesos que m'anava dient després, després, després. Ja n'hi havia prou.",
+          "Interrogador: Però no la va tocar. Declarant: No. Jo no sabria ni alliberar aquell panell. El meu terreny son els papers, no els mecanismes."
+        ]
+      },
+      "suspect-lluc-backstory-doc": {
+        "id": "suspect-lluc-backstory-doc",
+        "type": "document",
+        "category": "suspect-story",
+        "title": "Historia Personal",
+        "subtitle": "Cobertura visual no es el mateix que mecanisme mortal",
+        "content": [
+          "Nil ve d'un circuit de muntatges petits on la imaginacio havia de suplir la manca de recursos. La Casa Auber li oferia una escala nova i un possible salt internacional.",
+          "Iris el va impulsar i humiliat alhora. Li exigia atmosfera i contencio, brillantor i austeritat. Aquesta pressio l'ha tornat facil de llegir com a sospitos impulsivament ofes."
+        ]
+      },
+      "suspect-lluc-connection-doc": {
+        "id": "suspect-lluc-connection-doc",
+        "type": "document",
+        "category": "suspect-relationship",
+        "title": "Relacio amb Iris Vendrell",
+        "subtitle": "Admiracio professional convertida en ressentiment",
+        "content": [
+          "Nil necessitava el reconeixement d'Iris per legitimar la seva carrera. Quan ella comenca a parlar de retallar-li dispositius i responsabilitzar-lo de la distraccio visual, ell ho viu com una humiliacio.",
+          "Aquest dolor explica el seu mal to i la seva vulnerabilitat, pero no el situa al centre del mecanisme del panell."
+        ]
+      },
+      "suspect-lluc-alibi-doc": {
+        "id": "suspect-lluc-alibi-doc",
+        "type": "document",
+        "category": "suspect-alibi",
+        "title": "Log de Consola",
+        "subtitle": "Cabina de llum i boira - 20.58 h a 21.17 h",
+        "content": [
+          "Operador logat: Nil Font.",
+          "Seqüencia de llum i boira executada sense talls manuals entre les 20.58 h i les 21.17 h.",
+          "Presencia continuada de dos tecnics adjunts a cabina durant la franja."
+        ]
+      },
+      "suspect-lluc-interrogation-doc": {
+        "id": "suspect-lluc-interrogation-doc",
+        "type": "document",
+        "category": "suspect-interrogation",
+        "title": "Registre d'Interrogatori",
+        "subtitle": "Declaracio policial de Nil Font",
+        "content": [
+          "Interrogador: Nil, la primera impressio de tothom es que la boira ho tapa tot. Declarant: Ja, clar. És molt comode culpar la boira. El problema és que la boira no toca passadors ni empeny panells.",
+          "Interrogador: On era entre les nou i les nou i quart? Declarant: A la consola. Amb els dos tecnics al costat i amb la seqüencia corrent. Puc tenir molts defectes, pero desaparèixer de cabina sense que ningú ho noti no és un d'ells.",
+          "Interrogador: Estava enfadat amb Iris. Declarant: Bastant. M'havia deixat en ridicul més d'una vegada aquella setmana.",
+          "Interrogador: Fins al punt de voler enfonsar-li la nit? Declarant: Fins al punt de voler enviar-la a pastar fang, segur. Fins al punt de fer caure un panell sobre seu, no.",
+          "Interrogador: Sap tocar el mecanisme del corredor nord? Declarant: No, i tampoc em deixaven. Allò era territori sagrat de conservacio. A nosaltres només ens volien per fer que tot brillés.",
+          "Interrogador: Llavors la boira només hi era. Declarant: Exacte. Hi era. I ara us va molt bé a tots fer veure que ja us resol el cas tota sola."
+        ]
+      },
+      "forensic-report-doc": {
+        "id": "forensic-report-doc",
+        "type": "document",
+        "title": "Informe Forense",
+        "subtitle": "Mecanisme, rastres i trajectoria",
+        "content": [
+          "El panell lateral no presenta fractura estructural previa incompatible amb integritat de xarnella. La seva caiguda depen de la retirada del passador de seguretat i d'una accio d'alliberament lateral.",
+          "Al pestell superior s'identifica pasta d'argentat amb ceri i cola proteica coincidents amb compostos usats aquella setmana al taller de conservacio. Una fibra gris-blava coincideix amb guants fins de treball del mateix taller.",
+          "Absencia de fractura accidental compatible amb col.lapse espontani."
+        ]
+      },
+      "computer-emails-doc": {
+        "id": "computer-emails-doc",
+        "type": "document",
+        "title": "Documents i Correus",
+        "subtitle": "Esborranys recuperats del despatx d'Iris",
+        "content": [
+          "Es recupera un esborrany de correu adrecat al patronat: 'Suspensio immediata del passi. Revisio d'autenticitat, autoria i informes materials. Clara Nogues ha alterat el circuit de peces i ja no puc sostenir la ficcio publica'.",
+          "Nota de reunio de tarda: Iris exigeix el retorn del passador original i la traCabilitat completa dels retocs recents.",
+          "Hora de darrera modificacio de l'esborrany: 20.58 h."
+        ]
+      },
+      "drawer-notes-doc": {
+        "id": "drawer-notes-doc",
+        "type": "document",
+        "title": "Bloc i Notes Manuscrites",
+        "subtitle": "Troballes al despatx de la victima",
+        "content": [
+          "Full solt del bloc del despatx: 'C.N. ha tret el passador original. Verificar panell nord abans del passi'.",
+          "Pagina posterior del mateix bloc: 'No ajornar un altre cop. Millor caure avui que mentir mes'."
+        ]
+      },
+      "harbor-shift-doc": {
+        "id": "harbor-shift-doc",
+        "type": "document",
+        "title": "Registres d'Acces i Operacio",
+        "subtitle": "Passera nord, centraleta i consola de llum",
+        "content": [
+          "La targeta de Clara Nogues obre `passera-restauracio-nord` a les 21.07 h. No hi ha altres accessos humans a aquella cota fins despres del crim.",
+          "La centraleta situa Damia Riera al Salon Blau en una trucada oberta de 21.02 h a 21.14 h. Els logs de consola de Nil mostren sequencies continues sense absencies manuals.",
+          "La camera exterior mante Lucie Moreau fora de l'edifici durant gairebe tota la finestra critica."
+        ]
+      },
+      "timeline-synthesis-doc": {
+        "id": "timeline-synthesis-doc",
+        "type": "document",
+        "title": "Sintesi Cronologica",
+        "subtitle": "Franja 21.11 h - 21.16 h",
+        "content": [
+          "Finestra estimada de mort: 21.11 h - 21.16 h.",
+          "Durant aquesta franja, Damia Riera consta al Salon Blau, Lucie Moreau consta a l'exterior i Nil Font consta a la cabina de llum.",
+          "Acces registrat a `passera-restauracio-nord`: targeta de Clara Nogues, 21.07 h."
+        ]
+      },
+      "suspect-claudia-dossier-doc": {
+        "id": "suspect-claudia-dossier-doc",
+        "type": "document",
+        "category": "suspect-dossier",
+        "title": "Fitxa Policial",
+        "subtitle": "Clara Nogues - cap de conservacio",
+        "suspectName": "Clara Nogues",
+        "suspectRole": "cap de conservacio",
+        "photo": "./images/suspects/case-016/suspect-claudia.jpg",
+        "profile": [
+          "Clara Nogues, 42 anys, dirigeix la conservacio material de la Casa Auber. Es una professional d'enorme prestigi tecnic, coneguda per treballar amb mans exactes i un discurs aparentment auster sobre la veritat dels objectes.",
+          "Projecta serenor i fatiga noble. Darrere aquesta imatge hi ha una dependencia profunda de la institucio que la va elevar i de la directora que durant anys la va protegir."
+        ],
+        "personalHistory": [
+          "Clara va construir la seva carrera intervenint peces delicades sense fer soroll. Amb els anys va aprendre una llio moralment corrosiva: molts patrons prefereixen una obra convincent a una obra honestament ferida.",
+          "A la Casa Auber, Iris la va convertir en especialista imprescindible. Aquest privilegi va acabar tenint una factura: terminis impossibles, informes retocats i una serie de substitucions materials que Clara va acceptar com a solucions provisionals fins que ja van ser irreversibles.",
+          "La reobertura de la galeria no nomes exposava els miralls; exposava la seva propia caiguda. Si Iris parlava, Clara quedava convertida en la cara tecnica d'un frau elegant."
+        ]
+      },
+      "suspect-pau-dossier-doc": {
+        "id": "suspect-pau-dossier-doc",
+        "type": "document",
+        "category": "suspect-dossier",
+        "title": "Fitxa Policial",
+        "subtitle": "Damia Riera - tresorer i mecenes",
+        "suspectName": "Damia Riera",
+        "suspectRole": "tresorer i mecenes",
+        "photo": "./images/suspects/case-016/suspect-pau.jpg",
+        "profile": [
+          "Damia Riera, 56 anys, es el principal sustent financer de la Fundacio Auber. Te l'elegancia d'algu acostumat a convertir capital en gust i gust en autoritat.",
+          "La seva por real no es la violencia, sino la ruina simbolica. Si la reobertura s'ensorra, s'ensorra amb ella el relat de solvencia que ha venut durant anys."
+        ],
+        "personalHistory": [
+          "Damia forma part d'una generacio de mecenes que entenen la cultura com una arquitectura de legitimitat. La Casa Auber li servia per fixar una imatge de sofisticacio estable davant creditors i cercles europeus.",
+          "Iris era incomoda, pero util. Mentre controlava el relat amb una aparenca de rigor, Damia podia seguir presentant el projecte com un triomf moral a mes d'estetic."
+        ]
+      },
+      "suspect-mireia-dossier-doc": {
+        "id": "suspect-mireia-dossier-doc",
+        "type": "document",
+        "category": "suspect-dossier",
+        "title": "Fitxa Policial",
+        "subtitle": "Lucie Moreau - investigadora convidada",
+        "suspectName": "Lucie Moreau",
+        "suspectRole": "investigadora convidada",
+        "photo": "./images/suspects/case-016/suspect-mireia.jpg",
+        "profile": [
+          "Lucie Moreau, 37 anys, arriba de Paris amb un arxiu familiar que discuteix l'autoria oficial de la galeria. La seva presencia inquieta la fundacio perque no forma part de cap lleialtat local.",
+          "Projecta una fredor moral que la fa semblar implacable. Es una dona acostumada a veure com institucions brillants esborren noms utiles del passat."
+        ],
+        "personalHistory": [
+          "Lucie va creixer entre capses, cartes i fotografies d'una branca artistica secundaritzada pel relat oficial. La seva recerca no neix del luxe academic, sino del dolor de veure una contribucio femenina convertida en nota al marge.",
+          "A la Casa Auber creu trobar l'oportunitat de restituir aquesta historia. Cada ajornament d'Iris li sembla una nova domesticacio del llegat familiar."
+        ]
+      },
+      "suspect-lluc-dossier-doc": {
+        "id": "suspect-lluc-dossier-doc",
+        "type": "document",
+        "category": "suspect-dossier",
+        "title": "Fitxa Policial",
+        "subtitle": "Nil Font - dissenyador de llum i boira",
+        "suspectName": "Nil Font",
+        "suspectRole": "dissenyador de llum i boira",
+        "photo": "./images/suspects/case-016/suspect-lluc.jpg",
+        "profile": [
+          "Nil Font, 33 anys, havia de fer de la galeria un esdeveniment visual memorable. Talentos i fragile, viu aquesta inauguracio com la seva gran oportunitat professional.",
+          "La seva boira i els seus reflexos fan de seguida una falsa promesa narrativa: sembla l'home ideal per amagar un crim, justament perque treballa amb opacitats."
+        ],
+        "personalHistory": [
+          "Nil ve d'un circuit de muntatges petits on la imaginacio havia de suplir la manca de recursos. La Casa Auber li oferia una escala nova i un possible salt internacional.",
+          "Iris el va impulsar i humiliat alhora. Li exigia atmosfera i contencio, brillantor i austeritat. Aquesta pressio l'ha tornat facil de llegir com a sospitos impulsivament ofes."
+        ]
+      }
+    }
+  },
+  "solution": {
+    "culprit": "Clara Nogues",
+    "motive": "Iris estava a punt de suspendre la reobertura i exposar que Clara havia participat en una restauracio adulterada amb informes manipulats, cosa que arruinava la seva carrera i l'exposava penalment.",
+    "method": "Va retirar el passador de seguretat del panell nord i el va alliberar des de la passera superior aprofitant el cable de servei i la cobertura visual de l'assaig.",
+    "keyProof": "La nota manuscrita d'Iris, el registre d'acces de Clara a la passera nord, la forense sobre el pestell i la incompatibilitat entre la seva declaracio policial i la cronologia converteixen Clara en l'unica culpable viable.",
+    "eliminations": [
+      "Damia Riera tenia motiu financer, pero centraleta, testimonis i incapacitat tecnica l'allunyen del mecanisme.",
+      "Lucie Moreau menteix sobre papers i urgencies, pero la camera exterior i la trucada sostinguda la deixen fora de la finestra material.",
+      "Nil Font sembla perillos per la boira i el ressentiment, pero els seus logs i els testimonis el fixen a la consola."
+    ]
+  }
+}

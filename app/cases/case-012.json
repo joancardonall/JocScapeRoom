@@ -1,0 +1,241 @@
+{
+  "id": "case-012",
+  "title": "La porta verda de Paris",
+  "summary": "Elisa Roig, directora de l'Institut de les Arts de la Modernitat, apareix morta en un salon privat hores abans de presentar una exposicio sobre arquitectura, art i vida bohemia del Paris de fi de segle. La mostra enllacava els accessos de metro d'Hector Guimard, el colleccionisme victoria i la vida sentimental dels artistes exiliats entre salons, tallers i deutes. Pero la mateixa nit dels fets, Elisa havia decidit revelar que una part clau de la procedencia de la mostra era falsa.",
+  "objective": "Identifica l'unic responsable demostrant motiu, mitja i oportunitat. La resolucio ha de separar els vincles emocionals reals dels sospitosos de la cadena de proves que condueix al culpable.",
+  "fileSystem": {
+    "rootId": "main-folder",
+    "nodes": {
+      "main-folder": {
+        "id": "main-folder",
+        "type": "folder",
+        "title": "Expedient Principal",
+        "description": "Mort d'Elisa Roig a l'Institut de les Arts de la Modernitat.",
+        "children": [
+          "police-report-folder",
+          "witnesses-folder"
+        ]
+      },
+      "police-report-folder": {
+        "id": "police-report-folder",
+        "type": "folder",
+        "title": "Informes Policials",
+        "description": "Context, escena i observacions inicials.",
+        "children": [
+          "intro-report-doc",
+          "scene-arrival-doc"
+        ]
+      },
+      "witnesses-folder": {
+        "id": "witnesses-folder",
+        "type": "folder",
+        "title": "Testimonis",
+        "description": "Declaracions recollides durant la primera nit.",
+        "children": [
+          "witness-porter-doc",
+          "witness-taxi-doc",
+          "witness-dock-doc"
+        ]
+      },
+      "suspects-folder": {
+        "id": "suspects-folder",
+        "type": "folder",
+        "title": "Sospitosos",
+        "description": "Perfils, coartades i declaracions de les persones mes properes a la victima.",
+        "children": [
+          "suspect-claudia",
+          "suspect-pau",
+          "suspect-mireia",
+          "suspect-lluc"
+        ]
+      },
+      "extra-evidence-folder": {
+        "id": "extra-evidence-folder",
+        "type": "folder",
+        "title": "Proves Complementaries",
+        "description": "Forense, correus, notes, registres i sintesi cronologica.",
+        "children": [
+          "forensic-report-doc",
+          "computer-emails-doc",
+          "drawer-notes-doc",
+          "harbor-shift-doc",
+          "timeline-synthesis-doc"
+        ]
+      },
+      "intro-report-doc": {
+        "id": "intro-report-doc",
+        "type": "document",
+        "title": "Informe Inicial",
+        "subtitle": "Unitat d'Homicidis - resum dels fets",
+        "content": [
+          "La victima es Elisa Roig, 47 anys, directora i comissaria principal de l'Institut de les Arts de la Modernitat. Va ser localitzada sense vida a les 22.43 h del 17 de febrer al Salon Lemaire, una sala privada preparada per a una visita de mecenes.",
+          "El centre inaugurava l'endema una exposicio sobre Paris entre 1890 i 1905, amb peces d'arquitectura Art Nouveau, arts decoratives d'herencia victoriana i correspondencia de cercles bohemis vinculats a Montmartre. La mostra tenia com a reclam una serie de cartes i dibuixos atribuits a l'entorn de Hector Guimard.",
+          "Segons diversos treballadors, Elisa havia decidit aturar la inauguracio aquella mateixa nit. Creia que una part de la procedencia de les cartes i d'un dibuix preparatori de ferro colat havia estat manipulada per fer la historia mes atractiva i assegurar patrocinadors.",
+          "La victima tenia una reputacio complexa. Era brillant, protectora amb els joves que apadrinava i capaç de rescatar carreres invisibles, pero tambe controlava relats personals com si fossin peces d'arxiu. Alguns sospitosos la devien tot el que eren; d'altres la culpaven d'haver-los demanat lleialtat a canvi d'afecte.",
+          "La linia principal de la investigacio apunta a una trobada privada dins el Salon Lemaire, amb una beguda compartida i un intent posterior d'esborrar o recuperar documentacio abans que el cos fos trobat."
+        ]
+      },
+      "scene-arrival-doc": {
+        "id": "scene-arrival-doc",
+        "type": "document",
+        "title": "Arribada a l'Escena",
+        "subtitle": "Observacions dels primers agents",
+        "content": [
+          "El Salon Lemaire estava illuminat amb llum baixa de prova. La porta principal era tancada pero no bloquejada, i la porta de servei interior havia estat oberta amb targeta pocs minuts abans del descobriment.",
+          "Elisa Roig jeia al costat d'una vitrina baixa que contenia un model de ferro inspirat en una entrada de metro parisenca. Presentava una contusio al temple esquerre compatible amb una caiguda posterior a la perdua de consciencia, sense signes de lluita prolongada.",
+          "A la taula auxiliar hi havia dos petits gots de licor d'herbes, una ampolla verda sense etiqueta i una carpeta de procedencia oberta. En faltar dues cartes del conjunt i una targeta SD de l'arxiu fotografic, l'escena suggereix una manipulacio dirigida i no un impuls desordenat."
+        ]
+      },
+      "witness-porter-doc": {
+        "id": "witness-porter-doc",
+        "type": "document",
+        "title": "Declaracio del vigilant",
+        "subtitle": "Ramir Clapes, control de nit",
+        "content": [
+          "Ramir Clapes confirma que Elisa Roig va tornar al Salon Lemaire a les 21.49 h amb una carpeta color granat i va comentar que havia de parlar amb una persona de la casa abans que l'exposicio li esclates a les mans.",
+          "A les 22.08 h, Ramir veu Lluc Vilaro entrar per la porta de servei del passadis intern. El descriu tens, amb els guants blancs d'arxiu a la butxaca i una ampolla petita verda a la ma. Quan el vigilant li pregunta si encara treballa, Lluc respon que es una conversa curta amb l'Elisa.",
+          "Cap a les 22.28 h, el vigilant el veu sortir pel mateix passadis sense aturar-se. Recorda el detall perque Lluc acostumava a saludar sempre Elisa pel nom, pero aquella nit evitava mirar cap a la sala."
+        ]
+      },
+      "witness-taxi-doc": {
+        "id": "witness-taxi-doc",
+        "type": "document",
+        "title": "Declaracio de taxista",
+        "subtitle": "Nora Bassa, llicencia 514",
+        "content": [
+          "La conductora recull Claudia Ferres davant l'institut a les 21.36 h i la deixa a l'Hospital del Mar a les 21.52 h. El trajecte queda registrat per GPS i rebut digital.",
+          "Durant el cami, Claudia parla amb la seva germana i diu que no pot fallar al seu pare aquella nit, encara que Elisa decideixi enfonsar anys de captacio amb una sola compareixenca.",
+          "L'hospital confirma la seva entrada a la planta de cardiologia a les 21.58 h i la presencia al box del seu pare fins passades les 23.00 h. La taxista recorda clarament que Claudia va baixar plorant, mes esgotada que enfadada."
+        ]
+      },
+      "witness-dock-doc": {
+        "id": "witness-dock-doc",
+        "type": "document",
+        "title": "Declaracio de tecnica de sala",
+        "subtitle": "Noelia Prats, assistent de muntatge",
+        "content": [
+          "Noelia Prats situa Pau Maristany al pati de descarrega entre les 22.05 h i les 22.31 h revisant una estructura de fusta per a l'espai sobre arts decoratives victorianes. Diu que van parlar dues vegades i que ell no es va moure de la zona mes de pocs segons.",
+          "Tambe recorda haver vist Mireia Albiol a les 22.03 h al laboratori de paper amb dues restauradores. Mireia plorava, pero continuava revisant una carta tacada de tinta i repetia que Elisa no podia decidir tambe la historia dels morts.",
+          "Cap a les 22.17 h, Noelia passa pel passadis proper al Salon Lemaire i sent una discussio apagada entre Elisa i un home. Distingeix la frase 'si surt el nom del meu pare, la meva mare no sobrevivra a aixo' abans d'allunyar-se."
+        ]
+      },
+      "suspect-claudia": {
+        "id": "suspect-claudia",
+        "type": "suspect",
+        "name": "Claudia Ferres",
+        "role": "Directora de mecenatge i antiga parella d'Elisa",
+        "alibi": "Assegura que va sortir de l'institut abans de les 21.40 h per anar a l'hospital a veure el seu pare, ingressat per una recaiguda cardiaca, i que no va tornar al centre.",
+        "statement": [
+          "Elisa i jo vam compartir casa durant tres anys i una manera de treballar que, amb el temps, es va convertir en una manera de vigilar-nos. Ella deia que la veritat sempre havia d'arribar abans que la comoditat. Jo li responia que les institucions tambe es sostenen amb persones de carn i os.",
+          "Es cert que la seva decisio em feia mal. Jo havia passat mesos demanant diners a gent que ara ens exigiria explicacions, i a sobre tenia el meu pare connectat a monitors. Pero no vaig tornar a la sala ni volia recordar aquella relacio convertint-la en una escena criminal.",
+          "Elisa podia ser injusta quan creia que tenia rao. Et protegia molt i despres et demanava una fidelitat que ja no era professional. Aixo em va fer marxar d'ella, no matar-la."
+        ]
+      },
+      "suspect-pau": {
+        "id": "suspect-pau",
+        "type": "suspect",
+        "name": "Pau Maristany",
+        "role": "Arquitecte escenograf i restaurador de muntatge",
+        "alibi": "Declara que va romandre al pati de descarrega resolent un problema d'estructura i d'humitat de fusta durant tota la franja critica.",
+        "statement": [
+          "Coneixia Elisa des que estudiava amb el meu millor amic, el seu germa Marc. Despres que ell moris, tots dos vam intentar convertir la feina en una manera de no parlar del que ens havia quedat a dins. No sempre ens va sortir be.",
+          "Haviem discutit aquella setmana perque jo volia simplificar l'espai i ella insistia a conservar un recorregut massa teatral. Pero la nostra tensio venia de molt abans: del dol, del que no ens vam dir, i del fet que ella encara creia que podia decidir qui havia estat fidel a en Marc i qui no.",
+          "No tinc res a veure amb cartes falses ni amb arxius digitals. Jo trabajo amb fusta, ferro i espais. Aquella nit no em vaig moure del pati mes del que ja ha dit la Noelia."
+        ]
+      },
+      "suspect-mireia": {
+        "id": "suspect-mireia",
+        "type": "suspect",
+        "name": "Mireia Albiol",
+        "role": "Cap d'arxiu de paper i neta d'una pintora bohemia present a la mostra",
+        "alibi": "Afirma que va sortir plorant d'una discussio amb Elisa i que entre les 22.00 h i les 22.30 h va romandre al laboratori de paper amb dues restauradores.",
+        "statement": [
+          "La meva avia, Roser Albiol, va viure a Montmartre i va escriure cartes que Elisa considerava massa confuses per incloure-les completes. Sempre deia que volia protegir-ne la lectura historica, pero jo sentia que tambe em robava la veu de casa meva.",
+          "Aquella nit vaig discutir-hi perque volia exposar les cartes retallades i la procedencia falsa al mateix temps, com si nomes ella tingues dret a decidir quina memoria mereix ser vista sencera i quina no. Em vaig posar a plorar, si. Hi ha ferides familiars que no tenen res d'academic.",
+          "Malgrat tot, no la vaig matar. Elisa m'havia obert portes quan jo comencava i aixo encara em pesava. Hauria preferit odiar-la del tot, pero no vaig poder."
+        ]
+      },
+      "suspect-lluc": {
+        "id": "suspect-lluc",
+        "type": "suspect",
+        "name": "Lluc Vilaro",
+        "role": "Responsable de registre, procedencia i arxiu digital",
+        "alibi": "Mante que va deixar una ampolla de licor per a la visita de mecenes i que despres va tornar al magatzem digital, sense entrar realment a parlar amb Elisa.",
+        "statement": [
+          "Elisa em va donar la meva primera feina seriosa quan jo encara era el fill d'un catalogador mort i d'una mare que no aixecava el cap. Si avui existeixo dins aquest mon, en gran part es per ella.",
+          "Precisament per aixo em fa mal que ara se m'acusi a mi de qualsevol ombra. Quan una institucio decideix convertir la teva biografia en una historia d'ascens, tambe et deixa atrapat dins l'agraiment.",
+          "La meva mare te una demencia incipient i cada vegada reconeix menys coses, excepte el nom del meu pare i els anys en que ell va treballar entre peces i inventaris. Si algu preten usar el seu nom per tapar-se, no sere jo."
+        ]
+      },
+      "forensic-report-doc": {
+        "id": "forensic-report-doc",
+        "type": "document",
+        "title": "Informe Forense",
+        "subtitle": "Autopsia preliminar i laboratori",
+        "content": [
+          "La causa principal de la mort es una intoxicacio aguda per zopiclona dissolta en licor d'herbes anisat. La contusio al temple esquerre es posterior a la perdua de consciencia i compatible amb una caiguda contra la vitrina baixa.",
+          "La finestra de mort se situa entre les 22.14 h i les 22.29 h del 17 de febrer. El volum ingerit indica que la beguda va ser consumida minuts abans del collapse.",
+          "En el got de la victima i al coll de l'ampolla verda s'han detectat fibres de guants de coto blanc amb microresidus de patina verda i pols metallica. El departament de registre i arxiu utilitza aquests guants quan manipula peces de ferro i cartells amb acabats delicats."
+        ]
+      },
+      "computer-emails-doc": {
+        "id": "computer-emails-doc",
+        "type": "document",
+        "title": "Correus i Registres Digitals",
+        "subtitle": "Extraccio de correu i control d'accessos",
+        "content": [
+          "A les 20.41 h, Elisa escriu a Lluc Vilaro: '22.10 al Salon Lemaire. He comparat les cartes, la SD i la fitxa del dibuix. Dema no mentire per tu ni pel teu pare'.",
+          "A les 20.53 h, Lluc respon: 'Deixa'm explicar-t'ho abans d'arrasar-ho tot. La meva mare nomes conserva aquesta historia'. No consta cap anullacio posterior de la trobada.",
+          "Els logs indiquen que la targeta de servei de Lluc obre el passadis intern del Salon Lemaire a les 22.08 h i la porta lateral de sortida a les 22.28 h. El seu terminal de registre queda inactiu entre les 22.05 h i les 22.30 h.",
+          "A les 22.24 h, des del compte d'Elisa, s'intenta esborrar la carpeta 'Lemaire_Guimard_procedencia' i exportar el fitxer 'cartes_scan_SD'. L'accio queda incompleta per manca de contrasenya secundaria."
+        ]
+      },
+      "drawer-notes-doc": {
+        "id": "drawer-notes-doc",
+        "type": "document",
+        "title": "Notes Recuperades del Calaix",
+        "subtitle": "Apunts personals d'Elisa Roig",
+        "content": [
+          "En un full solt hi consta: 'Lluc ha reconstruit massa. Les cartes Lemaire no son una restauracio, son una biografia inventada per salvar una exposicio i el nom d'Oriol'.",
+          "Una anotacio anterior resumeix la xarxa emocional del cas: 'Claudia no em perdona que confongues veritat amb crueltat. Pau encara parla amb en Marc quan em mira. Mireia em retreu que jo sempre retallo la memoria dels altres.'",
+          "A la darrera pagina del bloc, escrita amb pressa, es llegeix: '22.10 amb Lluc. Recuperar SD. Si cal, suspendre-ho tot abans de convertir el dolor d'una familia en propaganda'."
+        ]
+      },
+      "harbor-shift-doc": {
+        "id": "harbor-shift-doc",
+        "type": "document",
+        "title": "Registre Intern d'Accessos i Torns",
+        "subtitle": "Control de portes, sales i terminals",
+        "content": [
+          "Claudia Ferres valida sortida a les 21.35 h. L'Hospital del Mar confirma la seva entrada a cardiologia a les 21.58 h. No hi ha cap retorn seu a l'institut aquella nit.",
+          "Pau Maristany registra activitat de descarrega a les 22.07 h, 22.19 h i 22.31 h al pati exterior. Mireia Albiol accedeix al laboratori de paper a les 22.01 h i hi roman fins les 22.34 h amb dues restauradores, segons registre i testimonis.",
+          "La targeta de servei de Lluc obre el passadis intern del Salon Lemaire a les 22.08 h i la sortida lateral a les 22.28 h. No hi ha cap ordre de visita de mecenes ni cap entrega oficial de licor prevista a aquella hora."
+        ]
+      },
+      "timeline-synthesis-doc": {
+        "id": "timeline-synthesis-doc",
+        "type": "document",
+        "title": "Sintesi Cronologica",
+        "subtitle": "Reconstruccio dels fets entre les 21.35 h i les 22.43 h",
+        "content": [
+          "21.35 h - 21.58 h: Claudia surt de l'institut i arriba a l'hospital per veure el seu pare. 21.49 h: Elisa entra al Salon Lemaire amb la carpeta de procedencia i anuncia al vigilant que ha de parlar amb algu de la casa abans de la inauguracio.",
+          "22.01 h - 22.34 h: Mireia queda situada al laboratori de paper amb dues restauradores. 22.05 h - 22.31 h: Pau mante activitat al pati de descarrega, confirmada per testimoni i registre.",
+          "20.41 h i 20.53 h: els correus entre Elisa i Lluc fixen una trobada a les 22.10 h per parlar de la procedencia i del nom del pare de Lluc. 22.08 h: la targeta de servei de Lluc obre el passadis intern del Salon Lemaire.",
+          "22.14 h - 22.29 h: finestra de mort segons forense. A les 22.17 h, una testimoni sent una discussio en que un home diu que la seva mare no sobrevivra si surt el nom del seu pare. 22.24 h: algu prova d'esborrar la carpeta compromesa des del compte d'Elisa.",
+          "22.28 h: la sortida lateral s'obre amb la targeta de Lluc i el vigilant el veu marxar tens. La combinacio de cita previa, motiu familiar immediat, rastre digital, fibres de guant i intent d'esborrat assenyala un unic autor viable."
+        ]
+      }
+    }
+  },
+  "solution": {
+    "culprit": "Lluc Vilaro",
+    "motive": "Elisa havia descobert que Lluc havia manipulat digitalment cartes i una targeta SD per reforcar la falsa procedencia de la mostra i, al mateix temps, protegir la memoria del seu pare Oriol, antic catalogador ja mort, que havia participat anys enrere en una cadena irregular d'inventaris. Lluc temia perdre la feina, destruir l'ultim relat que la seva mare encara reconeixia i veure convertit el dolor familiar en un escandol public.",
+    "method": "Lluc va acudir a la trobada privada amb una ampolla de licor d'herbes que contenia zopiclona dissolta. Elisa en va beure durant la discussio sobre la procedencia i, quan va perdre la consciencia, va caure contra la vitrina. Lluc va intentar recuperar o esborrar la documentacio digital compromesa i va fugir per la sortida lateral.",
+    "keyProof": "Tres linies independents convergeixen en Lluc: el correu que fixa la trobada i esmenta explicitament el pare i la SD, els accessos i l'intent d'esborrar la carpeta des del compte d'Elisa dins la finestra de mort, i el rastre fisic de l'ampolla i del got amb fibres de guants d'arxiu i patina verda del seu entorn de treball. La frase sentida per la testimoni sobre la mare i el pare reforca el motiu sense ser l'unica prova.",
+    "eliminations": [
+      "Claudia Ferres tenia motiu economic i sentimental, pero taxi, hospital i registre de visita la situen fora de l'institut durant tota la finestra de mort.",
+      "Pau Maristany arrossega dol i resentiment antic, pero el testimoni i els registres el mantenen al pati de descarrega quan es produeix la mort, sense acces ni vincle amb la manipulacio digital.",
+      "Mireia Albiol ofereix una falsa pista emocional molt forta per les cartes de la seva avia, pero queda situada al laboratori de paper amb dues restauradores i no hi ha cap prova que la connecti amb la beguda o amb l'esborrat d'arxius."
+    ]
+  }
+}

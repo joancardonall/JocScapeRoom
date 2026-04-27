@@ -1,0 +1,241 @@
+{
+  "id": "case-011",
+  "title": "La promenade truncada",
+  "summary": "El director d'un seminari internacional sobre Le Corbusier apareix mort a la terrassa d'un centre d'arquitectura la nit abans de revelar un informe que podia desacreditar una donacio estrella.",
+  "objective": "Resol l'homicidi establint qui podia accedir a la terrassa tecnica, qui tenia prou motiu per impedir l'informe i quines proves independents tanquen la finestra de mort.",
+  "fileSystem": {
+    "rootId": "main-folder",
+    "nodes": {
+      "main-folder": {
+        "id": "main-folder",
+        "type": "folder",
+        "title": "Expedient Principal",
+        "description": "Mort de Gabriel Hereu al Centre d'Arquitectura Contemporania.",
+        "children": [
+          "police-report-folder",
+          "witnesses-folder"
+        ]
+      },
+      "police-report-folder": {
+        "id": "police-report-folder",
+        "type": "folder",
+        "title": "Informes Policials",
+        "description": "Resum inicial i acta d'escena.",
+        "children": [
+          "intro-report-doc",
+          "scene-arrival-doc"
+        ]
+      },
+      "witnesses-folder": {
+        "id": "witnesses-folder",
+        "type": "folder",
+        "title": "Testimonis",
+        "description": "Relats de personal i serveis externs.",
+        "children": [
+          "witness-porter-doc",
+          "witness-taxi-doc",
+          "witness-dock-doc"
+        ]
+      },
+      "suspects-folder": {
+        "id": "suspects-folder",
+        "type": "folder",
+        "title": "Sospitosos",
+        "description": "Quatre perfils amb conflicte directe amb la victima.",
+        "children": [
+          "suspect-claudia",
+          "suspect-pau",
+          "suspect-mireia",
+          "suspect-lluc"
+        ]
+      },
+      "extra-evidence-folder": {
+        "id": "extra-evidence-folder",
+        "type": "folder",
+        "title": "Proves Complementaries",
+        "description": "Forense, correus, notes i cronologia final.",
+        "children": [
+          "forensic-report-doc",
+          "computer-emails-doc",
+          "drawer-notes-doc",
+          "harbor-shift-doc",
+          "timeline-synthesis-doc"
+        ]
+      },
+      "intro-report-doc": {
+        "id": "intro-report-doc",
+        "type": "document",
+        "title": "Informe Inicial",
+        "subtitle": "Context del cas",
+        "content": [
+          "Gabriel Hereu, 58 anys, director del seminari 'Habitar la ciutat moderna', va ser trobat mort a les 23.12 h a la terrassa est del Centre d'Arquitectura Contemporania.",
+          "La victima preparava una intervencio publica sobre la procedencia d'una maqueta atribuida a Le Corbusier, peça central del seminari i d'una donacio recent molt mediatica.",
+          "Diversos membres de l'equip sabien que Gabriel volia ajornar la presentacio i revisar factures, transports i permisos de prestec abans d'exposar res al public.",
+          "A la terrassa hi havia una copa de vi blanc, una carpeta de factures humida per la rosada i un panell de llum exterior manipulat.",
+          "Els indicis suggereixen una trobada privada amb algu acostumat a moure's per zones restringides del centre."
+        ]
+      },
+      "scene-arrival-doc": {
+        "id": "scene-arrival-doc",
+        "type": "document",
+        "title": "Arribada a l'Escena",
+        "subtitle": "Observacions inicials",
+        "content": [
+          "La terrassa no presenta signes d'escalada externa. La porta tecnica d'acces estava tancada pero no bloquejada, i s'hi detecta obertura recent amb targeta interna.",
+          "Gabriel Hereu mostra mareig incapacitant previ a una caiguda curta contra la barana baixa. Les lesions per l'impacte no expliquen per si soles la mort.",
+          "S'ha recuperat una copa amb restes de vi i un petit estoig de targetes SD buit prop del panell de llum exterior."
+        ]
+      },
+      "witness-porter-doc": {
+        "id": "witness-porter-doc",
+        "type": "document",
+        "title": "Declaracio del vigilant",
+        "subtitle": "Damià Solans, seguretat del centre",
+        "content": [
+          "Damià Solans situa Gabriel Hereu al seu despatx a les 21.44 h revisant una carpeta de factures i dient que a les deu i quart pujaria a la terrassa amb una persona de confiança.",
+          "A les 22.13 h, veu Lluc Verdaguer sortir de la sala de control de llums i pujar cap a l'escala tecnica de la terrassa. Lluc li comenta que hi ha una prova pendent de focus, cosa no registrada al calendari.",
+          "A les 22.36 h, el vigilant observa Lluc baixar de la mateixa zona i marxar pel passadis lateral sense passar per recepcio."
+        ]
+      },
+      "witness-taxi-doc": {
+        "id": "witness-taxi-doc",
+        "type": "document",
+        "title": "Declaracio del taxista",
+        "subtitle": "Marta Ribera, llicencia 144",
+        "content": [
+          "La taxista recull Claudia Benages a les 21.36 h al centre i la deixa a l'Hotel Marina a les 21.52 h. La cursa queda registrada al sistema.",
+          "Claudia comenta pel telefon que Gabriel acabara enfonsant una donacio que costava anys de relacions i que ella ja no pot salvar-lo de si mateix.",
+          "L'hotel confirma la seva entrada a un sopar privat a les 21.58 h i no consta cap nova sortida fins passada la mitjanit."
+        ]
+      },
+      "witness-dock-doc": {
+        "id": "witness-dock-doc",
+        "type": "document",
+        "title": "Declaracio de coordinadora",
+        "subtitle": "Elisenda Ros, suport de seminaris",
+        "content": [
+          "Elisenda Ros va veure Mireia Calvet a les 22.06 h a la sala de ponents amb dos professors convidats revisant la taula del debat inaugural.",
+          "A les 22.18 h va sentir Gabriel discutir amb un home a la terrassa sobre unes targetes de memoria i unes imatges que no podien desaparèixer.",
+          "També recorda haver parlat amb Pau Suñer a les 22.12 h i a les 22.29 h al moll de descarrega sobre caixes de publicacions que arribaven tard."
+        ]
+      },
+      "suspect-claudia": {
+        "id": "suspect-claudia",
+        "type": "suspect",
+        "name": "Claudia Benages",
+        "role": "Directora de relacions internacionals i donacions",
+        "alibi": "Sosté que va sortir del centre abans de les 21.40 h i que va assistir a un sopar privat a l'Hotel Marina fins passada la mitjanit.",
+        "statement": [
+          "Gabriel volia dinamitar una donacio en directe sense mesurar el dany institucional. Jo estava furiosa, no ho negaré.",
+          "El nostre conflicte no era només professional. Jo havia avalat la peça davant gent que m'havia ajudat tota la carrera, i ell semblava disposat a cremar-ho tot.",
+          "Però no vaig tornar al centre ni sabia res d'una trobada a la terrassa."
+        ]
+      },
+      "suspect-pau": {
+        "id": "suspect-pau",
+        "type": "suspect",
+        "name": "Pau Suñer",
+        "role": "Cap de produccio de l'esdeveniment",
+        "alibi": "Declara que va romandre al moll de descarrega coordinant llibres i senyaletica fins les 22.40 h.",
+        "statement": [
+          "Gabriel em feia pagar tots els retards encara que els proveidors fallessin. Erem a prop de no suportar-nos.",
+          "No tenia accés ni cap interès en targetes de memoria o factures de prestec. El meu mon era que l'acte obrís a l'hora.",
+          "Si algú va manipular llums i terrasses, no va ser cap responsable de produccio."
+        ]
+      },
+      "suspect-mireia": {
+        "id": "suspect-mireia",
+        "type": "suspect",
+        "name": "Mireia Calvet",
+        "role": "Comissaria academica del seminari",
+        "alibi": "Afirma que es va quedar a la sala de ponents amb dos professors convidats durant tota la franja critica.",
+        "statement": [
+          "Gabriel i jo discrepavem sobre com explicar Le Corbusier sense blanquejar-ne les ombres. Era una discussio intelectual i també personal.",
+          "Haviem estat col·laboradors molt propers, i ultimament jo li retreia que amagava massa informació en nom de la institució.",
+          "No vaig pujar a la terrassa i no vaig tocar cap targeta de memoria."
+        ]
+      },
+      "suspect-lluc": {
+        "id": "suspect-lluc",
+        "type": "suspect",
+        "name": "Lluc Verdaguer",
+        "role": "Responsable de llums, audiovisuals i arxiu media",
+        "alibi": "Assegura que va fer una comprovacio remota dels focus i que la seva presencia a l'escala tecnica es un malentès del vigilant.",
+        "statement": [
+          "Gabriel sempre em tractava com l'home dels botons, pero quan volia recuperar videos o targetes desaparegudes venia corrent a demanar-me miracles.",
+          "No tenia res a veure amb la procedencia de la maqueta ni amb les donacions. Jo nomes gestionava llums i media.",
+          "Si el meu nom surt als logs, sera perque soc qui obre i tanca mig edifici."
+        ]
+      },
+      "forensic-report-doc": {
+        "id": "forensic-report-doc",
+        "type": "document",
+        "title": "Informe Forense",
+        "subtitle": "Autopsia i laboratori preliminar",
+        "content": [
+          "La causa principal de la mort es una intoxicacio aguda per zopiclona dissolta en vi blanc, amb posterior caiguda contra la barana. La lesio traumàtica es secundaria.",
+          "La finestra de mort s'estableix entre les 22.20 h i les 22.35 h. La quantitat del sedant indica ingestio immediata abans del desmai.",
+          "A la copa hi ha residus de pols electrica fina i microfragments de guant negre antilliscant, compatibles amb manipulacio de panells de llum i equips audiovisuals. A l'estoig buit hi ha empremta parcial de Lluc Verdaguer."
+        ]
+      },
+      "computer-emails-doc": {
+        "id": "computer-emails-doc",
+        "type": "document",
+        "title": "Correus i Logs Audiovisuals",
+        "subtitle": "Extraccio del servidor del centre",
+        "content": [
+          "A les 20.24 h, Gabriel envia un missatge a Lluc: '22.15 terrassa est. Porta les targetes originals i el volcat complet. Demà ho explico tot'.",
+          "A les 20.38 h, Lluc respon: 'No pots sortir amb això sense parlar abans. Les imatges no m'enfonsaran només a mi'.",
+          "Els logs mostren que a les 22.12 h el compte de Lluc obre el panell de llum exterior i que a les 22.14 h la porta tecnica de la terrassa s'obre amb la seva targeta.",
+          "A les 22.33 h es detecta un intent d'esborrar la carpeta 'video_procedencia_maqueta' des del compte de Gabriel, pero el servidor en conserva la traça com a accés incomplet."
+        ]
+      },
+      "drawer-notes-doc": {
+        "id": "drawer-notes-doc",
+        "type": "document",
+        "title": "Notes del Calaix",
+        "subtitle": "Apunts de Gabriel Hereu",
+        "content": [
+          "Un full manuscrit recull: 'Lluc va substituir SD originals per copies netes. Diu que nomes protegia el centre, però hi ha factures de per mig'.",
+          "En una nota anterior: 'Claudia cremaria mig patronat per salvar la donacio. Mireia em qüestiona, Pau no toca res d'aixo'.",
+          "La darrera anotacio del dia diu: '22.15 terrassa est amb Lluc. Recuperar originals i tallar relat fals'."
+        ]
+      },
+      "harbor-shift-doc": {
+        "id": "harbor-shift-doc",
+        "type": "document",
+        "title": "Registre de Portes i Activitat",
+        "subtitle": "Control intern de l'edifici",
+        "content": [
+          "Claudia Benages valida sortida a les 21.34 h i la seva presencia a l'Hotel Marina queda confirmada abans de les 22.00 h.",
+          "Pau Suñer registra activitat al moll de descarrega a les 22.12 h, 22.29 h i 22.38 h. Mireia Calvet resta vinculada a la sala de ponents amb dos professors entre les 22.06 h i les 22.41 h.",
+          "La targeta de Lluc obre la porta tecnica de la terrassa a les 22.14 h i la porta lateral del passadis audiovisual a les 22.36 h. El seu terminal queda inactiu entre les 22.11 h i les 22.35 h."
+        ]
+      },
+      "timeline-synthesis-doc": {
+        "id": "timeline-synthesis-doc",
+        "type": "document",
+        "title": "Sintesi Cronologica",
+        "subtitle": "Lectura final de la finestra de mort",
+        "content": [
+          "20.24 h i 20.38 h: Gabriel i Lluc intercanvien correus sobre targetes originals i un volcat complet de video. Les notes del calaix fixen la trobada a les 22.15 h a la terrassa est.",
+          "21.36 h - 21.58 h: Claudia surt en taxi i arriba a l'hotel. 22.06 h: Mireia queda situada a la sala de ponents amb dos professors. 22.12 h i 22.29 h: Pau continua al moll de descarrega.",
+          "22.12 h: el compte de Lluc obre el panell de llum exterior. 22.14 h: la seva targeta obre la terrassa. 22.20 h - 22.35 h: finestra de mort segons forense.",
+          "22.18 h: una testimoni sent una discussio sobre targetes de memoria i imatges desaparegudes. 22.33 h: algu intenta esborrar la carpeta compromesa des del compte de la victima.",
+          "22.36 h: la porta lateral del passadis audiovisual s'obre amb la targeta de Lluc i el vigilant el veu baixar. Totes les linies independents de prova convergeixen en ell i deixen fora els altres tres sospitos."
+        ]
+      }
+    }
+  },
+  "solution": {
+    "culprit": "Lluc Verdaguer",
+    "motive": "Gabriel havia descobert que Lluc havia substituit targetes originals i manipulat material audiovisual per sostenir una falsa procedencia de la maqueta donada, amb factures que l'implicaven directament. La revelacio l'hauria destruït professionalment i l'hauria exposat davant del patronat.",
+    "method": "Lluc va pujar a la terrassa per la trobada pactada, va oferir a Gabriel vi blanc adulterat amb zopiclona i, un cop aquest va perdre l'estabilitat, va deixar que la caiguda contra la barana semblés accidental mentre intentava recuperar o esborrar el material compromes.",
+    "keyProof": "Els correus i les notes fixen la cita amb Lluc, els logs el situen obrint panell i terrassa, la finestra de mort encaixa amb la seva desaparicio del terminal, la copa conté rastres propis del seu entorn de treball i l'intent d'esborrar la carpeta compromet el seu mòbil immediat.",
+    "eliminations": [
+      "Claudia Benages tenia un fort mobil institucional, pero taxi, hotel i sopar privat l'exclouen clarament de la terrassa en la franja critica.",
+      "Pau Suñer mantenia friccions logistiques amb la victima, pero els registres del moll el deixen sense oportunitat real ni vincle amb les targetes SD.",
+      "Mireia Calvet aporta conflicte ideologic i personal, pero la seva presencia continuada amb dos professors a la sala de ponents la descarta com a autora material."
+    ]
+  }
+}

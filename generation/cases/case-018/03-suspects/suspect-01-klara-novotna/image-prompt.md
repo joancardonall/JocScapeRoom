@@ -1,0 +1,1 @@
+Retrat cinematic realista d'una dona txeca de 34 anys dels anys trenta, delineant d'arquitectura, cabell fosc curt recollit amb discrecio, ulls cansats i intel.ligents, camisa clara i jaqueta austera, mans tacades de grafit, ambient de taula de dibuix amb calcs, regles, acer cromat i llum freda de Brno.

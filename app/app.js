@@ -10,9 +10,8 @@ function App() {
   // 1) ESTAT PRINCIPAL DE L'APP
   // -----------------------------
   const [layoutData, setLayoutData] = React.useState(null); // scene-layout.json
-  const [selectedLayoutId, setSelectedLayoutId] = React.useState(''); // estil visual actual
-  const [caseIndex, setCaseIndex] = React.useState([]); // llista de casos disponibles
-  const [selectedCasePath, setSelectedCasePath] = React.useState(''); // cas actual
+  const [selectedLayoutId, setSelectedLayoutId] = React.useState('mies-study-room'); // estil visual actual
+  const [selectedCasePath] = React.useState('./cases/case-018.json'); // cas actual
   const [caseData, setCaseData] = React.useState(null); // JSON del cas carregat
   const [error, setError] = React.useState(''); // missatge d'error
   const [isSolutionVisible, setIsSolutionVisible] = React.useState(false); // panell solució
@@ -20,6 +19,7 @@ function App() {
 
   // Ref per controlar quin z-index va al davant.
   const zCounterRef = React.useRef(40);
+  const dragRef = React.useRef(null);
 
   // Retorna un nou z-index (sempre més gran que l'anterior).
   function nextZ() {
@@ -31,50 +31,24 @@ function App() {
   // 2) CARREGA DE FITXERS DE CONFIGURACIÓ BASE
   // ------------------------------------------
   React.useEffect(function () {
-    async function loadLayoutAndIndex() {
+    async function loadLayout() {
       try {
-        const responses = await Promise.all([
-          fetch('./scene-layout.json', { cache: 'no-store' }),
-          fetch('./cases/cases-index.json', { cache: 'no-store' })
-        ]);
-
-        const layoutResponse = responses[0];
-        const indexResponse = responses[1];
+        const layoutResponse = await fetch('./scene-layout.json', { cache: 'no-store' });
 
         if (!layoutResponse.ok) {
           throw new Error("No s'ha pogut carregar el layout (" + layoutResponse.status + ')');
         }
 
-        if (!indexResponse.ok) {
-          throw new Error("No s'ha pogut carregar l'index de casos (" + indexResponse.status + ')');
-        }
-
         const layout = await layoutResponse.json();
-        const index = await indexResponse.json();
 
         setLayoutData(layout);
-
-        if (Array.isArray(index)) {
-          setCaseIndex(index);
-        } else {
-          setCaseIndex([]);
-        }
       } catch (err) {
         setError(err.message);
       }
     }
 
-    loadLayoutAndIndex();
+    loadLayout();
   }, []);
-
-  React.useEffect(function () {
-    if (!Array.isArray(caseIndex) || caseIndex.length === 0) {
-      return;
-    }
-
-    const lastCase = caseIndex[caseIndex.length - 1];
-    setSelectedCasePath(lastCase.path || './cases/case-001.json');
-  }, [caseIndex]);
 
   React.useEffect(
     function () {
@@ -149,6 +123,55 @@ function App() {
 
     return function () {
       window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
+
+  React.useEffect(function () {
+    function handleMouseMove(event) {
+      if (!dragRef.current) {
+        return;
+      }
+
+      event.preventDefault();
+
+      const drag = dragRef.current;
+      const viewportWidth = window.innerWidth || 1;
+      const viewportHeight = window.innerHeight || 1;
+      const deltaX = ((event.clientX - drag.startMouseX) / viewportWidth) * 100;
+      const deltaY = ((event.clientY - drag.startMouseY) / viewportHeight) * 100;
+
+      setOpenWindows(function (prev) {
+        const updated = [];
+
+        for (let i = 0; i < prev.length; i += 1) {
+          const win = prev[i];
+
+          if (win.windowId === drag.windowId) {
+            const maxX = Math.max(0, 100 - win.w);
+            const maxY = Math.max(0, 100 - win.h);
+            const nextX = Math.min(maxX, Math.max(0, drag.startX + deltaX));
+            const nextY = Math.min(maxY, Math.max(0, drag.startY + deltaY));
+
+            updated.push(Object.assign({}, win, { x: nextX, y: nextY }));
+          } else {
+            updated.push(win);
+          }
+        }
+
+        return updated;
+      });
+    }
+
+    function handleMouseUp() {
+      dragRef.current = null;
+    }
+
+    window.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener('mouseup', handleMouseUp);
+
+    return function () {
+      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('mouseup', handleMouseUp);
     };
   }, []);
 
@@ -323,6 +346,11 @@ function App() {
     return !!node && node.type === 'document' && (node.category === 'suspect-dossier' || node.category === 'suspect-profile');
   }
 
+  function isGenericSuspectDossierTitle(title) {
+    const normalizedTitle = (title || '').trim().toLowerCase();
+    return normalizedTitle === 'fitxa policial' || normalizedTitle === 'perfil policial';
+  }
+
   function getLinkedBackstoryNode(node) {
     if (!node || node.category !== 'suspect-profile') {
       return null;
@@ -358,6 +386,10 @@ function App() {
       return node.subtitle.split(' - ')[0].trim();
     }
 
+    if (isSuspectDossierNode(node) && isGenericSuspectDossierTitle(node.title) && node.subtitle) {
+      return node.subtitle;
+    }
+
     return node.title || '';
   }
 
@@ -376,6 +408,10 @@ function App() {
 
     if (node.subtitle && node.subtitle.indexOf(' - ') !== -1) {
       return node.subtitle.split(' - ').slice(1).join(' - ').trim();
+    }
+
+    if (isSuspectDossierNode(node) && isGenericSuspectDossierTitle(node.title)) {
+      return '';
     }
 
     return node.subtitle || '';
@@ -574,15 +610,7 @@ function App() {
       for (let i = 0; i < prev.length; i += 1) {
         const win = prev[i];
         if (win.windowId === windowId) {
-          updated.push({
-            windowId: win.windowId,
-            nodeId: win.nodeId,
-            x: win.x,
-            y: win.y,
-            w: win.w,
-            h: win.h,
-            z: nextZ()
-          });
+          updated.push(Object.assign({}, win, { z: nextZ() }));
         } else {
           updated.push(win);
         }
@@ -600,6 +628,35 @@ function App() {
         }
       }
       return updated;
+    });
+  }
+
+  function startWindowDrag(windowId, event) {
+    if (event.button !== 0) {
+      return;
+    }
+
+    event.preventDefault();
+    event.stopPropagation();
+    bringWindowToFront(windowId);
+
+    setOpenWindows(function (prev) {
+      for (let i = 0; i < prev.length; i += 1) {
+        const win = prev[i];
+
+        if (win.windowId === windowId) {
+          dragRef.current = {
+            windowId: windowId,
+            startMouseX: event.clientX,
+            startMouseY: event.clientY,
+            startX: win.x,
+            startY: win.y
+          };
+          break;
+        }
+      }
+
+      return prev;
     });
   }
 
@@ -676,133 +733,7 @@ function App() {
     );
   }
 
-  // 7.2) Selectors de cas i estil visual
-  const selectOptions = [];
-  if (caseIndex.length > 0) {
-    for (let i = 0; i < caseIndex.length; i += 1) {
-      const item = caseIndex[i];
-      const keyValue = item.id || item.path;
-      const optionValue = item.path;
-      const optionText = (item.id || 'cas') + ' - ' + (item.title || item.path);
-      selectOptions.push(e('option', { key: keyValue, value: optionValue }, optionText));
-    }
-  } else {
-    selectOptions.push(e('option', { key: 'default', value: selectedCasePath }, selectedCasePath));
-  }
-
-  const layoutOptions = [];
-  const layouts = getAvailableLayouts();
-  for (let i = 0; i < layouts.length; i += 1) {
-    const layout = layouts[i];
-    const layoutId = getLayoutId(layout, i);
-    layoutOptions.push(e('option', { key: layoutId, value: layoutId }, layout.name || layoutId));
-  }
-
-  mainChildren.push(
-    e(
-      'section',
-      {
-        style: {
-          position: 'absolute',
-          left: '2%',
-          top: '3%',
-          display: 'flex',
-          alignItems: 'flex-end',
-          gap: '10px',
-          maxWidth: '78vw',
-          background: 'transparent',
-          border: 'none',
-          padding: 0,
-          zIndex: 5000
-        }
-      },
-      e(
-        'div',
-        { style: { minWidth: '220px', maxWidth: '360px' } },
-        e(
-          'label',
-          {
-            htmlFor: 'case-selector',
-            style: {
-              display: 'block',
-              fontSize: '11px',
-              marginBottom: '3px',
-              color: activeTheme.chrome.labelColor,
-              fontWeight: '600',
-              textShadow: activeTheme.chrome.labelShadow
-            }
-          },
-          'Cas'
-        ),
-        e(
-          'select',
-          {
-            id: 'case-selector',
-            value: selectedCasePath,
-            onChange: function (event) {
-              setSelectedCasePath(event.target.value);
-            },
-            style: {
-              width: '100%',
-              height: '30px',
-              borderRadius: '6px',
-              border: activeTheme.chrome.selectBorder,
-              background: activeTheme.chrome.selectBackground,
-              color: activeTheme.chrome.selectColor,
-              padding: '0 7px',
-              fontSize: '12px',
-              boxShadow: activeTheme.chrome.selectShadow
-            }
-          },
-          selectOptions
-        )
-      ),
-      e(
-        'div',
-        { style: { width: '160px' } },
-        e(
-          'label',
-          {
-            htmlFor: 'layout-selector',
-            style: {
-              display: 'block',
-              fontSize: '11px',
-              marginBottom: '3px',
-              color: activeTheme.chrome.labelColor,
-              fontWeight: '600',
-              textShadow: activeTheme.chrome.labelShadow
-            }
-          },
-          'Estil'
-        ),
-        e(
-          'select',
-          {
-            id: 'layout-selector',
-            value: selectedLayoutId,
-            onChange: function (event) {
-              setSelectedLayoutId(event.target.value);
-              setOpenWindows([]);
-            },
-            style: {
-              width: '100%',
-              height: '30px',
-              borderRadius: '6px',
-              border: activeTheme.chrome.selectBorder,
-              background: activeTheme.chrome.selectBackground,
-              color: activeTheme.chrome.selectColor,
-              padding: '0 7px',
-              fontSize: '12px',
-              boxShadow: activeTheme.chrome.selectShadow
-            }
-          },
-          layoutOptions
-        )
-      )
-    )
-  );
-
-  // 7.3) Finestres obertes
+  // 7.2) Finestres obertes
   for (let i = 0; i < openWindows.length; i += 1) {
     const win = openWindows[i];
     const node = getNodeById(win.nodeId);
@@ -1203,6 +1134,9 @@ function App() {
         e(
           'header',
           {
+            onMouseDown: function (event) {
+              startWindowDrag(win.windowId, event);
+            },
             style: {
               height: '44px',
               display: 'flex',
@@ -1210,7 +1144,9 @@ function App() {
               justifyContent: 'space-between',
               padding: '0 10px 0 12px',
               borderBottom: activeTheme.window.headerBorder,
-              background: activeTheme.window.headerBackground
+              background: activeTheme.window.headerBackground,
+              cursor: 'move',
+              userSelect: 'none'
             }
           },
           e(
@@ -1231,6 +1167,9 @@ function App() {
           e(
             'button',
             {
+              onMouseDown: function (event) {
+                event.stopPropagation();
+              },
               onClick: function () {
                 closeWindow(win.windowId);
               },

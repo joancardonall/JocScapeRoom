@@ -1,0 +1,1 @@
+Retrat cinematic realista d'una dona alemanya de 39 anys dels anys trenta, administradora cultural de Berlin, cabell ros fosc ondulat i recollit, mirada freda i calculadora, vestit sobri amb guants blancs plegats a la ma, ambient d'arxiu modernista amb cartes, calcs, vidre i acer cromat.

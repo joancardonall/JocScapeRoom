@@ -1,0 +1,1 @@
+Retrat cinematic realista d'un home txec de 29 anys dels anys trenta, fotograf d'arquitectura, rostre prim i nervios, cabell fosc desordenat, camera de plaques a la ma, jaqueta gastada pero elegant, fons de vil.la moderna amb reflexos de vidre, acer cromat i ombres de salo nocturn.

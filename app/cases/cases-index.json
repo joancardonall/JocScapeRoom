@@ -13,5 +13,6 @@
   {"id":"case-012","title":"La porta verda de Paris","path":"./cases/case-012.json"},
   {"id":"case-015","title":"El pavello de la boira","path":"./cases/case-015.json"},
   {"id":"case-016","title":"La galeria dels miralls freds","path":"./cases/case-016.json"},
-  {"id":"case-017","title":"L'ombra del trifori","path":"./cases/case-017.json"}
+  {"id":"case-017","title":"L'ombra del trifori","path":"./cases/case-017.json"},
+  {"id":"case-018","title":"El vidre de Tugendhat","path":"./cases/case-018.json"}
 ]

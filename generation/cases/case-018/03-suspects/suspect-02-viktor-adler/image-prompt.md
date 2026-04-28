@@ -1,0 +1,1 @@
+Retrat cinematic realista d'un home centreeuropeu de 51 anys dels anys trenta, industrial i mecenes d'arquitectura moderna, vestit fosc impecable, cabell pentinat enrere, mirada controlada i orgullosa, interior de vil.la moderna amb vidre, pedra polida, cadires tubulars i llum de recepcio privada.

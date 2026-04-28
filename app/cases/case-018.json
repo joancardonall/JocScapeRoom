@@ -1,0 +1,373 @@
+{
+  "id": "case-018",
+  "title": "El vidre de Tugendhat",
+  "summary": "Brno, 1931. El critic Otto Heller mor durant una vetllada privada en una casa moderna de vidre, acer cromat i panells corredissos inspirada en el mon de Mies van der Rohe. La caiguda sembla accidental, pero la carpeta de Berlin que portava Otto ha estat esporgada i l'escena conserva marques massa precises per ser casuals.",
+  "objective": "Reconstrueix la nit del crim, llegeix els dossiers dels sospitosos i demostra qui va matar Otto Heller per protegir el relat public de l'arquitectura moderna.",
+  "fileSystem": {
+    "rootId": "main-folder",
+    "nodes": {
+      "main-folder": {
+        "id": "main-folder",
+        "type": "folder",
+        "title": "Expedient Principal",
+        "description": "Mort d'Otto Heller a la Vila Adler durant una vetllada d'arquitectura moderna.",
+        "children": ["police-report-folder", "witnesses-folder", "suspects-folder", "extra-evidence-folder"]
+      },
+      "police-report-folder": {
+        "id": "police-report-folder",
+        "type": "folder",
+        "title": "Informe Policial",
+        "description": "Resum inicial i observacions de l'escena.",
+        "children": ["intro-report-doc", "scene-arrival-doc"]
+      },
+      "witnesses-folder": {
+        "id": "witnesses-folder",
+        "type": "folder",
+        "title": "Testimonis",
+        "description": "Declaracions de convidats i personal de servei.",
+        "children": ["witness-jana-doc", "witness-pavel-doc", "witness-grete-doc"]
+      },
+      "suspects-folder": {
+        "id": "suspects-folder",
+        "type": "folder",
+        "title": "Expedients de Sospitosos",
+        "description": "Dossiers personals amb relacio, coartada i interrogatori.",
+        "children": ["suspect-klara-folder", "suspect-viktor-folder", "suspect-herta-folder", "suspect-emil-folder"]
+      },
+      "extra-evidence-folder": {
+        "id": "extra-evidence-folder",
+        "type": "folder",
+        "title": "Proves Complementaries",
+        "description": "Forense, arxiu, fotografia i cronologia.",
+        "children": ["forensic-report-doc", "computer-emails-doc", "drawer-notes-doc", "timeline-synthesis-doc"]
+      },
+      "intro-report-doc": {
+        "id": "intro-report-doc",
+        "type": "document",
+        "title": "Informe Inicial",
+        "subtitle": "Brno, Vila Adler - 14 de maig de 1931",
+        "content": [
+          "La víctima és Otto Heller, 42 anys, crític i arxiver independent especialitzat en arquitectura moderna alemanya i txeca. És localitzat mort a les 22.23 h al peu del jardí d'hivern de la Vila Adler.",
+          "La vetllada reunia arquitectes, mecenes, premsa i intermediaris vinculats a una exposició sobre Mies van der Rohe, el Pavelló de Barcelona i les noves cases de vidre i acer del mecenatge europeu.",
+          "La primera hipòtesi és una caiguda accidental contra el rail inferior d'un panell corredís. La inspecció inicial, però, detecta un rail massa net, un fre desplaçat i la desaparició de dos calcs de la carpeta de Berlin que portava Heller."
+        ]
+      },
+      "scene-arrival-doc": {
+        "id": "scene-arrival-doc",
+        "type": "document",
+        "title": "Arribada a l'Escena",
+        "subtitle": "Jardí d'hivern i panells corredissos",
+        "content": [
+          "El cos queda al nivell inferior, amb el braç dret orientat cap al panell de vidre. La posició suggereix una caiguda, però el cop principal no coincideix amb l'alçada ni amb la forma del rail.",
+          "El fre inferior del panell apareix desplaçat. Al punt de contacte hi ha cera fresca de mecanisme i pols d'acer blau de Prússia.",
+          "La carpeta de Berlin és present a terra, però hi falten dos calcs amb inicials de Klara Novotna i un rebut vinculat a correccions del catàleg."
+        ]
+      },
+      "witness-jana-doc": {
+        "id": "witness-jana-doc",
+        "type": "document",
+        "title": "Declaració de Jana Marek",
+        "subtitle": "Traductora txeca convidada",
+        "content": [
+          "Jana situa Klara Novotna amb ella en una sala lateral entre les 22.14 h i les 22.25 h. Klara plorava i repetia que Otto volia convertir la seva vida en una nota de peu.",
+          "La testimoni no veu Klara sortir durant la franja crítica. Quan se sent el crit d'Emil, totes dues encara són a la sala."
+        ]
+      },
+      "witness-pavel-doc": {
+        "id": "witness-pavel-doc",
+        "type": "document",
+        "title": "Declaració de Pavel Dusek",
+        "subtitle": "Majordom de la Vila Adler",
+        "content": [
+          "Pavel confirma que Herta Weiss va demanar la clau de servei del jardí d'hivern a les 18.30 h i un parell de guants blancs per manipular documents.",
+          "La clau no torna al registre fins a les 22.34 h, després del descobriment del cos. Herta afirma que l'havia deixada en una safata, però cap membre del servei ho confirma."
+        ]
+      },
+      "witness-grete-doc": {
+        "id": "witness-grete-doc",
+        "type": "document",
+        "title": "Declaració de Grete Falk",
+        "subtitle": "Convidada de Berlin",
+        "content": [
+          "Grete veu Viktor Adler al saló principal durant el soroll final. El descriu pàl·lid i rígid, però envoltat de convidats.",
+          "També recorda haver sentit Otto dir a les 22.08 h que l'endemà Berlin despertaria amb menys vidre i més noms ratllats."
+        ]
+      },
+      "suspect-klara-folder": {
+        "id": "suspect-klara-folder",
+        "type": "folder",
+        "category": "suspect",
+        "title": "Klara Novotna",
+        "description": "Delineant tècnica que temia ser utilitzada com a símbol d'una autoria esborrada.",
+        "children": ["suspect-klara-dossier-doc", "suspect-klara-connection-doc", "suspect-klara-alibi-doc", "suspect-klara-interrogation-doc"]
+      },
+      "suspect-viktor-folder": {
+        "id": "suspect-viktor-folder",
+        "type": "folder",
+        "category": "suspect",
+        "title": "Viktor Adler",
+        "description": "Industrial, propietari de la casa i mecenes de l'exposició.",
+        "children": ["suspect-viktor-dossier-doc", "suspect-viktor-connection-doc", "suspect-viktor-alibi-doc", "suspect-viktor-interrogation-doc"]
+      },
+      "suspect-herta-folder": {
+        "id": "suspect-herta-folder",
+        "type": "folder",
+        "category": "suspect",
+        "title": "Herta Weiss",
+        "description": "Intermediària de Berlin i coordinadora documental de l'exposició.",
+        "children": ["suspect-herta-dossier-doc", "suspect-herta-connection-doc", "suspect-herta-alibi-doc", "suspect-herta-interrogation-doc"]
+      },
+      "suspect-emil-folder": {
+        "id": "suspect-emil-folder",
+        "type": "folder",
+        "category": "suspect",
+        "title": "Emil Kraus",
+        "description": "Fotògraf d'arquitectura que amaga una placa compromesa.",
+        "children": ["suspect-emil-dossier-doc", "suspect-emil-connection-doc", "suspect-emil-alibi-doc", "suspect-emil-interrogation-doc"]
+      },
+      "suspect-klara-dossier-doc": {
+        "id": "suspect-klara-dossier-doc",
+        "type": "document",
+        "category": "suspect-dossier",
+        "title": "Fitxa Policial",
+        "subtitle": "Klara Novotna",
+        "photo": "./images/suspects/case-018/klara-novotna.jpg",
+        "content": [
+          "Delineant tècnica de 34 anys, formada entre Brno i Berlin. Precisa, reservada i massa acostumada que altres persones converteixin els seus dibuixos en autoria aliena.",
+          "Otto havia promès fer visible el seu paper en diversos interiors moderns, però Klara va descobrir que pensava convertir-la en un element dramàtic del seu article.",
+          "El seu motiu és real: por, ràbia i necessitat de controlar el propi nom. La seva coartada, però, és sòlida."
+        ]
+      },
+      "suspect-klara-connection-doc": {
+        "id": "suspect-klara-connection-doc",
+        "type": "document",
+        "category": "suspect-relationship",
+        "title": "Relació amb Otto Heller",
+        "subtitle": "Reconeixement o explotació",
+        "content": [
+          "Klara havia facilitat a Otto notes i calcs amb l'esperança que el seu treball sortís de l'ombra. Ell li oferia una veu, però també li prenia el control del relat.",
+          "La discussió de les 21.57 h neix d'aquí: Klara volia ser reconeguda com a professional, no convertida en prova humana dins una polèmica que altres capitalitzarien."
+        ]
+      },
+      "suspect-klara-alibi-doc": {
+        "id": "suspect-klara-alibi-doc",
+        "type": "document",
+        "category": "suspect-alibi",
+        "title": "Coartada i Moviments",
+        "subtitle": "Sala lateral - 22.14 h a 22.25 h",
+        "content": [
+          "Després de discutir amb Otto, Klara entra en una sala lateral amb Jana Marek. Jana confirma que Klara no surt durant la finestra de mort.",
+          "La seva mentida posterior és documental: havia guardat una còpia parcial d'un calc per protegir-se. No encaixa amb el mecanisme ni amb el temps del crim."
+        ]
+      },
+      "suspect-klara-interrogation-doc": {
+        "id": "suspect-klara-interrogation-doc",
+        "type": "document",
+        "category": "suspect-interrogation",
+        "title": "Interrogatori",
+        "subtitle": "Declaració de Klara Novotna",
+        "content": [
+          "Interrogador: Otto havia de publicar el teu nom? Klara: Havia de publicar una història que encara no era seva.",
+          "Interrogador: El volies aturar. Klara: Volia que em mirés com una professional, no com una peça bonica per fer més dramàtic el seu article.",
+          "Interrogador: Vas sortir de la sala lateral? Klara: No. Jana em va veure desfer-me. No és una coartada elegant, però és certa."
+        ]
+      },
+      "suspect-viktor-dossier-doc": {
+        "id": "suspect-viktor-dossier-doc",
+        "type": "document",
+        "category": "suspect-dossier",
+        "title": "Fitxa Policial",
+        "subtitle": "Viktor Adler",
+        "photo": "./images/suspects/case-018/viktor-adler.jpg",
+        "content": [
+          "Industrial de 51 anys, propietari de la Vila Adler i mecenes de l'exposició. Volia que la casa el presentés com un home de futur, refinat i necessari.",
+          "Havia pagat correccions de catàleg per suavitzar procedències i silencis incòmodes. Tenia molt a perdre si Otto publicava l'arxiu sencer.",
+          "El seu motiu reputacional és potent, però la finestra de mort el situa al saló principal davant de diversos convidats."
+        ]
+      },
+      "suspect-viktor-connection-doc": {
+        "id": "suspect-viktor-connection-doc",
+        "type": "document",
+        "category": "suspect-relationship",
+        "title": "Relació amb Otto Heller",
+        "subtitle": "Mecenatge i xantatge elegant",
+        "content": [
+          "Viktor havia utilitzat Otto com a pont cap a revistes europees. Quan Otto detecta pagaments per alterar el catàleg, el vincle es torna una amenaça.",
+          "Viktor intenta comprar-lo amb una plaça de consultor. Otto rebutja l'oferta i promet publicar el rebut."
+        ]
+      },
+      "suspect-viktor-alibi-doc": {
+        "id": "suspect-viktor-alibi-doc",
+        "type": "document",
+        "category": "suspect-alibi",
+        "title": "Coartada i Moviments",
+        "subtitle": "Saló principal",
+        "content": [
+          "Grete Falk i dues persones més veuen Viktor al saló principal durant el soroll final. Estava pàl·lid, però visible.",
+          "No hi ha rastres seus al rail ni a la barra cromada, i el personal tècnic confirma que no coneixia el fre ocult del panell."
+        ]
+      },
+      "suspect-viktor-interrogation-doc": {
+        "id": "suspect-viktor-interrogation-doc",
+        "type": "document",
+        "category": "suspect-interrogation",
+        "title": "Interrogatori",
+        "subtitle": "Declaració de Viktor Adler",
+        "content": [
+          "Interrogador: Va pagar per corregir el catàleg? Viktor: Vaig pagar per evitar vulgaritats, no per mentir.",
+          "Interrogador: Otto podia destruir la seva reputació. Viktor: La reputació es defensa amb advocats, inspector. No amb barres cromades.",
+          "Interrogador: Coneixia el mecanisme del panell? Viktor: El vaig comprar, no el vaig instal·lar."
+        ]
+      },
+      "suspect-herta-dossier-doc": {
+        "id": "suspect-herta-dossier-doc",
+        "type": "document",
+        "category": "suspect-dossier",
+        "title": "Fitxa Policial",
+        "subtitle": "Herta Weiss",
+        "photo": "./images/suspects/case-018/herta-weiss.jpg",
+        "content": [
+          "Administradora cultural de 39 anys, vinguda de Berlin per coordinar documents, contactes i catàleg. Serena, eficient i acostumada a fer desaparèixer problemes abans que arribin als noms importants.",
+          "Otto sabia que ella havia reordenat cartes i calcs per protegir una versió neta de l'entorn de Mies i dels seus mecenes.",
+          "És l'única sospitosa amb motiu complet, coneixement de la carpeta, clau de servei i absència de testimoni durant tota la finestra."
+        ]
+      },
+      "suspect-herta-connection-doc": {
+        "id": "suspect-herta-connection-doc",
+        "type": "document",
+        "category": "suspect-relationship",
+        "title": "Relació amb Otto Heller",
+        "subtitle": "La guerra pel paquet de Berlin",
+        "content": [
+          "Otto i Herta es coneixien de Berlin. Ell sospitava que ella havia fet de filtre invisible entre els dibuixos, les cartes i el relat públic.",
+          "Ella sabia que Otto no buscava matisos: volia un nom responsable i havia decidit que aquell nom seria el seu."
+        ]
+      },
+      "suspect-herta-alibi-doc": {
+        "id": "suspect-herta-alibi-doc",
+        "type": "document",
+        "category": "suspect-alibi",
+        "title": "Coartada i Moviments",
+        "subtitle": "Jardí d'hivern",
+        "content": [
+          "Herta admet haver entrat al jardí d'hivern amb Otto a les 22.12 h, però diu que en va sortir al cap de dos minuts. Cap testimoni confirma aquesta sortida.",
+          "El llibre de claus mostra que encara tenia la clau de servei. El guant blanc conserva cera fresca i pols d'acer del fre manipulat."
+        ]
+      },
+      "suspect-herta-interrogation-doc": {
+        "id": "suspect-herta-interrogation-doc",
+        "type": "document",
+        "category": "suspect-interrogation",
+        "title": "Interrogatori",
+        "subtitle": "Declaració de Herta Weiss",
+        "content": [
+          "Interrogador: Per què va portar Otto al jardí d'hivern? Herta: Volia dramatitzar la seva petita revelació davant el vidre. Jo només vaig intentar calmar-lo.",
+          "Interrogador: El llibre de claus diu que vostè tenia la clau de servei. Herta: Per manipular documents i panells sense que els convidats ho toquessin tot.",
+          "Interrogador: El rail tenia cera fresca al punt on diu que no va tocar res. Herta: Aquesta casa és plena de mecanismes. No converteixi el manteniment en assassinat.",
+          "Interrogador: I els dos calcs desapareguts? Herta: Otto traficava amb papers. Pregunti als qui els volien vendre."
+        ]
+      },
+      "suspect-emil-dossier-doc": {
+        "id": "suspect-emil-dossier-doc",
+        "type": "document",
+        "category": "suspect-dossier",
+        "title": "Fitxa Policial",
+        "subtitle": "Emil Kraus",
+        "photo": "./images/suspects/case-018/emil-kraus.jpg",
+        "content": [
+          "Fotògraf d'arquitectura de 29 anys, ambiciós i nerviós. Esperava que una sola imatge de la Vila Adler li obrís Berlin.",
+          "Otto li havia promès una portada si aconseguia una fotografia prou compromesa. Emil amaga una placa després del crim per por de perdre-la.",
+          "La seva mentida el fa sospitós, però la placa mostra que arriba després del cop i captura el reflex de Herta amb guants prop del panell."
+        ]
+      },
+      "suspect-emil-connection-doc": {
+        "id": "suspect-emil-connection-doc",
+        "type": "document",
+        "category": "suspect-relationship",
+        "title": "Relació amb Otto Heller",
+        "subtitle": "Una portada o una traïció",
+        "content": [
+          "Otto havia promès a Emil projecció internacional, però el fotògraf sospitava que el crític volia quedar-se el negatiu més valuós sense pagar-lo.",
+          "Emil volia aprofitar l'escàndol, no provocar-lo físicament."
+        ]
+      },
+      "suspect-emil-alibi-doc": {
+        "id": "suspect-emil-alibi-doc",
+        "type": "document",
+        "category": "suspect-alibi",
+        "title": "Coartada i Moviments",
+        "subtitle": "Placa amagada",
+        "content": [
+          "Emil entra al jardí d'hivern a les 22.23 h des del costat oposat i troba el cos. La seva placa amagada fixa aquest moment.",
+          "La fotografia el condemna per mentir, però també el descarta com a autor del cop."
+        ]
+      },
+      "suspect-emil-interrogation-doc": {
+        "id": "suspect-emil-interrogation-doc",
+        "type": "document",
+        "category": "suspect-interrogation",
+        "title": "Interrogatori",
+        "subtitle": "Declaració d'Emil Kraus",
+        "content": [
+          "Interrogador: Per què va amagar una placa? Emil: Perquè era la millor fotografia de la meva vida i la pitjor prova possible.",
+          "Interrogador: Va tocar el cos? Emil: Vaig fer dos passos, vaig veure sang i vaig cridar.",
+          "Interrogador: La imatge mostra Herta. Emil: Ho vaig entendre massa tard. Primer només vaig pensar que tothom me la prendria."
+        ]
+      },
+      "forensic-report-doc": {
+        "id": "forensic-report-doc",
+        "type": "document",
+        "title": "Informe Forense",
+        "subtitle": "Cop, rail i barra cromada",
+        "content": [
+          "El traumatisme cranial no correspon a una caiguda neta contra el rail inferior. La marca principal és corba i regular, compatible amb una barra tubular cromada.",
+          "Una barra de mostra del prestatge de mobiliari ha estat retornada girada al revés. Conserva una microtraça de sang netejada i pols d'acer igual a la del panell.",
+          "La víctima va ser colpejada abans de ser disposada contra el rail per simular l'accident."
+        ]
+      },
+      "computer-emails-doc": {
+        "id": "computer-emails-doc",
+        "type": "document",
+        "title": "La Carpeta de Berlin",
+        "subtitle": "Calcs, carta retocada i rebut desaparegut",
+        "content": [
+          "La carpeta contenia proves sobre creditacions manipulades, col·laboracions ocultes i pressions de clients per presentar una modernitat més neta del que era.",
+          "Hi falten dues peces concretes: els calcs amb inicials de Klara i un rebut d'Adler sobre correccions de catàleg. La selecció no és casual: només algú que coneixia l'ordre exacte podia retirar el que incriminava Herta sense destruir tota la carpeta."
+        ]
+      },
+      "drawer-notes-doc": {
+        "id": "drawer-notes-doc",
+        "type": "document",
+        "title": "Placa Fotogràfica d'Emil",
+        "subtitle": "Reflex al vidre",
+        "content": [
+          "La placa amagada per Emil mostra el jardí d'hivern instants després del cop. Al reflex del panell apareix Herta amb guants blancs a prop del fre inferior.",
+          "La imatge també situa Emil entrant des del costat oposat, cosa que explica la seva mentida però el descarta com a agressor."
+        ]
+      },
+      "timeline-synthesis-doc": {
+        "id": "timeline-synthesis-doc",
+        "type": "document",
+        "title": "Síntesi Cronològica",
+        "subtitle": "22.08 h - 22.34 h",
+        "content": [
+          "22.08 h: Otto anuncia que publicarà els documents. 22.12 h: Herta el condueix al jardí d'hivern.",
+          "22.18 h - 22.21 h: finestra real de mort. Klara és amb Jana, Viktor és al saló i Emil encara no ha entrat.",
+          "22.23 h: Emil troba el cos i amaga la placa. 22.34 h: Herta retorna la clau de servei."
+        ]
+      }
+    }
+  },
+  "solution": {
+    "culprit": "Herta Weiss",
+    "motive": "Volia impedir que Otto publiqués que ella havia manipulat cartes, calcs i creditacions per protegir el relat públic de l'entorn de Mies i dels seus mecenes.",
+    "method": "Va bloquejar el panell corredís del jardí d'hivern, va colpejar Otto amb una barra tubular cromada i va simular una caiguda contra el rail mentre retirava documents de la carpeta.",
+    "keyProof": "El rail massa net, la cera del guant de Herta, el registre de claus i la placa d'Emil amb el seu reflex al panell connecten motiu, mètode i oportunitat.",
+    "eliminations": [
+      "Klara Novotna tenia motiu, però Jana Marek la veu a la sala lateral durant tota la finestra de mort.",
+      "Viktor Adler volia salvar reputació i diners, però és vist al saló principal i no coneixia el fre ocult del panell.",
+      "Emil Kraus menteix sobre la placa, però la mateixa fotografia mostra que arriba després del cop.",
+      "Herta Weiss és l'única amb clau, guants, coneixement exacte dels documents desapareguts i absència de coartada."
+    ]
+  }
+}

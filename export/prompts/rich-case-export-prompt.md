@@ -52,10 +52,11 @@ Generar un JSON final del joc que:
 - Retorna nomes JSON valid.
 - Tot el text visible per a l'usuari ha de ser en catala.
 - El catala ha de sonar natural i llegible, no excessivament sec ni encarcarat.
-- No copiïs literalment tot el cas font: resumeix-lo amb intel.ligencia.
+- No copiïs literalment tot el cas font, pero tampoc el redueixis a apunts breus: converteix-lo en documents finals rics i llegibles.
 - No perdis cap prova clau ni cap contradiccio important.
 - La sintesi cronologica ha d'explicar clarament per que nomes hi ha un culpable viable.
 - Els textos dels sospitos poden ser mes curts que al cas font, pero han de conservar personalitat, passat i conflicte.
+- No afegeixis mes fitxers visibles per donar context: amplia el contingut dels documents existents.
 
 ## Estandard obligatori per sospitos
 
@@ -78,6 +79,19 @@ Important:
 - A la resta de documents finals evita frases de comentarista extern que interpretin la prova per al jugador. Mostra el document i deixa que la deduccio surti de la lectura.
 
 No exportis els sospitos com un unic node `type: suspect`, tret que l'usuari t'ho demani explicitament per compatibilitat antiga.
+
+## Llargada minima recomanada
+
+Els documents que obre el jugador han de tenir mes context que en els casos antics:
+
+- informes inicials, escena, forense, documents digitals i cronologia: 4 a 6 paragrafs cadascun
+- testimonis: 3 a 5 paragrafs cadascun, amb que veu, que no veu, que interpreta malament i quin detall ajuda a deduir
+- `dossier-doc`: `profile[]` de 3 a 5 paragrafs i `personalHistory[]` de 3 a 5 paragrafs
+- `connection-doc`: 3 a 5 paragrafs sobre relacio publica, relacio privada, dependencia i ferida emocional
+- `alibi-doc`: 3 a 5 paragrafs com a peça tangible d'expedient, no resum de narrador
+- `interrogation-doc`: 8 a 12 intercanvis de pregunta/resposta, amb coartada, moviments, repreguntes, evasives i una contradiccio llegible
+
+No allarguis amb farciment. Cada paragraf ha d'aportar context, caracter, pista, contradiccio o atmosfera amb funcio deductiva.
 
 ## Criteris de qualitat
 

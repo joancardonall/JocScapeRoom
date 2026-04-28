@@ -175,8 +175,8 @@ Objectiu:
 
 Regles:
 - mantenir els node ids requerits
-- resumir, no copiar tot el material font
-- preservar la logica, encara que el text s'escurci
+- sintetitzar el material font sense aprimar-lo massa: els documents finals han de ser llegibles com a peces completes, no com a apunts breus
+- preservar la logica, el context i els detalls deductius encara que el text s'adapti al format JSON
 - els sospitos nous no s'han d'exportar com un sol node `type: suspect`
 - cada sospitos s'ha d'exportar com una carpeta-dossier amb documents interns
 - minim per sospitos al JSON final:
@@ -184,6 +184,12 @@ Regles:
   - relacio amb la victima
   - document tangible de coartada o presencia
   - interrogatori amb la coartada declarada i els moviments
+- llargada recomanada dels documents visibles al jugador:
+  - informes principals i proves: 4 a 6 paragrafs substancials
+  - documents de relacio i coartada: 3 a 5 paragrafs amb detalls concrets
+  - fitxes policials: `profile[]` amb 3 a 5 paragrafs i `personalHistory[]` amb 3 a 5 paragrafs
+  - interrogatoris: 8 a 12 intercanvis de pregunta/resposta, amb repreguntes, silencis, evasives i contradiccions
+- no augmentis el nombre de fitxers visibles per compensar falta de context: amplia el contingut dels documents que ja existeixen
 
 Fitxers a crear:
 - `06-export/case-0XX-draft.json`

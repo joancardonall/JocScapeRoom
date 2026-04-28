@@ -1,0 +1,468 @@
+{
+  "id": "case-019",
+  "title": "La vil.la dels llimoners",
+  "summary": "A la Villa Sant'Ambra, una fundacio d'art situada a la costa toscana, la restauradora Clara Ferri apareix morta durant una vetllada privada dedicada a una col.leccio de ceramica antiga. La mort sembla una caiguda accidental dins el taller, pero una copa rentada a mitges, un lot de fixador i una bossa de mostres amagada al calaix apunten a una falsificacio patrimonial que algu volia salvar.",
+  "objective": "Reconstrueix l'ultima nit de Clara, llegeix els expedients dels sospitosos i demostra qui va convertir una conversa de restauracio en un assassinat per protegir una peça falsa.",
+  "fileSystem": {
+    "rootId": "main-folder",
+    "nodes": {
+      "main-folder": {
+        "id": "main-folder",
+        "type": "folder",
+        "title": "Expedient Principal",
+        "description": "Mort de Clara Ferri a la Villa Sant'Ambra durant una vetllada d'art, patrimoni i disseny mediterrani.",
+        "children": ["police-report-folder", "witnesses-folder", "suspects-folder", "extra-evidence-folder"]
+      },
+      "police-report-folder": {
+        "id": "police-report-folder",
+        "type": "folder",
+        "title": "Informe Policial",
+        "description": "Resum inicial, escena i primera reconstruccio de la mort.",
+        "children": ["intro-report-doc", "scene-arrival-doc"]
+      },
+      "witnesses-folder": {
+        "id": "witnesses-folder",
+        "type": "folder",
+        "title": "Testimonis",
+        "description": "Declaracions de servei, convidats i personal extern.",
+        "children": ["witness-paolo-doc", "witness-bianca-doc", "witness-dario-doc", "witness-helen-doc"]
+      },
+      "suspects-folder": {
+        "id": "suspects-folder",
+        "type": "folder",
+        "title": "Expedients de Sospitosos",
+        "description": "Dossiers personals amb relacio, coartada i interrogatori.",
+        "children": ["suspect-livia-folder", "suspect-matteo-folder", "suspect-sofia-folder", "suspect-enzo-folder"]
+      },
+      "extra-evidence-folder": {
+        "id": "extra-evidence-folder",
+        "type": "folder",
+        "title": "Proves Complementaries",
+        "description": "Forense, ordinador, calaix de mostres i cronologia.",
+        "children": ["forensic-report-doc", "computer-emails-doc", "drawer-notes-doc", "timeline-synthesis-doc"]
+      },
+      "intro-report-doc": {
+        "id": "intro-report-doc",
+        "type": "document",
+        "title": "Informe Inicial",
+        "subtitle": "Villa Sant'Ambra - Costa toscana",
+        "content": [
+          "La víctima és Clara Ferri, 38 anys, restauradora principal de la Villa Sant'Ambra i especialista en ceràmica antiga mediterrània. És localitzada morta a les 22.07 h dins el taller de restauració, a tocar de la taula central on es preparava el panell ceràmic estrella de la vetllada.",
+          "La primera lectura de l'escena suggereix una caiguda accidental: dissolvents oberts, un drap humit a terra, una copa petita a la pica i una ferida lateral compatible amb un cop contra la taula. La casa estava plena de convidats, música baixa i portes obertes al jardí dels llimoners.",
+          "La inspecció posterior complica aquesta hipòtesi. La copa ha estat rentada només per dins, la carpeta crema de Clara ha perdut les conclusions finals i el calaix baix conserva una bossa de mostres amb una etiqueta que diu 'F-17 / no usar en sala'.",
+          "Clara havia descobert que el fragment més valuós del panell Sant'Ambra no era antic, sinó una reintegració moderna feta amb pigments comprats per la mateixa fundació. La presentació pública d'aquella nit hauria convertit una reconstrucció dubtosa en una autenticació fraudulenta.",
+          "La investigació ha de determinar qui tenia motiu per silenciar Clara, accés real al laboratori i coneixement suficient del fixador F-17 per convertir una copa de limoncello en una intoxicació."
+        ]
+      },
+      "scene-arrival-doc": {
+        "id": "scene-arrival-doc",
+        "type": "document",
+        "title": "Arribada a l'Escena",
+        "subtitle": "Taller de restauracio i pica lateral",
+        "content": [
+          "El taller es troba entre la biblioteca i la loggia oberta al mar. La sala no sembla violenta: hi ha llum càlida, pots etiquetats, pinzells, rajoles antigues i una tela de lli cobrint parcialment el panell Sant'Ambra.",
+          "Clara jeu al costat de la taula central. La ferida del cap és real, però poc profunda per explicar tota la mort. La posició del cos indica que va perdre força abans de colpejar-se, no que algú la empenyés amb violència directa.",
+          "La pica lateral conté una copa petita de limoncello. L'interior està esbandit, però la base conserva una gota enganxosa amb olor de llimona i una amargor química. L'aixeta encara degota quan arriba el primer cambrer.",
+          "La carpeta crema de Clara és sobre la taula, però hi falten les tres pàgines finals. No falten les fotografies ni les taules de mesures, només la conclusió que recomanava retirar el panell de la presentació.",
+          "El calaix baix no ha estat remenat del tot. A dins hi ha la bossa de proves provisional de Clara, amb una tira cromatogràfica, un fragment blau i una etiqueta escrita a mà amb el lot F-17."
+        ]
+      },
+      "witness-paolo-doc": {
+        "id": "witness-paolo-doc",
+        "type": "document",
+        "title": "Declaracio de Paolo Neri",
+        "subtitle": "Cambrer de servei",
+        "content": [
+          "Paolo porta una safata de limoncello a la biblioteca a les 21.38 h. Recorda que Sofia Bellandi agafa dues copes petites i diu, mig somrient, que la doctora Ferri necessita una conversa dolça abans de començar una guerra.",
+          "No veu què passa dins el laboratori, però li sorprèn que Sofia no torni les copes a la safata. La resta de convidats fan servir copes diferents, més altes, servides des de la terrassa.",
+          "A les 22.07 h, Paolo entra al taller perquè Bianca li diu que Clara no respon. La troba a terra i primer pensa que ha relliscat. Després veu la copa a la pica, l'aixeta degotant i un drap humit massa ben col.locat al pas.",
+          "Paolo no acusa ningú directament, però la seva declaració fixa dos detalls: Sofia tenia dues copes abans de la conversa privada i algú va moure la copa de Clara fins a la pica després de la caiguda."
+        ]
+      },
+      "witness-bianca-doc": {
+        "id": "witness-bianca-doc",
+        "type": "document",
+        "title": "Declaracio de Bianca Salvi",
+        "subtitle": "Ajudant de sala",
+        "content": [
+          "Bianca veu Sofia i Clara entrar al laboratori a les 21.42 h. Clara porta una carpeta crema i una bossa transparent petita. Sofia duu les dues copes i no sembla alterada; Bianca la descriu com 'massa tranquil.la per una nit tan cara'.",
+          "Quan Sofia surt, a les 21.56 h segons la càmera exterior, li diu que Clara vol estar sola i que ningú entri fins que baixi el to. Bianca interpreta que han discutit, no que Clara pugui estar en perill.",
+          "Bianca confirma que Livia era a la biblioteca amb donants durant la mateixa franja i que Enzo es movia entre terrassa i jardí. També diu que Matteo havia desaparegut cap a la loggia lateral abans que Clara entrés al laboratori.",
+          "El detall important és que Sofia surt sola, sense carpeta visible, però amb els guants blancs plegats dins una mà. Aquells guants no apareixen després al cistell habitual del taller."
+        ]
+      },
+      "witness-dario-doc": {
+        "id": "witness-dario-doc",
+        "type": "document",
+        "title": "Declaracio de Dario Masi",
+        "subtitle": "Barquer del moll",
+        "content": [
+          "Dario confirma que Matteo Ricci arriba al moll cap a les 21.59 h. Matteo està nerviós i pregunta si la barca pot sortir sense llum i esperar deu minuts més.",
+          "El barquer entén que es tracta d'una fugida discreta, no d'una passejada romàntica. Matteo mira sovint cap a la vil.la i porta una carpeta buida sota el braç, però no duu cap copa ni cap peça del taller.",
+          "Aquesta declaració fa Matteo sospitós perquè demostra que havia preparat una sortida secreta per Clara. Alhora, el situa fora del laboratori abans del descobriment i separa la seva mentida del mètode de mort.",
+          "Dario no veu Clara arribar al moll. Quan sent el moviment a la vil.la, Matteo ja és amb ell i reacciona com algú que espera una persona viva, no com algú que sap que ja és morta."
+        ]
+      },
+      "witness-helen-doc": {
+        "id": "witness-helen-doc",
+        "type": "document",
+        "title": "Declaracio de Helen Ward",
+        "subtitle": "Donant americana",
+        "content": [
+          "Helen Ward situa Livia Conti a la biblioteca entre les 21.43 h i les 21.58 h. Parlen de l'assegurança, de la cessió temporal del panell i de la possibilitat d'ajornar la firma si Clara no avala la peça.",
+          "Livia està rígida i visiblement preocupada, però no surt de la sala. Helen recorda una frase concreta: 'Si Clara diu no, jo no puc obligar una peça a ser autèntica'.",
+          "La frase no converteix Livia en innocent de totes les pressions institucionals, però debilita la idea que aquella nit estigués disposada a matar. El seu pànic era financer i familiar, no tècnic.",
+          "Helen també confirma que Sofia havia passat abans per la biblioteca i coneixia exactament quins donants esperaven la presentació. Això reforça el motiu de Sofia: sabia què es perdia si Clara parlava abans de les 22.15 h."
+        ]
+      },
+      "suspect-livia-folder": {
+        "id": "suspect-livia-folder",
+        "type": "folder",
+        "category": "suspect",
+        "title": "Livia Conti",
+        "description": "Presidenta de la fundacio, hereva de la vil.la i responsable de salvar una casa que ja no podia pagar-se sola.",
+        "children": ["suspect-livia-dossier-doc", "suspect-livia-connection-doc", "suspect-livia-alibi-doc", "suspect-livia-interrogation-doc"]
+      },
+      "suspect-matteo-folder": {
+        "id": "suspect-matteo-folder",
+        "type": "folder",
+        "category": "suspect",
+        "title": "Matteo Ricci",
+        "description": "Dissenyador de la museografia i parella secreta de Clara.",
+        "children": ["suspect-matteo-dossier-doc", "suspect-matteo-connection-doc", "suspect-matteo-alibi-doc", "suspect-matteo-interrogation-doc"]
+      },
+      "suspect-sofia-folder": {
+        "id": "suspect-sofia-folder",
+        "type": "folder",
+        "category": "suspect",
+        "title": "Sofia Bellandi",
+        "description": "Conservadora en cap, mentora de Clara i responsable cientifica del panell.",
+        "children": ["suspect-sofia-dossier-doc", "suspect-sofia-connection-doc", "suspect-sofia-alibi-doc", "suspect-sofia-interrogation-doc"]
+      },
+      "suspect-enzo-folder": {
+        "id": "suspect-enzo-folder",
+        "type": "folder",
+        "category": "suspect",
+        "title": "Enzo Vitale",
+        "description": "Marxant d'art i assessor comercial amb factures compromeses.",
+        "children": ["suspect-enzo-dossier-doc", "suspect-enzo-connection-doc", "suspect-enzo-alibi-doc", "suspect-enzo-interrogation-doc"]
+      },
+      "suspect-livia-dossier-doc": {
+        "id": "suspect-livia-dossier-doc",
+        "type": "document",
+        "category": "suspect-dossier",
+        "title": "Fitxa Policial",
+        "subtitle": "Livia Conti",
+        "photo": "./images/suspects/case-019/livia-conti.jpg",
+        "profile": [
+          "Livia Conti, 46 anys, presideix la Fundació Sant'Ambra i administra una vil.la que és alhora llegat familiar, deute econòmic i aparador cultural.",
+          "La vetllada havia de tancar una donació americana capaç de salvar la biblioteca, el jardí i diversos salaris pendents. El panell Sant'Ambra era la peça que justificava aquella confiança.",
+          "Té un motiu fort: si Clara retirava l'autenticació, Livia podia perdre diners, prestigi i potser la casa. No obstant això, no domina el detall tècnic del fixador F-17 ni queda situada al laboratori."
+        ],
+        "personalHistory": [
+          "Livia va créixer dins una casa admirada per tothom i viscuda per ella com una obligació. La fundació va ser la seva manera d'evitar que Sant'Ambra acabés venuda com a hotel de luxe.",
+          "La relació amb Clara era incòmoda perquè Livia la necessitava precisament per la seva integritat. Clara feia que la col.lecció fos defensable davant museus i donants.",
+          "La nit del crim, Livia està atrapada entre respectar una veritat tècnica i sostenir una institució fràgil. Aquesta tensió la fa sospitosa, però també explica per què buscava ajornar, no eliminar."
+        ]
+      },
+      "suspect-livia-connection-doc": {
+        "id": "suspect-livia-connection-doc",
+        "type": "document",
+        "category": "suspect-relationship",
+        "title": "Relacio amb Clara Ferri",
+        "subtitle": "Patrocini, gratitud i pressio",
+        "content": [
+          "Livia contracta Clara perquè necessitava algú que no fos ornamental. Volia que Sant'Ambra deixés de semblar una col.lecció familiar maquillada i es convertís en una institució respectable.",
+          "La relació es trenca quan Clara comença a parlar de retirar el panell. Livia no li demana obertament que menteixi, però prova totes les formes elegants de retardar una veritat: una segona anàlisi, una consulta externa, una nota més ambigua.",
+          "Clara li respon que una peça no es torna autèntica per supervivència pressupostària. Livia ho rep com una condemna personal, no només com una opinió tècnica.",
+          "El vincle aporta motiu i tensió, però no coneixement del mètode. Livia podia voler silenci; no podia construir sola la intoxicació amb un producte específic del laboratori."
+        ]
+      },
+      "suspect-livia-alibi-doc": {
+        "id": "suspect-livia-alibi-doc",
+        "type": "document",
+        "category": "suspect-alibi",
+        "title": "Coartada i Moviments",
+        "subtitle": "Biblioteca privada",
+        "content": [
+          "Livia Conti consta a la biblioteca privada entre les 21.43 h i les 21.58 h, reunida amb Helen Ward i Julian Mercer, donants de la Fundació Ward-Mercer.",
+          "La conversa queda parcialment confirmada per notes manuscrites de Helen sobre cessió temporal, assegurança i ajornament de firma. Les notes inclouen una frase atribuïda a Livia: 'sense Clara no puc defensar la peça'.",
+          "Un ajudant de sala entra a les 21.51 h amb aigua i veu Livia asseguda al costat de la finestra, lluny de la porta de servei que condueix al laboratori.",
+          "La coartada no elimina el motiu, però limita físicament la seva oportunitat i la separa del fixador F-17."
+        ]
+      },
+      "suspect-livia-interrogation-doc": {
+        "id": "suspect-livia-interrogation-doc",
+        "type": "document",
+        "category": "suspect-interrogation",
+        "title": "Interrogatori",
+        "subtitle": "Declaracio de Livia Conti",
+        "content": [
+          "Interrogador: Sabia que Clara volia retirar el panell de la presentació? Livia: Sabia que tenia dubtes greus. Clara no feia servir mai la paraula retirar si encara hi havia marge.",
+          "Interrogador: I hi havia marge? Livia: Per mi, sí. Per ella, no. Aquesta era la discussió.",
+          "Interrogador: La fundació depenia d'aquella peça. Livia: La fundació depèn de moltes coses: del panell, dels donants, del sostre que cau quan plou i de persones que no cobren prou.",
+          "Interrogador: Va pressionar Clara? Livia: La vaig suplicar que m'expliqués com guanyar temps. No li vaig demanar que falsifiqués res.",
+          "Interrogador: Entre les 21.42 h i les 21.56 h on era? Livia: A la biblioteca amb Helen Ward i Julian Mercer. Parlàvem d'ajornar la firma sense fer-ho públic.",
+          "Interrogador: Això la beneficia molt convenientment. Livia: Inspector, tot el que faig en aquesta casa sembla convenient o culpable depenent del dia.",
+          "Interrogador: Coneixia el fixador F-17? Livia: Conec factures i sostres, no pots de laboratori. Sofia em deia que hi havia productes que no havia de tocar ni preguntar.",
+          "Interrogador: Va ordenar a Sofia que solucionés el problema? Livia: Vaig ordenar que em diguessin la veritat abans de la presentació. Ara veig que era una ordre massa tardana.",
+          "Interrogador: Hauria venut la vil.la si Clara feia caure la donació? Livia: Potser. I hauria estat horrible. Però vendre una casa no és el mateix que matar una dona."
+        ]
+      },
+      "suspect-matteo-dossier-doc": {
+        "id": "suspect-matteo-dossier-doc",
+        "type": "document",
+        "category": "suspect-dossier",
+        "title": "Fitxa Policial",
+        "subtitle": "Matteo Ricci",
+        "photo": "./images/suspects/case-019/matteo-ricci.jpg",
+        "profile": [
+          "Matteo Ricci, 41 anys, és el dissenyador de la reforma museogràfica de Sant'Ambra. Havia projectat vitrines baixes, taules de travertí i recorreguts que deixaven veure el mar entre peces antigues.",
+          "Mantenia una relació secreta amb Clara Ferri. No era un afer teatral, sinó una intimitat construïda entre horaris impossibles, cafès al moll i discussions sobre com una casa pot mentir si se la il.lumina massa bé.",
+          "Matteo menteix sobre la discussió i sobre una clau lateral. Aquestes mentides el fan sospitós, però apunten a una fugida preparada per Clara, no a la intoxicació."
+        ],
+        "personalHistory": [
+          "Ve d'una família de fusters i sempre ha tingut complex davant del món acadèmic de la conservació. Clara el corregia sense menysprear-lo i això el feia sentir menys impostor.",
+          "La discussió de les 20.50 h neix de l'amor i del pànic. Matteo volia treure Clara de la vil.la aquella mateixa nit; Clara volia fer la denúncia de manera formal l'endemà.",
+          "El seu dolor el converteix en un mal testimoni. Amaga el vincle, la clau i la barca perquè sap que tot sembla possessiu, però les proves el situen lluny del laboratori en el moment decisiu."
+        ]
+      },
+      "suspect-matteo-connection-doc": {
+        "id": "suspect-matteo-connection-doc",
+        "type": "document",
+        "category": "suspect-relationship",
+        "title": "Relacio amb Clara Ferri",
+        "subtitle": "Amor secret i fugida fallida",
+        "content": [
+          "Matteo i Clara van començar a estimar-se mentre discutien sobre una vitrina. Ella deia que la peça necessitava respirar; ell deia que el visitant necessitava entendre-la. Cap dels dos va cedir del tot, i d'aquí va sortir una bona sala.",
+          "La relació havia de quedar amagada fins després de la inauguració. Clara temia que qualsevol decisió tècnica seva fos llegida com una protecció al projecte de Matteo.",
+          "La nit del crim, Matteo li demana que no esperi l'endemà. Creu que Sofia i Livia trobaran una manera de neutralitzar l'informe. Clara li respon que fugir convertiria la veritat en drama privat.",
+          "El vincle dona un motiu emocional: por de perdre-la, ràbia per no ser escoltat. Però també dona un motiu per voler-la viva i fora de la vil.la."
+        ]
+      },
+      "suspect-matteo-alibi-doc": {
+        "id": "suspect-matteo-alibi-doc",
+        "type": "document",
+        "category": "suspect-alibi",
+        "title": "Coartada i Moviments",
+        "subtitle": "Loggia lateral i moll",
+        "content": [
+          "Dario Masi, barquer, declara que Matteo arriba al moll cap a les 21.59 h. Porta una jaqueta clara, està nerviós i pregunta si la barca pot esperar deu minuts més.",
+          "El registre de la porta lateral de la loggia mostra una obertura a les 21.36 h amb una clau assignada al projecte de museografia. Matteo admet tard que la tenia ell.",
+          "La coartada no cobreix tota la primera part de la finestra, però el registre del laboratori no mostra entrada seva i Dario el situa lluny abans del descobriment.",
+          "La clau lateral explica la seva mentida: havia preparat una sortida discreta per Clara i l'informe."
+        ]
+      },
+      "suspect-matteo-interrogation-doc": {
+        "id": "suspect-matteo-interrogation-doc",
+        "type": "document",
+        "category": "suspect-interrogation",
+        "title": "Interrogatori",
+        "subtitle": "Declaracio de Matteo Ricci",
+        "content": [
+          "Interrogador: Per què va ocultar la seva relació amb Clara? Matteo: Perquè en aquesta casa tot es converteix en conflicte d'interessos quan convé.",
+          "Interrogador: Van discutir a les 20.50 h. Matteo: Sí. Jo volia que marxés. Ella volia fer les coses amb una netedat que jo ja no creia possible.",
+          "Interrogador: Marxar amb què? Matteo: Amb l'informe. Amb les mostres. Amb la seva vida, si em permet dir-ho així.",
+          "Interrogador: Tenia una clau lateral. Matteo: De la loggia, no del laboratori. La tenia pel muntatge de vitrines. No l'havia retornada.",
+          "Interrogador: On era entre les 21.42 h i les 21.56 h? Matteo: Primer a la loggia exterior, esperant. Després vaig baixar al moll.",
+          "Interrogador: Per què una barca? Matteo: Clara no volia sortir per la porta principal amb una carpeta que podia arruïnar tothom. Jo volia que sortís sencera.",
+          "Interrogador: La va veure entrar amb Sofia? Matteo: Des de lluny. I vaig pensar que potser Sofia l'ajudaria. M'equivocava en moltes coses aquella nit.",
+          "Interrogador: Hauria pogut entrar al laboratori abans de baixar al moll. Matteo: Hauria pogut fer moltes coses millors. Entrar, interrompre, cridar. No ho vaig fer.",
+          "Interrogador: Va tocar la copa? Matteo: No. Ni sabia que hi havia limoncello fins que Paolo ho va dir."
+        ]
+      },
+      "suspect-sofia-dossier-doc": {
+        "id": "suspect-sofia-dossier-doc",
+        "type": "document",
+        "category": "suspect-dossier",
+        "title": "Fitxa Policial",
+        "subtitle": "Sofia Bellandi",
+        "photo": "./images/suspects/case-019/sofia-bellandi.jpg",
+        "profile": [
+          "Sofia Bellandi, 52 anys, és la conservadora en cap de la Fundació Sant'Ambra. Té reputació de fer parlar col.leccions que altres institucions deixaven dormir.",
+          "Va portar Clara a la vil.la i la va protegir quan encara era una restauradora jove. Aquesta mentoria fa que la relació entre totes dues sigui més íntima que jeràrquica.",
+          "Sofia havia autoritzat proves de reintegració agressives sobre el panell. Quan el fragment modern va començar a semblar massa important, va decidir protegir la narrativa general abans que reconèixer la manipulació."
+        ],
+        "personalHistory": [
+          "Ha viscut tota la vida en institucions que exigeixen miracles amb pressupostos impossibles. Va aprendre a maquillar incerteses com a hipòtesis de treball i reconstruccions com a lectures materials.",
+          "El seu drama no és que sigui una farsant vulgar. És que ha justificat tantes petites concessions en nom de salvar el patrimoni que ja no sap on acaba la conservació i on comença la fabricació.",
+          "Clara era la persona que podia heretar el seu lloc i també la persona que podia dir-li prou. La nit del crim, Sofia no mata una enemiga externa; mata la deixebla que encara creia en el codi que ella havia traït."
+        ]
+      },
+      "suspect-sofia-connection-doc": {
+        "id": "suspect-sofia-connection-doc",
+        "type": "document",
+        "category": "suspect-relationship",
+        "title": "Relacio amb Clara Ferri",
+        "subtitle": "Mentoria i trencio moral",
+        "content": [
+          "Sofia va descobrir Clara en un taller de Florència i li va oferir el lloc a Sant'Ambra. Durant anys, Clara li va tenir una gratitud sincera. Sofia no era només una cap: era la prova que una dona rigorosa podia dirigir una col.lecció sense demanar permís.",
+          "La fractura arriba amb el panell. Clara creu que han trobat una falsificació; Sofia insisteix que han trobat una reconstrucció històrica problemàtica. La diferència de paraules es converteix en una diferència moral.",
+          "Sofia coneixia els hàbits de Clara: on guardava mostres, com anotava lots, quan preferia parlar en privat per no humiliar ningú. Aquest coneixement li permet dissenyar un crim que sembla una escena de treball mal tancada.",
+          "La relació aporta motiu, mètode i oportunitat. També explica l'error: Sofia busca l'informe formal, però subestima la manera tossuda com Clara duplicava les proves petites."
+        ]
+      },
+      "suspect-sofia-alibi-doc": {
+        "id": "suspect-sofia-alibi-doc",
+        "type": "document",
+        "category": "suspect-alibi",
+        "title": "Coartada i Moviments",
+        "subtitle": "Laboratori de restauracio",
+        "content": [
+          "Sofia declara que entra al laboratori amb Clara a les 21.42 h per revisar una fórmula de text per a la presentació. Afirma que la conversa dura poc i que surt a les 21.47 h.",
+          "Cap testimoni confirma aquesta sortida primerenca. La càmera exterior només la mostra creuant cap a la biblioteca a les 21.56 h.",
+          "Sofia diu que Clara estava alterada però físicament bé quan la deixa. Aquesta afirmació xoca amb la cronologia de símptomes i amb el temps necessari per rentar la copa.",
+          "El registre del magatzem mostra que Sofia havia retirat el fixador F-17 a les 18.05 h. Ella ho presenta com una prova rutinària, però el mateix lot apareix a la tira cromatogràfica de Clara."
+        ]
+      },
+      "suspect-sofia-interrogation-doc": {
+        "id": "suspect-sofia-interrogation-doc",
+        "type": "document",
+        "category": "suspect-interrogation",
+        "title": "Interrogatori",
+        "subtitle": "Declaracio de Sofia Bellandi",
+        "content": [
+          "Interrogador: Vostè va entrar al laboratori amb Clara a les 21.42 h. Sofia: Sí. Necessitàvem evitar que una discussió tècnica es convertís en espectacle.",
+          "Interrogador: Diu que va sortir cinc minuts després. Sofia: Aproximadament. No portava un cronòmetre.",
+          "Interrogador: La càmera la situa fora a les 21.56 h. Sofia: Vaig passar abans per la sala de preparació. Potser la càmera no cobreix aquell tram.",
+          "Interrogador: El registre no mostra cap porta oberta en aquell tram. Sofia: Aleshores recordo malament el temps. Havia estat un dia llarg.",
+          "Interrogador: Paolo diu que vostè va agafar dues copes de limoncello. Sofia: Per calmar Clara. Era una tradició absurda de la casa, no una arma.",
+          "Interrogador: El fixador F-17 apareix a la copa. Sofia: En un taller de restauració, tot acaba tocant tot. Aquesta és precisament la raó per no fer conclusions teatrals.",
+          "Interrogador: Vostè va retirar aquell lot a les 18.05 h. Sofia: Per una prova cromàtica. Està registrat, per tant no ho amagava.",
+          "Interrogador: L'informe de Clara ha perdut les tres pàgines finals. Sofia: Clara canviava conclusions cada dues hores. Potser les va retirar ella.",
+          "Interrogador: La tira cromatogràfica era dins un calaix que vostè no va trobar. Sofia: No sé de quina tira em parla.",
+          "Interrogador: Curiós. Encara no li he dit que la tira parla del F-17. Sofia: Inspector, tota aquesta sala parla del F-17 des que vostè ha entrat.",
+          "Interrogador: Per què Clara confiaria en prendre una copa amb vostè? Sofia: Perquè jo la vaig fer entrar en aquesta professió. I perquè ella encara creia que jo era millor del que sembla que vostès necessiten que sigui."
+        ]
+      },
+      "suspect-enzo-dossier-doc": {
+        "id": "suspect-enzo-dossier-doc",
+        "type": "document",
+        "category": "suspect-dossier",
+        "title": "Fitxa Policial",
+        "subtitle": "Enzo Vitale",
+        "photo": "./images/suspects/case-019/enzo-vitale.jpg",
+        "profile": [
+          "Enzo Vitale, 57 anys, és marxant d'art i assessor comercial extern. Es mou entre col.leccions privades, fundacions petites i compradors que prefereixen no aparèixer als catàlegs.",
+          "A Sant'Ambra havia promès contactes internacionals i una possible venda parcial que salvaria la fundació sense dir-ne venda. El panell de ceràmica era la clau de la seva operació.",
+          "Té motiu per silenciar Clara: les seves factures mostren compres modernes que poden comprometre'l. Però matar-la destruïa també la persona que podia legitimar altres peces de la col.lecció."
+        ],
+        "personalHistory": [
+          "Enzo va començar com a aprenent en una casa de subhastes de Gènova. Va aprendre aviat que la procedència d'una obra no sempre es descobreix: de vegades es redacta.",
+          "La seva relació amb Clara era de respecte tens. Ell intentava fer-la flexible; ella el mirava com si cada frase seva deixés una taca sobre la taula.",
+          "Durant la nit del crim, Enzo intenta fugir amb factures i correspondència. Això el converteix en culpable d'alguna cosa, però no del crim central."
+        ]
+      },
+      "suspect-enzo-connection-doc": {
+        "id": "suspect-enzo-connection-doc",
+        "type": "document",
+        "category": "suspect-relationship",
+        "title": "Relacio amb Clara Ferri",
+        "subtitle": "Mercat, pressio i procedencia",
+        "content": [
+          "Enzo veia Clara com una professional molesta però valuosa. Una autentificació seva podia obrir portes que cap discurs comercial no obriria.",
+          "Li va oferir contactes, una plaça temporal a París i una sortida professional si redactava l'informe amb paraules menys definitives. Clara li va respondre que no era una novel.lista de procedències.",
+          "La seva pressió revela el mercat que envolta Sant'Ambra. Enzo no crea el frau tècnic, però l'aprofita i el vol empaquetar.",
+          "El vincle dona motiu econòmic, factures amagades i una fugida sospitosa. No dona accés al laboratori ni coneixement concret del lot F-17."
+        ]
+      },
+      "suspect-enzo-alibi-doc": {
+        "id": "suspect-enzo-alibi-doc",
+        "type": "document",
+        "category": "suspect-alibi",
+        "title": "Coartada i Moviments",
+        "subtitle": "Terrassa i jardi dels llimoners",
+        "content": [
+          "Enzo es troba al jardí dels llimoners a les 21.10 h fent una trucada. Diversos convidats el veuen després a la terrassa fins aproximadament les 21.50 h.",
+          "A les 22.12 h intenta sortir per la porta del jardí amb una cartera de cuir. A dins hi ha factures de pigments, forn ceràmic i transports no declarats.",
+          "No hi ha registre d'entrada seva al laboratori durant la finestra crítica. Les seves sabates tenen pols de grava del jardí, no residus del terra del taller.",
+          "La coartada és incòmoda però coherent: Enzo amagava proves comercials quan entén que la mort de Clara pot convertir la vil.la en escena policial."
+        ]
+      },
+      "suspect-enzo-interrogation-doc": {
+        "id": "suspect-enzo-interrogation-doc",
+        "type": "document",
+        "category": "suspect-interrogation",
+        "title": "Interrogatori",
+        "subtitle": "Declaracio d'Enzo Vitale",
+        "content": [
+          "Interrogador: Va oferir a Clara una feina a París. Enzo: Vaig oferir-li futur. La gent brillant en institucions petites s'asseca.",
+          "Interrogador: A canvi d'un informe ambigu. Enzo: A canvi d'un informe prudent. La paraula ambigu la posa vostè.",
+          "Interrogador: Les seves factures mostren pigments moderns. Enzo: Les restauracions compren pigments. No tot pigment modern és una conspiració.",
+          "Interrogador: També hi ha serveis de forn ceràmic. Enzo: Per proves, reproduccions, suports. El món material no és tan pur com els policies voldrien.",
+          "Interrogador: Va entrar al laboratori? Enzo: No. Clara no m'hi volia. Deia que jo feia pujar la temperatura de les peces.",
+          "Interrogador: On era a les 21.42 h? Enzo: A la terrassa i després al jardí. Hi havia gent suficient per recordar el meu mal humor.",
+          "Interrogador: Per què fugia amb una cartera? Enzo: Perquè quan una restauradora mor, tots els papers comercials semblen punyals.",
+          "Interrogador: Va matar Clara? Enzo: No. Clara viva era un problema negociable. Clara morta és una ruïna sense comprador.",
+          "Interrogador: Sabia del F-17? Enzo: No sé ni si és un producte, una sala o una contrasenya. Jo no barrejo pots. Barrejo persones.",
+          "Interrogador: Això no el fa innocent. Enzo: No he demanat semblar innocent. He demanat que no em facin assassí per tenir mal gust moral."
+        ]
+      },
+      "forensic-report-doc": {
+        "id": "forensic-report-doc",
+        "type": "document",
+        "title": "Informe Forense",
+        "subtitle": "Copa, fixador i caiguda",
+        "content": [
+          "Clara presenta una contusió lateral compatible amb caiguda contra la cantonada baixa de la taula de ceràmica. La ferida sagna poc i no explica per si sola la rapidesa de la mort.",
+          "La pell al voltant de la boca i la llengua mostra irritació lleu. L'olor inicial del taller va confondre els primers testimonis, perquè hi havia dissolvents oberts, però la irritació no correspon a inhalació accidental.",
+          "La copa petita trobada a la pica conserva una gota enganxosa sota la base. La part interior ha estat esbandida amb pressa, sense sabó i sense assecar.",
+          "La gota conté sucre, pell de llimona i una resina amarga utilitzada com a component del fixador F-17. Aquest compost no forma part del limoncello artesanal servit a la resta de convidats.",
+          "El fixador F-17 s'utilitza només en proves de reintegració i no havia d'estar sobre la taula de servei. El pot del magatzem apareix amb el coll netejat i una marca recent al tap.",
+          "La hipòtesi més coherent és ingestió d'una beguda adulterada, seguida d'una caiguda per incapacitat física. La disposició posterior de la copa indica intervenció humana després dels símptomes."
+        ]
+      },
+      "computer-emails-doc": {
+        "id": "computer-emails-doc",
+        "type": "document",
+        "title": "Ordinador de Clara",
+        "subtitle": "Informe sense enviar i copia esborrada",
+        "content": [
+          "L'ordinador conserva un correu sense enviar a la inspectora Marta Galli. El text diu que l'informe complet es lliuraria l'endemà i que 'la manipulació no és només comercial, sinó metodològica'.",
+          "El document adjunt ja no hi és, però la ruta del fitxer apunta a una còpia temporal creada a les 21.16 h. La còpia va ser esborrada a les 22.20 h des d'un usuari d'administració del laboratori.",
+          "La carpeta física de Clara apareix sense les tres pàgines finals. Les pàgines retirades eren les conclusions, no les fotografies ni les taules de mesures.",
+          "Això indica que qui les va retirar sabia exactament quina part era perillosa. Un lladre hauria agafat tota la carpeta; una persona tècnica només necessitava eliminar la conclusió que vinculava pigment modern, lot F-17 i panell exposat.",
+          "El registre d'accés del passadís mostra entrada de Clara i Sofia a les 21.42 h. No hi ha cap altra entrada fins que Paolo obre amb clau de servei després de trobar Clara."
+        ]
+      },
+      "drawer-notes-doc": {
+        "id": "drawer-notes-doc",
+        "type": "document",
+        "title": "Calaix de Mostres",
+        "subtitle": "Bossa provisional de Clara",
+        "content": [
+          "El calaix baix del taller conté notes antigues, etiquetes de mostra i la bossa de proves provisional de Clara. No ha estat completament remenat; sembla que algú buscava una cosa concreta però va obrir el calaix equivocat o no va tenir prou temps.",
+          "La bossa inclou una etiqueta amb 'F-17', una tira cromatogràfica i un petit fragment blau. Aquest detall conserva la veritat que l'informe imprès ja no mostra.",
+          "La tira identifica el mateix lot de fixador que Sofia Bellandi havia retirat del magatzem a les 18.05 h amb la justificació 'prova de compatibilitat cromàtica'.",
+          "El fragment blau presenta un vernís massa recent per formar part d'una peça antiga. La prova no diu només que el panell està alterat; diu que la fundació havia creat el fragment que convertia la peça en excepcional.",
+          "La bossa és l'error del culpable. Les pàgines finals de l'informe desapareixen, però Clara havia deixat una segona veritat més petita, menys visible i més difícil d'explicar."
+        ]
+      },
+      "timeline-synthesis-doc": {
+        "id": "timeline-synthesis-doc",
+        "type": "document",
+        "title": "Sintesi Cronologica",
+        "subtitle": "21.38 h - 22.20 h",
+        "content": [
+          "21.38 h: Paolo porta limoncello a la biblioteca. Sofia agafa dues copes petites. 21.42 h: Clara i Sofia entren juntes al laboratori de restauració.",
+          "21.48 h - 21.53 h: Clara ingereix la beguda contaminada i comença a patir mareig i falta d'aire. Sofia retira les conclusions de l'informe i intenta fer que l'escena sembli una caiguda entre dissolvents.",
+          "21.56 h: la càmera exterior mostra Sofia creuant cap a la biblioteca. 21.59 h: Matteo arriba al moll, massa tard per haver executat el mètode i massa nerviós per no amagar res.",
+          "22.07 h: Paolo troba Clara. 22.12 h: Enzo intenta sortir amb factures. 22.20 h: una còpia temporal de l'informe és esborrada des d'un usuari d'administració del laboratori.",
+          "La seqüència deixa motius parcials per a Livia, Matteo i Enzo, però només Sofia uneix accés, confiança, lot F-17, manipulació documental i sortida solitària del laboratori."
+        ]
+      }
+    }
+  },
+  "solution": {
+    "culprit": "Sofia Bellandi",
+    "motive": "Volia impedir que Clara demostrés que el panell Sant'Ambra havia estat manipulat amb un fragment modern i que ella, com a conservadora en cap, havia autoritzat o amagat aquella reconstrucció fraudulenta.",
+    "method": "Va contaminar una copa de limoncello amb fixador F-17, va esperar que Clara patís els símptomes, va simular una caiguda al taller i va retirar les conclusions de l'informe.",
+    "keyProof": "La gota de la copa, la tira cromatogràfica del calaix, el lot F-17 retirat per Sofia i el registre que la situa sola amb Clara connecten mètode, oportunitat i encobriment.",
+    "eliminations": [
+      "Livia Conti tenia motiu econòmic i reputacional, però queda situada a la biblioteca i no coneixia el detall tècnic del fixador.",
+      "Matteo Ricci menteix sobre la relació i la barca, però el seu pla era ajudar Clara a fugir amb l'informe i queda vist al moll.",
+      "Enzo Vitale amaga factures i pressions comercials, però no entra al laboratori ni domina el lot F-17.",
+      "Sofia Bellandi és l'única amb accés, confiança de Clara, coneixement del producte, oportunitat temporal i capacitat de retirar l'informe adequat."
+    ]
+  }
+}

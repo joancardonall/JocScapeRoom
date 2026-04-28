@@ -11,7 +11,7 @@ function App() {
   // -----------------------------
   const [layoutData, setLayoutData] = React.useState(null); // scene-layout.json
   const [selectedLayoutId, setSelectedLayoutId] = React.useState('italian-villa-art'); // estil visual actual
-  const [selectedCasePath] = React.useState('./cases/case-018.json'); // cas actual
+  const [selectedCasePath] = React.useState('./cases/case-019.json'); // cas actual
   const [caseData, setCaseData] = React.useState(null); // JSON del cas carregat
   const [error, setError] = React.useState(''); // missatge d'error
   const [isSolutionVisible, setIsSolutionVisible] = React.useState(false); // panell solució

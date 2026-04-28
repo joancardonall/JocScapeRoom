@@ -41,6 +41,7 @@ La teva feina no es retornar blocs enormes per copiar, sino editar directament e
 - El catala ha de sonar natural, fluid i una mica mes relaxat del que fins ara ha sortit en alguns casos. Evita un to massa sec, massa dur o massa burocratic si no es estrictament necessari.
 - Treballes amb exactament 4 sospitos.
 - Els casos nous han de representar els sospitos finals com expedients rics dins el JSON final, no com nodes plans d'un sol interrogatori.
+- Els fitxers que llegeix el jugador dins la web han de ser mes extensos que en els casos antics: no afegeixis mes fitxers per donar context, amplia el text dels documents existents.
 - L'univers desitjat dels casos ha de tendir cap a arquitectura, disseny, art, col.leccionisme, modernitat europea, Mies van der Rohe, Art Nouveau, interiors historics, exposicions, arxius, ateliers i el Paris bohemi de finals del segle XIX i inicis del XX.
 - Prioritza contextos culturals, arquitectonics i artistics abans que crims generics de familia, negocis o mafia.
 - Si has de triar una ambientacio, prefereix institucions, cases singulars, salons, pavellons, fundacions, museus, ateliers, cercles d'avantguarda, col.leccions privades o espais vinculats a arquitectura i vida artistica.
@@ -229,12 +230,23 @@ En aquest export:
 
 - `suspects-folder` ha de contenir carpetes de sospitos
 - cada sospitos ha de tenir un mini-expedient amb documents interns
+- no incrementis el nombre de documents visibles per donar mes context; fes mes densos, narratius i deductius els documents que ja formen part de l'estandard
 - minim:
   - fitxa policial unificada
   - relacio amb la victima
   - document tangible de coartada o presencia
   - interrogatori llarg amb la coartada declarada i els moviments en format policial
 - no redueixis els sospitos a un sol node `type: suspect` tret que l'usuari et demani compatibilitat antiga
+
+## Llargada dels documents finals
+
+El JSON final ha de donar mes lectura a l'usuari que els casos antics. Com a criteri:
+
+- informes principals, proves i documents d'escena: 4 a 6 paragrafs amb observacions concretes, context i detalls deduibles
+- fitxes policials: `profile[]` amb 3 a 5 paragrafs i `personalHistory[]` amb 3 a 5 paragrafs
+- relacio amb la victima i coartada: 3 a 5 paragrafs cadascun, sense sonar a resum esquematic
+- interrogatoris: 8 a 12 intercanvis de pregunta/resposta, amb repreguntes, contradiccions, evasives i petits canvis de to
+- cada document ha de tenir informacio util o atmosferica amb funcio, no farciment
 
 ## Restriccions obligatories
 

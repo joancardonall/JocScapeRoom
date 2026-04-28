@@ -54,9 +54,11 @@ def collect_existing_case_numbers() -> list[int]:
         if match:
             numbers.add(int(match.group(1)))
 
-    root_case = ROOT / "app" / "cases" / "case-001.json"
-    if root_case.exists():
-        numbers.add(1)
+    app_cases_dir = ROOT / "app" / "cases"
+    for path in app_cases_dir.glob("case-*.json"):
+        match = re.fullmatch(r"case-(\d{3})\.json", path.name)
+        if match:
+            numbers.add(int(match.group(1)))
 
     return sorted(numbers)
 
@@ -175,6 +177,8 @@ Aquest fitxer explica a una IA com ha de treballar aquest cas sense improvisar d
 - Les declaracions han de quadrar amb la cronologia real.
 - Els sospitos han de semblar plausibles, pero nomes un pot resistir totes les comprovacions.
 - En l'export final, els sospitos s'han de convertir en carpetes-dossier amb 4 documents interns visibles: fitxa policial, relacio amb la victima, declaracio inicial i interrogatori.
+- No afegeixis mes documents visibles per donar mes context; fes mes extensos els documents existents.
+- Llargada recomanada al JSON final: informes i proves de 4 a 6 paragrafs, relacions i coartades de 3 a 5 paragrafs, fitxes policials amb `profile[]` i `personalHistory[]` de 3 a 5 paragrafs cadascun, i interrogatoris de 8 a 12 intercanvis de pregunta/resposta.
 - La foto final de cada sospitos ha d'apuntar a `app/images/suspects/{case_id}/<id-final-del-sospitos>.jpg`; ha de ser un retrat policial frontal de fitxa. Si encara no existeix, la UI mostrara una imatge per defecte.
 
 ## Prompt base recomanat

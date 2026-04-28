@@ -37,4 +37,4 @@ Per aquest projecte, el flux recomanat ara mateix es:
 3. Omplir els fitxers del cas font de manera coherent
 4. Fer l'export final a JSON quan el cas estigui madur
 5. En l'export, representar cada sospitos com una carpeta-dossier amb 4 documents interns visibles
-6. Desar les fotos finals dels sospitos a `app/images/suspects/case-XXX/<id-final-del-sospitos>.jpg`; si encara no hi son, la UI mostrara un retrat per defecte
+6. Desar les fotos finals dels sospitos a `app/images/suspects/case-XXX/<id-final-del-sospitos>.jpg`; han de ser retrats policials de fitxa, no escenes d'accio ni plans amb objectes. Si encara no hi son, la UI mostrara un retrat per defecte

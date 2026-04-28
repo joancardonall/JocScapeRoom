@@ -95,7 +95,7 @@ Important: no obrir `app/index.html` directament. Cal servidor local perque la w
 6. En clicar un hotspot, obre el node associat.
 7. Si el node és carpeta, mostra fills.
 8. Si el node és document o sospitós, mostra contingut textual.
-9. En els dossiers de sospitós nous, la UI mostra una fitxa policial amb foto i recorre a un retrat per defecte si la imatge encara no existeix.
+9. En els dossiers de sospitós nous, la UI mostra una fitxa policial amb foto i recorre a un retrat per defecte si la imatge encara no existeix. Les fotos finals han de ser retrats policials frontals, de bust, mirant a càmera, sense acció ni objectes.
 10. El botó de solució i la tecla `Esc` mostren o amaguen la resolució final.
 
 ## Estils visuals de l'escena

@@ -378,6 +378,8 @@ Per cada sospitos escriu:
 La fitxa policial i la relacio amb la victima han d'estar escrites amb prou profunditat per convertir-se despres en documents llegibles dins l'expedient final del sospitos.
 La coartada no s'ha d'explicar amb veu de narrador: ha d'apareixer sobretot dins la declaracio policial i, si hi ha una altra peça, ha de ser un document tangible del cas.
 - el prompt d'imatge s'ha d'escriure ja personalitzat; no s'accepten frases de plantilla com "ambient i trets a concretar quan la identitat estigui definida"
+- el prompt d'imatge ha de demanar sempre un retrat policial de fitxa: pla de bust frontal, cap i espatlles, mirant directament a camera, fons neutre, llum suau de despatx policial i composicio centrada
+- el prompt d'imatge ha de prohibir explicitament accio, mans visibles, objectes, eines, armes, documents, interiors narratius, escenes dramatitzades i qualsevol activitat del sospitos
 
 No canviis el culpable ja definit.
 Tot en catala.

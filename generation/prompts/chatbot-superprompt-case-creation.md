@@ -181,7 +181,8 @@ Cada sospitos ha de tenir:
 - `dossier.md` ha d'unir el perfil basic i la historia personal en una sola fitxa policial
 - `dossier.md` ha d'incloure la ruta final de foto `app/images/suspects/case-XXX/<id-final-del-sospitos>.jpg` perque l'usuari hi pugui afegir la imatge despres
 - textos llargs i explicats en format d'historia quan el fitxer ho demani, especialment a `dossier.md` i `connection-to-victim.md`
-- `image-prompt.md` ha d'estar personalitzat amb nom, edat aproximada, rol, trets i ambient; no deixis mai placeholders generics
+- `image-prompt.md` ha d'estar personalitzat amb nom, edat aproximada, rol i trets fisics, pero ha de demanar sempre un retrat policial de fitxa: pla de bust frontal, cap i espatlles, mirant directament a camera, fons neutre, llum suau de despatx policial i composicio centrada
+- `image-prompt.md` ha de prohibir explicitament accio, mans visibles, objectes, eines, armes, documents, interiors narratius, escenes dramatitzades i qualsevol activitat del sospitos; la imatge ha de ser nomes el retrat per a la fitxa policial
 - `alibi.md` no ha de sonar a narrador: ha de ser un resum tecnic o administratiu molt breu
 - `alibi.md` no ha de ser un resum de narrador: ha de ser una peÇa tangible d'expedient, com una declaracio inicial, un registre o un full de presencia
 - `interrogation-statement.md` ha de contenir la coartada declarada i els moviments en format d'interrogatori policial real, llarg, amb preguntes, repreguntes, pauses i respostes del sospitos

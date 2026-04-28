@@ -1,7 +1,114 @@
 {
   "id": "desk-layout-v1",
-  "sceneImage": "./images/detective-desk-ai.png",
+  "sceneImage": "./images/backgrounds/italian-villa-art-detective-desk.png",
   "styles": [
+    {
+      "id": "italian-villa-art",
+      "name": "Vil.la italiana",
+      "sceneImage": "./images/backgrounds/italian-villa-art-detective-desk.png",
+      "theme": {
+        "chrome": {
+          "labelColor": "#fff8e7",
+          "labelShadow": "0 1px 4px rgba(64, 35, 12, 0.78)",
+          "selectBackground": "rgba(88, 55, 24, 0.48)",
+          "selectBorder": "1px solid rgba(255, 230, 176, 0.56)",
+          "selectColor": "#fff8e7",
+          "selectShadow": "0 8px 20px rgba(82, 49, 18, 0.22)"
+        },
+        "window": {
+          "background": "rgba(255, 250, 239, 0.96)",
+          "border": "1px solid rgba(143, 95, 38, 0.46)",
+          "borderRadius": "8px",
+          "shadow": "0 18px 38px rgba(72, 42, 16, 0.34)",
+          "headerBackground": "linear-gradient(90deg, rgba(239, 211, 161, 0.95), rgba(255, 244, 219, 0.92))",
+          "headerBorder": "1px solid rgba(143, 95, 38, 0.28)",
+          "titleColor": "#3b2816",
+          "bodyColor": "#2f2115",
+          "closeBackground": "rgba(255, 250, 239, 0.72)",
+          "closeBorder": "1px solid rgba(143, 95, 38, 0.42)",
+          "closeColor": "#3b2816"
+        },
+        "listItem": {
+          "background": "rgba(255, 250, 239, 0.72)",
+          "border": "1px solid rgba(181, 130, 69, 0.32)",
+          "borderRadius": "8px",
+          "iconBackground": "rgba(239, 211, 161, 0.38)",
+          "titleColor": "#342313",
+          "metaColor": "#7a542a"
+        },
+        "dossier": {
+          "background": "linear-gradient(180deg, rgba(255, 250, 239, 0.97), rgba(239, 224, 194, 0.96))",
+          "border": "1px solid rgba(143, 95, 38, 0.4)",
+          "headerBackground": "rgba(223, 178, 105, 0.28)",
+          "headerBorder": "1px solid rgba(143, 95, 38, 0.28)",
+          "eyebrowColor": "#7a542a",
+          "titleColor": "#2c1c0f",
+          "subtitleColor": "#65451f",
+          "cardBackground": "rgba(255, 252, 246, 0.76)",
+          "cardBorder": "1px solid rgba(181, 130, 69, 0.28)",
+          "cardTitleColor": "#79501f",
+          "photoBorder": "1px solid rgba(143, 95, 38, 0.4)",
+          "photoBackground": "#ead7b2"
+        },
+        "solution": {
+          "buttonBackground": "rgba(70, 42, 18, 0.78)",
+          "buttonColor": "#fff8e7",
+          "buttonBorder": "1px solid rgba(255, 230, 176, 0.5)",
+          "panelBackground": "rgba(255, 250, 239, 0.94)",
+          "panelBorder": "1px solid rgba(143, 95, 38, 0.42)",
+          "panelColor": "#302114"
+        }
+      },
+      "hotspotActions": {
+        "monitor": "computer-emails-doc",
+        "file": "main-folder",
+        "board": "suspects-folder",
+        "drawer": "drawer-notes-doc",
+        "bag": "forensic-report-doc"
+      },
+      "hotspots": [
+        {
+          "id": "monitor",
+          "label": "Ordinador",
+          "x": 12,
+          "y": 42,
+          "w": 27,
+          "h": 25
+        },
+        {
+          "id": "board",
+          "label": "Tauler",
+          "x": 72,
+          "y": 3,
+          "w": 26,
+          "h": 51
+        },
+        {
+          "id": "drawer",
+          "label": "Calaix",
+          "x": 0,
+          "y": 68,
+          "w": 32,
+          "h": 31
+        },
+        {
+          "id": "bag",
+          "label": "Bossa de proves",
+          "x": 67,
+          "y": 75,
+          "w": 22,
+          "h": 22
+        },
+        {
+          "id": "file",
+          "label": "Carpeta del cas",
+          "x": 65,
+          "y": 55,
+          "w": 33,
+          "h": 19
+        }
+      ]
+    },
     {
       "id": "desk-realista",
       "name": "Despatx realista",

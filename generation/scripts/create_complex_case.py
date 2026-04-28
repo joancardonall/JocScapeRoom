@@ -163,6 +163,7 @@ Aquest fitxer explica a una IA com ha de treballar aquest cas sense improvisar d
 
 - Tan bon punt cada sospitos tingui nom definit, renombra la carpeta de `suspect-01/` a un format tipus `suspect-01-nom-cognom/`.
 - No deixis cap `image-prompt.md` amb textos provisionals del tipus "ambient i trets a concretar".
+- Cada `image-prompt.md` ha de demanar un retrat policial de fitxa: bust frontal, cap i espatlles, mirant a camera, fons neutre, sense accio, sense mans visibles, sense objectes i sense escena narrativa.
 - Mantingues el prefix numeric (`suspect-01-`, `suspect-02-`) per no perdre l'ordre de treball.
 
 ## Regles
@@ -174,7 +175,7 @@ Aquest fitxer explica a una IA com ha de treballar aquest cas sense improvisar d
 - Les declaracions han de quadrar amb la cronologia real.
 - Els sospitos han de semblar plausibles, pero nomes un pot resistir totes les comprovacions.
 - En l'export final, els sospitos s'han de convertir en carpetes-dossier amb 4 documents interns visibles: fitxa policial, relacio amb la victima, declaracio inicial i interrogatori.
-- La foto final de cada sospitos ha d'apuntar a `app/images/suspects/{case_id}/<id-final-del-sospitos>.jpg`; si encara no existeix, la UI mostrara una imatge per defecte.
+- La foto final de cada sospitos ha d'apuntar a `app/images/suspects/{case_id}/<id-final-del-sospitos>.jpg`; ha de ser un retrat policial frontal de fitxa. Si encara no existeix, la UI mostrara una imatge per defecte.
 
 ## Prompt base recomanat
 
@@ -430,6 +431,7 @@ Sequencia real dels fets del dia del crim.
 Cada sospitos te una carpeta propia amb els materials base que despres es convertiran en proves o declaracions dins del joc.
 
 Quan el nom del sospitos ja estigui decidit, renombra la carpeta a un format com `suspect-01-nom-cognom/` i actualitza `image-prompt.md` amb un prompt concret, no generic.
+El prompt d'imatge ha de ser sempre per a un retrat policial de fitxa: bust frontal, cap i espatlles, mirant directament a camera, fons neutre, sense accio, sense mans visibles, sense objectes i sense escena narrativa.
 
 ## Carpetes creades
 
@@ -611,7 +613,9 @@ Defineix aqui la cadena logica final que el jugador hauria de poder reconstruir.
 """
         file_map[f"03-suspects/{folder}/image-prompt.md"] = f"""# Prompt d'Imatge
 
-Retrat cinematic realista del {label.lower()}, en format vertical tipus fitxa policial. Despres de generar-lo, desa la imatge final a `app/images/suspects/{case_id}/<id-final-del-sospitos>.jpg`.
+Retrat policial realista del {label.lower()} per a una fitxa d'investigacio. Pla de bust frontal, cap i espatlles, mirant directament a la camera, fons neutre gris o beix, llum suau de despatx policial, composicio centrada. Personalitza'l amb edat aproximada, rol, trets facials, pentinat, roba i expressio. Sense accio, sense mans visibles, sense objectes, sense eines, sense armes, sense documents, sense interiors narratius, sense escena dramatitzada i sense cap activitat del sospitos.
+
+Despres de generar-lo, desa la imatge final a `app/images/suspects/{case_id}/<id-final-del-sospitos>.jpg`.
 """
         file_map[f"03-suspects/{folder}/connection-to-victim.md"] = f"""# Relacio amb la Victima
 

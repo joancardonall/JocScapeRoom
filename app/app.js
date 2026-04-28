@@ -10,7 +10,7 @@ function App() {
   // 1) ESTAT PRINCIPAL DE L'APP
   // -----------------------------
   const [layoutData, setLayoutData] = React.useState(null); // scene-layout.json
-  const [selectedLayoutId, setSelectedLayoutId] = React.useState('mies-study-room'); // estil visual actual
+  const [selectedLayoutId, setSelectedLayoutId] = React.useState('italian-villa-art'); // estil visual actual
   const [selectedCasePath] = React.useState('./cases/case-018.json'); // cas actual
   const [caseData, setCaseData] = React.useState(null); // JSON del cas carregat
   const [error, setError] = React.useState(''); // missatge d'error

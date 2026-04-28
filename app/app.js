@@ -206,6 +206,88 @@ function App() {
     return layouts[0];
   }
 
+  function mergeTheme(baseTheme, customTheme) {
+    const merged = {};
+
+    for (const sectionName in baseTheme) {
+      if (Object.prototype.hasOwnProperty.call(baseTheme, sectionName)) {
+        merged[sectionName] = Object.assign({}, baseTheme[sectionName]);
+      }
+    }
+
+    if (customTheme) {
+      for (const sectionName in customTheme) {
+        if (Object.prototype.hasOwnProperty.call(customTheme, sectionName)) {
+          merged[sectionName] = Object.assign({}, merged[sectionName] || {}, customTheme[sectionName]);
+        }
+      }
+    }
+
+    return merged;
+  }
+
+  function getDefaultTheme() {
+    return {
+      chrome: {
+        labelColor: '#fff7ea',
+        labelShadow: '0 1px 3px rgba(0, 0, 0, 0.75)',
+        selectBackground: 'rgba(20, 18, 16, 0.34)',
+        selectBorder: '1px solid rgba(255, 255, 255, 0.38)',
+        selectColor: '#fff8ed',
+        selectShadow: '0 1px 4px rgba(0, 0, 0, 0.18)'
+      },
+      window: {
+        background: 'rgba(252, 248, 240, 0.98)',
+        border: '1px solid #8f7756',
+        borderRadius: '10px',
+        shadow: '0 12px 26px rgba(0, 0, 0, 0.35)',
+        headerBackground: '#efe4d1',
+        headerBorder: '1px solid #cbb99e',
+        titleColor: '#2c2116',
+        bodyColor: '#251b12',
+        closeBackground: '#f6efe3',
+        closeBorder: '1px solid #664f37',
+        closeColor: '#1f1710'
+      },
+      listItem: {
+        background: '#fffaf1',
+        border: '1px solid #c9b79b',
+        borderRadius: '12px',
+        iconBackground: '#f4ecdf',
+        titleColor: '#2a2118',
+        metaColor: '#6a5640'
+      },
+      dossier: {
+        background: 'linear-gradient(180deg, #f7f1e4 0%, #efe3cf 100%)',
+        border: '1px solid #b89e76',
+        headerBackground: '#e6d2b2',
+        headerBorder: '1px solid #c9b08a',
+        eyebrowColor: '#6f5230',
+        titleColor: '#24190f',
+        subtitleColor: '#5c4330',
+        cardBackground: 'rgba(255, 251, 244, 0.92)',
+        cardBorder: '1px solid #d7c1a0',
+        cardTitleColor: '#694c2d',
+        photoBorder: '1px solid #9b7f59',
+        photoBackground: '#d9c7ab'
+      },
+      solution: {
+        buttonBackground: '#171717',
+        buttonColor: '#fff',
+        buttonBorder: '1px solid #000',
+        panelBackground: 'rgba(240, 248, 239, 0.97)',
+        panelBorder: '1px solid #7b966f',
+        panelColor: '#1f2a1c'
+      }
+    };
+  }
+
+  function getActiveTheme() {
+    const activeLayout = getActiveLayout();
+    const customTheme = activeLayout && activeLayout.theme ? activeLayout.theme : null;
+    return mergeTheme(getDefaultTheme(), customTheme);
+  }
+
   function getFolderChildren(node) {
     const children = Array.isArray(node.children) ? node.children : [];
 
@@ -562,6 +644,7 @@ function App() {
   // ---------------------------------
   const mainChildren = [];
   const activeLayout = getActiveLayout();
+  const activeTheme = getActiveTheme();
 
   // 7.1) Hotspots invisibles
   const hotspots = activeLayout && Array.isArray(activeLayout.hotspots) ? activeLayout.hotspots : [];
@@ -644,9 +727,9 @@ function App() {
               display: 'block',
               fontSize: '11px',
               marginBottom: '3px',
-              color: '#fff7ea',
+              color: activeTheme.chrome.labelColor,
               fontWeight: '600',
-              textShadow: '0 1px 3px rgba(0, 0, 0, 0.75)'
+              textShadow: activeTheme.chrome.labelShadow
             }
           },
           'Cas'
@@ -663,12 +746,12 @@ function App() {
               width: '100%',
               height: '30px',
               borderRadius: '6px',
-              border: '1px solid rgba(255, 255, 255, 0.38)',
-              background: 'rgba(20, 18, 16, 0.34)',
-              color: '#fff8ed',
+              border: activeTheme.chrome.selectBorder,
+              background: activeTheme.chrome.selectBackground,
+              color: activeTheme.chrome.selectColor,
               padding: '0 7px',
               fontSize: '12px',
-              boxShadow: '0 1px 4px rgba(0, 0, 0, 0.18)'
+              boxShadow: activeTheme.chrome.selectShadow
             }
           },
           selectOptions
@@ -685,9 +768,9 @@ function App() {
               display: 'block',
               fontSize: '11px',
               marginBottom: '3px',
-              color: '#fff7ea',
+              color: activeTheme.chrome.labelColor,
               fontWeight: '600',
-              textShadow: '0 1px 3px rgba(0, 0, 0, 0.75)'
+              textShadow: activeTheme.chrome.labelShadow
             }
           },
           'Estil'
@@ -705,12 +788,12 @@ function App() {
               width: '100%',
               height: '30px',
               borderRadius: '6px',
-              border: '1px solid rgba(255, 255, 255, 0.38)',
-              background: 'rgba(20, 18, 16, 0.34)',
-              color: '#fff8ed',
+              border: activeTheme.chrome.selectBorder,
+              background: activeTheme.chrome.selectBackground,
+              color: activeTheme.chrome.selectColor,
               padding: '0 7px',
               fontSize: '12px',
-              boxShadow: '0 1px 4px rgba(0, 0, 0, 0.18)'
+              boxShadow: activeTheme.chrome.selectShadow
             }
           },
           layoutOptions
@@ -732,10 +815,6 @@ function App() {
 
     // Contingut per carpetes
     if (node.type === 'folder') {
-      if (node.description) {
-        bodyChildren.push(e('p', { style: { marginTop: 0 }, key: win.windowId + '-desc' }, node.description));
-      }
-
       const children = getFolderChildren(node);
       for (let j = 0; j < children.length; j += 1) {
         const childId = children[j];
@@ -758,9 +837,9 @@ function App() {
                 width: '100%',
                 marginBottom: '8px',
                 padding: '9px',
-                border: '1px solid #c9b79b',
-                borderRadius: '12px',
-                background: '#fffaf1',
+                border: activeTheme.listItem.border,
+                borderRadius: activeTheme.listItem.borderRadius,
+                background: activeTheme.listItem.background,
                 cursor: 'pointer',
                 display: 'flex',
                 alignItems: 'center',
@@ -774,7 +853,7 @@ function App() {
                 width: '36px',
                 height: '36px',
                 borderRadius: '8px',
-                background: '#f4ecdf',
+                background: activeTheme.listItem.iconBackground,
                 padding: '4px',
                 boxSizing: 'border-box',
                 flex: '0 0 auto'
@@ -788,7 +867,7 @@ function App() {
                 {
                   style: {
                     fontSize: '14px',
-                    color: '#2a2118',
+                    color: activeTheme.listItem.titleColor,
                     fontWeight: '600',
                     whiteSpace: 'nowrap',
                     overflow: 'hidden',
@@ -797,7 +876,7 @@ function App() {
                 },
                 childLabel
               ),
-              e('div', { style: { fontSize: '12px', color: '#6a5640' } }, typeLabel)
+              e('div', { style: { fontSize: '12px', color: activeTheme.listItem.metaColor } }, typeLabel)
             )
           )
         );
@@ -821,7 +900,7 @@ function App() {
               'p',
               {
                 key: node.id + '-profile-' + j,
-                style: { lineHeight: 1.5, margin: '0 0 10px', color: '#251b12' }
+                style: { lineHeight: 1.5, margin: '0 0 10px', color: activeTheme.window.bodyColor }
               },
               profileParagraphs[j]
             )
@@ -834,7 +913,7 @@ function App() {
               'p',
               {
                 key: node.id + '-history-' + j,
-                style: { lineHeight: 1.5, margin: '0 0 10px', color: '#251b12' }
+                style: { lineHeight: 1.5, margin: '0 0 10px', color: activeTheme.window.bodyColor }
               },
               historyParagraphs[j]
             )
@@ -847,8 +926,8 @@ function App() {
             {
               key: node.id + '-dossier',
               style: {
-                background: 'linear-gradient(180deg, #f7f1e4 0%, #efe3cf 100%)',
-                border: '1px solid #b89e76',
+                background: activeTheme.dossier.background,
+                border: activeTheme.dossier.border,
                 borderRadius: '14px',
                 boxShadow: 'inset 0 0 0 1px rgba(255, 255, 255, 0.45)',
                 overflow: 'hidden'
@@ -859,8 +938,8 @@ function App() {
               {
                 style: {
                   padding: '14px 16px',
-                  borderBottom: '1px solid #c9b08a',
-                  background: '#e6d2b2'
+                  borderBottom: activeTheme.dossier.headerBorder,
+                  background: activeTheme.dossier.headerBackground
                 }
               },
               e(
@@ -871,7 +950,7 @@ function App() {
                     fontWeight: '700',
                     letterSpacing: '0.18em',
                     textTransform: 'uppercase',
-                    color: '#6f5230',
+                    color: activeTheme.dossier.eyebrowColor,
                     marginBottom: '6px'
                   }
                 },
@@ -883,7 +962,7 @@ function App() {
                   style: {
                     fontSize: '24px',
                     fontWeight: '700',
-                    color: '#24190f'
+                    color: activeTheme.dossier.titleColor
                   }
                 },
                 suspectName || 'Sospitós sense identificar'
@@ -894,7 +973,7 @@ function App() {
                     {
                       style: {
                         marginTop: '4px',
-                        color: '#5c4330',
+                        color: activeTheme.dossier.subtitleColor,
                         fontStyle: 'italic'
                       }
                     },
@@ -936,17 +1015,17 @@ function App() {
                     height: '294px',
                     objectFit: 'cover',
                     borderRadius: '12px',
-                    border: '1px solid #9b7f59',
-                    background: '#d9c7ab'
+                    border: activeTheme.dossier.photoBorder,
+                    background: activeTheme.dossier.photoBackground
                   }
                 }),
                 e(
                   'div',
                   {
                     style: {
-                      border: '1px solid #ccb28d',
+                      border: activeTheme.dossier.cardBorder,
                       borderRadius: '12px',
-                      background: 'rgba(255, 250, 241, 0.85)',
+                      background: activeTheme.dossier.cardBackground,
                       padding: '12px'
                     }
                   },
@@ -957,15 +1036,15 @@ function App() {
                         fontSize: '11px',
                         textTransform: 'uppercase',
                         letterSpacing: '0.12em',
-                        color: '#73573a',
+                        color: activeTheme.dossier.cardTitleColor,
                         marginBottom: '8px',
                         fontWeight: '700'
                       }
                     },
                     'Dades visibles'
                   ),
-                  e('p', { style: { margin: '0 0 6px', lineHeight: 1.4 } }, 'Nom: ' + (suspectName || 'No informat')),
-                  e('p', { style: { margin: 0, lineHeight: 1.4 } }, 'Càrrec: ' + (suspectRole || 'No informat'))
+                  e('p', { style: { margin: '0 0 6px', lineHeight: 1.4, color: activeTheme.window.bodyColor } }, 'Nom: ' + (suspectName || 'No informat')),
+                  e('p', { style: { margin: 0, lineHeight: 1.4, color: activeTheme.window.bodyColor } }, 'Càrrec: ' + (suspectRole || 'No informat'))
                 )
               ),
               e(
@@ -976,9 +1055,9 @@ function App() {
                   {
                     style: {
                       marginBottom: historyChildren.length > 0 ? '16px' : '0',
-                      border: '1px solid #d7c1a0',
+                      border: activeTheme.dossier.cardBorder,
                       borderRadius: '12px',
-                      background: 'rgba(255, 251, 244, 0.92)',
+                      background: activeTheme.dossier.cardBackground,
                       padding: '14px'
                     }
                   },
@@ -990,7 +1069,7 @@ function App() {
                         fontSize: '14px',
                         textTransform: 'uppercase',
                         letterSpacing: '0.08em',
-                        color: '#694c2d'
+                        color: activeTheme.dossier.cardTitleColor
                       }
                     },
                     'Perfil bàsic'
@@ -1002,9 +1081,9 @@ function App() {
                       'section',
                       {
                         style: {
-                          border: '1px solid #d7c1a0',
+                          border: activeTheme.dossier.cardBorder,
                           borderRadius: '12px',
-                          background: 'rgba(255, 251, 244, 0.92)',
+                          background: activeTheme.dossier.cardBackground,
                           padding: '14px'
                         }
                       },
@@ -1016,7 +1095,7 @@ function App() {
                             fontSize: '14px',
                             textTransform: 'uppercase',
                             letterSpacing: '0.08em',
-                            color: '#694c2d'
+                            color: activeTheme.dossier.cardTitleColor
                           }
                         },
                         'Història personal'
@@ -1035,7 +1114,7 @@ function App() {
               'p',
               {
                 key: win.windowId + '-subtitle',
-                style: { marginTop: 0, fontStyle: 'italic', color: '#5f4a35' }
+                style: { marginTop: 0, fontStyle: 'italic', color: activeTheme.dossier.subtitleColor }
               },
               node.subtitle
             )
@@ -1049,7 +1128,7 @@ function App() {
               'p',
               {
                 key: node.id + '-p-' + j,
-                style: { lineHeight: 1.42, marginBottom: '10px' }
+                  style: { lineHeight: 1.42, marginBottom: '10px', color: activeTheme.window.bodyColor }
               },
               paragraphs[j]
             )
@@ -1060,8 +1139,8 @@ function App() {
 
     // Contingut per sospitosos
     if (node.type === 'suspect') {
-      bodyChildren.push(e('p', { key: node.id + '-name', style: { marginTop: 0, marginBottom: '6px' } }, 'Nom: ' + (node.name || '-')));
-      bodyChildren.push(e('p', { key: node.id + '-role', style: { marginTop: 0, marginBottom: '6px' } }, 'Rol: ' + (node.role || '-')));
+      bodyChildren.push(e('p', { key: node.id + '-name', style: { marginTop: 0, marginBottom: '6px', color: activeTheme.window.bodyColor } }, 'Nom: ' + (node.name || '-')));
+      bodyChildren.push(e('p', { key: node.id + '-role', style: { marginTop: 0, marginBottom: '6px', color: activeTheme.window.bodyColor } }, 'Rol: ' + (node.role || '-')));
       bodyChildren.push(
         e(
           'p',
@@ -1070,10 +1149,11 @@ function App() {
             style: {
               marginTop: 0,
               marginBottom: '12px',
-              background: '#f5ede0',
-              border: '1px solid #d8c7ab',
+              background: activeTheme.dossier.cardBackground,
+              border: activeTheme.dossier.cardBorder,
               borderRadius: '8px',
-              padding: '8px'
+              padding: '8px',
+              color: activeTheme.window.bodyColor
             }
           },
           'Coartada declarada: ' + (node.alibi || '-')
@@ -1087,7 +1167,7 @@ function App() {
             'p',
             {
               key: node.id + '-s-' + j,
-              style: { lineHeight: 1.42, marginBottom: '10px' }
+              style: { lineHeight: 1.42, marginBottom: '10px', color: activeTheme.window.bodyColor }
             },
             statements[j]
           )
@@ -1111,10 +1191,10 @@ function App() {
             height: win.h + '%',
             minWidth: '320px',
             minHeight: '220px',
-            background: 'rgba(252, 248, 240, 0.98)',
-            border: '1px solid #8f7756',
-            borderRadius: '10px',
-            boxShadow: '0 12px 26px rgba(0, 0, 0, 0.35)',
+            background: activeTheme.window.background,
+            border: activeTheme.window.border,
+            borderRadius: activeTheme.window.borderRadius,
+            boxShadow: activeTheme.window.shadow,
             overflow: 'hidden',
             animation: 'popupIn 170ms ease-out',
             zIndex: win.z
@@ -1129,8 +1209,8 @@ function App() {
               alignItems: 'center',
               justifyContent: 'space-between',
               padding: '0 10px 0 12px',
-              borderBottom: '1px solid #cbb99e',
-              background: '#efe4d1'
+              borderBottom: activeTheme.window.headerBorder,
+              background: activeTheme.window.headerBackground
             }
           },
           e(
@@ -1139,7 +1219,7 @@ function App() {
               style: {
                 fontSize: '14px',
                 fontWeight: '600',
-                color: '#2c2116',
+                color: activeTheme.window.titleColor,
                 overflow: 'hidden',
                 whiteSpace: 'nowrap',
                 textOverflow: 'ellipsis',
@@ -1157,9 +1237,10 @@ function App() {
               style: {
                 width: '30px',
                 height: '30px',
-                border: '1px solid #664f37',
+                border: activeTheme.window.closeBorder,
                 borderRadius: '6px',
-                background: '#f6efe3',
+                background: activeTheme.window.closeBackground,
+                color: activeTheme.window.closeColor,
                 cursor: 'pointer',
                 fontSize: '18px',
                 lineHeight: '18px'
@@ -1200,9 +1281,9 @@ function App() {
           width: '18%',
           minWidth: '190px',
           padding: '10px 12px',
-          background: '#171717',
-          color: '#fff',
-          border: '1px solid #000',
+          background: activeTheme.solution.buttonBackground,
+          color: activeTheme.solution.buttonColor,
+          border: activeTheme.solution.buttonBorder,
           borderRadius: '6px',
           cursor: 'pointer',
           fontSize: 'clamp(12px, 1vw, 16px)'
@@ -1216,16 +1297,16 @@ function App() {
   if (isSolutionVisible) {
     const solutionChildren = [];
 
-    solutionChildren.push(e('p', { key: 'sol-1', style: { margin: '0 0 6px' } }, 'Culpable: ' + caseData.solution.culprit));
-    solutionChildren.push(e('p', { key: 'sol-2', style: { margin: '0 0 6px' } }, 'Motiu: ' + caseData.solution.motive));
-    solutionChildren.push(e('p', { key: 'sol-3', style: { margin: '0 0 6px' } }, 'Mètode: ' + caseData.solution.method));
-    solutionChildren.push(e('p', { key: 'sol-4', style: { margin: '0 0 10px' } }, 'Prova clau: ' + caseData.solution.keyProof));
+    solutionChildren.push(e('p', { key: 'sol-1', style: { margin: '0 0 6px', color: activeTheme.solution.panelColor } }, 'Culpable: ' + caseData.solution.culprit));
+    solutionChildren.push(e('p', { key: 'sol-2', style: { margin: '0 0 6px', color: activeTheme.solution.panelColor } }, 'Motiu: ' + caseData.solution.motive));
+    solutionChildren.push(e('p', { key: 'sol-3', style: { margin: '0 0 6px', color: activeTheme.solution.panelColor } }, 'Mètode: ' + caseData.solution.method));
+    solutionChildren.push(e('p', { key: 'sol-4', style: { margin: '0 0 10px', color: activeTheme.solution.panelColor } }, 'Prova clau: ' + caseData.solution.keyProof));
 
     if (Array.isArray(caseData.solution.eliminations) && caseData.solution.eliminations.length > 0) {
-      solutionChildren.push(e('p', { key: 'sol-5', style: { margin: '0 0 6px', fontWeight: '600' } }, 'Per què no els altres sospitosos:'));
+      solutionChildren.push(e('p', { key: 'sol-5', style: { margin: '0 0 6px', fontWeight: '600', color: activeTheme.solution.panelColor } }, 'Per què no els altres sospitosos:'));
       for (let i = 0; i < caseData.solution.eliminations.length; i += 1) {
         solutionChildren.push(
-          e('p', { key: 'sol-elim-' + i, style: { margin: '0 0 6px' } }, '- ' + caseData.solution.eliminations[i])
+          e('p', { key: 'sol-elim-' + i, style: { margin: '0 0 6px', color: activeTheme.solution.panelColor } }, '- ' + caseData.solution.eliminations[i])
         );
       }
     }
@@ -1239,8 +1320,8 @@ function App() {
             left: '2%',
             bottom: '12%',
             width: '46%',
-            background: 'rgba(240, 248, 239, 0.97)',
-            border: '1px solid #7b966f',
+            background: activeTheme.solution.panelBackground,
+            border: activeTheme.solution.panelBorder,
             borderRadius: '8px',
             padding: '1%',
             animation: 'popupIn 180ms ease-out'

@@ -1,0 +1,107 @@
+{
+  "id": "nom-estil",
+  "name": "Nom visible",
+  "sceneImage": "./images/backgrounds/nom-estil.png",
+  "theme": {
+    "chrome": {
+      "labelColor": "#fff7ea",
+      "labelShadow": "0 1px 3px rgba(0, 0, 0, 0.75)",
+      "selectBackground": "rgba(20, 18, 16, 0.34)",
+      "selectBorder": "1px solid rgba(255, 255, 255, 0.38)",
+      "selectColor": "#fff8ed",
+      "selectShadow": "0 1px 4px rgba(0, 0, 0, 0.18)"
+    },
+    "window": {
+      "background": "rgba(252, 248, 240, 0.98)",
+      "border": "1px solid #8f7756",
+      "borderRadius": "10px",
+      "shadow": "0 12px 26px rgba(0, 0, 0, 0.35)",
+      "headerBackground": "#efe4d1",
+      "headerBorder": "1px solid #cbb99e",
+      "titleColor": "#2c2116",
+      "bodyColor": "#251b12",
+      "closeBackground": "#f6efe3",
+      "closeBorder": "1px solid #664f37",
+      "closeColor": "#1f1710"
+    },
+    "listItem": {
+      "background": "#fffaf1",
+      "border": "1px solid #c9b79b",
+      "borderRadius": "12px",
+      "iconBackground": "#f4ecdf",
+      "titleColor": "#2a2118",
+      "metaColor": "#6a5640"
+    },
+    "dossier": {
+      "background": "linear-gradient(180deg, #f7f1e4 0%, #efe3cf 100%)",
+      "border": "1px solid #b89e76",
+      "headerBackground": "#e6d2b2",
+      "headerBorder": "1px solid #c9b08a",
+      "eyebrowColor": "#6f5230",
+      "titleColor": "#24190f",
+      "subtitleColor": "#5c4330",
+      "cardBackground": "rgba(255, 251, 244, 0.92)",
+      "cardBorder": "1px solid #d7c1a0",
+      "cardTitleColor": "#694c2d",
+      "photoBorder": "1px solid #9b7f59",
+      "photoBackground": "#d9c7ab"
+    },
+    "solution": {
+      "buttonBackground": "#171717",
+      "buttonColor": "#fff",
+      "buttonBorder": "1px solid #000",
+      "panelBackground": "rgba(240, 248, 239, 0.97)",
+      "panelBorder": "1px solid #7b966f",
+      "panelColor": "#1f2a1c"
+    }
+  },
+  "hotspotActions": {
+    "monitor": "computer-emails-doc",
+    "file": "main-folder",
+    "board": "suspects-folder",
+    "drawer": "drawer-notes-doc",
+    "bag": "forensic-report-doc"
+  },
+  "hotspots": [
+    {
+      "id": "monitor",
+      "label": "Ordinador",
+      "x": 1,
+      "y": 2,
+      "w": 34,
+      "h": 33
+    },
+    {
+      "id": "board",
+      "label": "Tauler",
+      "x": 53,
+      "y": 2,
+      "w": 46,
+      "h": 35
+    },
+    {
+      "id": "drawer",
+      "label": "Calaix",
+      "x": 0,
+      "y": 57,
+      "w": 27,
+      "h": 41
+    },
+    {
+      "id": "bag",
+      "label": "Bossa de proves",
+      "x": 38,
+      "y": 52,
+      "w": 16,
+      "h": 27
+    },
+    {
+      "id": "file",
+      "label": "Carpeta del cas",
+      "x": 61,
+      "y": 48,
+      "w": 29,
+      "h": 46
+    }
+  ]
+}

@@ -109,6 +109,113 @@
           "h": 46
         }
       ]
+    },
+    {
+      "id": "mies-study-room",
+      "name": "Estudi Mies",
+      "sceneImage": "./images/backgrounds/mies-detective-study-room.png",
+      "theme": {
+        "chrome": {
+          "labelColor": "#f7ead2",
+          "labelShadow": "0 1px 4px rgba(0, 0, 0, 0.85)",
+          "selectBackground": "rgba(19, 14, 10, 0.52)",
+          "selectBorder": "1px solid rgba(222, 194, 145, 0.42)",
+          "selectColor": "#fff7e8",
+          "selectShadow": "0 8px 22px rgba(0, 0, 0, 0.24)"
+        },
+        "window": {
+          "background": "rgba(18, 14, 11, 0.84)",
+          "border": "1px solid rgba(222, 194, 145, 0.42)",
+          "borderRadius": "6px",
+          "shadow": "0 18px 42px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 244, 216, 0.13)",
+          "headerBackground": "linear-gradient(90deg, rgba(38, 28, 19, 0.92), rgba(20, 18, 16, 0.84))",
+          "headerBorder": "1px solid rgba(222, 194, 145, 0.26)",
+          "titleColor": "#f8ead2",
+          "bodyColor": "#f4e7d2",
+          "closeBackground": "rgba(255, 244, 216, 0.08)",
+          "closeBorder": "1px solid rgba(222, 194, 145, 0.38)",
+          "closeColor": "#f8ead2"
+        },
+        "listItem": {
+          "background": "rgba(255, 244, 216, 0.08)",
+          "border": "1px solid rgba(222, 194, 145, 0.26)",
+          "borderRadius": "6px",
+          "iconBackground": "rgba(255, 244, 216, 0.12)",
+          "titleColor": "#f8ead2",
+          "metaColor": "#c7aa7b"
+        },
+        "dossier": {
+          "background": "linear-gradient(180deg, rgba(34, 25, 18, 0.95), rgba(16, 14, 13, 0.94))",
+          "border": "1px solid rgba(222, 194, 145, 0.34)",
+          "headerBackground": "rgba(222, 194, 145, 0.12)",
+          "headerBorder": "1px solid rgba(222, 194, 145, 0.24)",
+          "eyebrowColor": "#c7aa7b",
+          "titleColor": "#fff1dc",
+          "subtitleColor": "#d8c19a",
+          "cardBackground": "rgba(255, 244, 216, 0.07)",
+          "cardBorder": "1px solid rgba(222, 194, 145, 0.22)",
+          "cardTitleColor": "#d9bc85",
+          "photoBorder": "1px solid rgba(222, 194, 145, 0.3)",
+          "photoBackground": "#241c16"
+        },
+        "solution": {
+          "buttonBackground": "rgba(19, 14, 10, 0.72)",
+          "buttonColor": "#fff1dc",
+          "buttonBorder": "1px solid rgba(222, 194, 145, 0.42)",
+          "panelBackground": "rgba(18, 14, 11, 0.9)",
+          "panelBorder": "1px solid rgba(222, 194, 145, 0.36)",
+          "panelColor": "#f4e7d2"
+        }
+      },
+      "hotspotActions": {
+        "monitor": "computer-emails-doc",
+        "file": "main-folder",
+        "board": "suspects-folder",
+        "drawer": "drawer-notes-doc",
+        "bag": "forensic-report-doc"
+      },
+      "hotspots": [
+        {
+          "id": "monitor",
+          "label": "Ordinador",
+          "x": 21,
+          "y": 43,
+          "w": 24,
+          "h": 29
+        },
+        {
+          "id": "board",
+          "label": "Tauler",
+          "x": 35,
+          "y": 1,
+          "w": 33,
+          "h": 50
+        },
+        {
+          "id": "drawer",
+          "label": "Calaix",
+          "x": 74,
+          "y": 78,
+          "w": 25,
+          "h": 21
+        },
+        {
+          "id": "bag",
+          "label": "Caixa de proves",
+          "x": 81,
+          "y": 58,
+          "w": 18,
+          "h": 19
+        },
+        {
+          "id": "file",
+          "label": "Carpeta del cas",
+          "x": 59,
+          "y": 60,
+          "w": 18,
+          "h": 16
+        }
+      ]
     }
   ],
   "hotspotActions": {

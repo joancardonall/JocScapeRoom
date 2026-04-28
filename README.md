@@ -46,6 +46,8 @@ Bloc d'execució de la web a partir dels JSON finals.
   - Geometria de l'escena i mapatge hotspot -> nodeId.
 - `app/images/`
   - Fons i icones.
+- `app/images/backgrounds/`
+  - Fons visuals nous i prompts utilitzats per generar-los.
 - `app/cases/`
   - Casos finals jugables i `cases-index.json`.
 

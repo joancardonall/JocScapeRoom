@@ -153,7 +153,7 @@
         "category": "suspect-dossier",
         "title": "Fitxa Policial",
         "subtitle": "Livia Conti",
-        "photo": "./images/suspects/case-019/livia-conti.jpg",
+        "photo": "./images/suspects/case-019/livia-conti.png",
         "profile": [
           "Livia Conti, 46 anys, presideix la Fundació Sant'Ambra i administra una vil.la que és alhora llegat familiar, deute econòmic i aparador cultural.",
           "La vetllada havia de tancar una donació americana capaç de salvar la biblioteca, el jardí i diversos salaris pendents. El panell Sant'Ambra era la peça que justificava aquella confiança.",
@@ -215,7 +215,7 @@
         "category": "suspect-dossier",
         "title": "Fitxa Policial",
         "subtitle": "Matteo Ricci",
-        "photo": "./images/suspects/case-019/matteo-ricci.jpg",
+        "photo": "./images/suspects/case-019/matteo-ricci.png",
         "profile": [
           "Matteo Ricci, 41 anys, és el dissenyador de la reforma museogràfica de Sant'Ambra. Havia projectat vitrines baixes, taules de travertí i recorreguts que deixaven veure el mar entre peces antigues.",
           "Mantenia una relació secreta amb Clara Ferri. No era un afer teatral, sinó una intimitat construïda entre horaris impossibles, cafès al moll i discussions sobre com una casa pot mentir si se la il.lumina massa bé.",
@@ -277,7 +277,7 @@
         "category": "suspect-dossier",
         "title": "Fitxa Policial",
         "subtitle": "Sofia Bellandi",
-        "photo": "./images/suspects/case-019/sofia-bellandi.jpg",
+        "photo": "./images/suspects/case-019/sofia-bellandi.png",
         "profile": [
           "Sofia Bellandi, 52 anys, és la conservadora en cap de la Fundació Sant'Ambra. Té reputació de fer parlar col.leccions que altres institucions deixaven dormir.",
           "Va portar Clara a la vil.la i la va protegir quan encara era una restauradora jove. Aquesta mentoria fa que la relació entre totes dues sigui més íntima que jeràrquica.",
@@ -341,7 +341,7 @@
         "category": "suspect-dossier",
         "title": "Fitxa Policial",
         "subtitle": "Enzo Vitale",
-        "photo": "./images/suspects/case-019/enzo-vitale.jpg",
+        "photo": "./images/suspects/case-019/enzo-vitale.png",
         "profile": [
           "Enzo Vitale, 57 anys, és marxant d'art i assessor comercial extern. Es mou entre col.leccions privades, fundacions petites i compradors que prefereixen no aparèixer als catàlegs.",
           "A Sant'Ambra havia promès contactes internacionals i una possible venda parcial que salvaria la fundació sense dir-ne venda. El panell de ceràmica era la clau de la seva operació.",

@@ -588,6 +588,11 @@ function App() {
         height = 68;
       }
 
+      if (isDigitalMessageDocument(node)) {
+        width = 46;
+        height = 64;
+      }
+
       const newWindow = {
         windowId: windowId,
         nodeId: nodeId,
@@ -629,6 +634,207 @@ function App() {
       }
       return updated;
     });
+  }
+
+  function isDigitalMessageDocument(node) {
+    return !!node && node.id === 'computer-emails-doc';
+  }
+
+  function startsRecoveredMessage(text) {
+    const trimmed = (text || '').trim();
+    return /^(De|From|Canal|Sistema|Registre|Log):\s*/i.test(trimmed);
+  }
+
+  function parseRecoveredMessages(content) {
+    const messages = [];
+
+    for (let i = 0; i < content.length; i += 1) {
+      const part = String(content[i] || '').trim();
+      if (!part) {
+        continue;
+      }
+
+      if (startsRecoveredMessage(part) || messages.length === 0) {
+        messages.push(part);
+      } else {
+        messages[messages.length - 1] = messages[messages.length - 1] + '\n\n' + part;
+      }
+    }
+
+    return messages.map(function (rawMessage) {
+      const lines = rawMessage.split('\n');
+      const headers = [];
+      const bodyLines = [];
+      let readingHeaders = true;
+
+      for (let i = 0; i < lines.length; i += 1) {
+        const line = lines[i];
+        const headerMatch = line.match(/^([^:\n]{2,24}):\s*(.*)$/);
+
+        if (readingHeaders && headerMatch) {
+          headers.push({ label: headerMatch[1].trim(), value: headerMatch[2].trim() });
+        } else {
+          readingHeaders = false;
+          bodyLines.push(line);
+        }
+      }
+
+      const subjectHeader = headers.find(function (header) {
+        return header.label.toLowerCase() === 'assumpte' || header.label.toLowerCase() === 'subject';
+      });
+
+      return {
+        headers: headers,
+        title: subjectHeader ? subjectHeader.value : 'Missatge recuperat',
+        body: bodyLines.join('\n').trim()
+      };
+    });
+  }
+
+  function getMessageHeaderValue(message, label) {
+    const normalizedLabel = label.toLowerCase();
+    const header = message.headers.find(function (item) {
+      return item.label.toLowerCase() === normalizedLabel;
+    });
+
+    return header ? header.value : '';
+  }
+
+  function renderRecoveredMessage(node, message, index, activeTheme) {
+    const bodyParagraphs = message.body ? message.body.split(/\n{2,}/) : [];
+    const bodyChildren = [];
+    const detailChildren = [];
+
+    const importantLabels = ['De', 'Per a', 'Hora', 'Estat', 'Canal', 'Sistema', 'Registre', 'Log'];
+
+    for (let i = 0; i < importantLabels.length; i += 1) {
+      const value = getMessageHeaderValue(message, importantLabels[i]);
+      if (value) {
+        detailChildren.push(
+          e(
+            'div',
+            {
+              key: node.id + '-mail-' + index + '-h-' + importantLabels[i],
+              style: {
+                display: 'flex',
+                gap: '8px',
+                alignItems: 'baseline',
+                minWidth: '210px',
+                flex: '1 1 210px'
+              }
+            },
+            e(
+              'span',
+              {
+                style: {
+                  color: '#6d6256',
+                  fontSize: '11px',
+                  fontWeight: '700',
+                  textTransform: 'uppercase'
+                }
+              },
+              importantLabels[i]
+            ),
+            e(
+              'span',
+              {
+                style: {
+                  color: activeTheme.window.bodyColor,
+                  fontSize: '13px',
+                  overflowWrap: 'anywhere'
+                }
+              },
+              value
+            )
+          )
+        );
+      }
+    }
+
+    for (let i = 0; i < bodyParagraphs.length; i += 1) {
+      const paragraph = bodyParagraphs[i].trim();
+      if (!paragraph) {
+        continue;
+      }
+
+      bodyChildren.push(
+        e(
+          'p',
+          {
+            key: node.id + '-mail-' + index + '-body-' + i,
+            style: {
+              margin: i === 0 ? '0 0 10px' : '10px 0 0',
+              lineHeight: 1.5,
+              color: activeTheme.window.bodyColor,
+              whiteSpace: 'pre-wrap'
+            }
+          },
+          paragraph
+        )
+      );
+    }
+
+    return e(
+      'article',
+      {
+        key: node.id + '-mail-' + index,
+        style: {
+          marginBottom: '12px',
+          border: '1px solid #cfc5b8',
+          borderRadius: '8px',
+          overflow: 'hidden',
+          background: '#fffdf8',
+          boxShadow: '0 1px 2px rgba(45, 34, 22, 0.08)'
+        }
+      },
+      e(
+        'div',
+        {
+          style: {
+            padding: '10px 12px',
+            background: '#f0f4f7',
+            borderBottom: '1px solid #d7dde2'
+          }
+        },
+        e(
+          'div',
+          {
+            style: {
+              marginBottom: detailChildren.length > 0 ? '8px' : 0,
+              fontSize: '15px',
+              fontWeight: '700',
+              color: '#25313a',
+              overflowWrap: 'anywhere'
+            }
+          },
+          message.title
+        ),
+        detailChildren.length > 0
+          ? e(
+              'div',
+              {
+                style: {
+                  display: 'flex',
+                  flexWrap: 'wrap',
+                  gap: '6px 14px'
+                }
+              },
+              detailChildren
+            )
+          : null
+      ),
+      e(
+        'div',
+        {
+          style: {
+            padding: '13px 14px',
+            fontFamily: 'Georgia, Times, serif',
+            fontSize: '15px'
+          }
+        },
+        bodyChildren
+      )
+    );
   }
 
   function startWindowDrag(windowId, event) {
@@ -1052,18 +1258,26 @@ function App() {
           );
         }
 
-        const paragraphs = node.content || [];
-        for (let j = 0; j < paragraphs.length; j += 1) {
-          bodyChildren.push(
-            e(
-              'p',
-              {
-                key: node.id + '-p-' + j,
+        if (isDigitalMessageDocument(node)) {
+          const messages = parseRecoveredMessages(node.content || []);
+
+          for (let j = 0; j < messages.length; j += 1) {
+            bodyChildren.push(renderRecoveredMessage(node, messages[j], j, activeTheme));
+          }
+        } else {
+          const paragraphs = node.content || [];
+          for (let j = 0; j < paragraphs.length; j += 1) {
+            bodyChildren.push(
+              e(
+                'p',
+                {
+                  key: node.id + '-p-' + j,
                   style: { lineHeight: 1.42, marginBottom: '10px', color: activeTheme.window.bodyColor }
-              },
-              paragraphs[j]
-            )
-          );
+                },
+                paragraphs[j]
+              )
+            );
+          }
         }
       }
     }

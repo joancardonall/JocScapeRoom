@@ -92,6 +92,8 @@ DESIGN CONSTRAINTS
 - Use `photo` paths that point to `./images/suspects/case-XXX/<suspect-base-id>.jpg`; the app will fall back to a default portrait if the image does not exist yet.
 - The interrogation document must carry the declared alibi and movements in a long police Q/A transcript style.
 - Avoid omniscient narrator commentary inside evidence documents. Evidence should read like real dossier pieces, not explanatory summaries.
+- `computer-emails-doc` must read as actual recovered emails, drafts, chat messages, system notifications, or access-log excerpts. Use sender/recipient/subject/time metadata and first-person or institutional wording from the characters/systems involved.
+- Do not put narrator analysis in `computer-emails-doc`. Avoid phrases like "aixo indica", "el text diu", "qui ho va fer sabia", "un lladre hauria", or explanatory conclusions that belong in `timeline-synthesis-doc` or `solution`.
 - Suspect dossier and relationship documents should read as richer story material, not as flat bullet summaries.
 
 QUALITY TARGET

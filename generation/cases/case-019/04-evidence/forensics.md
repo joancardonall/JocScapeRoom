@@ -20,4 +20,4 @@ La signatura de retirada del lot correspon a Sofia Bellandi, feta a les 18.05 h 
 
 ## Conclusio
 
-La hipotesi mes coherent es ingestio voluntaria d'una beguda adulterada, seguida d'una caiguda per incapacitat fisica. La disposicio posterior de la copa indica intervencio humana despres dels simptomes.
+Conclusio forense preliminar: mort compatible amb ingestio d'una beguda que contenia component del fixador F-17, seguida d'una caiguda. La copa presenta rentat interior incomplet i residu conservat sota la base.

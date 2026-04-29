@@ -8,18 +8,18 @@ A les 22.07 h, Paolo troba Clara al taller. Primer pensa que ha relliscat perque
 
 ## Bianca Salvi, ajudant de sala
 
-Bianca veu Sofia i Clara entrar al laboratori. Clara porta una carpeta crema i una bossa petita transparent. Sofia no sembla nerviosa; de fet, Bianca diu que tenia el mateix somriure que feia servir davant dels donants.
+Bianca veu Sofia i Clara entrar al laboratori a les 21.42 h. Clara porta una carpeta crema i una bossa petita transparent. Sofia duu dues copes. Bianca declara que Sofia "parlava baix i no accelerava el pas".
 
 Quan Sofia surt, li diu que Clara vol estar sola i que ningú entri "fins que baixi el to". Bianca interpreta que han discutit, no que Clara estigui en perill.
 
 ## Dario Masi, barquer del moll
 
-Dario confirma que Matteo arriba al moll cap a les 21.59 h i pregunta si la barca pot sortir sense fer soroll. Matteo sembla alterat i mira sovint cap a la vil.la.
+Dario confirma que Matteo arriba al moll cap a les 21.59 h i pregunta si la barca pot sortir sense fer soroll. Matteo mira sovint cap a la vil.la i porta una carpeta buida sota el braç.
 
-Aixo fa sospitos Matteo, pero tambe el situa fora del laboratori durant la fase final de la intoxicacio i abans del descobriment.
+Dario no li veu cap copa, pot de laboratori ni peça del taller. Quan se sent moviment a la vil.la, Matteo continua al moll i pregunta si Clara ha sortit per una altra porta.
 
 ## Helen Ward, donant americana
 
 Helen veu Livia a la biblioteca entre les 21.43 h i les 21.58 h. Livia esta tensa, pero no surt de la sala. Parlen de contractes de cessio i de la possibilitat d'ajornar la firma.
 
-Helen recorda una frase de Livia: "Si Clara diu no, jo no puc obligar una peça a ser autentica". La frase no l'absol completament, pero contradiu la imatge d'una presidenta disposada a qualsevol cosa aquella nit.
+Helen recorda una frase de Livia: "Si Clara diu no, jo no puc obligar una peça a ser autentica". Helen conserva una nota manuscrita amb tres punts: cessio temporal, assegurança i ajornament de la firma si Clara no avalava el panell.

@@ -502,8 +502,14 @@ El prompt d'imatge ha de ser sempre per a un retrat policial de fitxa: bust fron
 """,
         "04-evidence/documents-and-digital.md": """# Proves Documentals i Digitals
 
-- Correus:
-- Missatges:
+## Regla d'estil
+
+Els correus i missatges s'han d'escriure com artefactes recuperats, no com resums de narrador: De/Per a/Assumpte/Hora i cos literal escrit pel personatge. Les conclusions deductives van a la sintesi cronologica o a la solucio.
+
+## Materials
+
+- Correus recuperats:
+- Missatges interns:
 - Registres d'acces:
 - Documents alterats:
 - Fitxers desapareguts:

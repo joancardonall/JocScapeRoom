@@ -8,16 +8,16 @@
 
 ## Perfil basic
 
-Matteo Ricci es un dissenyador d'interiors nascut a Pisa, conegut per barrejar mobiliari contemporani amb cases historices sense convertir-les en hotels de luxe. A Sant'Ambra havia dissenyat vitrines baixes, taules de traverti i una circulacio pensada per veure el mar entre peces antigues.
+Matteo Ricci es un dissenyador d'interiors nascut a Pisa. A Sant'Ambra havia dissenyat vitrines baixes, taules de traverti i una circulacio pensada per connectar biblioteca, loggia i taller.
 
-La seva relacio amb Clara era secreta. No era un afer teatral, sino una intimitat construida entre horaris impossibles, cafès al moll i converses sobre com una casa pot mentir si se la il.lumina massa be.
+La seva relacio amb Clara era secreta. Consta en missatges privats, trobades al moll i una discussio registrada per dos testimonis a les 20.50 h.
 
-Matteo menteix per vergonya i per por que la policia interpreti qualsevol gest com possessio. Havia preparat una barca per ajudar Clara a marxar amb l'informe, pero aquesta fugida no arriba a passar.
+Matteo oculta inicialment la discussio amb Clara i la possessio d'una clau lateral assignada al projecte de museografia.
 
 ## Historia personal
 
-Matteo ve d'una familia de fusters i sempre ha tingut complex davant del mon academic de la conservacio. Clara li donava seguretat perque el corregia sense menysprear-lo.
+Matteo ve d'una familia de fusters i treballa sovint en projectes on depen de validacions academiques externes.
 
-La discussio de les 20.50 h neix de l'amor i del panic. Matteo volia treure Clara de la vil.la aquella mateixa nit. Clara volia fer-ho be, amb registre, informe i denuncia formal.
+A les 20.50 h discuteix amb Clara sobre sortir de la vil.la aquella mateixa nit. Clara volia fer la denuncia de manera formal l'endema.
 
-El seu dolor el fa mal testimoni. Amaga la relacio, la clau lateral i la barca. Pero les seves mentides protegeixen una fugida prevista, no el crim.
+En la primera declaracio, Matteo omet la relacio amb Clara, la clau lateral i la barca preparada al moll.

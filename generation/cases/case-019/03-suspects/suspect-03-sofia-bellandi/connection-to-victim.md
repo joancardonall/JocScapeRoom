@@ -1,9 +1,9 @@
 # Relacio amb Clara Ferri
 
-Sofia va descobrir Clara en un taller de Florencia i li va oferir el lloc a Sant'Ambra. Durant anys, Clara li va tenir una gratitud sincera. Sofia no era només una cap: era la prova que una dona rigorosa podia dirigir una col.leccio sense demanar permis.
+Sofia va coneixer Clara en un taller de Florencia i li va oferir el lloc a Sant'Ambra. Durant anys, Sofia signa les recomanacions professionals de Clara i l'inclou en restauracions delicades.
 
-La fractura arriba amb el panell. Clara creu que han trobat una falsificacio; Sofia insisteix que han trobat una "reconstruccio historica problematica". La diferència de paraules es converteix en una diferència moral.
+La discrepancia sobre el panell queda documentada en dues versions d'informe: Clara usa "falsificacio material"; Sofia corregeix el terme per "reconstruccio historica problematica".
 
-Sofia coneixia els habits de Clara: on guardava mostres, com anotava lots, quan preferia parlar en privat per no humiliar ningú. Aquest coneixement li permet dissenyar un crim que sembla una escena de treball mal tancada.
+Sofia coneixia els habits de Clara: on guardava mostres, com anotava lots i quan preferia parlar en privat per no exposar una discrepancia tecnica davant dels donants.
 
-La relacio aporta motiu, metode i oportunitat. Tambe explica l'error: Sofia busca l'informe formal, pero subestima la manera tossuda com Clara duplicava les proves petites.
+Els registres de la nit situen Sofia amb Clara al laboratori; els registres del magatzem la situen amb acces previ al lot F-17.

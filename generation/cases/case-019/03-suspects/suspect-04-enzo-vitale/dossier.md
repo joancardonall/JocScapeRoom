@@ -12,7 +12,7 @@ Enzo Vitale es mou entre col.leccions privades, fundacions petites i compradors 
 
 A Sant'Ambra havia promes contactes internacionals i una possible venda parcial que salvaria la fundacio sense dir-ne venda. El panell de ceramica era la clau de la seva operacio.
 
-Enzo tenia motiu per silenciar Clara: les seves factures mostren compres modernes que poden comprometre'l. Pero matar-la destruia tambe la persona que podia legitimar altres peces de la col.leccio.
+Les factures localitzades a la seva cartera mostren compres de pigments moderns, serveis de forn ceramic i transports no declarats vinculats a Sant'Ambra.
 
 ## Historia personal
 
@@ -20,4 +20,4 @@ Enzo va començar com a aprenent en una casa de subhastes de Genova. Va aprendre
 
 La seva relacio amb Clara era de respecte tens. Ell intentava fer-la flexible; ella el mirava com si cada frase seva deixes una taca sobre la taula.
 
-Durant la nit del crim, Enzo intenta fugir amb factures i correspondencia. Aixo el converteix en culpable d'alguna cosa, pero no del crim central.
+Durant la nit del crim, Enzo intenta sortir de la vil.la amb factures i correspondencia dins una cartera de cuir.

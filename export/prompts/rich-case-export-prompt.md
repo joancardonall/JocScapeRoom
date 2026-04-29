@@ -93,6 +93,12 @@ Els documents que obre el jugador han de tenir mes context que en els casos anti
 
 No allarguis amb farciment. Cada paragraf ha d'aportar context, caracter, pista, contradiccio o atmosfera amb funcio deductiva.
 
+## Regla estricta per ordinador i correus
+
+`computer-emails-doc` no pot ser un resum narratiu de correus. Ha de contenir peces digitals recuperades com a tals: correus amb De/Per a/Assumpte/Hora, esborranys, missatges interns, notificacions de sistema o fragments de log.
+
+Quan el contingut provingui d'un correu, escriu-lo com si l'hagues escrit el personatge: primera persona, intencio concreta, capcalera visible i text literal. No facis servir frases de narrador com "el text diu que", "aixo indica", "qui ho va retirar sabia" o "un lladre hauria". Aquestes conclusions van a `timeline-synthesis-doc`, `proof-chain` o `solution`, no a l'ordinador.
+
 ## Criteris de qualitat
 
 Abans de donar el JSON per tancat, comprova internament:

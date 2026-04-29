@@ -24,5 +24,5 @@
 
 - Livia tenia pressa i diners en joc.
 - Matteo amagava una relacio i una fugida preparada.
-- Enzo portava factures que demostraven pressions comercials.
+- Enzo portava factures de pigments moderns, serveis de forn ceramic i transports no declarats.
 - Cap dels tres pot connectar metode, finestra i coneixement tecnic.

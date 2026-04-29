@@ -4,13 +4,38 @@
 
 La carpeta crema de Clara apareix sense les tres pagines finals. Les pagines retirades eren les conclusions, no les fotografies ni les taules de mesures.
 
-Aixo indica que qui les va retirar sabia exactament quina part era perillosa. Un lladre hauria agafat tota la carpeta; una persona tecnica nomes necessitava eliminar la conclusio que vinculava pigment modern, lot F-17 i panell exposat.
+La portada de l'informe conserva la numeracio "1-18". La carpeta inventariada a les 22.32 h conte les pagines 1-15, fotografies impreses i taules de mesures. No hi ha restes de paper trencat dins la carpeta.
 
 ## Ordinador de Clara
 
-L'ordinador conserva un correu sense enviar a la inspectora Marta Galli. El text diu que l'informe complet es lliuraria l'endema i que "la manipulacio no es nomes comercial, sino metodologica".
+De: Clara Ferri <c.ferri@fondazione-santambra.it>  
+Per a: Marta Galli <m.galli@carabinieri.it>  
+Assumpte: Informe Sant'Ambra - lliurament dema  
+Estat: esborrany, 21.18 h
 
-El document adjunt no hi es, pero la ruta del fitxer apunta a una copia temporal creada a les 21.16 h. La copia va ser esborrada a les 22.20 h des d'un usuari d'administracio del laboratori.
+Marta,
+
+dema et lliurare l'informe complet amb les fotografies, les taules de mesures i les conclusions signades. No vull enviar-te nomes una alarma verbal: vull que puguis llegir exactament d'on surt cada dada.
+
+El fragment blau no es una restauracio antiga. El pigment coincideix amb el lot modern que figura a les compres internes i el fixador F-17 apareix a la mateixa sequencia de proves. La manipulacio no es nomes comercial, sino metodologica.
+
+He deixat una copia temporal de l'annex a la carpeta del laboratori perque la xarxa de la vila cau cada deu minuts. Si aquesta nit em passa res o si l'arxiu desapareix, busca la versio creada a les 21.16 h; el nom provisional es santambra_annex_clara.tmp.
+
+De: Sofia Bellandi <s.bellandi@fondazione-santambra.it>  
+Per a: Clara Ferri <c.ferri@fondazione-santambra.it>  
+Assumpte: Parlem abans que aixo surti de la vila  
+Hora: 21.31 h
+
+Clara,
+
+no enviis res encara. Porta nomes les conclusions finals al laboratori i deixa les taules al teu despatx; no cal fer circular material que despres no podrem contextualitzar. Et dec una conversa honesta abans que Marta Galli rebi cap document.
+
+De: Clara Ferri <c.ferri@fondazione-santambra.it>  
+Per a: Clara Ferri <c.ferri@fondazione-santambra.it>  
+Assumpte: Recordatori privat  
+Hora: 21.37 h
+
+Si baixo amb Sofia, torno de seguida a buscar la bossa petita del calaix. La tira del F-17 i el fragment blau no han de sortir de la meva vista fins que Marta els tingui.
 
 ## Registre d'acces
 
@@ -20,6 +45,6 @@ El registre no diu qui surt, pero una camera exterior sense audio mostra Sofia c
 
 ## Factures d'Enzo
 
-Les factures amagades per Enzo documenten compres de pigments moderns i serveis de forn ceràmic. Són greus, pero no proven que ell matés Clara.
+Les factures amagades per Enzo documenten compres de pigments moderns, serveis de forn ceràmic i transports no declarats vinculats a Sant'Ambra.
 
-La seva funcio al cas es revelar el secret de la falsificacio i donar motiu economic, mentre la prova del metode continua apuntant al laboratori i a Sofia.
+La cartera queda precintada a les 22.18 h. No consta cap registre d'entrada d'Enzo al laboratori ni cap autoritzacio seva sobre productes del magatzem quimic.

@@ -31,4 +31,6 @@ Validation rules:
 - If tone or language is not Catalan, fail.
 - If any required node ID is missing, fail.
 - For new-format cases, fail if suspects are exported without the 4-document dossier structure (dossier, relationship, alibi, interrogation) when the case is expected to use the new standard.
+- If `computer-emails-doc` contains narrator summaries or deductive commentary instead of actual recovered emails/messages/log excerpts, mark major or fail when it hides key evidence.
+- `computer-emails-doc` should include concrete metadata such as sender, recipient, subject, timestamp, draft state, message channel, or log source. If it only paraphrases what an email "says", mark major.
 - Prefer concise, concrete issue reports.

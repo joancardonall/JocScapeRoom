@@ -228,6 +228,7 @@ Pipeline ideal:
 
 5. `evidence-builder`
    Genera proves coherents amb la cronologia.
+   Quan generis proves digitals o correus, escriu-los com artefactes recuperats: capcaleres, remitent, destinatari, hora i cos del missatge. No hi posis conclusions de narrador.
 
 6. `suspect-writer`
    Escriu coartades, declaracions i contradiccions.
